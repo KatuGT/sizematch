@@ -1,5 +1,7 @@
+import Topbar from "@/Components/TopBar/TopBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import BottomBar from "@/Components/BottomBar/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <p>navbar</p>
-        {children}
-        <p>tapbar</p>
+        <div className="flex min-h-screen flex-col justify-between">
+          <Topbar />
+          {children}
+          <BottomBar />
+        </div>
       </body>
     </html>
   );

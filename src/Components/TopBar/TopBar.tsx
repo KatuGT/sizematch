@@ -2,19 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 import SizeMatchLogoBlanco from "../../../public/sizeMatchLogoBlanco.png";
 
 const Topbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
-
   return (
-    <nav className="flex justify-center bg-black px-2 h-[80px]">
+    <nav className="flex h-[80px] justify-center bg-black px-2">
       <div className="flex max-w-[80%] items-center justify-center gap-5">
         <Link
           href="/News"
-          className="after:hoverUnderline relative flex-1 h-full flex items-center justify-center text-center text-white after:hover:opacity-100"
+          className="after:hoverUnderline relative flex h-full flex-1 items-center justify-center text-center text-white after:hover:opacity-100"
         >
           News
           {pathname === "/News" && (
@@ -31,7 +28,7 @@ const Topbar = () => {
         </Link>
         <Link
           href="/Contact"
-          className="after:hoverUnderline relative flex-1 h-full flex items-center justify-center text-center text-white after:hover:opacity-100"
+          className="after:hoverUnderline relative flex h-full flex-1 items-center justify-center text-center text-white after:hover:opacity-100"
         >
           Contact Us
           {pathname === "/Contact" && (

@@ -13,7 +13,6 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Piston(props) {
   const { nodes, materials } = useGLTF("/piston-transformed.glb");
-
   materials.material_0.metalness = 1
   materials.material_0.roughness = 0.1
   materials.material_0.envMapIntensity = .5

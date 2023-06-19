@@ -6,9 +6,9 @@ import Piston from "@/3Dcomponents/Piston";
 
 export default function Home() {
   return (
-    <main className="flex h-full items-center justify-center flex-1">
-      <div className="flex-1">Piston</div>
-      <div className="h-[500px] flex-1">
+    <main className="relative flex h-full flex-1 items-center justify-center bg-[#111]">
+      <div className="absolute text-[200px] text-white inset-0 text-center top-[15%] font-bold" >Piston kit</div>
+      <div className="flex-1 h-[700px]">
         <Canvas>
           <Stage environment="studio" intensity={0.3}>
             <Piston />

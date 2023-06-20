@@ -29,3 +29,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  color: #3bc83b;
+}
+
+
+:root{
+  --sizeAColor: #0c950c;
+  --sizeAColorLight: #3bc83b;
+
+  --sizeBColor: #0c5095;
+  --sizeBColorLight: #3ba7c8;
+}

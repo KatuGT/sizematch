@@ -2,19 +2,25 @@
   display: none;
 }
 
-
 .sizeA {
-  fill: green;
-  color: green;
+  /* fill: var(--sizeAColor); */
+  /* color: var(--sizeAColor); */
 }
 
-.sizeA.hovered {
-    fill: red;
-    color: red;
+.sizeB {
+    fill: var(--sizeBColor);
+    color: var(--sizeBColor);
   }
 
-/* .groupSizeA:hover .sizeA{
-  fill: red;
-  color: red;
+/* .sizeA.hovered {
   display: block;
-} */
+  color: var(--sizeAColorLight);
+  fill: var(--sizeAColorLight);
+}
+
+.sizeB.hovered {
+    display: block;
+    color: var(--sizeBColorLight);
+    fill: var(--sizeBColorLight);
+  }
+   */

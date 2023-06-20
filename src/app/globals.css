@@ -30,13 +30,8 @@
   box-sizing: border-box;
 }
 
-body{
-  color: #3bc83b;
-}
-
-
 :root{
-  --sizeAColor: #0c950c;
+  --sizeAColor: #0b7c0b;
   --sizeAColorLight: #3bc83b;
 
   --sizeBColor: #0c5095;

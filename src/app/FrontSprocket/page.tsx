@@ -1,12 +1,16 @@
 "use client";
-import React, { useRef, useState } from "react";
-import "./frontSprocketStyle.css";
+import React, { useState } from "react";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
+
 const FrontSprocket = () => {
-  const [isHovered, setIsHovered] = useState(false);
   const [hoverClass, setHoverClass] = useState("");
 
-  const handleHover = (e: React.MouseEvent<SVGPathElement, MouseEvent>) => {
+  const handleHover = (
+    e: React.MouseEvent<
+      SVGPathElement | SVGTextElement | HTMLHeadingElement,
+      MouseEvent
+    >
+  ) => {
     const { classList } = e.target as HTMLElement;
     setHoverClass(classList[0]);
   };
@@ -28,8 +32,8 @@ const FrontSprocket = () => {
       <div>
         <h1
           className={`sizeA ${
-            hoverClass === "sizeA" ? "text-[#3bc83b]" : "text-[#0c950c]"
-          } `}
+            hoverClass === "sizeA" ? "text-sizeAcolorLight" : "text-sizeAcolor"
+          }`}
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         >
@@ -37,11 +41,23 @@ const FrontSprocket = () => {
         </h1>
 
         <h1
-          className={`sizeB ${hoverClass === "sizeB" ? "#yrllo" : "#0c950c"} `}
+          className={`sizeB ${
+            hoverClass === "sizeB" ? "text-sizeBcolorLight" : "text-sizeBcolor"
+          } `}
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         >
           Medida B
+        </h1>
+
+        <h1
+          className={`sizeC ${
+            hoverClass === "sizeC" ? "text-sizeCcolorLight" : "text-sizeCcolor"
+          } `}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        >
+          Medida C
         </h1>
       </div>
     </div>

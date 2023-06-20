@@ -5,4 +5,6 @@ export const sizeColors = {
     sizeBcolorLight : '#3ba7c8',
     sizeCcolor : '#9e7c0d',
     sizeCcolorLight : '#dbb331',
+    sizeDcolor : '#93166d',
+    sizeDcolorLight : '#c9389d',
 }

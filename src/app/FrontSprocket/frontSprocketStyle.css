@@ -1,0 +1,20 @@
+.innterDiameter {
+  display: none;
+}
+
+
+.sizeA {
+  fill: green;
+  color: green;
+}
+
+.sizeA.hovered {
+    fill: red;
+    color: red;
+  }
+
+/* .groupSizeA:hover .sizeA{
+  fill: red;
+  color: red;
+  display: block;
+} */

@@ -37,7 +37,7 @@ const Chain = ({ hoveredClass, handleHover, handleMouseLeave }: SVGProps) => {
               ? sizeColors.sizeEcolorLight
               : sizeColors.sizeEcolor,
           fontFamily: "&quot",
-          fontSize: "197.949px",
+          fontSize: "150.949px",
         }}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}

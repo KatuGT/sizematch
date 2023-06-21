@@ -29,11 +29,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-:root{
-  --sizeAColor: #0b7c0b;
-  --sizeAColorLight: #3bc83b;
-
-  --sizeBColor: #0c5095;
-  --sizeBColorLight: #3ba7c8;
-}

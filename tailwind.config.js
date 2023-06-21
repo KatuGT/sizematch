@@ -16,6 +16,8 @@ module.exports = {
         'sizeCcolorLight' : '#dbb331',
         'sizeDcolor' : '#93166d',
         'sizeDcolorLight' : '#c9389d',
+        'sizeEcolor' : '#9db613',
+        'sizeEcolorLight' : '#cae04b'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

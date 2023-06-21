@@ -1,16 +1,11 @@
+import { SVGProps } from "@/types/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
-
-interface FrontSprocketSVGProps {
-  hoveredClass: string;
-  handleHover: React.MouseEventHandler<SVGPathElement | SVGTextElement>;
-  handleMouseLeave: React.MouseEventHandler<SVGPathElement | SVGTextElement>;
-}
 
 const FrontSprocketSVG = ({
   hoveredClass,
   handleHover,
   handleMouseLeave,
-}: FrontSprocketSVGProps) => {
+}: SVGProps) => {
 
   return (
     <svg
@@ -44,7 +39,7 @@ const FrontSprocketSVG = ({
         }}
       />
       {/* {Medida A empieza} */}
-      <g className={"groupSizeA"}>
+      <g>
         <path
           className={`sizeA`}
           style={{
@@ -162,7 +157,7 @@ const FrontSprocketSVG = ({
         className="sizeB"
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
-        d="M1145.31 369.509H755.709v-11.954l-19.516 13.783 19.516 14.079v-11.742h389.6v-4.166Z"
+        d="M1142.77 369.509H716.372v-11.954l-21.36 13.783 21.36 14.079v-11.742h426.398v-4.166Z"
         style={{
           fill:
             hoveredClass === "sizeB"

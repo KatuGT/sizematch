@@ -36,9 +36,12 @@ const FrontSprocket = () => {
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
+    const newValue = value.replace(/[^0-9.]/g, "");
+    Number(newValue);
+
     setFrontSprocketSizes((prev) => ({
       ...prev,
-      [name]: Number(value.replace(/[^0-9.]/g, "")),
+      [name]: newValue,
     }));
   };
 
@@ -48,30 +51,45 @@ const FrontSprocket = () => {
       inputName: "a_innetDiameter",
       placeholder: "20.50",
       value: frontSprocketSizes?.a_innetDiameter,
+      generalSize: "sizeA",
+      baseColor: "text-sizeAcolor",
+      hoverColor: "text-sizeAcolorLight",
     },
     {
       displayName: "B",
       inputName: "b_innerTeeth",
       placeholder: "23.50",
       value: frontSprocketSizes?.b_innerTeeth,
+      generalSize: "sizeB",
+      baseColor: "text-sizeBcolor",
+      hoverColor: "text-sizeBcolorLight",
     },
     {
       displayName: "C",
       inputName: "c_outerDiameter",
       placeholder: "12",
       value: frontSprocketSizes?.c_outerDiameter,
+      generalSize: "sizeC",
+      baseColor: "text-sizeCcolor",
+      hoverColor: "text-sizeCcolorLight",
     },
     {
       displayName: "D",
       inputName: "d_width",
       placeholder: "8.5",
       value: frontSprocketSizes?.d_width,
+      generalSize: "sizeD",
+      baseColor: "text-sizeDcolor",
+      hoverColor: "text-sizeDcolorLight",
     },
     {
       displayName: "E",
       inputName: "e_chain",
-      value: frontSprocketSizes?.e_chain,
       placeholder: "520",
+      value: frontSprocketSizes?.e_chain,
+      generalSize: "sizeE",
+      baseColor: "text-sizeEcolor",
+      hoverColor: "text-sizeEcolorLight",
     },
   ];
 
@@ -153,7 +171,6 @@ const FrontSprocket = () => {
         hoverClass={hoverClass}
         sizes={size}
       />
-
     </div>
   );
 };

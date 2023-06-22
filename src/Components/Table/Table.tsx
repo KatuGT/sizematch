@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 interface TablePros {
@@ -10,6 +11,9 @@ interface TablePros {
     inputName: string;
     value?: number;
     placeholder: string;
+    generalSize: string;
+    baseColor: string;
+    hoverColor: string;
   }[];
 }
 
@@ -21,52 +25,54 @@ const Table = ({
   sizes,
 }: TablePros) => {
   return (
-    <section>
-        <h4 className="text-white">*Please write the size in millimeters</h4>
-        <h4 className="text-white mb-2">*At least two values are required</h4>
+    <section className="px-5">
+      <div>
+        <p className="text-white">*Please write the size in millimeters</p>
+        <p className=" text-white">*At least two values are required</p>
+      </div>
       <div className="overflow-hidden rounded-3xl border border-solid border-gray-100 ">
-        <table className="my-2 border-spacing-0 overflow-hidden text-center">
+        <table className="my-2 border-spacing-0 overflow-hidden text-center text-white">
           <thead>
-            <tr className="border-b border-solid border-gray-200 text-white">
+            <tr className="border-b border-solid border-gray-200">
               <th className="w-32 p-2">Make</th>
               <th className="w-32 p-2">Code</th>
-              {sizes.map((size) => {
-                const needDataList = size.inputName.includes("chain");
+              {sizes?.map((size) => {
+                const needDataList = size?.inputName?.includes("chain");
 
                 return (
                   <th
-                    key={size.displayName}
+                    key={size?.inputName}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleMouseLeave}
-                    className={`size${size.displayName} w-28 ${
-                      hoverClass === `size${size.displayName}`
-                        ? `text-size${size.displayName}colorLight`
-                        : `text-size${size.displayName}color`
+                    className={`${size?.generalSize} w-28 ${
+                      hoverClass === size?.generalSize
+                        ? size?.baseColor
+                        : size?.hoverColor
                     }`}
                   >
                     {!needDataList ? (
                       <label>
-                        <span>{size.displayName}</span>
+                        <span>{size?.displayName}</span>
                         <input
                           pattern="^\d+(\.\d+)?$"
                           type="text"
-                          name={size.inputName}
-                          placeholder={size.placeholder}
+                          name={size?.inputName}
+                          placeholder={size?.placeholder}
                           className="w-full bg-transparent text-center text-white"
                           onChange={handleFSChange}
-                          value={size.value || ""}
+                          value={size?.value || ""}
                         />
                       </label>
                     ) : (
                       <label>
                         <span>E</span>
                         <input
-                          placeholder={size.placeholder}
+                          name={size?.inputName}
+                          placeholder={size?.placeholder}
                           className="w-full bg-transparent text-center text-white"
-                          list="chain"
-                          name={size.inputName}
                           onChange={handleFSChange}
-                          value={size.value}
+                          value={size?.value || ""}
+                          list="chain"
                         />
                         <datalist id="chain">
                           <option value="532" />

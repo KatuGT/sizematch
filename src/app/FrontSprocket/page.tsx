@@ -24,7 +24,7 @@ const FrontSprocket = () => {
   };
 
   interface FSsizeProps {
-    a_innetDiameter?: number;
+    a_innerDiameter?: number;
     b_innerTeeth?: number;
     c_outerDiameter?: number;
     d_width?: number;
@@ -48,9 +48,9 @@ const FrontSprocket = () => {
   const size = [
     {
       displayName: "A",
-      inputName: "a_innetDiameter",
+      inputName: "a_innerDiameter",
       placeholder: "20.50",
-      value: frontSprocketSizes?.a_innetDiameter,
+      value: frontSprocketSizes?.a_innerDiameter,
       generalSize: "sizeA",
       baseColor: "text-sizeAcolor",
       hoverColor: "text-sizeAcolorLight",
@@ -100,7 +100,7 @@ const FrontSprocket = () => {
           <InputSizeEntry
             placeholder="20.50"
             name="a_innetDiameter"
-            value={frontSprocketSizes?.a_innetDiameter}
+            value={frontSprocketSizes?.a_innerDiameter}
             onChange={handleFSChange}
             position="left-[-100px] top-[39%]"
           />

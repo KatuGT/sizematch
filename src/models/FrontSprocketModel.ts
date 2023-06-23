@@ -18,24 +18,24 @@ const FrontSprocketSchema = new Schema(
       type: String,
     },
     a_innerDiameter: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
     b_innerTeeth: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
     c_outerDiameter: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
     d_width: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
     e_chain: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: '0',
     },
   },
   { timestamps: true }

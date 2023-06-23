@@ -4,39 +4,40 @@ import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
 interface FSprops {
-  a_innerDiameter?: number;
-  b_innerTeeth?: number;
-  c_outerDiameter?: number;
-  d_width?: number;
-  e_chain?: number;
+  [key: string]: string | RegExp;
 }
 
 const searchFrontSprocket = async (sizes: FSprops) => {
-  const frontSprockets = await FrontSprocket.find(sizes);
-  console.log(frontSprockets);
+  const searchQuery: FSprops = {};
+
+  for (const field in sizes) {
+    if (sizes[field as keyof FSprops]) {
+      searchQuery[field] = new RegExp(`^${sizes[field as keyof FSprops]}`);
+    }
+  }
+
+  const frontSprockets = await FrontSprocket.find(searchQuery);
+
   return frontSprockets;
 };
 
 export const GET = async (req: NextApiRequest, { params }: any) => {
   await connect();
 
-  const { sizes } = params;
+  const { sizes, part } = params;
 
   const searchParams = new URLSearchParams(sizes);
-  const sizesObject = {};
+  const sizesObject: FSprops = {};
 
   for (const [key, value] of searchParams.entries()) {
     sizesObject[key] = value;
   }
 
-  console.log(sizesObject);
   try {
     let searchResults: any;
 
-    switch (params.part) {
+    switch (part) {
       case "frontSprocket":
-        console.log("hasta aqui");
-
         searchResults = await searchFrontSprocket(sizesObject);
         break;
       default:
@@ -44,6 +45,7 @@ export const GET = async (req: NextApiRequest, { params }: any) => {
     }
     return new NextResponse(searchResults, { status: 200 });
   } catch (error) {
+    console.log(error);
     return new NextResponse("Error", { status: 500 });
   }
 };

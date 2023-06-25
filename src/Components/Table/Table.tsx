@@ -9,7 +9,7 @@ interface TablePros {
   sizes: {
     displayName: string;
     inputName: string;
-    value?: number;
+    value?: string;
     placeholder: string;
     generalSize: string;
     baseColor: string;

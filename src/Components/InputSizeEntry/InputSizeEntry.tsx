@@ -1,7 +1,7 @@
 import React from "react";
 
 interface InputSizeEntryProps {
-  value?: number;
+  value?: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   name: string;
   placeholder: string;

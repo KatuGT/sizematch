@@ -11,7 +11,6 @@ interface InputPartPostProps {
   handleHover?: React.MouseEventHandler<HTMLTableCellElement>;
   handleMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
   onChange?: React.ChangeEventHandler<HTMLDivElement>;
-  value?: string
 }
 
 export const InputPartPost = ({
@@ -25,9 +24,7 @@ export const InputPartPost = ({
   handleHover,
   handleMouseLeave,
   onChange,
-  value
 }: InputPartPostProps) => {
-    console.log(value);
     
   return (
     <div
@@ -45,7 +42,6 @@ export const InputPartPost = ({
         className="max-w-[50%] rounded-e-full bg-transparent p-2 text-right"
         {...register(name)}
         onChange={onChange}
-        // value={value[name] || ''}
       />
     </div>
   );

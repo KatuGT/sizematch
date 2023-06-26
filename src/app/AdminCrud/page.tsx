@@ -1,20 +1,51 @@
 "use client";
 import { InputPartPost } from "@/Components/inputPartPost/InputPartPost";
-import { FSSizeInput } from "@/utils/FSInputData";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
+import { Button } from "@/Components/Button/button";
+import { FSSizeInput } from "@/utils/FSInputData";
+import { RSSizeInput } from "@/utils/RSInputData";
 
 const AdminCrud = () => {
+
+  // Cambia array que se mapea en el formulario
+  enum possibleParts {
+    frontSprocket = "frontSprocket",
+    rearSprocket = "rearSprocket",
+  }
+
+  const [selectedPart, setSelectedPart] = useState<possibleParts>(
+    possibleParts.frontSprocket
+  );
+
+  const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
+
+  const handleArrayToMap = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedOption = e.target.value as possibleParts;
+    setSelectedPart(selectedOption);
+
+    switch (selectedPart) {
+      case possibleParts.frontSprocket:
+        setArratoToMap(FSSizeInput);
+        break;
+      case possibleParts.rearSprocket:
+        setArratoToMap(RSSizeInput);
+        break;
+      default:
+        setArratoToMap([]);
+        break;
+    }
+  };
+
+  // Post
   interface partPostProps {
     [key: string]: string;
   }
-
-  const [selectedPart, setSelectedPart] = useState("");
 
   const {
     register,
@@ -27,6 +58,7 @@ const AdminCrud = () => {
 
   const [hoverClass, setHoverClass] = useState("");
 
+  // conecta el hover del svg con el formulario
   const handleHover = (
     e: React.MouseEvent<
       SVGPathElement | SVGTextElement | HTMLHeadingElement,
@@ -49,6 +81,7 @@ const AdminCrud = () => {
     e_chain?: string;
   }
 
+  // valores del inputs de formulario e ilistración sincronizados
   const [frontSprocketSizes, setFrontSprocketSizes] = useState<FSsizeProps>();
 
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,22 +100,27 @@ const AdminCrud = () => {
   return (
     <div className="mx-auto my-5 flex flex-wrap  items-center justify-center gap-10">
       <div>
-        <div className="mb-3">
-          <label htmlFor="partList">Choose a motorcycle part:</label>
+        <div className="mb-3 flex flex-col ">
+          <label htmlFor="partList" className="text-white">
+            Choose a motorcycle part:
+          </label>
 
           <select
+            className="flex items-center justify-between rounded-full bg-white px-3 py-2"
             name="choosenPart"
             id="partList"
             value={selectedPart}
-            onChange={(e) => setSelectedPart(e.target.value)}
+            onChange={handleArrayToMap}
           >
             <option disabled>--Please choose an option--</option>
-            <option value="frontSprocket">Front Sprocket</option>
-            <option value="rearSrocket">Rear Srocket</option>
-            <option value="connectingRod">Connecting Rod</option>
+            <option value={possibleParts.frontSprocket}>Front Sprocket</option>
+            <option value={possibleParts.rearSprocket}>Rear Sprocket</option>
           </select>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col justify-center gap-3"
+        >
           <InputPartPost
             placeholder="JT Sprocket"
             id="make"
@@ -106,7 +144,7 @@ const AdminCrud = () => {
             type="url"
           />
 
-          {FSSizeInput.map((item) => {
+          {arratoToMap?.map((item) => {
             return (
               <InputPartPost
                 register={register}
@@ -122,7 +160,7 @@ const AdminCrud = () => {
               />
             );
           })}
-          <button>Enviar</button>
+          <Button text="Send" />
         </form>
       </div>
       <div className="flex flex-col flex-wrap items-center justify-center">

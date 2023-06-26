@@ -1,61 +1,14 @@
 "use client";
-import { InputPartPost } from "@/Components/inputPartPost/InputPartPost";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
-import { Button } from "@/Components/Button/button";
-import { FSSizeInput } from "@/utils/FSInputData";
-import { RSSizeInput } from "@/utils/RSInputData";
+import PostForm from "@/Components/PostForm/PostForm";
 
 const AdminCrud = () => {
-
-  // Cambia array que se mapea en el formulario
-  enum possibleParts {
-    frontSprocket = "frontSprocket",
-    rearSprocket = "rearSprocket",
-  }
-
-  const [selectedPart, setSelectedPart] = useState<possibleParts>(
-    possibleParts.frontSprocket
-  );
-
-  const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
-
-  const handleArrayToMap = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedOption = e.target.value as possibleParts;
-    setSelectedPart(selectedOption);
-
-    switch (selectedPart) {
-      case possibleParts.frontSprocket:
-        setArratoToMap(FSSizeInput);
-        break;
-      case possibleParts.rearSprocket:
-        setArratoToMap(RSSizeInput);
-        break;
-      default:
-        setArratoToMap([]);
-        break;
-    }
-  };
-
-  // Post
-  interface partPostProps {
-    [key: string]: string;
-  }
-
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data: partPostProps) => console.log(data);
-
   const [hoverClass, setHoverClass] = useState("");
 
   // conecta el hover del svg con el formulario
@@ -81,6 +34,20 @@ const AdminCrud = () => {
     e_chain?: string;
   }
 
+  // Post
+  interface partPostProps {
+    [key: string]: string;
+  }
+
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data: partPostProps) => console.log(data);
+
   // valores del inputs de formulario e ilistración sincronizados
   const [frontSprocketSizes, setFrontSprocketSizes] = useState<FSsizeProps>();
 
@@ -99,70 +66,14 @@ const AdminCrud = () => {
 
   return (
     <div className="mx-auto my-5 flex flex-wrap  items-center justify-center gap-10">
-      <div>
-        <div className="mb-3 flex flex-col ">
-          <label htmlFor="partList" className="text-white">
-            Choose a motorcycle part:
-          </label>
-
-          <select
-            className="flex items-center justify-between rounded-full bg-white px-3 py-2"
-            name="choosenPart"
-            id="partList"
-            value={selectedPart}
-            onChange={handleArrayToMap}
-          >
-            <option disabled>--Please choose an option--</option>
-            <option value={possibleParts.frontSprocket}>Front Sprocket</option>
-            <option value={possibleParts.rearSprocket}>Rear Sprocket</option>
-          </select>
-        </div>
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col justify-center gap-3"
-        >
-          <InputPartPost
-            placeholder="JT Sprocket"
-            id="make"
-            label="Make"
-            register={register}
-            name="make"
-          />
-          <InputPartPost
-            placeholder="31435"
-            id="code"
-            label="Code"
-            register={register}
-            name="code"
-          />
-          <InputPartPost
-            placeholder="www.sizematch.com"
-            id="link"
-            label="Link"
-            register={register}
-            name="link"
-            type="url"
-          />
-
-          {arratoToMap?.map((item) => {
-            return (
-              <InputPartPost
-                register={register}
-                key={item.inputName}
-                placeholder={item.placeholder}
-                id={item.inputName}
-                label={item.label}
-                name={item.inputName}
-                className={item.className}
-                handleHover={handleHover}
-                handleMouseLeave={handleMouseLeave}
-                onChange={handleFSChange}
-              />
-            );
-          })}
-          <Button text="Send" />
-        </form>
-      </div>
+      <PostForm
+        handleFSChange={handleFSChange}
+        handleHover={handleHover}
+        handleMouseLeave={handleMouseLeave}
+        register={register}
+        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
+      />
       <div className="flex flex-col flex-wrap items-center justify-center">
         <div className="relative mx-20 mb-10 w-[300px] ">
           <InputSizeEntry

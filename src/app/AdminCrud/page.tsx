@@ -1,14 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
-
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
 import PostForm from "@/Components/PostForm/PostForm";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 const AdminCrud = () => {
+  const { state, dispatch } = useContext(SharedValuesContext);
+  const { frontSprocket } = state;
+
   const [hoverClass, setHoverClass] = useState("");
 
   // conecta el hover del svg con el formulario
@@ -34,34 +39,16 @@ const AdminCrud = () => {
     e_chain?: string;
   }
 
-  // Post
-  interface partPostProps {
-    [key: string]: string;
-  }
-
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data: partPostProps) => console.log(data);
-
-  // valores del inputs de formulario e ilistración sincronizados
-  const [frontSprocketSizes, setFrontSprocketSizes] = useState<FSsizeProps>();
-
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
 
-    setFrontSprocketSizes((prev) => ({
-      ...prev,
-      [name]: newValue,
-    }));
-
-    setValue(name, value);
+    dispatch({
+      type: name,
+      payload: newValue,
+      group: "frontSprocket",
+    });
   };
 
   return (
@@ -70,32 +57,29 @@ const AdminCrud = () => {
         handleFSChange={handleFSChange}
         handleHover={handleHover}
         handleMouseLeave={handleMouseLeave}
-        register={register}
-        handleSubmit={handleSubmit}
-        onSubmit={onSubmit}
       />
       <div className="flex flex-col flex-wrap items-center justify-center">
         <div className="relative mx-20 mb-10 w-[300px] ">
           <InputSizeEntry
-            placeholder="20.50"
+            placeholder="15.50"
             name="a_innerMinimumDiameter"
-            value={frontSprocketSizes?.a_innerMinimumDiameter}
+            value={frontSprocket?.a_innerMinimumDiameter}
             onChange={handleFSChange}
             position="left-[-100px] top-[37%]"
           />
 
           <InputSizeEntry
-            placeholder="23.50"
+            placeholder="12"
             name="b_innerTeeth"
-            value={frontSprocketSizes?.b_innerTeeth}
+            value={frontSprocket?.b_innerTeeth}
             onChange={handleFSChange}
             position="right-[-95px] top-[28%]"
           />
 
           <InputSizeEntry
-            placeholder="12"
+            placeholder="20.50"
             name="c_innerMaximumDiameter"
-            value={frontSprocketSizes?.c_innerMaximumDiameter}
+            value={frontSprocket?.c_innerMaximumDiameter}
             onChange={handleFSChange}
             position="bottom-[-30px] left-[34%]"
           />
@@ -111,7 +95,7 @@ const AdminCrud = () => {
             <InputSizeEntry
               placeholder="8.5"
               name="d_width"
-              value={frontSprocketSizes?.d_width}
+              value={frontSprocket?.d_width}
               onChange={handleFSChange}
               position="bottom-[-35px] left-[-40%]"
             />
@@ -129,7 +113,7 @@ const AdminCrud = () => {
               list="chain"
               name="e_chain"
               onChange={handleFSChange}
-              value={frontSprocketSizes?.e_chain || ""}
+              value={frontSprocket?.e_chain || ""}
             />
             <datalist id="chain">
               <option value="532" />

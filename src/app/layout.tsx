@@ -2,6 +2,7 @@ import Topbar from "@/Components/TopBar/TopBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import BottomBar from "@/Components/BottomBar/BottomBar";
+import { SharedValuesProvider } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex bg-gray-900 min-h-screen flex-col justify-between">
-          <Topbar />
-          {children}
-          <BottomBar />
-        </div>
-      </body>
+      <SharedValuesProvider>
+        <body className={inter.className}>
+          <div className="flex min-h-screen flex-col justify-between bg-gray-900">
+            <Topbar />
+            {children}
+            <BottomBar />
+          </div>
+        </body>
+      </SharedValuesProvider>
     </html>
   );
 }

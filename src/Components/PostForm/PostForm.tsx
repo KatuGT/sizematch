@@ -1,40 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { InputPartPost } from "../inputPartPost/InputPartPost";
-import { FSSizeInput } from "@/utils/FSInputData";
+import { FSSizeInput, InputItemFS } from "@/utils/FSInputData";
 import { RSSizeInput } from "@/utils/RSInputData";
 import { Button } from "../Button/button";
-import {
-  FieldValues,
-  UseFormHandleSubmit,
-  UseFormRegister,
-} from "react-hook-form";
+import { useForm } from "react-hook-form";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 interface FormProps {
   handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
   handleMouseLeave: React.MouseEventHandler<HTMLDivElement>;
   handleHover: React.MouseEventHandler<HTMLDivElement>;
-  register: UseFormRegister<FieldValues>;
-  handleSubmit: UseFormHandleSubmit<FieldValues>;
-  onSubmit: any;
 }
 
-const PostForm = ({
-  handleHover,
-  handleMouseLeave,
-  handleFSChange,
-  register,
-  handleSubmit,
-  onSubmit,
-}: FormProps) => {
+const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
   // Cambia array que se mapea en el formulario
   enum possibleParts {
     frontSprocket = "frontSprocket",
     rearSprocket = "rearSprocket",
   }
-
-//   const [selectedPart, setSelectedPart] = useState<possibleParts>(
-//     possibleParts.frontSprocket
-//   );
 
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
 
@@ -53,7 +36,32 @@ const PostForm = ({
     }
   };
 
-  console.log(arratoToMap);
+  const { state, dispatch } = useContext(SharedValuesContext);
+  const { frontSprocket } = state;
+
+  interface partPostProps {
+    [key: string]: string;
+  }
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data: partPostProps) => console.log(data);
+
+  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    const newValue = value.replace(/[^0-9.]/g, "");
+
+    dispatch({
+      type: name,
+      payload: newValue,
+      group: "frontSprocket",
+    });
+  };
 
   return (
     <div>
@@ -100,19 +108,20 @@ const PostForm = ({
           type="url"
         />
 
-        {arratoToMap?.map((item) => {
+        {arratoToMap?.map((item: InputItemFS) => {
           return (
             <InputPartPost
-              register={register}
               key={item.inputName}
               placeholder={item.placeholder}
               id={item.inputName}
               label={item.label}
               name={item.inputName}
               className={item.className}
-              handleHover={handleHover}
+              value={frontSprocket[item.inputName]}
+              register={register}
               handleMouseLeave={handleMouseLeave}
-              onChange={handleFSChange}
+              onChange={handleFormChange}
+              handleHover={handleHover}
             />
           );
         })}

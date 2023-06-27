@@ -14,7 +14,7 @@ export const RSSizeInput = [
     className: "sizeB",
   },
   {
-    label: "C - holeDiameter ",
+    label: "C - Hole diameter ",
     inputName: "c_holeDiameter",
     placeholder: "20.50",
     className: "sizeC",

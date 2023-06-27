@@ -7,6 +7,7 @@ interface InputPartPostProps {
   type?: string;
   placeholder: string;
   className?: string;
+  value?: string
   register: UseFormRegister<FieldValues>;
   handleHover?: React.MouseEventHandler<HTMLTableCellElement>;
   handleMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
@@ -16,16 +17,16 @@ interface InputPartPostProps {
 export const InputPartPost = ({
   id,
   label,
-  register,
   name,
   type = "text",
   placeholder,
   className,
+  value,
+  register,
   handleHover,
   handleMouseLeave,
   onChange,
 }: InputPartPostProps) => {
-    
   return (
     <div
       onMouseLeave={handleMouseLeave}
@@ -42,6 +43,7 @@ export const InputPartPost = ({
         className="max-w-[50%] rounded-e-full bg-transparent p-2 text-right"
         {...register(name)}
         onChange={onChange}
+        value={value}
       />
     </div>
   );

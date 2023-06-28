@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
-const FrontSprocketSchema = new Schema(
+const FrontSprocketNarrowSplineSchema = new Schema(
   {
     make: {
       type: String,
@@ -43,8 +43,8 @@ const FrontSprocketSchema = new Schema(
   { timestamps: true }
 );
 
-const FrontSprocket =
-  mongoose.models.FrontSprocket ||
-  mongoose.model("FrontSprocket", FrontSprocketSchema);
+const FrontSprocketNarrowSpline =
+  mongoose.models.FrontSprocketNarrowSpline ||
+  mongoose.model("FrontSprocketNarrowSpline", FrontSprocketNarrowSplineSchema);
 
-export default FrontSprocket;
+export default FrontSprocketNarrowSpline;

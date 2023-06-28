@@ -1,4 +1,4 @@
-import FrontSprocket from "@/models/FrontSprocketModel";
+import FrontSprocket from "@/models/FrontSprocketNarrowSplineModel";
 import connect from "@/utils/db";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";

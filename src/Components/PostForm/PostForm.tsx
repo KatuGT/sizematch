@@ -106,15 +106,27 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
     mode: "all",
   });
 
+  const [duplicatedPartError, setDuplicatedPartError] = useState();
+
+  console.log(duplicatedPartError);
+
   const onSubmit = async (data: partPostProps) => {
     try {
-      await fetch("/api/parts", {
+      const resp = await fetch("/api/parts/frontSprocket", {
         method: "POST",
         body: JSON.stringify({
           ...data,
         }),
       });
-      reset();
+
+      if (resp.ok) {
+        reset();
+      } else if (resp.status === 409) {
+        const errorData = await resp.json();
+        setDuplicatedPartError(errorData.message);
+
+        throw new Error(errorData.message);
+      }
     } catch (err) {
       console.log(err);
     }
@@ -151,7 +163,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value || ''}
+                value={value || ""}
                 placeholder="JT Sprocket"
                 id="make"
                 label="Make"
@@ -165,7 +177,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value || ''}
+                value={value || ""}
                 placeholder="31435"
                 id="code"
                 label="Code"
@@ -179,7 +191,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value || ''}
+                value={value || ""}
                 placeholder="www.sizematch.com"
                 id="link"
                 label="Link"
@@ -284,6 +296,9 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
           </div>
         </div>
         <Button text="Send" />
+        {duplicatedPartError && (
+          <span className="text-red-700">{duplicatedPartError}</span>
+        )}
       </form>
     </div>
   );

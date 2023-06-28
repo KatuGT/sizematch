@@ -41,84 +41,12 @@ const AdminCrud = () => {
   };
 
   return (
-    <div className="mx-auto my-5 flex flex-wrap  items-center justify-center gap-10">
+    <div className="mx-auto my-5 ">
       <PostForm
         handleFSChange={handleFSChange}
         handleHover={handleHover}
         handleMouseLeave={handleMouseLeave}
       />
-      <div className="flex flex-col flex-wrap items-center justify-center">
-        <div className="relative mx-20 mb-10 w-[300px] ">
-          <InputSizeEntry
-            placeholder="15.50"
-            name="a_innerMinimumDiameter"
-            value={frontSprocket?.a_innerMinimumDiameter}
-            onChange={handleFSChange}
-            position="left-[-100px] top-[37%]"
-          />
-
-          <InputSizeEntry
-            placeholder="12"
-            name="b_innerTeeth"
-            value={frontSprocket?.b_innerTeeth}
-            onChange={handleFSChange}
-            position="right-[-95px] top-[28%]"
-          />
-
-          <InputSizeEntry
-            placeholder="20.50"
-            name="c_innerMaximumDiameter"
-            value={frontSprocket?.c_innerMaximumDiameter}
-            onChange={handleFSChange}
-            position="bottom-[-30px] left-[34%]"
-          />
-
-          <FrontSprocketSVG
-            handleHover={handleHover}
-            handleMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
-          />
-        </div>
-        <div className="flex items-center justify-center">
-          <div className="relative w-[52px]">
-            <InputSizeEntry
-              placeholder="8.5"
-              name="d_width"
-              value={frontSprocket?.d_width}
-              onChange={handleFSChange}
-              position="bottom-[-35px] left-[-40%]"
-            />
-            <FrontSprocketSideSVG
-              handleHover={handleHover}
-              handleMouseLeave={handleMouseLeave}
-              hoveredClass={hoverClass}
-            />
-          </div>
-
-          <div className="relative w-[100px]">
-            <input
-              className={`borde-gray-200 absolute bottom-[5%] right-[-100%] w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
-              placeholder="520"
-              list="chain"
-              name="e_chain"
-              onChange={handleFSChange}
-              value={frontSprocket?.e_chain || ""}
-            />
-            <datalist id="chain">
-              <option value="532" />
-              <option value="530" />
-              <option value="525" />
-              <option value="520" />
-              <option value="428" />
-            </datalist>
-            <Chain
-              handleHover={handleHover}
-              handleMouseLeave={handleMouseLeave}
-              hoveredClass={hoverClass}
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

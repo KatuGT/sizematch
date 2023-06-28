@@ -1,6 +1,6 @@
 // Input needed for the POST form for Front Sprockets
 
-type FrontSprocketType = {
+export type FrontSprocketType = {
   a_innerMinimumDiameter: string;
   b_innerTeeth: string;
   c_innerMaximumDiameter: string;

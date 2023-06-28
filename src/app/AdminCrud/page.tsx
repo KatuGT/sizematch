@@ -1,13 +1,10 @@
 "use client";
 import { useContext, useState } from "react";
-import { useForm } from "react-hook-form";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
 import PostForm from "@/Components/PostForm/PostForm";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 const AdminCrud = () => {
@@ -30,14 +27,6 @@ const AdminCrud = () => {
   const handleMouseLeave = () => {
     setHoverClass("");
   };
-
-  interface FSsizeProps {
-    a_innerMinimumDiameter?: string;
-    b_innerTeeth?: string;
-    c_innerMaximumDiameter?: string;
-    d_width?: string;
-    e_chain?: string;
-  }
 
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

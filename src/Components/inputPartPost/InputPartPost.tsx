@@ -1,17 +1,19 @@
-import { UseFormRegister, FieldValues } from "react-hook-form";
+import { FrontSprocketType } from "@/utils/FSInputData";
+import { useEffect } from "react";
+import { UseFormRegister, FieldValues, UseFormSetValue } from "react-hook-form";
 
 interface InputPartPostProps {
   id: string;
   label: string;
-  name: string;
+  name?: string;
   type?: string;
   placeholder: string;
   className?: string;
-  value?: string
-  register: UseFormRegister<FieldValues>;
+  value?: string;
+  register?: UseFormRegister<any>;
   handleHover?: React.MouseEventHandler<HTMLTableCellElement>;
   handleMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
-  onChange?: React.ChangeEventHandler<HTMLDivElement>;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
 export const InputPartPost = ({
@@ -41,7 +43,8 @@ export const InputPartPost = ({
         placeholder={placeholder}
         id={id}
         className="max-w-[50%] rounded-e-full bg-transparent p-2 text-right"
-        {...register(name)}
+        // {...register(name)}
+        name={name}
         onChange={onChange}
         value={value}
       />

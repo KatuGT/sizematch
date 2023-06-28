@@ -17,7 +17,7 @@ const FrontSprocketSchema = new Schema(
     link: {
       type: String,
     },
-    a_innerDiameter: {
+    a_innerMinimumDiameter: {
       type: String,
       default: '0',
     },
@@ -25,7 +25,7 @@ const FrontSprocketSchema = new Schema(
       type: String,
       default: '0',
     },
-    c_outerDiameter: {
+    c_innerMaximumDiameter: {
       type: String,
       default: '0',
     },

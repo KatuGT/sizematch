@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
-import FrontSprocketside from "../../../public/svgParts/FrontSprocketSide";
 import Chain from "../../../public/svgParts/Chain";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 import Table from "@/Components/Table/Table";
+import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
 
 const FrontSprocket = () => {
   const [hoverClass, setHoverClass] = useState("");
@@ -24,11 +24,11 @@ const FrontSprocket = () => {
   };
 
   interface FSsizeProps {
-    a_innerDiameter?: number;
-    b_innerTeeth?: number;
-    c_outerDiameter?: number;
-    d_width?: number;
-    e_chain?: number;
+    a_innerMinimumDiameter?: string;
+    b_innerTeeth?: string;
+    c_innerMaximumDiameter?: string;
+    d_width?: string;
+    e_chain?: string;
   }
 
   const [frontSprocketSizes, setFrontSprocketSizes] = useState<FSsizeProps>();
@@ -37,7 +37,6 @@ const FrontSprocket = () => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
-    Number(newValue);
 
     setFrontSprocketSizes((prev) => ({
       ...prev,
@@ -45,12 +44,12 @@ const FrontSprocket = () => {
     }));
   };
 
-  const size = [
+  const FrontSprocketTableData = [
     {
       displayName: "A",
-      inputName: "a_innerDiameter",
+      inputName: "a_innerMinimumDiameter",
       placeholder: "20.50",
-      value: frontSprocketSizes?.a_innerDiameter,
+      value: frontSprocketSizes?.a_innerMinimumDiameter,
       generalSize: "sizeA",
       baseColor: "text-sizeAcolor",
       hoverColor: "text-sizeAcolorLight",
@@ -66,9 +65,9 @@ const FrontSprocket = () => {
     },
     {
       displayName: "C",
-      inputName: "c_outerDiameter",
+      inputName: "c_innerMaximumDiameter",
       placeholder: "12",
-      value: frontSprocketSizes?.c_outerDiameter,
+      value: frontSprocketSizes?.c_innerMaximumDiameter,
       generalSize: "sizeC",
       baseColor: "text-sizeCcolor",
       hoverColor: "text-sizeCcolorLight",
@@ -100,7 +99,7 @@ const FrontSprocket = () => {
           <InputSizeEntry
             placeholder="20.50"
             name="a_innetDiameter"
-            value={frontSprocketSizes?.a_innerDiameter}
+            value={frontSprocketSizes?.a_innerMinimumDiameter}
             onChange={handleFSChange}
             position="left-[-100px] top-[39%]"
           />
@@ -115,8 +114,8 @@ const FrontSprocket = () => {
 
           <InputSizeEntry
             placeholder="12"
-            name="c_outerDiameter"
-            value={frontSprocketSizes?.c_outerDiameter}
+            name="c_innerMaximumDiameter"
+            value={frontSprocketSizes?.c_innerMaximumDiameter}
             onChange={handleFSChange}
             position="bottom-[-30px] left-[42%]"
           />
@@ -135,7 +134,7 @@ const FrontSprocket = () => {
             onChange={handleFSChange}
             position="bottom-[-35px] left-[-5%]"
           />
-          <FrontSprocketside
+          <FrontSprocketSideSVG
             handleHover={handleHover}
             handleMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}
@@ -169,7 +168,7 @@ const FrontSprocket = () => {
         handleHover={handleHover}
         handleMouseLeave={handleMouseLeave}
         hoverClass={hoverClass}
-        sizes={size}
+        sizes={FrontSprocketTableData}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import { SVGProps } from "@/types/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 
-const FrontSprocketside = ({
+const FrontSprocketSideSVG = ({
   hoveredClass,
   handleHover,
   handleMouseLeave,
@@ -55,4 +55,4 @@ const FrontSprocketside = ({
     </text>
   </svg>
 );
-export default FrontSprocketside;
+export default FrontSprocketSideSVG;

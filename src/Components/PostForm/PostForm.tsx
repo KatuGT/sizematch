@@ -61,8 +61,8 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
       .string()
       .matches(/^\d*\.?\d+$/, "Invalid number")
       .trim()
-      .max(2, "Enter a valid value")
-      .required("Required"),
+      .max(2, "Enter a valid value"),
+    // .required("Required"),
     c_innerMaximumDiameter: yup
       .string()
       .matches(/^\d*\.?\d+$/, "Invalid number")
@@ -73,8 +73,8 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
       .string()
       .matches(/^\d*\.?\d+$/, "Invalid number")
       .trim()
-      .max(4, "Enter a valid value")
-      .required("Required"),
+      .max(4, "Enter a valid value"),
+    // .required("Required"),
     e_chain: yup
       .string()
       .matches(/^\d*\.?\d+$/, "Invalid number")
@@ -100,13 +100,36 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
     handleSubmit,
     formState: { errors },
     control,
+    reset,
   } = useForm({
     resolver: yupResolver(frontSprocketCompleteSchema),
     mode: "all",
   });
 
-  const onSubmit = (data: partPostProps) => {
-    console.log(data);
+  const [duplicatedPartError, setDuplicatedPartError] = useState();
+
+  console.log(duplicatedPartError);
+
+  const onSubmit = async (data: partPostProps) => {
+    try {
+      const resp = await fetch("/api/parts/frontSprocket", {
+        method: "POST",
+        body: JSON.stringify({
+          ...data,
+        }),
+      });
+
+      if (resp.ok) {
+        reset();
+      } else if (resp.status === 409) {
+        const errorData = await resp.json();
+        setDuplicatedPartError(errorData.message);
+
+        throw new Error(errorData.message);
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -140,7 +163,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="JT Sprocket"
                 id="make"
                 label="Make"
@@ -154,7 +177,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="31435"
                 id="code"
                 label="Code"
@@ -168,7 +191,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             render={({ field: { onChange, value } }) => (
               <InputPartPost
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="www.sizematch.com"
                 id="link"
                 label="Link"
@@ -178,7 +201,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
             )}
           />
         </div>
-        <div className="flex  flex-wrap items-center justify-center mb-10">
+        <div className="mb-10  flex flex-wrap items-center justify-center">
           <div className="relative mr-32 w-[300px] ">
             <Controller
               control={control}
@@ -248,7 +271,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
                   <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
                     <input
                       onChange={onChange}
-                      value={value?.replace(/[^0-9.]/g, "") || ''}
+                      value={value?.replace(/[^0-9.]/g, "") || ""}
                       className={`borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                       placeholder="520"
                       list="chain"
@@ -273,6 +296,9 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
           </div>
         </div>
         <Button text="Send" />
+        {duplicatedPartError && (
+          <span className="text-red-700">{duplicatedPartError}</span>
+        )}
       </form>
     </div>
   );

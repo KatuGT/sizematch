@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
-const FrontSprocketSchema = new Schema(
+const FrontSprocketNarrowSplineSchema = new Schema(
   {
     make: {
       type: String,
@@ -11,7 +11,7 @@ const FrontSprocketSchema = new Schema(
     },
     code: {
       type: String,
-      required: [true, "Código requerida"],
+      required: [true, "Código requerido"],
       unique: [true, "Ya existe este código"],
     },
     link: {
@@ -19,30 +19,32 @@ const FrontSprocketSchema = new Schema(
     },
     a_innerMinimumDiameter: {
       type: String,
-      default: '0',
+      required: [true, "Medida A"],
     },
     b_innerTeeth: {
       type: String,
-      default: '0',
+      // required: [true, "Medida B"],
+      default: "0",
     },
     c_innerMaximumDiameter: {
       type: String,
-      default: '0',
+      required: [true, "Medida C"],
     },
     d_width: {
       type: String,
-      default: '0',
+      // required: [true, "Medida D"],
+      default: "0",
     },
     e_chain: {
       type: String,
-      default: '0',
+      required: [true, "Medida E"],
     },
   },
   { timestamps: true }
 );
 
-const FrontSprocket =
-  mongoose.models.FrontSprocket ||
-  mongoose.model("FrontSprocket", FrontSprocketSchema);
+const FrontSprocketNarrowSpline =
+  mongoose.models.FrontSprocketNarrowSpline ||
+  mongoose.model("FrontSprocketNarrowSpline", FrontSprocketNarrowSplineSchema);
 
-export default FrontSprocket;
+export default FrontSprocketNarrowSpline;

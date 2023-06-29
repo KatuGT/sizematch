@@ -2,7 +2,7 @@
 
 export type FrontSprocketType = {
   a_innerMinimumDiameter: string;
-  b_innerTeeth: string;
+  b_innerTeethNumber: string;
   c_innerMaximumDiameter: string;
   d_width: string;
   e_chain: string;
@@ -23,7 +23,7 @@ export const FSSizeInput: InputItemFS[] = [
   },
   {
     label: "B - Inner teeth  amount",
-    inputName: "b_innerTeeth",
+    inputName: "b_innerTeethNumber",
     placeholder: "12",
     className: "sizeB",
   },

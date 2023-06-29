@@ -1,7 +1,7 @@
-import { SVGProps } from "@/types/SVGProps";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 
-const FrontSprocketSideSVG = ({
+const FrontSprocketSideNarrowSpline = ({
   hoveredClass,
   handleHover,
   handleMouseLeave,
@@ -55,4 +55,4 @@ const FrontSprocketSideSVG = ({
     </text>
   </svg>
 );
-export default FrontSprocketSideSVG;
+export default FrontSprocketSideNarrowSpline;

@@ -1,7 +1,7 @@
-import { SVGProps } from "@/types/SVGProps";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 
-const FrontSprocketSVG = ({
+const FrontSprocketNarrowSpline = ({
   hoveredClass,
   handleHover,
   handleMouseLeave,
@@ -187,4 +187,4 @@ const FrontSprocketSVG = ({
   );
 };
 
-export default FrontSprocketSVG;
+export default FrontSprocketNarrowSpline;

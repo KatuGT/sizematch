@@ -3,7 +3,7 @@ import React, { createContext, useReducer } from "react";
 
 const INITIAL_STATE_FRONTSPROCKET = {
   a_innerMinimumDiameter: "",
-  b_innerTeeth: "",
+  b_innerTeethNumber: "",
   c_innerMaximumDiameter: "",
   d_width: "",
   e_chain: "",

@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import FrontSprocketSVG from "../../../public/svgParts/FrontSprocket";
+import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 import Table from "@/Components/Table/Table";
-import FrontSprocketSideSVG from "../../../public/svgParts/FrontSprocketSide";
+import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
 
 const FrontSprocket = () => {
   const [hoverClass, setHoverClass] = useState("");
@@ -25,7 +25,7 @@ const FrontSprocket = () => {
 
   interface FSsizeProps {
     a_innerMinimumDiameter?: string;
-    b_innerTeeth?: string;
+    b_innerTeethNumber?: string;
     c_innerMaximumDiameter?: string;
     d_width?: string;
     e_chain?: string;
@@ -56,9 +56,9 @@ const FrontSprocket = () => {
     },
     {
       displayName: "B",
-      inputName: "b_innerTeeth",
+      inputName: "b_innerTeethNumber",
       placeholder: "23.50",
-      value: frontSprocketSizes?.b_innerTeeth,
+      value: frontSprocketSizes?.b_innerTeethNumber,
       generalSize: "sizeB",
       baseColor: "text-sizeBcolor",
       hoverColor: "text-sizeBcolorLight",
@@ -106,8 +106,8 @@ const FrontSprocket = () => {
 
           <InputSizeEntry
             placeholder="23.50"
-            name="b_innerTeeth"
-            value={frontSprocketSizes?.b_innerTeeth}
+            name="b_innerTeethNumber"
+            value={frontSprocketSizes?.b_innerTeethNumber}
             onChange={handleFSChange}
             position="right-[-90px] top-[30%]"
           />
@@ -120,7 +120,7 @@ const FrontSprocket = () => {
             position="bottom-[-30px] left-[42%]"
           />
 
-          <FrontSprocketSVG
+          <FrontSprocketNarrowSpline
             handleHover={handleHover}
             handleMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}
@@ -134,7 +134,7 @@ const FrontSprocket = () => {
             onChange={handleFSChange}
             position="bottom-[-35px] left-[-5%]"
           />
-          <FrontSprocketSideSVG
+          <FrontSprocketSideNarrowSpline
             handleHover={handleHover}
             handleMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}

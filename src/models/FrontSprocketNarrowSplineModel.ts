@@ -21,7 +21,7 @@ const FrontSprocketNarrowSplineSchema = new Schema(
       type: String,
       required: [true, "Medida A"],
     },
-    b_innerTeeth: {
+    b_innerTeethNumber: {
       type: String,
       // required: [true, "Medida B"],
       default: "0",

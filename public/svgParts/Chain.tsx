@@ -1,4 +1,4 @@
-import { SVGProps } from "@/types/SVGProps";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 import React from "react";
 

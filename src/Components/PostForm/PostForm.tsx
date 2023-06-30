@@ -18,13 +18,7 @@ import { partsOptions } from "@/utils/SelectListOptions/parts";
 import { makesOptions } from "@/utils/SelectListOptions/makes";
 import Swal from "sweetalert2";
 
-interface FormProps {
-  handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
-  handleMouseLeave: React.MouseEventHandler<HTMLDivElement>;
-  handleHover: React.MouseEventHandler<HTMLDivElement>;
-}
-
-const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
+const PostForm = () => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
 
   const [partSchema, setPartSchema] = useState<any>(
@@ -55,6 +49,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
     formState: { errors },
     control,
     reset,
+    watch,
   } = useForm({
     resolver: yupResolver(completeSchema),
     mode: "all",
@@ -63,13 +58,13 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
     },
   });
 
-  const [duplicatedPartError, setDuplicatedPartError] = useState();
-
   const [selectedPart, setSelectedPart] = useState(
     possibleParts.FSNarrowSpline
   );
 
   const onSubmit = async (data: partPostProps) => {
+    console.log(data);
+
     try {
       const resp = await fetch(`/api/parts/${selectedPart}`, {
         method: "POST",
@@ -96,7 +91,6 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
         reset();
       } else if (resp.status === 409) {
         const errorData = await resp.json();
-        setDuplicatedPartError(errorData.message);
 
         throw new Error(errorData.message);
       }
@@ -195,9 +189,6 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
         </div>
         {DisplaySVG()}
         <Button text="Send" />
-        {duplicatedPartError && (
-          <span className="text-red-700">{duplicatedPartError}</span>
-        )}
       </form>
     </div>
   );

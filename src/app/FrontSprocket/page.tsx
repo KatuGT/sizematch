@@ -97,6 +97,7 @@ const FrontSprocket = () => {
       <div className="mx-[100px] mb-24 flex flex-wrap items-center justify-center gap-24">
         <div className="relative w-[500px] ">
           <InputSizeEntry
+            mainClass="sizeA"
             placeholder="20.50"
             name="a_innetDiameter"
             value={frontSprocketSizes?.a_innerMinimumDiameter}
@@ -121,8 +122,8 @@ const FrontSprocket = () => {
           />
 
           <FrontSprocketNarrowSpline
-            handleHover={handleHover}
-            handleMouseLeave={handleMouseLeave}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}
           />
         </div>
@@ -135,8 +136,8 @@ const FrontSprocket = () => {
             position="bottom-[-35px] left-[-5%]"
           />
           <FrontSprocketSideNarrowSpline
-            handleHover={handleHover}
-            handleMouseLeave={handleMouseLeave}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}
           />
         </div>
@@ -157,16 +158,16 @@ const FrontSprocket = () => {
             <option value="428" />
           </datalist>
           <Chain
-            handleHover={handleHover}
-            handleMouseLeave={handleMouseLeave}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}
           />
         </div>
       </div>
       <Table
         handleFSChange={handleFSChange}
-        handleHover={handleHover}
-        handleMouseLeave={handleMouseLeave}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
         hoverClass={hoverClass}
         sizes={FrontSprocketTableData}
       />

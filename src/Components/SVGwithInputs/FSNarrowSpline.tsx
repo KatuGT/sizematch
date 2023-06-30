@@ -4,6 +4,7 @@ import { Controller } from "react-hook-form";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
+import { useHover } from "@/utils/handleHoveredSize";
 
 interface FSNarrowSplineProps {
   control: any;
@@ -11,6 +12,8 @@ interface FSNarrowSplineProps {
 }
 
 const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
+  const { handleHover, handleMouseLeave, hoverClass } = useHover();
+
   return (
     <div className="mb-10  flex flex-wrap items-center justify-center">
       <div className="relative mr-32 w-[300px] ">
@@ -19,6 +22,10 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
           name="a_innerMinimumDiameter"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeA"
               onChange={onChange}
               value={value}
               placeholder="15.50"
@@ -32,6 +39,10 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
           name="b_innerTeethNumber"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeB"
               onChange={onChange}
               value={value}
               placeholder="12"
@@ -45,6 +56,10 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
           name="c_innerMaximumDiameter"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeC"
               onChange={onChange}
               value={value}
               placeholder="20.50"
@@ -53,8 +68,11 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             />
           )}
         />
-
-        <FrontSprocketNarrowSpline />
+        <FrontSprocketNarrowSpline
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
       </div>
       <div className="flex items-center justify-center">
         <div className="relative w-[52px]">
@@ -63,6 +81,10 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             name="d_width"
             render={({ field: { onChange, value } }) => (
               <InputSizeEntry
+                hoveredClass={hoverClass}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleMouseLeave}
+                mainClass="sizeD"
                 onChange={onChange}
                 value={value}
                 placeholder="8.5"
@@ -71,9 +93,12 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
               />
             )}
           />
-          <FrontSprocketSideNarrowSpline />
+          <FrontSprocketSideNarrowSpline
+            hoveredClass={hoverClass}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
-
         <div className="relative mr-10 w-[100px]">
           <Controller
             control={control}
@@ -81,9 +106,11 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             render={({ field: { onChange, value } }) => (
               <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
                 <input
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleMouseLeave}
                   onChange={onChange}
                   value={value?.replace(/[^0-9.]/g, "") || ""}
-                  className={`borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
+                  className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                   placeholder="520"
                   list="chain"
                 />
@@ -102,7 +129,11 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
               </div>
             )}
           />
-          <Chain />
+          <Chain
+            hoveredClass={hoverClass}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
       </div>
     </div>

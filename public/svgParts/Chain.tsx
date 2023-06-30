@@ -2,7 +2,7 @@ import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 import React from "react";
 
-const Chain = ({ hoveredClass, handleHover, handleMouseLeave }: SVGProps) => {
+const Chain = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +39,8 @@ const Chain = ({ hoveredClass, handleHover, handleMouseLeave }: SVGProps) => {
           fontFamily: "&quot",
           fontSize: "150.949px",
         }}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
       >
         {"E"}
       </text>

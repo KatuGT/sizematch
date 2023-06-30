@@ -3,8 +3,8 @@ import { sizeColors } from "@/utils/sizeColors";
 
 const FrontSprocketSideNarrowSpline = ({
   hoveredClass,
-  handleHover,
-  handleMouseLeave,
+  onMouseEnter,
+  onMouseLeave,
 }: SVGProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@ const FrontSprocketSideNarrowSpline = ({
             ? sizeColors.sizeDcolorLight
             : sizeColors.sizeDcolor,
       }}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     />
     <text
       x={96}
@@ -48,8 +48,8 @@ const FrontSprocketSideNarrowSpline = ({
             ? sizeColors.sizeDcolorLight
             : sizeColors.sizeDcolor,
       }}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {"D"}
     </text>

@@ -2,8 +2,8 @@
 import React from "react";
 
 interface TablePros {
-  handleHover: React.MouseEventHandler<HTMLTableCellElement>;
-  handleMouseLeave: React.MouseEventHandler<HTMLTableCellElement>;
+  onMouseEnter: React.MouseEventHandler<HTMLTableCellElement>;
+  onMouseLeave: React.MouseEventHandler<HTMLTableCellElement>;
   handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
   hoverClass: string;
   sizes: {
@@ -18,8 +18,8 @@ interface TablePros {
 }
 
 const Table = ({
-  handleHover,
-  handleMouseLeave,
+  onMouseEnter,
+  onMouseLeave,
   handleFSChange,
   hoverClass,
   sizes,
@@ -42,8 +42,8 @@ const Table = ({
                 return (
                   <th
                     key={size?.inputName}
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
                     className={`${size?.generalSize} w-28 ${
                       hoverClass === size?.generalSize
                         ? size?.baseColor

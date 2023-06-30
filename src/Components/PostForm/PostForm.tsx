@@ -16,6 +16,7 @@ import { frontSprocketLargeSplineSchema } from "@/utils/yupSchemas/FSLargeSpline
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { partsOptions } from "@/utils/SelectListOptions/parts";
 import { makesOptions } from "@/utils/SelectListOptions/makes";
+import Swal from "sweetalert2";
 
 interface FormProps {
   handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -78,6 +79,20 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
       });
 
       if (resp.ok) {
+        Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        }).fire({
+          icon: "success",
+          title: "New part added",
+        });
         reset();
       } else if (resp.status === 409) {
         const errorData = await resp.json();
@@ -145,7 +160,7 @@ const PostForm = ({ handleHover, handleMouseLeave }: FormProps) => {
                 id="makes"
                 label="Make"
                 optionsArray={makesOptions}
-              />  
+              />
             )}
           />
           <Controller

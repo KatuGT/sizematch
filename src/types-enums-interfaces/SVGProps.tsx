@@ -1,5 +1,5 @@
 export interface SVGProps {
   hoveredClass?: string;
-  handleHover?: React.MouseEventHandler<SVGPathElement | SVGTextElement>;
-  handleMouseLeave?: React.MouseEventHandler<SVGPathElement | SVGTextElement>;
+  onMouseEnter?: React.MouseEventHandler<SVGPathElement | SVGTextElement | HTMLDivElement>;
+  onMouseLeave?: React.MouseEventHandler<SVGPathElement | SVGTextElement | HTMLDivElement>;
 }

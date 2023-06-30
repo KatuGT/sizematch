@@ -3,8 +3,8 @@ import { sizeColors } from "@/utils/sizeColors";
 
 const FrontSprocketSideLargeSpline = ({
   hoveredClass,
-  handleHover,
-  handleMouseLeave,
+  onMouseEnter,
+  onMouseLeave
 }: SVGProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -25,18 +25,30 @@ const FrontSprocketSideLargeSpline = ({
     />
     <path
       d="m5.797 261.225-.001-4.167 174.398-.022v4.167l-174.397.022ZM4.931 718.766V714.6l173.337-.022v4.166l-173.337.022ZM164.129 305.064l-.052-22.459-12.404-.083 14.088-17.449 13.779 17.641-12.209-.086.058 25.159h-.028l.001 363.413.058 25.181 12.404.083-14.087 17.449-13.779-17.641 12.208.087-.058-25.159h.014V305.064h.007Z"
+      className={`sizeD`}
       style={{
-        fill: "#93166d",
+        fill:
+          hoveredClass === "sizeD"
+            ? sizeColors.sizeDcolorLight
+            : sizeColors.sizeDcolor,
       }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     />
     <text
       x={181.955}
       y={507.252}
+      className={`sizeD`}
       style={{
         fontFamily: "&quot",
         fontSize: 50,
-        fill: "#941b6e",
+        fill:
+          hoveredClass === "sizeD"
+            ? sizeColors.sizeDcolorLight
+            : sizeColors.sizeDcolor,
       }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {"D"}
     </text>

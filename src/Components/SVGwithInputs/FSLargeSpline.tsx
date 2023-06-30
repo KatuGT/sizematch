@@ -4,6 +4,7 @@ import { Controller } from "react-hook-form";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketLargeSpline from "../../../public/svgParts/FrontSprocketLargeSpline";
 import FrontSprocketSideLargeSpline from "../../../public/svgParts/FrontSprocketSideLargeSpline";
+import { useHover } from "@/utils/handleHoveredSize";
 
 interface FSLargeSplineProps {
   control: any;
@@ -11,6 +12,8 @@ interface FSLargeSplineProps {
 }
 
 const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
+  const { handleHover, handleMouseLeave, hoverClass } = useHover();
+
   return (
     <div className="mb-10  flex flex-wrap justify-center">
       <div className="relative mr-32 w-[300px] ">
@@ -19,6 +22,10 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
           name="a_innerMinimumDiameter"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeA"
               onChange={onChange}
               value={value}
               placeholder="15.50"
@@ -32,10 +39,14 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
           name="b_innerTeethSpacing"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeB"
               onChange={onChange}
               value={value}
               placeholder="12"
-              position="right-[-95px] top-[37%]"
+              position="right-[-85px] top-[15%]"
               error={errors?.b_innerTeethSpacing?.message?.toString()}
             />
           )}
@@ -45,6 +56,10 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
           name="c_innerMaximumDiameter"
           render={({ field: { onChange, value } }) => (
             <InputSizeEntry
+              hoveredClass={hoverClass}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              mainClass="sizeC"
               onChange={onChange}
               value={value}
               placeholder="20.50"
@@ -54,7 +69,11 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
           )}
         />
 
-        <FrontSprocketLargeSpline/>
+        <FrontSprocketLargeSpline
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
       </div>
       <div className="flex items-center justify-center">
         <div className="relative w-[55px] self-start">
@@ -63,6 +82,10 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
             name="d_centerToCenter"
             render={({ field: { onChange, value } }) => (
               <InputSizeEntry
+                hoveredClass={hoverClass}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleMouseLeave}
+                mainClass="sizeD"
                 onChange={onChange}
                 value={value}
                 placeholder="25.2"
@@ -71,7 +94,11 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
               />
             )}
           />
-          <FrontSprocketSideLargeSpline />
+          <FrontSprocketSideLargeSpline
+            hoveredClass={hoverClass}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
 
         <div className="relative mr-10 w-[100px]">
@@ -81,9 +108,11 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
             render={({ field: { onChange, value } }) => (
               <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
                 <input
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleMouseLeave}
                   onChange={onChange}
                   value={value?.replace(/[^0-9.]/g, "") || ""}
-                  className={`borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
+                  className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                   placeholder="520"
                   list="chain"
                 />
@@ -102,7 +131,11 @@ const FSLargeSpline = ({ control, errors }: FSLargeSplineProps) => {
               </div>
             )}
           />
-          <Chain />
+          <Chain
+            hoveredClass={hoverClass}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
       </div>
     </div>

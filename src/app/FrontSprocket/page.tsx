@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 import Table from "@/Components/Table/Table";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
+import useSWR, { SWRResponse } from "swr";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 const FrontSprocket = () => {
   const [hoverClass, setHoverClass] = useState("");
@@ -44,6 +46,21 @@ const FrontSprocket = () => {
     }));
   };
 
+  interface Data {
+    [key: string]: string;
+  }
+
+   
+const fetcher = (...args: Parameters<typeof fetch>) =>
+  fetch(...args).then((res) => res.json()) as Promise<Data>;
+
+  const { data, error } = useSWR<Data>(
+    `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/e_chain=520&d_width=12.2`,
+    fetcher
+  );
+ 
+  
+  
   const FrontSprocketTableData = [
     {
       displayName: "A",
@@ -158,6 +175,8 @@ const FrontSprocket = () => {
             <option value="428" />
           </datalist>
           <Chain
+            className="Esize"
+            identificator="E"
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}
             hoveredClass={hoverClass}

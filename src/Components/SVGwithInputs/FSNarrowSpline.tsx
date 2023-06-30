@@ -8,8 +8,8 @@ import { useHover } from "@/utils/handleHoveredSize";
 import ListItem from "../ListItem/ListItem";
 
 interface FSNarrowSplineProps {
-  control: any;
-  errors: any;
+  control?: any;
+  errors?: any;
 }
 
 const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {

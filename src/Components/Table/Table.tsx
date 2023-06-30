@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 
-interface TablePros {
-  onMouseEnter: React.MouseEventHandler<HTMLTableCellElement>;
-  onMouseLeave: React.MouseEventHandler<HTMLTableCellElement>;
+interface TableProps {
+  onMouseEnter?: React.MouseEventHandler<HTMLTableCellElement>;
+  onMouseLeave?: React.MouseEventHandler<HTMLTableCellElement>;
   handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
-  hoverClass: string;
+  hoverClass?: string;
   sizes: {
     displayName: string;
     inputName: string;
@@ -17,13 +17,13 @@ interface TablePros {
   }[];
 }
 
-const Table = ({
+const Table: React.FC<TableProps> = ({
   onMouseEnter,
   onMouseLeave,
   handleFSChange,
   hoverClass,
   sizes,
-}: TablePros) => {
+}) => {
   return (
     <section className="px-5">
       <div>
@@ -46,8 +46,8 @@ const Table = ({
                     onMouseLeave={onMouseLeave}
                     className={`${size?.generalSize} w-28 ${
                       hoverClass === size?.generalSize
-                        ? size?.baseColor
-                        : size?.hoverColor
+                        ? size?.hoverColor
+                        : size?.baseColor
                     }`}
                   >
                     {!needDataList ? (
@@ -90,29 +90,7 @@ const Table = ({
               <th className="w-32 p-2">Link</th>
             </tr>
           </thead>
-          {/* <tbody>
-          <tr className="overflow-hidden bg-gray-800 text-white even:bg-gray-700">
-            <td className="p-4">Prox</td>
-            <td className="p-4">03-54535</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">www-com</td>
-          </tr>
-
-          <tr className="overflow-hidden bg-gray-800 text-white even:bg-gray-700">
-            <td className="p-4">Prox</td>
-            <td className="p-4">03-54535</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">100</td>
-            <td className="p-4">www-com</td>
-          </tr>
-        </tbody> */}
+     
         </table>
       </div>
     </section>

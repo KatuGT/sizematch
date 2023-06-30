@@ -1,9 +1,8 @@
-import React from 'react'
+'use client'
+import React from "react";
 
 const BreakDisc = () => {
-  return (
-    <div>BreakDisc</div>
-  )
-}
+   return <div>BreakDisc</div>;
+};
 
-export default BreakDisc
+export default BreakDisc;

@@ -134,7 +134,7 @@ const PostForm = () => {
     <div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col  justify-center gap-10"
+        className="flex flex-col  justify-center gap-4"
       >
         <div className="flex flex-col gap-3">
           <InputListPartPost

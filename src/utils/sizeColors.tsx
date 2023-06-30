@@ -7,6 +7,8 @@ export const sizeColors = {
   sizeCcolorLight: "#dbb331",
   sizeDcolor: "#93166d",
   sizeDcolorLight: "#c9389d",
-  sizeEcolor: "#9db613",
+  sizeEcolor: "#88af05",
   sizeEcolorLight: "#cae04b",
+  sizeFcolor: "#b47b01",
+  sizeFcolorLight: "#f68929",
 };

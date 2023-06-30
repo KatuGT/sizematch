@@ -1,11 +1,47 @@
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Chain = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
+interface chainProps extends SVGProps {
+  className: string;
+  identificator: string;
+}
+
+const Chain = ({
+  hoveredClass,
+  onMouseEnter,
+  onMouseLeave,
+  className,
+  identificator,
+}: chainProps) => {
+  const [currentColor, setCurrentColor] = useState({
+    color: sizeColors.sizeEcolorLight,
+    lightColor: sizeColors.sizeEcolorLight,
+  });
+
+  useEffect(() => {
+    switch (identificator) {
+      case "E":
+        setCurrentColor({
+          color: sizeColors.sizeEcolor,
+          lightColor: sizeColors.sizeEcolorLight,
+        });
+        break;
+
+      case "F":
+        setCurrentColor({
+          color: sizeColors.sizeFcolor,
+          lightColor: sizeColors.sizeFcolorLight,
+        });
+        break;
+
+      default:
+        break;
+    }
+  }, [identificator]);
+
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       style={{
         fillRule: "evenodd",
@@ -30,19 +66,19 @@ const Chain = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       <text
         x={921.478}
         y={489.72}
-        className="sizeE"
+        className={className}
         style={{
           fill:
-            hoveredClass === "sizeE"
-              ? sizeColors.sizeEcolorLight
-              : sizeColors.sizeEcolor,
+            hoveredClass === className
+              ? currentColor.lightColor
+              : currentColor.color,
           fontFamily: "&quot",
           fontSize: "150.949px",
         }}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        {"E"}
+        {identificator}
       </text>
     </svg>
   );

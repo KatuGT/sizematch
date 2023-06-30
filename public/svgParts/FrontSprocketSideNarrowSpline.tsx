@@ -1,10 +1,10 @@
-import { SVGProps } from "@/types/SVGProps";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { sizeColors } from "@/utils/sizeColors";
 
-const FrontSprocketSideSVG = ({
+const FrontSprocketSideNarrowSpline = ({
   hoveredClass,
-  handleHover,
-  handleMouseLeave,
+  onMouseEnter,
+  onMouseLeave,
 }: SVGProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@ const FrontSprocketSideSVG = ({
             ? sizeColors.sizeDcolorLight
             : sizeColors.sizeDcolor,
       }}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     />
     <text
       x={96}
@@ -48,11 +48,11 @@ const FrontSprocketSideSVG = ({
             ? sizeColors.sizeDcolorLight
             : sizeColors.sizeDcolor,
       }}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {"D"}
     </text>
   </svg>
 );
-export default FrontSprocketSideSVG;
+export default FrontSprocketSideNarrowSpline;

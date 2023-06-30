@@ -35,9 +35,12 @@ const FrontSprocketLargeSchema = new Schema(
       // required: [true, "Medida D"],
       default: "0",
     },
-    e_chain: {
+    e_width: {
       type: String,
-      required: [true, "Medida E"],
+    },
+    f_chain: {
+      type: String,
+      required: [true, "Medida F"],
     },
   },
   { timestamps: true }

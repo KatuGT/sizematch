@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
 import InputSizeEntry from "../InputSizeEntry/InputSizeEntry";
 import { Controller } from "react-hook-form";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
-import { useHover } from "@/utils/handleHoveredSize";
+// import { useHover } from "@/utils/onMouseEnteredSize";
 import ListItem from "../ListItem/ListItem";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
-interface FSNarrowSplineProps {
+interface FSNarrowSplineProps extends SVGProps {
   control?: any;
   errors?: any;
 }
 
-const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
-  const { handleHover, handleMouseLeave, hoverClass } = useHover();
+const FSNarrowSpline = ({
+  control,
+  errors,
+  hoveredClass,
+  onMouseEnter,
+  onMouseLeave,
+}: FSNarrowSplineProps) => {
+  // const { onMouseEnter, onMouseLeave, hoveredClass } = useHover();
+
+  const { state, dispatch } = useContext(SharedValuesContext);
+  const { fsNarroSpline } = state;
+
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    dispatch({
+      type: e.target.name,
+      payload: e.target.value,
+      group: "FSNarrowSpline",
+    });
+  };
 
   return (
     <div>
@@ -22,39 +41,39 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
           <ListItem
             classSize="sizeA"
             text="A - Minimum inner diameter"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
           />
           <ListItem
             classSize="sizeB"
             text="B - Inner teeth count"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
           />
           <ListItem
             classSize="sizeC"
             text="C - Maximum inner diameter"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
           />
 
           <ListItem
             classSize="sizeD"
             text="D - Width"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
           />
 
           <ListItem
             classSize="sizeE"
             text="E - Pitch"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
-            hoveredClass={hoverClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
           />
         </ul>
       </section>
@@ -65,12 +84,16 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             name="a_innerMinimumDiameter"
             render={({ field: { onChange, value } }) => (
               <InputSizeEntry
-                hoveredClass={hoverClass}
-                onMouseEnter={handleHover}
-                onMouseLeave={handleMouseLeave}
+                hoveredClass={hoveredClass}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
                 mainClass="sizeA"
-                onChange={onChange}
-                value={value}
+                name="a_innerMinimumDiameter"
+                onChange={(value) => {
+                  onChange(value);
+                  handleOnChange(value);
+                }}
+                value={fsNarroSpline.a_innerMinimumDiameter}
                 placeholder="15.50"
                 position="left-[-100px] top-[37%]"
                 error={errors?.a_innerMinimumDiameter?.message?.toString()}
@@ -82,12 +105,16 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             name="b_innerTeethNumber"
             render={({ field: { onChange, value } }) => (
               <InputSizeEntry
-                hoveredClass={hoverClass}
-                onMouseEnter={handleHover}
-                onMouseLeave={handleMouseLeave}
+                hoveredClass={hoveredClass}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
                 mainClass="sizeB"
-                onChange={onChange}
-                value={value}
+                name="b_innerTeethNumber"
+                onChange={(value) => {
+                  onChange(value);
+                  handleOnChange(value);
+                }}
+                value={fsNarroSpline.b_innerTeethNumber}
                 placeholder="12"
                 position="right-[-95px] top-[28%]"
                 error={errors?.b_innerTeethNumber?.message?.toString()}
@@ -99,12 +126,16 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             name="c_innerMaximumDiameter"
             render={({ field: { onChange, value } }) => (
               <InputSizeEntry
-                hoveredClass={hoverClass}
-                onMouseEnter={handleHover}
-                onMouseLeave={handleMouseLeave}
+                hoveredClass={hoveredClass}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
                 mainClass="sizeC"
-                onChange={onChange}
-                value={value}
+                name="c_innerMaximumDiameter"
+                onChange={(value) => {
+                  onChange(value);
+                  handleOnChange(value);
+                }}
+                value={fsNarroSpline.c_innerMaximumDiameter}
                 placeholder="20.50"
                 position="bottom-[-30px] left-[34%]"
                 error={errors?.c_innerMaximumDiameter?.message?.toString()}
@@ -112,9 +143,9 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             )}
           />
           <FrontSprocketNarrowSpline
-            hoveredClass={hoverClass}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
           />
         </div>
 
@@ -125,12 +156,16 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
               name="d_width"
               render={({ field: { onChange, value } }) => (
                 <InputSizeEntry
-                  hoveredClass={hoverClass}
-                  onMouseEnter={handleHover}
-                  onMouseLeave={handleMouseLeave}
+                  hoveredClass={hoveredClass}
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
-                  onChange={onChange}
-                  value={value}
+                  name="d_width"
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                  value={fsNarroSpline.d_width}
                   placeholder="8.5"
                   position="bottom-[-35px] left-[-40%]"
                   error={errors?.d_width?.message?.toString()}
@@ -138,9 +173,9 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
               )}
             />
             <FrontSprocketSideNarrowSpline
-              hoveredClass={hoverClass}
-              onMouseEnter={handleHover}
-              onMouseLeave={handleMouseLeave}
+              hoveredClass={hoveredClass}
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
             />
           </div>
 
@@ -151,10 +186,14 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
               render={({ field: { onChange, value } }) => (
                 <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
                   <input
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleMouseLeave}
-                    onChange={onChange}
-                    value={value?.replace(/[^0-9.]/g, "") || ""}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                    name="e_chain"
+                    onChange={(value) => {
+                      onChange(value);
+                      handleOnChange(value);
+                    }}
+                    value={fsNarroSpline.e_chain?.replace(/[^0-9.]/g, "") || ""}
                     className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                     placeholder="520"
                     list="chain"
@@ -177,9 +216,9 @@ const FSNarrowSpline = ({ control, errors }: FSNarrowSplineProps) => {
             <Chain
               className="sizeE"
               identificator="E"
-              hoveredClass={hoverClass}
-              onMouseEnter={handleHover}
-              onMouseLeave={handleMouseLeave}
+              hoveredClass={hoveredClass}
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
             />
           </div>
         </div>

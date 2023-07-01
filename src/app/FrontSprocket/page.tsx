@@ -1,29 +1,37 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import InputSizeEntry from "@/Components/InputSizeEntry/InputSizeEntry";
 import Table from "@/Components/Table/Table";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
-import useSWR, { SWRResponse } from "swr";
+import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import FSNarrowSpline from "@/Components/SVGwithInputs/FSNarrowSpline";
+import { useForm, Controller } from "react-hook-form";
+import { generateSchema } from "@/utils/generateYupSchema";
+import { frontSprocketNarrowSplineSchema } from "@/utils/yupSchemas/FSNarrowSpline";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useHover } from "@/utils/handleHoveredSize";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 const FrontSprocket = () => {
-  const [hoverClass, setHoverClass] = useState("");
+  const { handleHover, handleMouseLeave, hoverClass } = useHover();
+  // const [hoverClass, setHoverClass] = useState("");
 
-  const handleHover = (
-    e: React.MouseEvent<
-      SVGPathElement | SVGTextElement | HTMLHeadingElement,
-      MouseEvent
-    >
-  ) => {
-    const { classList } = e.target as HTMLElement;
-    setHoverClass(classList[0]);
-  };
+  // const handleHover = (
+  //   e: React.MouseEvent<
+  //     SVGPathElement | SVGTextElement | HTMLHeadingElement,
+  //     MouseEvent
+  //   >
+  // ) => {
+  //   const { classList } = e.target as HTMLElement;
+  //   setHoverClass(classList[0]);
+  // };
 
-  const handleMouseLeave = () => {
-    setHoverClass("");
-  };
+  // const handleMouseLeave = () => {
+  //   setHoverClass("");
+  // };
 
   interface FSsizeProps {
     a_innerMinimumDiameter?: string;
@@ -34,39 +42,38 @@ const FrontSprocket = () => {
   }
 
   const [frontSprocketSizes, setFrontSprocketSizes] = useState<FSsizeProps>();
-
+  const { state, dispatch } = useContext(SharedValuesContext);
+  const { fsNarroSpline } = state;
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
 
-    setFrontSprocketSizes((prev) => ({
-      ...prev,
-      [name]: newValue,
-    }));
+    dispatch({
+      type: name,
+      payload: newValue,
+      group: "FSNarrowSpline",
+    });
   };
 
   interface Data {
     [key: string]: string;
   }
 
-   
-const fetcher = (...args: Parameters<typeof fetch>) =>
-  fetch(...args).then((res) => res.json()) as Promise<Data>;
+  const fetcher = (...args: Parameters<typeof fetch>) =>
+    fetch(...args).then((res) => res.json()) as Promise<Data>;
 
   const { data, error } = useSWR<Data>(
     `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/e_chain=520&d_width=12.2`,
     fetcher
   );
- 
-  
-  
+
   const FrontSprocketTableData = [
     {
       displayName: "A",
       inputName: "a_innerMinimumDiameter",
       placeholder: "20.50",
-      value: frontSprocketSizes?.a_innerMinimumDiameter,
+      value: fsNarroSpline?.a_innerMinimumDiameter,
       generalSize: "sizeA",
       baseColor: "text-sizeAcolor",
       hoverColor: "text-sizeAcolorLight",
@@ -75,7 +82,7 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
       displayName: "B",
       inputName: "b_innerTeethNumber",
       placeholder: "23.50",
-      value: frontSprocketSizes?.b_innerTeethNumber,
+      value: fsNarroSpline?.b_innerTeethNumber,
       generalSize: "sizeB",
       baseColor: "text-sizeBcolor",
       hoverColor: "text-sizeBcolorLight",
@@ -84,7 +91,7 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
       displayName: "C",
       inputName: "c_innerMaximumDiameter",
       placeholder: "12",
-      value: frontSprocketSizes?.c_innerMaximumDiameter,
+      value: fsNarroSpline?.c_innerMaximumDiameter,
       generalSize: "sizeC",
       baseColor: "text-sizeCcolor",
       hoverColor: "text-sizeCcolorLight",
@@ -93,7 +100,7 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
       displayName: "D",
       inputName: "d_width",
       placeholder: "8.5",
-      value: frontSprocketSizes?.d_width,
+      value: fsNarroSpline?.d_width,
       generalSize: "sizeD",
       baseColor: "text-sizeDcolor",
       hoverColor: "text-sizeDcolorLight",
@@ -102,16 +109,26 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
       displayName: "E",
       inputName: "e_chain",
       placeholder: "520",
-      value: frontSprocketSizes?.e_chain,
+      value: fsNarroSpline?.e_chain,
       generalSize: "sizeE",
       baseColor: "text-sizeEcolor",
       hoverColor: "text-sizeEcolorLight",
     },
   ];
 
+  const completeSchema = generateSchema(frontSprocketNarrowSplineSchema);
+
+  const {
+    formState: { errors },
+    control,
+    watch,
+  } = useForm({
+    resolver: yupResolver(completeSchema),
+  });
+
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mx-[100px] mb-24 flex flex-wrap items-center justify-center gap-24">
+      {/* <div className="mx-[100px] mb-24 flex flex-wrap items-center justify-center gap-24">
         <div className="relative w-[500px] ">
           <InputSizeEntry
             mainClass="sizeA"
@@ -182,7 +199,15 @@ const fetcher = (...args: Parameters<typeof fetch>) =>
             hoveredClass={hoverClass}
           />
         </div>
-      </div>
+      </div> */}
+
+      <FSNarrowSpline
+        control={control}
+        errors={errors}
+        hoveredClass={hoverClass}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+      />
       <Table
         handleFSChange={handleFSChange}
         onMouseEnter={handleHover}

@@ -17,6 +17,7 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { partsOptions } from "@/utils/SelectListOptions/parts";
 import { makesOptions } from "@/utils/SelectListOptions/makes";
 import Swal from "sweetalert2";
+import { generateSchema } from "@/utils/generateYupSchema";
 
 const PostForm = () => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
@@ -24,19 +25,6 @@ const PostForm = () => {
   const [partSchema, setPartSchema] = useState<any>(
     frontSprocketNarrowSplineSchema
   );
-
-  const commonSchema = {
-    make: yup.string().trim().max(20, "Too long").required("Required"),
-    code: yup.string().trim().max(20, "Too long").required("Required"),
-    link: yup.string().trim().max(150, "Too long").url().required("Required"),
-  };
-
-  const generateSchema = (additionalSchema: any) => {
-    return yup.object().shape({
-      ...commonSchema,
-      ...additionalSchema,
-    });
-  };
 
   const completeSchema = generateSchema(partSchema);
 

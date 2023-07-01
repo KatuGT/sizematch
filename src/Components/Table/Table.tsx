@@ -1,11 +1,19 @@
 "use client";
-import React from "react";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import {
+  FSsizeProps,
+  SearchResult,
+} from "@/types-enums-interfaces/FSnarrowSplineProps";
+import React, { useContext } from "react";
 
 interface TableProps {
   onMouseEnter?: React.MouseEventHandler<HTMLTableCellElement>;
   onMouseLeave?: React.MouseEventHandler<HTMLTableCellElement>;
   handleFSChange: React.ChangeEventHandler<HTMLInputElement>;
   hoverClass?: string;
+  searchResults: SearchResult[] | undefined;
+  isLoading: boolean;
+  error: string;
   sizes: {
     displayName: string;
     inputName: string;
@@ -23,7 +31,13 @@ const Table: React.FC<TableProps> = ({
   handleFSChange,
   hoverClass,
   sizes,
+  searchResults,
+  isLoading,
+  error,
 }) => {
+  const { state } = useContext(SharedValuesContext);
+  const { fsNarroSpline } = state;
+
   return (
     <section className="px-5">
       <div>
@@ -58,9 +72,11 @@ const Table: React.FC<TableProps> = ({
                           type="text"
                           name={size?.inputName}
                           placeholder={size?.placeholder}
-                          className="w-full bg-transparent text-center text-white"
+                          className={`${size?.generalSize} w-full bg-transparent text-center text-white`}
                           onChange={handleFSChange}
-                          value={size?.value || ""}
+                          value={
+                            fsNarroSpline[size?.inputName as keyof FSsizeProps]
+                          }
                         />
                       </label>
                     ) : (
@@ -90,7 +106,51 @@ const Table: React.FC<TableProps> = ({
               <th className="w-32 p-2">Link</th>
             </tr>
           </thead>
-     
+          <tbody>
+            {searchResults &&
+              searchResults?.map((result: any) => {
+                return (
+                  <tr
+                    key={result._id}
+                    className="overflow-hidden bg-gray-800 text-white even:bg-gray-700"
+                  >
+                    <td className="p-4">{result.make}</td>
+                    <td className="p-4">{result.code}</td>
+                    <td className="p-4">{result.a_innerMinimumDiameter}</td>
+                    <td className="p-4">{result.b_innerTeethNumber}</td>
+                    <td className="p-4">{result.c_innerMaximumDiameter}</td>
+                    <td className="p-4">{result.d_width}</td>
+                    <td className="p-4">{result.e_chain}</td>
+                    <td className="max-w-[50px] p-4">
+                      <a
+                        href={result.link}
+                        className="rounded p-2 outline outline-1 outline-slate-300"
+                      >
+                        See more
+                      </a>
+                    </td>
+                  </tr>
+                );
+              })}
+          </tbody>
+          {isLoading && (
+            <tfoot className="overflow-hidden bg-gray-800 text-white even:bg-gray-700">
+              <tr>
+                <td colSpan={8} className="py-3">
+                  Wait...
+                </td>
+              </tr>
+            </tfoot>
+          )}
+          {error && (
+            <tfoot className="overflow-hidden bg-gray-800 text-white even:bg-gray-700">
+              <tr>
+                <td colSpan={8} className="py-3">
+                  Error
+                </td>
+              </tr>
+            </tfoot>
+          )}
         </table>
       </div>
     </section>

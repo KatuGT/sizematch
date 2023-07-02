@@ -77,8 +77,8 @@ const FSNarrowSpline = ({
           />
         </ul>
       </section>
-      <div className="mb-10 flex flex-wrap items-center justify-center gap-[50px]">
-        <div className="relative mx-32 w-[300px] laptop:ml-10 laptop:mr-32 ">
+      <div className="mb-10 flex flex-col flex-wrap items-center justify-center gap-[50px] mobile:gap-[65px] mobile:flex-row">
+        <div className="relative w-[200px] mobile:w-[300px] laptop:ml-10 laptop:mr-32 ">
           <Controller
             control={control}
             name="a_innerMinimumDiameter"
@@ -95,7 +95,7 @@ const FSNarrowSpline = ({
                 }}
                 value={fsNarroSpline.a_innerMinimumDiameter}
                 placeholder="15.50"
-                position="left-[-100px] top-[37%]"
+                position="left-[-70px] top-[37%]  laptop:left-[-100px] laptop:top-[37%]"
                 error={errors?.a_innerMinimumDiameter?.message?.toString()}
               />
             )}
@@ -116,7 +116,7 @@ const FSNarrowSpline = ({
                 }}
                 value={fsNarroSpline.b_innerTeethNumber}
                 placeholder="12"
-                position="right-[-95px] top-[28%]"
+                position="right-[-65px] laptop:right-[-95px] top-[28%]"
                 error={errors?.b_innerTeethNumber?.message?.toString()}
               />
             )}
@@ -150,7 +150,7 @@ const FSNarrowSpline = ({
         </div>
 
         <div className="flex items-center justify-center gap-7">
-          <div className="relative w-[52px]">
+          <div className="relative w-[45px] laptop:w-[52px]">
             <Controller
               control={control}
               name="d_width"

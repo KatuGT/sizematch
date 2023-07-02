@@ -39,15 +39,15 @@ const Table: React.FC<TableProps> = ({
   const { fsNarroSpline } = state;
 
   return (
-    <div className="mb-5 max-w-full overflow-x-auto px-4 ">
+    <div className="table-container mb-5 max-w-full overflow-x-auto px-4 ">
       <div>
         <p className="text-white">*Please write the size in millimeters</p>
         <p className=" text-white">*At least two values are required</p>
       </div>
       <div className="w-[max-content] border border-solid border-gray-100">
-        <table className="my-2 w-[max-content] table-fixed border-spacing-0 text-center text-white">
+        <table className="w-[max-content] table-fixed border-spacing-0 text-center text-white">
           <thead>
-            <tr className="">
+            <tr>
               <th className="sticky left-0 w-[128px] rounded-s-3xl  bg-gray-900">
                 Make
               </th>
@@ -66,7 +66,7 @@ const Table: React.FC<TableProps> = ({
                       hoverClass === size?.generalSize
                         ? size?.hoverColor
                         : size?.baseColor
-                    }  `}
+                    } py-2 `}
                   >
                     {!needDataList ? (
                       <label className="flex flex-col">
@@ -86,7 +86,7 @@ const Table: React.FC<TableProps> = ({
                         />
                       </label>
                     ) : (
-                      <label>
+                      <label className="flex flex-col">
                         <span>E</span>
                         <input
                           name={size?.inputName}
@@ -129,12 +129,12 @@ const Table: React.FC<TableProps> = ({
                     <td className="sticky left-[124px] w-[100px] bg-inherit  p-3">
                       {result.code}
                     </td>
-                    <td className="p-3  ">{result.a_innerMinimumDiameter}</td>
-                    <td className="p-3  ">{result.b_innerTeethNumber}</td>
-                    <td className="p-3  ">{result.c_innerMaximumDiameter}</td>
-                    <td className="p-3  ">{result.d_width}</td>
-                    <td className="p-3  ">{result.e_chain}</td>
-                    <td className="p-3  ">
+                    <td className="p-3">{result.a_innerMinimumDiameter}</td>
+                    <td className="p-3">{result.b_innerTeethNumber}</td>
+                    <td className="p-3">{result.c_innerMaximumDiameter}</td>
+                    <td className="p-3">{result.d_width}</td>
+                    <td className="p-3">{result.e_chain}</td>
+                    <td className="p-3">
                       <a
                         href={result.link}
                         className="rounded text-center outline outline-1 outline-slate-300"

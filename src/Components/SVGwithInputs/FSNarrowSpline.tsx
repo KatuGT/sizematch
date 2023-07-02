@@ -82,7 +82,7 @@ const FSNarrowSpline = ({
           <Controller
             control={control}
             name="a_innerMinimumDiameter"
-            render={({ field: { onChange, value } }) => (
+            render={({ field: { onChange } }) => (
               <InputSizeEntry
                 hoveredClass={hoveredClass}
                 onMouseEnter={onMouseEnter}
@@ -103,7 +103,7 @@ const FSNarrowSpline = ({
           <Controller
             control={control}
             name="b_innerTeethNumber"
-            render={({ field: { onChange, value } }) => (
+            render={({ field: { onChange } }) => (
               <InputSizeEntry
                 hoveredClass={hoveredClass}
                 onMouseEnter={onMouseEnter}
@@ -124,7 +124,7 @@ const FSNarrowSpline = ({
           <Controller
             control={control}
             name="c_innerMaximumDiameter"
-            render={({ field: { onChange, value } }) => (
+            render={({ field: { onChange } }) => (
               <InputSizeEntry
                 hoveredClass={hoveredClass}
                 onMouseEnter={onMouseEnter}
@@ -154,7 +154,7 @@ const FSNarrowSpline = ({
             <Controller
               control={control}
               name="d_width"
-              render={({ field: { onChange, value } }) => (
+              render={({ field: { onChange } }) => (
                 <InputSizeEntry
                   hoveredClass={hoveredClass}
                   onMouseEnter={onMouseEnter}
@@ -183,7 +183,7 @@ const FSNarrowSpline = ({
             <Controller
               control={control}
               name="e_chain"
-              render={({ field: { onChange, value } }) => (
+              render={({ field: { onChange } }) => (
                 <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
                   <input
                     onMouseEnter={onMouseEnter}

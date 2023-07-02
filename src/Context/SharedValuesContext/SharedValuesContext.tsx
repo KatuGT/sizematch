@@ -1,29 +1,19 @@
 "use client";
 import React, { createContext, useReducer } from "react";
-
-const INITIAL_STATE_FSNARROWSPLINE = {
-  a_innerMinimumDiameter: "",
-  b_innerTeethNumber: "",
-  c_innerMaximumDiameter: "",
-  d_width: "",
-  e_chain: "",
-};
-
-const INITIAL_STATE_FSLARGESPLINE = {
-  a_holeTohole: "",
-  b_center: "",
-  c_chain: "",
-};
+import {
+  INITIAL_STATE_FSLARGESPLINE,
+  INITIAL_STATE_FSNARROWSPLINE,
+} from "./InitialStates";
 
 type StateType = {
-  fsNarroSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
+  fsNarrowSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
 };
 
 type ActionType = {
   type: string;
   payload: string;
-  group: "FSNarrowSpline" | "FSLageSpline";
+  group: "FSNarrowSpline" | "FSLageSpline" | "RESET_VALUES";
 };
 
 type ContextType = {
@@ -33,21 +23,22 @@ type ContextType = {
 
 export const SharedValuesContext = createContext<ContextType>({
   state: {
-    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   },
   dispatch: () => {},
 });
 
+
 const reducer = (state: StateType, action: ActionType) => {
   const { group, type, payload } = action;
-
+    
   switch (group) {
     case "FSNarrowSpline":
       return {
         ...state,
-        fsNarroSpline: {
-          ...state.fsNarroSpline,
+        fsNarrowSpline: {
+          ...state.fsNarrowSpline,
           [type]: payload,
         },
       };
@@ -58,6 +49,12 @@ const reducer = (state: StateType, action: ActionType) => {
           ...state.fsLargeSpline,
           [type]: payload,
         },
+      };
+    case "RESET_VALUES": // Add a case for resetting values
+      return {
+        ...state,
+        fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
+        fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
       };
     default:
       return state;
@@ -70,7 +67,7 @@ export const SharedValuesProvider = ({
   children: React.ReactNode;
 }) => {
   const [state, dispatch] = useReducer(reducer, {
-    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   });
 

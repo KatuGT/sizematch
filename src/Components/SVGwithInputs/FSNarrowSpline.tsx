@@ -24,7 +24,7 @@ const FSNarrowSpline = ({
   // const { onMouseEnter, onMouseLeave, hoveredClass } = useHover();
 
   const { state, dispatch } = useContext(SharedValuesContext);
-  const { fsNarroSpline } = state;
+  const { fsNarrowSpline } = state;
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({
@@ -93,7 +93,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.a_innerMinimumDiameter}
+                value={fsNarrowSpline.a_innerMinimumDiameter}
                 placeholder="15.50"
                 position="left-[-70px] top-[37%]  laptop:left-[-100px] laptop:top-[37%]"
                 error={errors?.a_innerMinimumDiameter?.message?.toString()}
@@ -114,7 +114,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.b_innerTeethNumber}
+                value={fsNarrowSpline.b_innerTeethNumber}
                 placeholder="12"
                 position="right-[-65px] laptop:right-[-95px] top-[28%]"
                 error={errors?.b_innerTeethNumber?.message?.toString()}
@@ -135,7 +135,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.c_innerMaximumDiameter}
+                value={fsNarrowSpline.c_innerMaximumDiameter}
                 placeholder="20.50"
                 position="bottom-[-30px] left-[34%]"
                 error={errors?.c_innerMaximumDiameter?.message?.toString()}
@@ -165,7 +165,7 @@ const FSNarrowSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsNarroSpline.d_width}
+                  value={fsNarrowSpline.d_width}
                   placeholder="8.5"
                   position="bottom-[-35px] left-[-40%]"
                   error={errors?.d_width?.message?.toString()}
@@ -193,7 +193,7 @@ const FSNarrowSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={fsNarroSpline.e_chain?.replace(/[^0-9.]/g, "") || ""}
+                    value={fsNarrowSpline.e_chain?.replace(/[^0-9.]/g, "") || ""}
                     className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                     placeholder="520"
                     list="chain"

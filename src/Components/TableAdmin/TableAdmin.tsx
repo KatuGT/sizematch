@@ -106,7 +106,7 @@ const TableAdmin = () => {
   return (
     <div
       style={{ height: 400, width: "100%" }}
-      className="bg-gray-800 text-white"
+      className="bg-gray-800 text-white mt-5"
     >
       <DataGrid
         rows={searchResults}

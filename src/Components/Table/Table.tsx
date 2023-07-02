@@ -36,7 +36,7 @@ const Table: React.FC<TableProps> = ({
   error,
 }) => {
   const { state } = useContext(SharedValuesContext);
-  const { fsNarroSpline } = state;
+  const { fsNarrowSpline } = state;
 
   return (
     <div className="table-container mb-5 max-w-full overflow-x-auto px-4 ">
@@ -79,7 +79,7 @@ const Table: React.FC<TableProps> = ({
                           className={`${size?.generalSize} w-[100px] bg-transparent text-center text-white`}
                           onChange={handleFSChange}
                           value={
-                            fsNarroSpline[
+                            fsNarrowSpline[
                               size?.inputName as keyof FSsizeProps
                             ] || ""
                           }
@@ -94,7 +94,7 @@ const Table: React.FC<TableProps> = ({
                           className="w-[100px] bg-transparent text-center text-white"
                           onChange={handleFSChange}
                           value={
-                            fsNarroSpline[
+                            fsNarrowSpline[
                               size?.inputName as keyof FSsizeProps
                             ] || ""
                           }

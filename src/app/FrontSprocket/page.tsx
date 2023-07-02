@@ -20,23 +20,23 @@ const FrontSprocket = () => {
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
   const { dispatch, state } = useContext(SharedValuesContext);
-  const { fsNarroSpline } = state;
+  const { fsNarrowSpline } = state;
 
   const transformToParams = useCallback(() => {
     let count = 0;
     let params = "";
 
-    for (const key in fsNarroSpline) {
+    for (const key in fsNarrowSpline) {
       if (
-        fsNarroSpline.hasOwnProperty(key) &&
-        fsNarroSpline[key as keyof FSsizeProps] !== ""
+        fsNarrowSpline.hasOwnProperty(key) &&
+        fsNarrowSpline[key as keyof FSsizeProps] !== ""
       ) {
         count++;
         if (count > 1) {
           params += "&";
         }
         params += `${key}=${encodeURIComponent(
-          fsNarroSpline[key as keyof FSsizeProps]
+          fsNarrowSpline[key as keyof FSsizeProps]
         )}`;
       }
     }
@@ -44,11 +44,11 @@ const FrontSprocket = () => {
       params = "";
     }
     return params;
-  }, [fsNarroSpline]);
+  }, [fsNarrowSpline]);
 
   useEffect(() => {
     transformToParams();
-  }, [fsNarroSpline, transformToParams]);
+  }, [fsNarrowSpline, transformToParams]);
 
   const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

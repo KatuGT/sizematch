@@ -51,7 +51,7 @@ const PostForm = () => {
     possibleParts.FSNarrowSpline
   );
 
-  const { resetValues } = useContext(SharedValuesContext);
+  const { dispatch } = useContext(SharedValuesContext);
 
   const onSubmit = async (data: partPostProps) => {
     try {
@@ -63,6 +63,11 @@ const PostForm = () => {
       });
 
       if (resp.ok) {
+        dispatch({
+          type: "",
+          group: "RESET_VALUES",
+          payload: "",
+        });
         Swal.mixin({
           toast: true,
           position: "top-end",
@@ -77,8 +82,8 @@ const PostForm = () => {
           icon: "success",
           title: "New part added",
         });
+        
         reset();
-        resetValues();
       } else if (resp.status === 409) {
         const errorData = await resp.json();
 

@@ -40,7 +40,9 @@ const FrontSprocket = () => {
         )}`;
       }
     }
-
+    if (count < 2) {
+      params = "";
+    }
     return params;
   }, [fsNarroSpline]);
 
@@ -66,11 +68,13 @@ const FrontSprocket = () => {
   const params = transformToParams();
 
   const { data, error, isLoading } = useSWR<SearchResult[]>(
-    `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/${params}`,
+    params
+      ? `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/${params}`
+      : null,
     fetcher
   );
 
-  const searchResults: SearchResult[] = data || [];
+  let searchResults: SearchResult[] = data || [];
 
   const completeSchema = generateSchema(frontSprocketNarrowSplineSchema);
 

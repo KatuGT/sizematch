@@ -36,7 +36,7 @@ const FSNarrowSpline = ({
 
   return (
     <div>
-      <section>
+      <section className="p-4 laptop:p-0">
         <ul>
           <ListItem
             classSize="sizeA"
@@ -77,8 +77,8 @@ const FSNarrowSpline = ({
           />
         </ul>
       </section>
-      <div className="mb-10  flex flex-wrap items-center justify-center">
-        <div className="relative mr-32 w-[300px] ">
+      <div className="mb-10 flex flex-wrap items-center justify-center gap-[50px]">
+        <div className="relative mx-32 w-[300px] laptop:ml-10 laptop:mr-32 ">
           <Controller
             control={control}
             name="a_innerMinimumDiameter"
@@ -149,7 +149,7 @@ const FSNarrowSpline = ({
           />
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-7">
           <div className="relative w-[52px]">
             <Controller
               control={control}

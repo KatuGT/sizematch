@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {      
+      screens: {
+        'laptop': '932px',
+      },
       colors:{
         'sizeAcolor' : '#0b7c0b',
         'sizeAcolorLight' : '#3bc83b',

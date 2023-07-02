@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import React, { createContext, useReducer } from "react";
 
-const INITIAL_STATE_FRONTSPROCKET = {
+const INITIAL_STATE_FSNARROWSPLINE = {
   a_innerMinimumDiameter: "",
   b_innerTeethNumber: "",
   c_innerMaximumDiameter: "",
@@ -9,21 +9,21 @@ const INITIAL_STATE_FRONTSPROCKET = {
   e_chain: "",
 };
 
-const INITIAL_STATE_REARSPROCKET = {
+const INITIAL_STATE_FSLARGESPLINE = {
   a_holeTohole: "",
   b_center: "",
   c_chain: "",
 };
 
 type StateType = {
-  frontSprocket: typeof INITIAL_STATE_FRONTSPROCKET;
-  rearSprocket: typeof INITIAL_STATE_REARSPROCKET;
+  fsNarroSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
+  fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
 };
 
 type ActionType = {
   type: string;
   payload: string;
-  group: "frontSprocket" | "rearSprocket";
+  group: "FSNarrowSpline" | "FSLageSpline";
 };
 
 type ContextType = {
@@ -33,8 +33,8 @@ type ContextType = {
 
 export const SharedValuesContext = createContext<ContextType>({
   state: {
-    frontSprocket: INITIAL_STATE_FRONTSPROCKET,
-    rearSprocket: INITIAL_STATE_REARSPROCKET,
+    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   },
   dispatch: () => {},
 });
@@ -43,19 +43,19 @@ const reducer = (state: StateType, action: ActionType) => {
   const { group, type, payload } = action;
 
   switch (group) {
-    case "frontSprocket":
+    case "FSNarrowSpline":
       return {
         ...state,
-        frontSprocket: {
-          ...state.frontSprocket,
+        fsNarroSpline: {
+          ...state.fsNarroSpline,
           [type]: payload,
         },
       };
-    case "rearSprocket":
+    case "FSLageSpline":
       return {
         ...state,
-        rearSP: {
-          ...state.rearSprocket,
+        fsLargeSpline: {
+          ...state.fsLargeSpline,
           [type]: payload,
         },
       };
@@ -70,8 +70,8 @@ export const SharedValuesProvider = ({
   children: React.ReactNode;
 }) => {
   const [state, dispatch] = useReducer(reducer, {
-    frontSprocket: INITIAL_STATE_FRONTSPROCKET,
-    rearSprocket: INITIAL_STATE_REARSPROCKET,
+    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   });
 
   return (

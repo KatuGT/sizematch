@@ -33,7 +33,7 @@ const InputSizeEntry = ({
       <div className="relative">
         <input
           type="text"
-          className={`${mainClass}  flex w-[100px] flex-col rounded-md border border-solid bg-transparent px-1 text-white`}
+          className={`${mainClass} flex w-[70px] laptop:w-[100px] flex-col rounded-md border border-solid bg-transparent px-1 text-white`}
           placeholder={placeholder}
           name={name}
           value={value?.replace(/[^0-9.]/g, "") || ""}

@@ -1,5 +1,8 @@
-import FrontSprocket from "@/models/FrontSprocketNarrowSplineModel";
+import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
+import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
+import { Model } from "mongoose";
 import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
@@ -7,43 +10,57 @@ interface FSprops {
   [key: string]: string | RegExp;
 }
 
-const searchFrontSprocket = async (sizes: FSprops) => {
-  const searchQuery: FSprops = {};
-
-  for (const field in sizes) {
-    if (sizes[field as keyof FSprops]) {
-      searchQuery[field] = new RegExp(`^${sizes[field as keyof FSprops]}`);
-    }
-  }
-
-  const frontSprockets = await FrontSprocket.find(searchQuery);
-
-  return frontSprockets;
+const searchModel = async (
+  Model: Model<any>,
+  searchQuery: FSprops
+): Promise<any> => {
+  const results = await Model.find(searchQuery);
+  return results;
 };
 
-export const GET = async (req: NextApiRequest, { params }: any) => {
+export const GET = async (req: Request, { params }: any) => {
   await connect();
 
   const { sizes, part } = params;
 
   const searchParams = new URLSearchParams(sizes);
+
+  // Convierte los parametros en objeto
   const sizesObject: FSprops = {};
 
   for (const [key, value] of searchParams.entries()) {
     sizesObject[key] = value;
   }
 
-  try {
-    let searchResults: any;
+  // Convierte el "value" del objeto anterior en expresión Regex
+  const searchQuery: FSprops = {};
 
-    switch (part) {
-      case "frontSprocket":
-        searchResults = await searchFrontSprocket(sizesObject);
-        break;
-      default:
-        return new NextResponse("Error getting the info", { status: 500 });
+  for (const field in sizesObject) {
+    if (sizesObject[field as keyof FSprops]) {
+      searchQuery[field] = new RegExp(
+        `^${sizesObject[field as keyof FSprops]}`
+      );
     }
-    return new NextResponse(searchResults, { status: 200 });
+  }
+
+  try {
+    let searchResult: any;
+    switch (part) {
+      case possibleParts.FSLargeSpline:
+        searchResult = await searchModel(FrontSprocketLargeSpline, searchQuery);
+        break;
+      case possibleParts.FSNarrowSpline:
+        searchResult = await searchModel(
+          FrontSprocketNarrowSpline,
+          searchQuery
+        );
+        break;
+
+      default:
+        break;
+    }
+
+    return new NextResponse(JSON.stringify(searchResult), { status: 200 });
   } catch (error) {
     console.log(error);
     return new NextResponse("Error", { status: 500 });

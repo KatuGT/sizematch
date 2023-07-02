@@ -1,5 +1,6 @@
 "use client";
 import PostForm from "@/Components/PostForm/PostForm";
+import TableAdmin from "@/Components/TableAdmin/TableAdmin";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ const AdminCrud = () => {
   return (
     <div className="mx-auto my-5 ">
       <PostForm />
+      <TableAdmin/>
     </div>
   );
 };

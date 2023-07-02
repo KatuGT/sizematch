@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "../Button/button";
 import {
   InputListPartPost,
@@ -8,7 +8,6 @@ import { FSSizeInput, InputItemFS } from "@/utils/FSInputData";
 import { RSSizeInput } from "@/utils/RSInputData";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
 import FSLargeSpline from "../SVGwithInputs/FSLargeSpline";
 import { frontSprocketNarrowSplineSchema } from "@/utils/yupSchemas/FSNarrowSpline";
@@ -18,6 +17,8 @@ import { partsOptions } from "@/utils/SelectListOptions/parts";
 import { makesOptions } from "@/utils/SelectListOptions/makes";
 import Swal from "sweetalert2";
 import { generateSchema } from "@/utils/generateYupSchema";
+import { useHover } from "@/utils/handleHoveredSize";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 const PostForm = () => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
@@ -50,9 +51,9 @@ const PostForm = () => {
     possibleParts.FSNarrowSpline
   );
 
-  const onSubmit = async (data: partPostProps) => {
-    console.log(data);
+  const { resetValues } = useContext(SharedValuesContext);
 
+  const onSubmit = async (data: partPostProps) => {
     try {
       const resp = await fetch(`/api/parts/${selectedPart}`, {
         method: "POST",
@@ -77,6 +78,7 @@ const PostForm = () => {
           title: "New part added",
         });
         reset();
+        resetValues();
       } else if (resp.status === 409) {
         const errorData = await resp.json();
 
@@ -86,6 +88,8 @@ const PostForm = () => {
       console.log(err);
     }
   };
+
+  const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
   useEffect(() => {
     const setPartData = () => {
@@ -109,7 +113,15 @@ const PostForm = () => {
   const DisplaySVG = () => {
     switch (selectedPart) {
       case possibleParts.FSNarrowSpline:
-        return <FSNarrowSpline control={control} errors={errors} />;
+        return (
+          <FSNarrowSpline
+            control={control}
+            errors={errors}
+            hoveredClass={hoverClass}
+            onMouseEnter={handleHover}
+            onMouseLeave={handleMouseLeave}
+          />
+        );
       case possibleParts.FSLargeSpline:
         return <FSLargeSpline control={control} errors={errors} />;
       default:

@@ -12,10 +12,8 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
 };
 
-export const POST = async (req: Request, { params }: any) => {
-  const { part } = params;
-
-  const body = await req.json();
+export const DELETE = async (req: Request, { params }: any) => {
+  const { part, id } = params;
 
   const PartModel = partModelArray[part as possibleParts];
 
@@ -23,35 +21,12 @@ export const POST = async (req: Request, { params }: any) => {
     return new NextResponse("Invalid part", { status: 400 });
   }
 
-  const newPart = new PartModel(body);
+  await PartModel.findByIdAndDelete(id);
 
   try {
     await connect();
 
-    await newPart.save();
-
-    return new NextResponse("Front Sprocket has been added", { status: 201 });
-  } catch (err) {
-    return new NextResponse("Database Error", { status: 500 });
-  }
-};
-
-export const GET = async (req: Request, { params }: any) => {
-  const { part } = params;
-
-  // Get the appropriate model based on the part
-  const PartModel = partModelArray[part as possibleParts];
-
-  if (!PartModel) {
-    return new NextResponse("Invalid part", { status: 400 });
-  }
-
-  const parts = await PartModel.find();
-
-  try {
-    await connect();
-
-    return new NextResponse(JSON.stringify(parts), { status: 201 });
+    return new NextResponse(JSON.stringify("Deleted"), { status: 201 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }

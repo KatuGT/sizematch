@@ -77,7 +77,7 @@ const FSNarrowSpline = ({
           />
         </ul>
       </section>
-      <div className="mb-10 flex flex-col flex-wrap items-center justify-center gap-[50px] mobile:gap-[65px] mobile:flex-row">
+      <div className="mb-10 flex flex-col flex-wrap items-center justify-center gap-[50px] mobile:flex-row mobile:gap-[65px]">
         <div className="relative w-[200px] mobile:w-[300px] laptop:ml-10 laptop:mr-32 ">
           <Controller
             control={control}
@@ -193,7 +193,9 @@ const FSNarrowSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={fsNarrowSpline.e_chain?.replace(/[^0-9.]/g, "") || ""}
+                    value={
+                      fsNarrowSpline.e_chain?.replace(/[^0-9.]/g, "") || ""
+                    }
                     className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                     placeholder="520"
                     list="chain"

@@ -19,6 +19,8 @@ import Swal from "sweetalert2";
 import { generateSchema } from "@/utils/generateYupSchema";
 import { useHover } from "@/utils/handleHoveredSize";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
+import { type } from "os";
 
 const PostForm = () => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
@@ -46,10 +48,17 @@ const PostForm = () => {
       make: makesOptions[0].displayName,
     },
   });
+  const { dispatch: selectedPartDispatch } = useContext(SelectedPartContext);
 
   const [selectedPart, setSelectedPart] = useState(
     possibleParts.FSNarrowSpline
   );
+
+  const handleChangePart = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const part = e.target.value as possibleParts;
+    setSelectedPart(part);
+    selectedPartDispatch({ type: "CHANGE_FRONTSPROCKET", payload: part });
+  };
 
   const { dispatch } = useContext(SharedValuesContext);
 
@@ -82,7 +91,7 @@ const PostForm = () => {
           icon: "success",
           title: "New part added",
         });
-        
+
         reset();
       } else if (resp.status === 409) {
         const errorData = await resp.json();
@@ -90,7 +99,7 @@ const PostForm = () => {
         throw new Error(errorData.message);
       }
     } catch (err) {
-      console.log(err);
+      console.warn(err);
     }
   };
 
@@ -136,14 +145,14 @@ const PostForm = () => {
   };
 
   return (
-    <div>
+    <div className="max-w-[1000px] w-full flex flex-col items-center justify-center">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col  justify-center gap-4"
+        className="mx-auto my-0 flex flex-col justify-center gap-10 px-4"
       >
         <div className="flex flex-col gap-3">
           <InputListPartPost
-            onChange={(e) => setSelectedPart(e.target.value as possibleParts)}
+            onChange={handleChangePart}
             id="bikePart"
             label="Choose motorbike part:"
             placeholder="Front Sprocket"

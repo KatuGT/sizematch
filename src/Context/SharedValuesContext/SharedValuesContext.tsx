@@ -29,10 +29,9 @@ export const SharedValuesContext = createContext<ContextType>({
   dispatch: () => {},
 });
 
-
 const reducer = (state: StateType, action: ActionType) => {
   const { group, type, payload } = action;
-    
+
   switch (group) {
     case "FSNarrowSpline":
       return {
@@ -50,7 +49,7 @@ const reducer = (state: StateType, action: ActionType) => {
           [type]: payload,
         },
       };
-    case "RESET_VALUES": // Add a case for resetting values
+    case "RESET_VALUES":
       return {
         ...state,
         fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,

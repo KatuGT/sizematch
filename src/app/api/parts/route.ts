@@ -7,8 +7,12 @@ export const GET = async () => {
     await connect();
 
     const FSLargeSpline = await FrontSprocketLargeSpline.find();
+    console.log("Retrieved data:", FSLargeSpline);
 
     return new NextResponse(FSLargeSpline, { status: 200 });
-  } catch (error) {}
-  return new NextResponse("error", { status: 500 });
+  } catch (error) {
+    console.log('Get product error', error);
+
+    return new NextResponse("error", { status: 500 });
+  }
 };

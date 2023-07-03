@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import BottomBar from "@/Components/BottomBar/BottomBar";
 import { SharedValuesProvider } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { SelectedPartProvider } from "@/Context/SelectedPartContext/SelectedPartContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,13 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SharedValuesProvider>
-        <body className={inter.className}>
-          <div className="flex min-h-screen flex-col justify-between bg-gray-900">
-            <Topbar />
-            {children}
-            <BottomBar />
-          </div>
-        </body>
+        <SelectedPartProvider>
+          <body className={inter.className}>
+            <div className="flex min-h-screen flex-col justify-between bg-gray-900">
+              <Topbar />
+              {children}
+              <BottomBar />
+            </div>
+          </body>
+        </SelectedPartProvider>
       </SharedValuesProvider>
     </html>
   );

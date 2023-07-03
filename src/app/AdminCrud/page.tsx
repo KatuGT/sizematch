@@ -10,9 +10,11 @@ export const metadata: Metadata = {
 
 const AdminCrud = () => {
   return (
-    <div className="mx-auto my-5 ">
+    <div className="mx-auto my-5 w-full flex flex-col justify-center items-center" >
       <PostForm />
-      <TableAdmin/>
+      <div className="w-full laptop:w-[min-content] mx-auto my-0 p-4">
+        <TableAdmin />
+      </div>
     </div>
   );
 };

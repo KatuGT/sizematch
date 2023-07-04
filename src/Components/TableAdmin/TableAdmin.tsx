@@ -1,8 +1,6 @@
 import React, {
-  useCallback,
   useContext,
   useEffect,
-  useMemo,
   useState,
 } from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
@@ -17,8 +15,9 @@ import {
   getLargeSplineConfigColumn,
   getNarrowSplineConfigColumn,
 } from "@/utils/ColumnConfig/frontSprocketColumns";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 
-const TableAdmin = () => {
+const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {
   const { state } = useContext(SelectedPartContext);
   const { frontSprocket } = state;
 
@@ -33,7 +32,7 @@ const TableAdmin = () => {
   let searchResults: SearchResult[] = data || [];
 
   const [columns, setColumns] = useState<GridColDef[]>([]);
-
+  
   useEffect(() => {
     const handleDelete = async (id: string | ObjectId) => {
       Swal.fire({
@@ -55,7 +54,11 @@ const TableAdmin = () => {
       });
     };
 
+
     const columnsFSnarrowSpline = getNarrowSplineConfigColumn({
+      hoveredClass:hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
       onClickEdit: () => {
         // Handle edit logic here
@@ -63,6 +66,9 @@ const TableAdmin = () => {
     });
 
     const columnsFSlargeSpline = getLargeSplineConfigColumn({
+      hoveredClass:hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
       onClickEdit: () => {
         // Handle edit logic here
@@ -73,7 +79,7 @@ const TableAdmin = () => {
         ? columnsFSnarrowSpline
         : columnsFSlargeSpline;
     setColumns(gridCol);
-  }, [frontSprocket, mutate]);
+  }, [frontSprocket, hoveredClass, mutate, onMouseEnter, onMouseLeave]);
 
   return (
     <div

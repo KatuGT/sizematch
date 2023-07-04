@@ -4,7 +4,7 @@ import {
   InputListPartPost,
   InputPartPost,
 } from "../inputPartPost/InputPartPost";
-import { FSSizeInput, InputItemFS } from "@/utils/FSInputData";
+import { FSSizeInput } from "@/utils/FSInputData";
 import { RSSizeInput } from "@/utils/RSInputData";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -17,12 +17,11 @@ import { partsOptions } from "@/utils/SelectListOptions/parts";
 import { makesOptions } from "@/utils/SelectListOptions/makes";
 import Swal from "sweetalert2";
 import { generateSchema } from "@/utils/generateYupSchema";
-import { useHover } from "@/utils/handleHoveredSize";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
-import { type } from "os";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 
-const PostForm = () => {
+const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
 
   const [partSchema, setPartSchema] = useState<any>(
@@ -103,8 +102,6 @@ const PostForm = () => {
     }
   };
 
-  const { handleHover, handleMouseLeave, hoverClass } = useHover();
-
   useEffect(() => {
     const setPartData = () => {
       switch (selectedPart) {
@@ -131,13 +128,21 @@ const PostForm = () => {
           <FSNarrowSpline
             control={control}
             errors={errors}
-            hoveredClass={hoverClass}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleMouseLeave}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
           />
         );
       case possibleParts.FSLargeSpline:
-        return <FSLargeSpline control={control} errors={errors} />;
+        return (
+          <FSLargeSpline
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
       default:
         setArratoToMap([]);
         break;
@@ -145,61 +150,65 @@ const PostForm = () => {
   };
 
   return (
-    <div className="max-w-[1000px] w-full flex flex-col items-center justify-center">
+    <div className="flex w-full max-w-[1000px] flex-col items-center justify-center">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto my-0 flex flex-col justify-center gap-10 px-4"
+        className="mx-auto my-0 flex flex-col justify-center gap-10 px-4 mobile:px-0"
       >
-        <div className="flex flex-col gap-3">
-          <InputListPartPost
-            onChange={handleChangePart}
-            id="bikePart"
-            label="Choose motorbike part:"
-            placeholder="Front Sprocket"
-            optionsArray={partsOptions}
-          />
+        <div className="flex gap-3 justify-center flex-wrap">
+          <div className="flex flex-col gap-3 flex-1 px-4 laptop:px-0 ">
+            <InputListPartPost
+              onChange={handleChangePart}
+              id="bikePart"
+              label="Part"
+              placeholder="Front Sprocket"
+              optionsArray={partsOptions}
+            />
 
-          <Controller
-            control={control}
-            name="make"
-            render={({ field: { onChange, value } }) => (
-              <InputListPartPost
-                onChange={onChange}
-                id="makes"
-                label="Make"
-                optionsArray={makesOptions}
-              />
-            )}
-          />
-          <Controller
-            control={control}
-            name="code"
-            render={({ field: { onChange, value } }) => (
-              <InputPartPost
-                onChange={onChange}
-                value={value || ""}
-                placeholder="31435"
-                id="code"
-                label="Code"
-                error={errors?.code?.message?.toString()}
-              />
-            )}
-          />
-          <Controller
-            control={control}
-            name="link"
-            render={({ field: { onChange, value } }) => (
-              <InputPartPost
-                onChange={onChange}
-                value={value || ""}
-                placeholder="www.sizematch.com"
-                id="link"
-                label="Link"
-                type="url"
-                error={errors?.link?.message?.toString()}
-              />
-            )}
-          />
+            <Controller
+              control={control}
+              name="make"
+              render={({ field: { onChange, value } }) => (
+                <InputListPartPost
+                  onChange={onChange}
+                  id="makes"
+                  label="Make"
+                  optionsArray={makesOptions}
+                />
+              )}
+            />
+          </div>
+          <div className="flex flex-col gap-3 flex-1 px-4 laptop:px-0 ">
+            <Controller
+              control={control}
+              name="code"
+              render={({ field: { onChange, value } }) => (
+                <InputPartPost
+                  onChange={onChange}
+                  value={value || ""}
+                  placeholder="31435"
+                  id="code"
+                  label="Code"
+                  error={errors?.code?.message?.toString()}
+                />
+              )}
+            />
+            <Controller
+              control={control}
+              name="link"
+              render={({ field: { onChange, value } }) => (
+                <InputPartPost
+                  onChange={onChange}
+                  value={value || ""}
+                  placeholder="www.sizematch.com"
+                  id="link"
+                  label="Link"
+                  type="url"
+                  error={errors?.link?.message?.toString()}
+                />
+              )}
+            />
+          </div>
         </div>
         {DisplaySVG()}
         <Button text="Send" />

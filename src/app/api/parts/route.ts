@@ -1,17 +1,32 @@
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
+import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
+import { Model, Document } from "mongoose";
 import { NextResponse } from "next/server";
 
-export const GET = async () => {
+type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
+
+const partModelArray: Record<possibleParts, PartModel> = {
+  [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
+  [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
+};
+
+export const GET = async (req: Request) => {
+  const url = new URL(req.url);
+
+  const part = url.searchParams.get("part");
+
+  const PartModel = partModelArray[part as possibleParts];
+
   try {
     await connect();
 
-    const FSLargeSpline = await FrontSprocketLargeSpline.find();
-    console.log("Retrieved data:", FSLargeSpline);
+    const result = await PartModel.find();
 
-    return new NextResponse(FSLargeSpline, { status: 200 });
+    return new NextResponse(JSON.stringify(result), { status: 200 });
   } catch (error) {
-    console.log('Get product error', error);
+    console.log("Get product error", error);
 
     return new NextResponse("error", { status: 500 });
   }

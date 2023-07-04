@@ -54,23 +54,6 @@ const narrowSplineColumn: GridColDef[] = [
     field: "actions",
     headerName: "Actions",
     width: 120,
-    //   renderCell: (params) => (
-    //     <div className="flex flex-col items-stretch justify-between p-2 text-white">
-    //       <button
-    //         onClick={() => handleDelete(params.row._id)}
-    //         className="flex items-center justify-between"
-    //       >
-    //         <DeleteIcon color="error" /> <span>Delete</span>
-    //       </button>
-    //       <button
-    //         onClick={() => console.log(params.row._id)}
-    //         className="flex items-center justify-between"
-    //       >
-    //         <EditIcon color="info" />
-    //         <span>Edit</span>
-    //       </button>
-    //     </div>
-    //   ),
   },
 ];
 

@@ -5,12 +5,11 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { SearchResult } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
+
 import { ObjectId } from "mongodb";
 import Swal from "sweetalert2";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
@@ -27,54 +26,54 @@ const TableAdmin = () => {
     fetch(...args).then((res) => res.json()) as Promise<SearchResult[]>;
 
   const { data, mutate } = useSWR<SearchResult[]>(
-    `http://localhost:3000/api/parts/${frontSprocket}`,
+    `http://localhost:3000/api/parts?part=${frontSprocket}`,
     fetcher
   );
 
   let searchResults: SearchResult[] = data || [];
 
-  const handleDelete = async (id: string | ObjectId) => {
-    Swal.fire({
-      title: "Do you want to dalete this part?",
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: "Yes, delete it",
-      denyButtonText: `Don't delete`,
-    }).then(async (result) => {
-      if (result.isConfirmed) {
-        await fetch(`/api/parts/${frontSprocket}/${id}`, {
-          method: "DELETE",
-        });
-        mutate();
-        Swal.fire("Borrado!", "", "success");
-      } else if (result.isDenied) {
-        Swal.fire("Changes are not saved", "", "info");
-      }
-    });
-  };
+  const [columns, setColumns] = useState<GridColDef[]>([]);
 
- 
-  const columnsFSnarrowSpline = getNarrowSplineConfigColumn({
-    onClickDelete: handleDelete,
-    onClickEdit: () => {
-      // Handle edit logic here
-    },
-  });
-
-  const columnsFSlargeSpline = getLargeSplineConfigColumn({
-    onClickDelete: handleDelete,
-    onClickEdit: () => {
-      // Handle edit logic here
-    },
-  });
-  const [columns, setColumns] = useState(columnsFSnarrowSpline);
   useEffect(() => {
+    const handleDelete = async (id: string | ObjectId) => {
+      Swal.fire({
+        title: "Do you want to dalete this part?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it",
+        denyButtonText: `Don't delete`,
+      }).then(async (result) => {
+        if (result.isConfirmed) {
+          await fetch(`/api/parts/${frontSprocket}/${id}`, {
+            method: "DELETE",
+          });
+          mutate();
+          Swal.fire("Borrado!", "", "success");
+        } else if (result.isDenied) {
+          Swal.fire("Changes are not saved", "", "info");
+        }
+      });
+    };
+
+    const columnsFSnarrowSpline = getNarrowSplineConfigColumn({
+      onClickDelete: handleDelete,
+      onClickEdit: () => {
+        // Handle edit logic here
+      },
+    });
+
+    const columnsFSlargeSpline = getLargeSplineConfigColumn({
+      onClickDelete: handleDelete,
+      onClickEdit: () => {
+        // Handle edit logic here
+      },
+    });
     const gridCol =
       frontSprocket === possibleParts.FSNarrowSpline
         ? columnsFSnarrowSpline
         : columnsFSlargeSpline;
     setColumns(gridCol);
-  }, [columnsFSlargeSpline, columnsFSnarrowSpline, frontSprocket]);
+  }, [frontSprocket, mutate]);
 
   return (
     <div

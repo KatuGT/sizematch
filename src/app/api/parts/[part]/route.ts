@@ -38,21 +38,28 @@ export const POST = async (req: Request, { params }: any) => {
 
 export const GET = async (req: Request, { params }: any) => {
   const { part } = params;
-
-  // Get the appropriate model based on the part
+ 
   const PartModel = partModelArray[part as possibleParts];
 
   if (!PartModel) {
     return new NextResponse("Invalid part", { status: 400 });
   }
 
-  const parts = await PartModel.find();
+  const options = {
+    bufferCommands: false,
+    bufferTimeoutMS: 30000,
+  };
 
+  const parts = await PartModel.find().setOptions(options);
+  console.log(parts);
+  
   try {
     await connect();
 
     return new NextResponse(JSON.stringify(parts), { status: 201 });
   } catch (err) {
+    console.log(err);
+
     return new NextResponse("Database Error", { status: 500 });
   }
 };

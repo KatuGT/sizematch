@@ -14,6 +14,7 @@ const searchModel = async (
   searchQuery: FSprops
 ): Promise<any> => {
   const results = await Model.find(searchQuery);
+
   return results;
 };
 

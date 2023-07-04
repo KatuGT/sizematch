@@ -2,42 +2,39 @@ import { GridColDef, GridCellParams } from "@mui/x-data-grid";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { ObjectId } from "mongodb";
-import { useState } from "react";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 
 // Front Sprocket NARROW Splie column config
-interface ColumnsProps extends SVGProps {
-  onClickDelete: (id: string | ObjectId) => Promise<void>;
-  onClickEdit: React.MouseEventHandler<HTMLButtonElement>;
-}
 
-export const getNarrowSplineConfigColumn = ({
-  onClickDelete,
-  onClickEdit,
+export const getNSConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
-}: ColumnsProps) => {
+}: SVGProps) => {
   const narrowSplineColumn: GridColDef[] = [
-    { field: "_id", headerName: "ID", width: 70, sortable: false },
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
     {
       field: "a_innerMinimumDiameter",
       headerName: "A",
       width: 90,
+      filterable: false,
+      disableColumnMenu: true,
+      headerAlign: 'center',
+
       renderHeader: (params) => (
-        <div
+        <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           className={`sizeA ${
             hoveredClass === "sizeA"
               ? "text-sizeAcolorLight"
               : "text-sizeAcolor"
-          }`}
+          } flex flex-col bg-red-300`}
         >
-          A
-        </div>
+          <p className="h-[5px] bg-red-300">A</p>
+          <input type="text" className="h-[5px]" />
+        </label>
       ),
       sortable: false,
     },
@@ -45,6 +42,7 @@ export const getNarrowSplineConfigColumn = ({
       field: "b_innerTeethNumber",
       headerName: "B",
       width: 90,
+      disableColumnMenu: true,
       renderHeader: (params) => (
         <div
           onMouseEnter={onMouseEnter}
@@ -64,6 +62,7 @@ export const getNarrowSplineConfigColumn = ({
       field: "c_innerMaximumDiameter",
       headerName: "C",
       width: 90,
+      disableColumnMenu: true,
       renderHeader: (params) => (
         <div
           onMouseEnter={onMouseEnter}
@@ -84,6 +83,7 @@ export const getNarrowSplineConfigColumn = ({
       headerName: "D",
       sortable: false,
       width: 90,
+      disableColumnMenu: true,
       renderHeader: (params) => (
         <div
           onMouseEnter={onMouseEnter}
@@ -103,6 +103,7 @@ export const getNarrowSplineConfigColumn = ({
       headerName: "E",
       sortable: false,
       width: 90,
+      disableColumnMenu: true,
       renderHeader: (params) => (
         <div
           onMouseEnter={onMouseEnter}
@@ -121,30 +122,9 @@ export const getNarrowSplineConfigColumn = ({
       field: "link",
       headerName: "Link",
       width: 90,
+      disableColumnMenu: true,
       sortable: false,
       renderCell: (params) => <a href={params.row.link}>See more</a>,
-    },
-    {
-      field: "actions",
-      headerName: "Actions",
-      width: 120,
-      renderCell: (params: GridCellParams) => (
-        <div className="flex flex-col items-stretch justify-between p-2 text-white">
-          <button
-            onClick={() => onClickDelete(params.row._id)}
-            className="flex items-center justify-between"
-          >
-            <DeleteIcon color="error" /> <span>Delete</span>
-          </button>
-          <button
-            onClick={onClickEdit}
-            className="flex items-center justify-between"
-          >
-            <EditIcon color="info" />
-            <span>Edit</span>
-          </button>
-        </div>
-      ),
     },
   ];
 
@@ -152,16 +132,12 @@ export const getNarrowSplineConfigColumn = ({
 };
 
 // Front Sprocket LARGE Splie column config
-
-export const getLargeSplineConfigColumn = ({
-  onClickDelete,
-  onClickEdit,
+export const getLSConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
-}: ColumnsProps) => {
-  const largeSplineColumn: GridColDef[] = [
-    { field: "_id", headerName: "ID", width: 70, sortable: false },
+}: SVGProps) => {
+  const largeSplineColumnUser: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
     {
@@ -289,25 +265,8 @@ export const getLargeSplineConfigColumn = ({
       field: "actions",
       headerName: "Actions",
       width: 120,
-      renderCell: (params: GridCellParams) => (
-        <div className="flex flex-col items-stretch justify-between p-2 text-white">
-          <button
-            onClick={() => onClickDelete(params.row._id)}
-            className="flex items-center justify-between"
-          >
-            <DeleteIcon color="error" /> <span>Delete</span>
-          </button>
-          <button
-            onClick={onClickEdit}
-            className="flex items-center justify-between"
-          >
-            <EditIcon color="info" />
-            <span>Edit</span>
-          </button>
-        </div>
-      ),
     },
   ];
 
-  return largeSplineColumn;
+  return largeSplineColumnUser;
 };

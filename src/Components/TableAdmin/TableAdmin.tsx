@@ -14,7 +14,7 @@ import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartC
 import {
   getLargeSplineConfigColumn,
   getNarrowSplineConfigColumn,
-} from "@/utils/ColumnConfig/frontSprocketColumns";
+} from "@/utils/ColumnConfig/frontSprocketColumnsAdmin";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 
 const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {

@@ -10,7 +10,7 @@ type StateType = {
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
 };
 
-type ActionType = {
+export type ActionType = {
   type: string;
   payload: string;
   group: "FSNarrowSpline" | "FSLageSpline" | "RESET_VALUES";

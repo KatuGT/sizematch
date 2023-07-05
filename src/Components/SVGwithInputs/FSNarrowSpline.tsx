@@ -21,8 +21,6 @@ const FSNarrowSpline = ({
   onMouseEnter,
   onMouseLeave,
 }: FSNarrowSplineProps) => {
-  // const { onMouseEnter, onMouseLeave, hoveredClass } = useHover();
-
   const { state, dispatch } = useContext(SharedValuesContext);
   const { fsNarrowSpline } = state;
 

@@ -1,29 +1,39 @@
 "use client";
-import React, { useCallback, useContext, useEffect } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import useSWR from "swr";
-import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import FSNarrowSpline from "@/Components/SVGwithInputs/FSNarrowSpline";
+import { DataGrid, GridColDef, GridOverlay } from "@mui/x-data-grid";
 import { useForm } from "react-hook-form";
-import { generateSchema } from "@/utils/generateYupSchema";
-import { frontSprocketNarrowSplineSchema } from "@/utils/yupSchemas/FSNarrowSpline";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useHover } from "@/utils/handleHoveredSize";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { FSNarrowSplineTableData } from "@/utils/TableHeadData/FSNarrowSpline";
 import {
   FSNarrowSplinesizeProps,
   SearchResult,
 } from "@/types-enums-interfaces/FSnarrowSplineProps";
-import { getNarrowSplineConfigColumn } from "@/utils/ColumnConfig/frontSprocketColumnsAdmin";
-import { DataGrid, GridNoRowsOverlay, GridOverlay } from "@mui/x-data-grid";
-import { getNSConfigColumnUser } from "@/utils/ColumnConfig/frontSprocketColumnsUsers";
+import {
+  frontSprocketNarrowSplineSchema,
+  generateSchema,
+  getLSConfigColumnUser,
+  getNSConfigColumnUser,
+  useHover,
+} from "@/utils";
+import { FSLargeSpline, FSNarrowSpline } from "@/Components";
 
 const FrontSprocket = () => {
+  const { dispatch, state } = useContext(SharedValuesContext);
+  const { fsNarrowSpline, fsLargeSpline } = state;
+
+  //actualiza context
+
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const { dispatch, state } = useContext(SharedValuesContext);
-  const { fsNarrowSpline } = state;
-
+  //crea params para el fetch
   const transformToParams = useCallback(() => {
     let count = 0;
     let params = "";
@@ -48,22 +58,57 @@ const FrontSprocket = () => {
     return params;
   }, [fsNarrowSpline]);
 
-  useEffect(() => {
-    transformToParams();
-  }, [fsNarrowSpline, transformToParams]);
+  //Setea tipo de piñon
+  const [frontSprocketType, setFrontSprocketType] = useState(
+    possibleParts.FSNarrowSpline
+  );
 
-  const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+  const handleFSChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = e.target;
 
-    const newValue = value.replace(/[^0-9.]/g, "");
-    
-    dispatch({
-      type: name,
-      payload: newValue,
-      group: "FSNarrowSpline",
-    });
+      const newValue = value.replace(/[^0-9.]/g, "");
+
+      dispatch({
+        type: name,
+        payload: newValue,
+        group:
+          frontSprocketType === "frontSprocketNarrowSpline"
+            ? "FSNarrowSpline"
+            : "FSLageSpline",
+      });
+    },
+    [dispatch, frontSprocketType]
+  );
+
+  const columnNarrowSpline = getNSConfigColumnUser({
+    hoveredClass: hoverClass,
+    onMouseEnter: handleHover,
+    onMouseLeave: handleMouseLeave,
+    onChange: handleFSChange,
+    dataNarrowSpline: fsNarrowSpline,
+  });
+
+  const columLargeSpline = getLSConfigColumnUser({
+    hoveredClass: hoverClass,
+    onMouseEnter: handleHover,
+    onMouseLeave: handleMouseLeave,
+    onChange: handleFSChange,
+    dataLargeSpline: fsLargeSpline,
+  });
+
+  const [columns, setColumns] = useState<GridColDef[]>(columnNarrowSpline);
+
+  const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFrontSprocketType(e.target.value as possibleParts);
+    const updatedColumns =
+      frontSprocketType === possibleParts.FSNarrowSpline
+        ? columnNarrowSpline
+        : columLargeSpline;
+    setColumns(updatedColumns);
   };
 
+  //fetch
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json()) as Promise<SearchResult[]>;
 
@@ -71,7 +116,7 @@ const FrontSprocket = () => {
 
   const { data, isLoading } = useSWR<SearchResult[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/${params}`
+      ? `http://localhost:3000/api/search/${frontSprocketType}/${params}`
       : null,
     fetcher
   );
@@ -88,27 +133,70 @@ const FrontSprocket = () => {
     mode: "onBlur",
   });
 
-  const column = getNSConfigColumnUser({
-    hoveredClass: hoverClass,
-    onMouseEnter: handleHover,
-    onMouseLeave: handleMouseLeave,
-    onChange: handleFSChange,
-    data: fsNarrowSpline
-  });
+  return (
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[min-content]">
+      <div>
+        <ul className="w-[max-content] mb-10 items-center rounded-lg border border-gray-200 bg-white text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:flex">
+          <li className="w-[max-content] border-b border-gray-200 dark:border-gray-600 sm:border-b-0 sm:border-r">
+            <div className="flex items-center px-3">
+              <input
+                id="horizontal-list-radio-narrow-spline"
+                type="radio"
+                value={possibleParts.FSNarrowSpline}
+                name="splineType"
+                onChange={(e) => handleSprocketType(e)}
+                className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-700"
+              />
+              <label
+                htmlFor="horizontal-list-radio-narrow-spline"
+                className="ml-2 w-[max-content]  py-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Narrow spline
+              </label>
+            </div>
+          </li>
+          <li className="w-[max-content]  border-b border-gray-200 dark:border-gray-600 sm:border-b-0 sm:border-r">
+            <div className="flex items-center px-3">
+              <input
+                id="horizontal-list-radio-large-spline"
+                type="radio"
+                name="splineType"
+                value={possibleParts.FSLargeSpline}
+                onChange={(e) => handleSprocketType(e)}
+                className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-700"
+              />
+              <label
+                htmlFor="horizontal-list-radio-large-spline"
+                className="ml-2 w-full py-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Large spline
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {frontSprocketType === possibleParts.FSNarrowSpline ? (
+        <FSNarrowSpline
+          control={control}
+          errors={errors}
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
+      ) : (
+        <FSLargeSpline
+          control={control}
+          errors={errors}
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
+      )}
 
-   return (
-    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center   p-4 laptop:w-[min-content]">
-      <FSNarrowSpline
-        control={control}
-        errors={errors}
-        hoveredClass={hoverClass}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-      />
-      <div className="mb-10 mt-5 h-[400px] w-full bg-gray-800 text-white">
+      <div className="my-20 h-[400px] w-full bg-gray-800 text-white">
         <DataGrid
           rows={searchResults}
-          columns={column}
+          columns={columns}
           getRowId={(row) => row._id}
           initialState={{
             pagination: {

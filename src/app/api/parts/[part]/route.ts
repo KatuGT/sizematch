@@ -2,7 +2,7 @@ import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
-import { Model, Document } from "mongoose";
+ import { Model, Document } from "mongoose";
 import { NextResponse } from "next/server";
 
 type PartModel = Model<Document<any, any, any>, {}, {}, {}>;

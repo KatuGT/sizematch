@@ -1,16 +1,20 @@
-import { GridColDef, GridCellParams } from "@mui/x-data-grid";
-import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
-import { ObjectId } from "mongodb";
+import { GridColDef } from "@mui/x-data-grid";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { FSNarrowSplinesizeProps } from "@/types-enums-interfaces/FSnarrowSplineProps";
+
+interface TableProps extends SVGProps {
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  data: FSNarrowSplinesizeProps;
+}
 
 // Front Sprocket NARROW Splie column config
-
 export const getNSConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
-}: SVGProps) => {
+  onChange,
+  data,
+}: TableProps) => {
   const narrowSplineColumn: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
@@ -20,9 +24,9 @@ export const getNSConfigColumnUser = ({
       width: 90,
       filterable: false,
       disableColumnMenu: true,
-      headerAlign: 'center',
+      headerAlign: "center",
 
-      renderHeader: (params) => (
+      renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -30,10 +34,20 @@ export const getNSConfigColumnUser = ({
             hoveredClass === "sizeA"
               ? "text-sizeAcolorLight"
               : "text-sizeAcolor"
-          } flex flex-col bg-red-300`}
+          } custom-input-wrapper`}
         >
-          <p className="h-[5px] bg-red-300">A</p>
-          <input type="text" className="h-[5px]" />
+          <span className="custom-input-span">A</span>
+          <input
+            placeholder="20"
+            type="text"
+            className="custom-input"
+            name="a_innerMinimumDiameter"
+            value={
+              data["a_innerMinimumDiameter" as keyof FSNarrowSplinesizeProps] ||
+              ""
+            }
+            onChange={onChange}
+          />
         </label>
       ),
       sortable: false,
@@ -43,18 +57,28 @@ export const getNSConfigColumnUser = ({
       headerName: "B",
       width: 90,
       disableColumnMenu: true,
-      renderHeader: (params) => (
-        <div
+      renderHeader: () => (
+        <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           className={`sizeB ${
             hoveredClass === "sizeB"
               ? "text-sizeBcolorLight"
               : "text-sizeBcolor"
-          }`}
+          } custom-input-wrapper`}
         >
-          B
-        </div>
+          <span className="custom-input-span">B</span>
+          <input
+            placeholder="22"
+            type="text"
+            className="custom-input"
+            name="b_innerTeethNumber"
+            value={
+              data["b_innerTeethNumber" as keyof FSNarrowSplinesizeProps] || ""
+            }
+            onChange={onChange}
+          />
+        </label>
       ),
       sortable: false,
     },
@@ -63,18 +87,29 @@ export const getNSConfigColumnUser = ({
       headerName: "C",
       width: 90,
       disableColumnMenu: true,
-      renderHeader: (params) => (
-        <div
+      renderHeader: () => (
+        <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           className={`sizeC ${
             hoveredClass === "sizeC"
               ? "text-sizeCcolorLight"
               : "text-sizeCcolor"
-          }`}
+          } custom-input-wrapper`}
         >
-          C
-        </div>
+          <span className="custom-input-span">C</span>
+          <input
+            placeholder="25.5"
+            type="text"
+            className="custom-input"
+            name="c_innerMaximumDiameter"
+            value={
+              data["c_innerMaximumDiameter" as keyof FSNarrowSplinesizeProps] ||
+              ""
+            }
+            onChange={onChange}
+          />
+        </label>
       ),
       sortable: false,
     },
@@ -84,18 +119,26 @@ export const getNSConfigColumnUser = ({
       sortable: false,
       width: 90,
       disableColumnMenu: true,
-      renderHeader: (params) => (
-        <div
+      renderHeader: () => (
+        <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           className={`sizeD ${
             hoveredClass === "sizeD"
               ? "text-sizeDcolorLight"
               : "text-sizeDcolor"
-          }`}
+          } custom-input-wrapper`}
         >
-          D
-        </div>
+          <span className="custom-input-span">D</span>
+          <input
+            placeholder="10.8"
+            type="text"
+            className="custom-input"
+            name="d_width"
+            value={data["d_width" as keyof FSNarrowSplinesizeProps] || ""}
+            onChange={onChange}
+          />
+        </label>
       ),
     },
     {
@@ -104,7 +147,7 @@ export const getNSConfigColumnUser = ({
       sortable: false,
       width: 90,
       disableColumnMenu: true,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -112,9 +155,17 @@ export const getNSConfigColumnUser = ({
             hoveredClass === "sizeE"
               ? "text-sizeEcolorLight"
               : "text-sizeEcolor"
-          }`}
+          } custom-input-wrapper`}
         >
-          E
+          <span className="custom-input-span">E</span>
+          <input
+            placeholder="520"
+            type="text"
+            className="custom-input"
+            name="e_chain"
+            value={data["e_chain" as keyof FSNarrowSplinesizeProps] || ""}
+            onChange={onChange}
+          />
         </div>
       ),
     },

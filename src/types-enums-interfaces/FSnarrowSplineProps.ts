@@ -1,4 +1,4 @@
-export interface FSsizeProps {
+export interface FSNarrowSplinesizeProps {
   a_innerMinimumDiameter?: string;
   b_innerTeethNumber?: string;
   c_innerMaximumDiameter?: string;

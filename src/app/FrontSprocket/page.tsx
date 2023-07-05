@@ -11,7 +11,7 @@ import { useHover } from "@/utils/handleHoveredSize";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { FSNarrowSplineTableData } from "@/utils/TableHeadData/FSNarrowSpline";
 import {
-  FSsizeProps,
+  FSNarrowSplinesizeProps,
   SearchResult,
 } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import { getNarrowSplineConfigColumn } from "@/utils/ColumnConfig/frontSprocketColumnsAdmin";
@@ -31,14 +31,14 @@ const FrontSprocket = () => {
     for (const key in fsNarrowSpline) {
       if (
         fsNarrowSpline.hasOwnProperty(key) &&
-        fsNarrowSpline[key as keyof FSsizeProps] !== ""
+        fsNarrowSpline[key as keyof FSNarrowSplinesizeProps] !== ""
       ) {
         count++;
         if (count > 1) {
           params += "&";
         }
         params += `${key}=${encodeURIComponent(
-          fsNarrowSpline[key as keyof FSsizeProps]
+          fsNarrowSpline[key as keyof FSNarrowSplinesizeProps]
         )}`;
       }
     }
@@ -56,7 +56,7 @@ const FrontSprocket = () => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
-
+    
     dispatch({
       type: name,
       payload: newValue,
@@ -69,7 +69,7 @@ const FrontSprocket = () => {
 
   const params = transformToParams();
 
-  const { data, error, isLoading } = useSWR<SearchResult[]>(
+  const { data, isLoading } = useSWR<SearchResult[]>(
     params
       ? `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/${params}`
       : null,
@@ -92,17 +92,11 @@ const FrontSprocket = () => {
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    onChange: handleFSChange,
+    data: fsNarrowSpline
   });
 
-  function CustomNoRowsOverlay() {
-    return (
-      <div>
-        <div>No Rowssss</div>
-      </div>
-    );
-  }
-
-  return (
+   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center   p-4 laptop:w-[min-content]">
       <FSNarrowSpline
         control={control}

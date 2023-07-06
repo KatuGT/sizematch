@@ -4,7 +4,6 @@ import { Controller } from "react-hook-form";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
-// import { useHover } from "@/utils/onMouseEnteredSize";
 import ListItem from "../ListItem/ListItem";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
@@ -25,9 +24,13 @@ const FSNarrowSpline = ({
   const { fsNarrowSpline } = state;
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    const newValue = value.replace(/[^0-9.]/g, "");
+
     dispatch({
-      type: e.target.name,
-      payload: e.target.value,
+      type: name,
+      payload: newValue,
       group: "FSNarrowSpline",
     });
   };

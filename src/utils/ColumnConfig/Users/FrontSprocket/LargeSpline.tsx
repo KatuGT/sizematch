@@ -1,21 +1,29 @@
 import { GridColDef } from "@mui/x-data-grid";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplineProps";
-
-interface TableProps extends SVGProps {
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  dataLargeSpline: FSlargeSplinesizeProps;
-}
+import { useContext } from "react";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 // Front Sprocket LARGE Splie column config
-export const getLSConfigColumnUser = ({
+export const GetLSConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
-  onChange,
-  dataLargeSpline,
-}: TableProps) => {
- 
+}: SVGProps) => {
+  const { dispatch, state } = useContext(SharedValuesContext);
+  const { fsLargeSpline } = state;
+
+  const handleFSLSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    const newValue = value.replace(/[^0-9.]/g, "");
+
+    dispatch({
+      type: name,
+      payload: newValue,
+      group: "FSLageSpline",
+    });
+  };
   const largeSplineColumnUser: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
@@ -23,6 +31,8 @@ export const getLSConfigColumnUser = ({
       field: "a_innerMinimumDiameter",
       headerName: "A",
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -35,16 +45,12 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">A</span>
           <input
-            placeholder="20"
+            placeholder="15.50"
             type="text"
             className="custom-input"
             name="a_innerMinimumDiameter"
-            value={
-              dataLargeSpline[
-                "a_innerMinimumDiameter" as keyof FSlargeSplinesizeProps
-              ] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.a_innerMinimumDiameter}
+            onChange={handleFSLSChange}
           />
         </label>
       ),
@@ -54,6 +60,8 @@ export const getLSConfigColumnUser = ({
       field: "b_innerTeethSpacing",
       headerName: "B",
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -66,16 +74,12 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">B</span>
           <input
-            placeholder="20"
+            placeholder="12"
             type="text"
             className="custom-input"
             name="b_innerTeethSpacing"
-            value={
-              dataLargeSpline[
-                "b_innerTeethSpacing" as keyof FSlargeSplinesizeProps
-              ] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.b_innerTeethSpacing}
+            onChange={handleFSLSChange}
           />
         </label>
       ),
@@ -85,6 +89,8 @@ export const getLSConfigColumnUser = ({
       field: "c_innerMaximumDiameter",
       headerName: "C",
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -97,16 +103,12 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">C</span>
           <input
-            placeholder="20"
+            placeholder="20.50"
             type="text"
             className="custom-input"
             name="c_innerMaximumDiameter"
-            value={
-              dataLargeSpline[
-                "c_innerMaximumDiameter" as keyof FSlargeSplinesizeProps
-              ] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.c_innerMaximumDiameter}
+            onChange={handleFSLSChange}
           />
         </label>
       ),
@@ -117,6 +119,8 @@ export const getLSConfigColumnUser = ({
       headerName: "D",
       sortable: false,
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -129,16 +133,12 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">D</span>
           <input
-            placeholder="20"
+            placeholder="36"
             type="text"
             className="custom-input"
             name="d_centerToCenter"
-            value={
-              dataLargeSpline[
-                "d_centerToCenter" as keyof FSlargeSplinesizeProps
-              ] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.d_centerToCenter}
+            onChange={handleFSLSChange}
           />
         </label>
       ),
@@ -148,6 +148,8 @@ export const getLSConfigColumnUser = ({
       headerName: "E",
       sortable: false,
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -160,14 +162,12 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">E</span>
           <input
-            placeholder="20"
+            placeholder="10.2"
             type="text"
             className="custom-input"
             name="e_width"
-            value={
-              dataLargeSpline["e_width" as keyof FSlargeSplinesizeProps] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.e_width}
+            onChange={handleFSLSChange}
           />
         </label>
       ),
@@ -177,6 +177,8 @@ export const getLSConfigColumnUser = ({
       headerName: "F",
       sortable: false,
       width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderHeader: () => (
         <label
           onMouseEnter={onMouseEnter}
@@ -189,15 +191,22 @@ export const getLSConfigColumnUser = ({
         >
           <span className="custom-input-span">F</span>
           <input
-            placeholder="20"
+            placeholder="520"
             type="text"
             className="custom-input"
             name="f_chain"
-            value={
-              dataLargeSpline["f_chain" as keyof FSlargeSplinesizeProps] || ""
-            }
-            onChange={onChange}
+            value={fsLargeSpline.f_chain}
+            onChange={handleFSLSChange}
+            list="LargeSplainChain"
           />
+          <datalist id="LargeSplainChain">
+            <option value="532" />
+            <option value="530" />
+            <option value="525" />
+            <option value="520" />
+            <option value="428" />
+            <option value="420" />
+          </datalist>
         </label>
       ),
     },
@@ -206,13 +215,10 @@ export const getLSConfigColumnUser = ({
       headerName: "Link",
       width: 90,
       sortable: false,
+      disableColumnMenu: true,
+      headerAlign: "center",
       renderCell: (params) => <a href={params.row.link}>Link</a>,
-    },
-    {
-      field: "actions",
-      headerName: "Actions",
-      width: 120,
-    },
+    },   
   ];
 
   return largeSplineColumnUser;

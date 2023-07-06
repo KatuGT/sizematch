@@ -1,20 +1,30 @@
 import { GridColDef } from "@mui/x-data-grid";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { FSNarrowSplinesizeProps } from "@/types-enums-interfaces/FSnarrowSplineProps";
-
-interface TableProps extends SVGProps {
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  dataNarrowSpline: FSNarrowSplinesizeProps;
-}
+import { useContext } from "react";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 
 // Front Sprocket NARROW Splie column config
-export const getNSConfigColumnUser = ({
+export const GetNSConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
-  onChange,
-  dataNarrowSpline,
-}: TableProps) => {
+}: SVGProps) => {
+  const { dispatch, state } = useContext(SharedValuesContext);
+  const { fsNarrowSpline } = state;
+
+  const handleFSNSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    const newValue = value.replace(/[^0-9.]/g, "");
+
+    dispatch({
+      type: name,
+      payload: newValue,
+      group: "FSNarrowSpline",
+    });
+  };
+
   const narrowSplineColumn: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
@@ -42,12 +52,8 @@ export const getNSConfigColumnUser = ({
             type="text"
             className="custom-input"
             name="a_innerMinimumDiameter"
-            value={
-              dataNarrowSpline[
-                "a_innerMinimumDiameter" as keyof FSNarrowSplinesizeProps
-              ] || ""
-            }
-            onChange={onChange}
+            value={fsNarrowSpline.a_innerMinimumDiameter || ""}
+            onChange={handleFSNSChange}
           />
         </label>
       ),
@@ -75,11 +81,11 @@ export const getNSConfigColumnUser = ({
             className="custom-input"
             name="b_innerTeethNumber"
             value={
-              dataNarrowSpline[
+              fsNarrowSpline[
                 "b_innerTeethNumber" as keyof FSNarrowSplinesizeProps
               ] || ""
             }
-            onChange={onChange}
+            onChange={handleFSNSChange}
           />
         </label>
       ),
@@ -107,11 +113,11 @@ export const getNSConfigColumnUser = ({
             className="custom-input"
             name="c_innerMaximumDiameter"
             value={
-              dataNarrowSpline[
+              fsNarrowSpline[
                 "c_innerMaximumDiameter" as keyof FSNarrowSplinesizeProps
               ] || ""
             }
-            onChange={onChange}
+            onChange={handleFSNSChange}
           />
         </label>
       ),
@@ -140,9 +146,9 @@ export const getNSConfigColumnUser = ({
             className="custom-input"
             name="d_width"
             value={
-              dataNarrowSpline["d_width" as keyof FSNarrowSplinesizeProps] || ""
+              fsNarrowSpline["d_width" as keyof FSNarrowSplinesizeProps] || ""
             }
-            onChange={onChange}
+            onChange={handleFSNSChange}
           />
         </label>
       ),
@@ -170,9 +176,9 @@ export const getNSConfigColumnUser = ({
             className="custom-input"
             name="e_chain"
             value={
-              dataNarrowSpline["e_chain" as keyof FSNarrowSplinesizeProps] || ""
+              fsNarrowSpline["e_chain" as keyof FSNarrowSplinesizeProps] || ""
             }
-            onChange={onChange}
+            onChange={handleFSNSChange}
           />
         </div>
       ),

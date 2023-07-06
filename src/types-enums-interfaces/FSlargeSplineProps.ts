@@ -3,7 +3,7 @@ export interface FSlargeSplinesizeProps {
   b_innerTeethSpacing?: string;
   c_innerMaximumDiameter?: string;
   d_centerToCenter?: string;
-  e_chain?: string;
+  e_width?: string;
   f_chain?: string;
 }
 

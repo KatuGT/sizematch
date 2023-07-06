@@ -6,7 +6,7 @@ export interface FSNarrowSplinesizeProps {
   e_chain?: string;
 }
 
-export interface SearchResult {
+export interface SearchResultFSNarrowSpline {
   _id: string;
   make: string;
   code: string;

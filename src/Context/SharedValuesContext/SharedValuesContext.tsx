@@ -10,11 +10,26 @@ type StateType = {
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
 };
 
-export type ActionType = {
-  type: string;
-  payload: string;
-  group: "FSNarrowSpline" | "FSLageSpline" | "RESET_VALUES";
+type SetDataAction = {
+  type: "SET_DATA";
+  payload: Partial<
+    typeof INITIAL_STATE_FSNARROWSPLINE | typeof INITIAL_STATE_FSLARGESPLINE
+  >;
+  group: "FSNarrowSpline" | "FSLargeSpline";
 };
+
+export type ActionType =
+  | SetDataAction
+  | {
+      type: "SET_DATA";
+      payload: Partial<typeof INITIAL_STATE_FSNARROWSPLINE>;
+      group: "FSNarrowSpline" | "FSLargeSpline";
+    }
+  | {
+      type: string;
+      payload: string;
+      group: "FSNarrowSpline" | "FSLargeSpline" | "RESET_VALUES";
+    };
 
 type ContextType = {
   state: StateType;
@@ -36,18 +51,24 @@ const reducer = (state: StateType, action: ActionType) => {
     case "FSNarrowSpline":
       return {
         ...state,
-        fsNarrowSpline: {
-          ...state.fsNarrowSpline,
-          [type]: payload,
-        },
+        fsNarrowSpline:
+          type === "SET_DATA"
+            ? Object.assign({}, state.fsNarrowSpline, payload)
+            : {
+                ...state.fsNarrowSpline,
+                [type]: payload,
+              },
       };
-    case "FSLageSpline":
+    case "FSLargeSpline":
       return {
         ...state,
-        fsLargeSpline: {
-          ...state.fsLargeSpline,
-          [type]: payload,
-        },
+        fsLargeSpline:
+          type === "SET_DATA"
+            ? Object.assign({}, state.fsLargeSpline, payload)
+            : {
+                ...state.fsLargeSpline,
+                [type]: payload,
+              },
       };
     case "RESET_VALUES":
       return {

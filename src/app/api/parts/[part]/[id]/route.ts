@@ -40,7 +40,6 @@ export const GET = async (
   { params }: { params: { part: string; id: string } }
 ) => {
   const { part, id } = params;
-  console.log(id);
   
   const PartModel = partModelArray[part as possibleParts];
 

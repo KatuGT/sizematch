@@ -16,6 +16,8 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
+
+
   const { state: partState } = useContext(SelectedPartContext);
   const { frontSprocket } = partState;
 
@@ -29,10 +31,12 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   let searchResults: SearchResult[] = data || [];
 
+  
   const [columns, setColumns] = useState<GridColDef[]>([]);
 
-  const { dispatch: EditingModeDispatch, } =
+  const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
+  const { id, part } = editingModeState;
 
   useEffect(() => {
     const handleEdit = async (part: string, id: string | ObjectId) => {
@@ -69,6 +73,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       onMouseEnter: onMouseEnter,
       onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
+
       onClickEdit: handleEdit,
     });
 
@@ -93,6 +98,34 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     onMouseEnter,
     onMouseLeave,
   ]);
+
+  const singlePartfetcher = (...args: Parameters<typeof fetch>) =>
+    fetch(...args).then((res) => res.json()) as Promise<SearchResult>;
+
+  const { data: singlePart } = useSWR(
+    id ? `http://localhost:3000/api/parts/${part}/${id}` : null,
+    singlePartfetcher
+  );
+
+  const { dispatch: sharedValueDispatch } =
+    useContext(SharedValuesContext);
+
+  useEffect(() => {
+    sharedValueDispatch({
+      type: "SET_DATA",
+      payload: {
+        code: singlePart?.code,
+        make: singlePart?.make,
+        link: singlePart?.link,
+        a_innerMinimumDiameter: singlePart?.a_innerMinimumDiameter,
+        b_innerTeethNumber: singlePart?.b_innerTeethNumber,
+        c_innerMaximumDiameter: singlePart?.c_innerMaximumDiameter,
+        d_width: singlePart?.d_width,
+        e_chain: singlePart?.e_chain,
+      },
+      group: "FSNarrowSpline",
+    });
+  }, [data, sharedValueDispatch, singlePart]);
 
   return (
     <div

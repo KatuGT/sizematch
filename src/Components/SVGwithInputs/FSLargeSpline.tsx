@@ -31,7 +31,7 @@ const FSLargeSpline = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: "FSLageSpline",
+      group: "FSNarrowSpline",
     });
   };
   return (
@@ -101,7 +101,7 @@ const FSLargeSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.a_innerMinimumDiameter}
+                  value={fsLargeSpline.a_innerMinimumDiameter || ""}
                   placeholder="15.50"
                   position="left-[-70px] laptop:left-[-100px] top-[37%]"
                   error={errors?.a_innerMinimumDiameter?.message?.toString()}
@@ -122,7 +122,7 @@ const FSLargeSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.b_innerTeethSpacing}
+                  value={fsLargeSpline.b_innerTeethSpacing || ""}
                   placeholder="12"
                   position="right-[-68px] top-[35%]
                 laptop:right-[-95px] laptop:top-[37%]"
@@ -144,7 +144,7 @@ const FSLargeSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.c_innerMaximumDiameter}
+                  value={fsLargeSpline.c_innerMaximumDiameter || ""}
                   placeholder="20.50"
                   position="bottom-[-30px] left-[34%] mobile:left-[40%]"
                   error={errors?.c_innerMaximumDiameter?.message?.toString()}
@@ -175,7 +175,7 @@ const FSLargeSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.d_centerToCenter}
+                  value={fsLargeSpline.d_centerToCenter || ""}
                   placeholder="36"
                   position="top-[39%] left-[50px] mobile:top-[40%] mobile:left-[60px]"
                   error={errors?.d_centerToCenter?.message?.toString()}
@@ -197,7 +197,7 @@ const FSLargeSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.e_width}
+                  value={fsLargeSpline.e_width || ""}
                   placeholder="10.2"
                   position="bottom-[-20px] left-[-23px] laptop:left-[-40px]"
                   error={errors?.e_width?.message?.toString()}
@@ -223,7 +223,7 @@ const FSLargeSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={fsLargeSpline.f_chain}
+                    value={fsLargeSpline.f_chain || ""}
                     name="f_chain"
                     className={`sizeF borde-gray-200 w-[70px] rounded-md border border-solid bg-transparent px-1 text-white laptop:w-[100px]`}
                     placeholder="520"

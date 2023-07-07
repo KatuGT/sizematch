@@ -20,6 +20,8 @@ import { generateSchema } from "@/utils/generateYupSchema";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
+import useSWR from "swr";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const [arratoToMap, setArratoToMap] = useState<any[]>(FSSizeInput);
@@ -39,7 +41,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     formState: { errors },
     control,
     reset,
-    watch,
   } = useForm({
     resolver: yupResolver(completeSchema),
     mode: "all",
@@ -59,46 +60,103 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     selectedPartDispatch({ type: "CHANGE_FRONTSPROCKET", payload: part });
   };
 
-  const { dispatch } = useContext(SharedValuesContext);
+  const { dispatch: sharedValueDispatch } = useContext(SharedValuesContext);
+  const { dispatch: EditingModeDispatch, state: editingModeState } =
+    useContext(EditingModeContext);
+
+  const { editingMode, id, part } = editingModeState;
+
+  const fetcher = (...args: Parameters<typeof fetch>) =>
+    fetch(...args).then((res) => res.json()) as Promise<any>;
+
+  const { data, isLoading } = useSWR(
+    id ? `http://localhost:3000/api/parts/${part}/${id}` : null,
+    fetcher
+  );
 
   const onSubmit = async (data: partPostProps) => {
-    try {
-      const resp = await fetch(`/api/parts/${selectedPart}`, {
-        method: "POST",
-        body: JSON.stringify({
-          ...data,
-        }),
-      });
-
-      if (resp.ok) {
-        dispatch({
-          type: "",
-          group: "RESET_VALUES",
-          payload: "",
-        });
-        Swal.mixin({
-          toast: true,
-          position: "top-end",
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          didOpen: (toast) => {
-            toast.addEventListener("mouseenter", Swal.stopTimer);
-            toast.addEventListener("mouseleave", Swal.resumeTimer);
+    if (editingModeState.editingMode) {
+      try {
+        const resp = await fetch(`/api/parts/${part}/${id}`, {
+          method: "PUT",
+          body: JSON.stringify({ ...data }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
           },
-        }).fire({
-          icon: "success",
-          title: "New part added",
+        });
+        EditingModeDispatch({
+          type: "EDIT_MODE",
+          payload: false,
         });
 
-        reset();
-      } else if (resp.status === 409) {
-        const errorData = await resp.json();
+        if (resp.ok) {
+          Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+          }).fire({
+            icon: "success",
+            title: "Edition completed!",
+          });
+          sharedValueDispatch({
+            type: "",
+            group: "RESET_VALUES",
+            payload: "",
+          });
+          reset();
+        } else if (resp.status === 409) {
+          const errorData = await resp.json();
 
-        throw new Error(errorData.message);
+          throw new Error(errorData.message);
+        }
+      } catch (err) {
+        console.warn(err);
       }
-    } catch (err) {
-      console.warn(err);
+    } else {
+      try {
+        const resp = await fetch(`/api/parts/${selectedPart}`, {
+          method: "POST",
+          body: JSON.stringify({
+            ...data,
+          }),
+        });
+
+        if (resp.ok) {
+          sharedValueDispatch({
+            type: "",
+            group: "RESET_VALUES",
+            payload: "",
+          });
+          Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+          }).fire({
+            icon: "success",
+            title: "New part added",
+          });
+
+          reset();
+        } else if (resp.status === 409) {
+          const errorData = await resp.json();
+
+          throw new Error(errorData.message);
+        }
+      } catch (err) {
+        console.warn(err);
+      }
     }
   };
 
@@ -131,6 +189,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             hoveredClass={hoveredClass}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            data={data}
           />
         );
       case possibleParts.FSLargeSpline:
@@ -151,12 +210,15 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   return (
     <div className="flex w-full max-w-[1000px] flex-col items-center justify-center">
+      {editingMode && (
+        <h3 className="mb-5 text-2xl font-bold text-white">Editing mode</h3>
+      )}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="mx-auto my-0 flex flex-col justify-center gap-10 px-4 mobile:px-0"
       >
-        <div className="flex gap-3 justify-center flex-wrap">
-          <div className="flex flex-col gap-3 flex-1 px-4 laptop:px-0 ">
+        <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-1 flex-col gap-3 px-4 laptop:px-0 ">
             <InputListPartPost
               onChange={handleChangePart}
               id="bikePart"
@@ -174,18 +236,22 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                   id="makes"
                   label="Make"
                   optionsArray={makesOptions}
+                  value={data ? data.code : value || ""}
                 />
               )}
             />
           </div>
-          <div className="flex flex-col gap-3 flex-1 px-4 laptop:px-0 ">
+          <div className="flex flex-1 flex-col gap-3 px-4 laptop:px-0 ">
             <Controller
               control={control}
               name="code"
               render={({ field: { onChange, value } }) => (
                 <InputPartPost
-                  onChange={onChange}
-                  value={value || ""}
+                  name="code"
+                  onChange={(value) => {
+                    onChange(value);
+                  }}
+                  value={data ? data.code : value || ""}
                   placeholder="31435"
                   id="code"
                   label="Code"
@@ -199,7 +265,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
               render={({ field: { onChange, value } }) => (
                 <InputPartPost
                   onChange={onChange}
-                  value={value || ""}
+                  value={data ? data.link : value || ""}
                   placeholder="www.sizematch.com"
                   id="link"
                   label="Link"
@@ -211,7 +277,26 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           </div>
         </div>
         {DisplaySVG()}
-        <Button text="Send" />
+        <div className="flex justify-center gap-4">
+          <Button type="submit" text={editingMode ? "Edit" : "Send"} />
+          <Button
+            type="button"
+            text={editingMode ? "Cancel" : "Reset"}
+            onClick={() => {
+              sharedValueDispatch({
+                type: "",
+                group: "RESET_VALUES",
+                payload: "",
+              });
+              reset();
+
+              EditingModeDispatch({
+                type: "EDIT_MODE",
+                payload: false,
+              });
+            }}
+          />
+        </div>
       </form>
     </div>
   );

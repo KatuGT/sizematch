@@ -3,14 +3,17 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { ObjectId } from "mongodb";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import { useContext } from "react";
+import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
 // Front Sprocket NARROW Splie column config
 interface ColumnsProps extends SVGProps {
   onClickDelete: (id: string | ObjectId) => Promise<void>;
-  onClickEdit: React.MouseEventHandler<HTMLButtonElement>;
+  onClickEdit: (part: string, id: string | ObjectId) => Promise<void>;
 }
 
-export const getNarrowSplineConfigColumn = ({
+export const GetNarrowSplineConfigColumn = ({
   onClickDelete,
   onClickEdit,
   hoveredClass,
@@ -136,7 +139,9 @@ export const getNarrowSplineConfigColumn = ({
             <DeleteIcon color="error" /> <span>Delete</span>
           </button>
           <button
-            onClick={onClickEdit}
+            onClick={() =>
+              onClickEdit(possibleParts.FSNarrowSpline, params.row._id)
+            }
             className="flex items-center justify-between"
           >
             <EditIcon color="info" />
@@ -166,7 +171,7 @@ export const getLargeSplineConfigColumn = ({
       field: "a_innerMinimumDiameter",
       headerName: "A",
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -185,7 +190,7 @@ export const getLargeSplineConfigColumn = ({
       field: "b_innerTeethSpacing",
       headerName: "B",
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -204,7 +209,7 @@ export const getLargeSplineConfigColumn = ({
       field: "c_innerMaximumDiameter",
       headerName: "C",
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -224,7 +229,7 @@ export const getLargeSplineConfigColumn = ({
       headerName: "D",
       sortable: false,
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -243,7 +248,7 @@ export const getLargeSplineConfigColumn = ({
       headerName: "E",
       sortable: false,
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -262,7 +267,7 @@ export const getLargeSplineConfigColumn = ({
       headerName: "F",
       sortable: false,
       width: 90,
-      renderHeader: (params) => (
+      renderHeader: () => (
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -296,7 +301,9 @@ export const getLargeSplineConfigColumn = ({
             <DeleteIcon color="error" /> <span>Delete</span>
           </button>
           <button
-            onClick={onClickEdit}
+            onClick={() =>
+              onClickEdit(possibleParts.FSLargeSpline, params.row._id)
+            }
             className="flex items-center justify-between"
           >
             <EditIcon color="info" />

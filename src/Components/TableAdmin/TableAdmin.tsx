@@ -1,10 +1,5 @@
-import React, {
-  useContext,
-  useEffect,
-  useState,
-} from "react";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { SearchResult } from "@/types-enums-interfaces/FSnarrowSplineProps";
+import React, { useContext, useEffect, useState } from "react";
+import { DataGrid, GridColDef, GridOverlay } from "@mui/x-data-grid";
 import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
@@ -12,19 +7,22 @@ import { ObjectId } from "mongodb";
 import Swal from "sweetalert2";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
 import {
+  GetNarrowSplineConfigColumn,
   getLargeSplineConfigColumn,
-  getNarrowSplineConfigColumn,
 } from "@/utils/ColumnConfig/Admin/frontSprocketColumnsAdmin";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { SearchResult } from "@/types-enums-interfaces/FSlargeSplineProps";
+import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
-const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {
-  const { state } = useContext(SelectedPartContext);
-  const { frontSprocket } = state;
+const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
+  const { state: partState } = useContext(SelectedPartContext);
+  const { frontSprocket } = partState;
 
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json()) as Promise<SearchResult[]>;
 
-  const { data, mutate } = useSWR<SearchResult[]>(
+  const { data, mutate, isLoading } = useSWR<SearchResult[]>(
     `http://localhost:3000/api/parts?part=${frontSprocket}`,
     fetcher
   );
@@ -32,8 +30,20 @@ const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {
   let searchResults: SearchResult[] = data || [];
 
   const [columns, setColumns] = useState<GridColDef[]>([]);
-  
+
+  const { dispatch: EditingModeDispatch, } =
+    useContext(EditingModeContext);
+
   useEffect(() => {
+    const handleEdit = async (part: string, id: string | ObjectId) => {
+      EditingModeDispatch({
+        type: "EDIT_MODE",
+        payload: true,
+        id: id.toString(),
+        part: part,
+      });
+    };
+
     const handleDelete = async (id: string | ObjectId) => {
       Swal.fire({
         title: "Do you want to dalete this part?",
@@ -54,37 +64,40 @@ const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {
       });
     };
 
-
-    const columnsFSnarrowSpline = getNarrowSplineConfigColumn({
-      hoveredClass:hoveredClass,
+    const columnsFSnarrowSpline = GetNarrowSplineConfigColumn({
+      hoveredClass: hoveredClass,
       onMouseEnter: onMouseEnter,
       onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
-      onClickEdit: () => {
-        // Handle edit logic here
-      },
+      onClickEdit: handleEdit,
     });
 
     const columnsFSlargeSpline = getLargeSplineConfigColumn({
-      hoveredClass:hoveredClass,
+      hoveredClass: hoveredClass,
       onMouseEnter: onMouseEnter,
       onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
-      onClickEdit: () => {
-        // Handle edit logic here
-      },
+      onClickEdit: handleEdit,
     });
+
     const gridCol =
       frontSprocket === possibleParts.FSNarrowSpline
         ? columnsFSnarrowSpline
         : columnsFSlargeSpline;
     setColumns(gridCol);
-  }, [frontSprocket, hoveredClass, mutate, onMouseEnter, onMouseLeave]);
+  }, [
+    EditingModeDispatch,
+    frontSprocket,
+    hoveredClass,
+    mutate,
+    onMouseEnter,
+    onMouseLeave,
+  ]);
 
   return (
     <div
-      style={{ height: 400, width: "100%" }}
-      className="mt-5 bg-gray-800 text-white"
+      style={{ height: 400, width: "min-content" }}
+      className="mx-auto mt-5 bg-gray-800 text-white"
     >
       <DataGrid
         rows={searchResults}
@@ -103,6 +116,12 @@ const TableAdmin = ({hoveredClass, onMouseEnter, onMouseLeave }:SVGProps) => {
         }}
         pageSizeOptions={[5, 10]}
         sx={{ color: "#fff" }}
+        loading={isLoading}
+        slots={{
+          noRowsOverlay: () => <GridOverlay> No results</GridOverlay>,
+
+          loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
+        }}
       />
     </div>
   );

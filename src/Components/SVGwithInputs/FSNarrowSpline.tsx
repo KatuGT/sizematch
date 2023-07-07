@@ -11,6 +11,7 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 interface FSNarrowSplineProps extends SVGProps {
   control?: any;
   errors?: any;
+  data: any;
 }
 
 const FSNarrowSpline = ({
@@ -19,6 +20,7 @@ const FSNarrowSpline = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
+  data,
 }: FSNarrowSplineProps) => {
   const { state, dispatch } = useContext(SharedValuesContext);
   const { fsNarrowSpline } = state;
@@ -34,7 +36,8 @@ const FSNarrowSpline = ({
       group: "FSNarrowSpline",
     });
   };
-
+  console.log(data);
+  
   return (
     <div>
       <section className="p-4 laptop:p-0">
@@ -94,7 +97,11 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarrowSpline.a_innerMinimumDiameter}
+                value={
+                  data
+                    ? data.a_innerMinimumDiameter
+                    : fsNarrowSpline.a_innerMinimumDiameter
+                }
                 placeholder="15.50"
                 position="left-[-70px] top-[37%]  laptop:left-[-100px] laptop:top-[37%]"
                 error={errors?.a_innerMinimumDiameter?.message?.toString()}
@@ -115,7 +122,11 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarrowSpline.b_innerTeethNumber}
+                value={
+                  data
+                    ? data.b_innerTeethNumber
+                    : fsNarrowSpline.b_innerTeethNumber
+                }
                 placeholder="12"
                 position="right-[-65px] laptop:right-[-95px] top-[28%]"
                 error={errors?.b_innerTeethNumber?.message?.toString()}
@@ -136,7 +147,11 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarrowSpline.c_innerMaximumDiameter}
+                value={
+                  data
+                    ? data.c_innerMaximumDiameter
+                    : fsNarrowSpline.c_innerMaximumDiameter
+                }
                 placeholder="20.50"
                 position="bottom-[-30px] left-[34%]"
                 error={errors?.c_innerMaximumDiameter?.message?.toString()}
@@ -166,7 +181,7 @@ const FSNarrowSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsNarrowSpline.d_width}
+                  value={data ? data.d_width : fsNarrowSpline.d_width}
                   placeholder="8.5"
                   position="bottom-[-35px] left-[-40%]"
                   error={errors?.d_width?.message?.toString()}
@@ -194,9 +209,7 @@ const FSNarrowSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={
-                      fsNarrowSpline.e_chain?.replace(/[^0-9.]/g, "") || ""
-                    }
+                    value={data ? data.e_chain : fsNarrowSpline.e_chain}
                     className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                     placeholder="520"
                     list="chain"

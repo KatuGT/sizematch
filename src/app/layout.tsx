@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import BottomBar from "@/Components/BottomBar/BottomBar";
 import { SharedValuesProvider } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartProvider } from "@/Context/SelectedPartContext/SelectedPartContext";
-
+import LogRocket from 'logrocket';
+LogRocket.init('ozqtga/sizematch');
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

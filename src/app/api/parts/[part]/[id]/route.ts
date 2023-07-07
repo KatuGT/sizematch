@@ -12,7 +12,10 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
 };
 
-export const DELETE = async (req: Request, { params }: any) => {
+export const DELETE = async (
+  req: Request,
+  { params }: { params: { part: string; id: string } }
+) => {
   const { part, id } = params;
 
   const PartModel = partModelArray[part as possibleParts];
@@ -27,6 +30,54 @@ export const DELETE = async (req: Request, { params }: any) => {
     await connect();
 
     return new NextResponse(JSON.stringify("Deleted"), { status: 201 });
+  } catch (err) {
+    return new NextResponse("Database Error", { status: 500 });
+  }
+};
+
+export const GET = async (
+  req: Request,
+  { params }: { params: { part: string; id: string } }
+) => {
+  const { part, id } = params;
+  console.log(id);
+  
+  const PartModel = partModelArray[part as possibleParts];
+
+  if (!PartModel) {
+    return new NextResponse("Invalid part", { status: 400 });
+  }
+
+  const singlePart = await PartModel.findById({_id: id});
+
+  try {
+    await connect();
+
+    return new NextResponse(JSON.stringify(singlePart), { status: 201 });
+  } catch (err) {
+    return new NextResponse("Database Error", { status: 500 });
+  }
+};
+
+export const PUT = async (
+  req: Request,
+  { params }: { params: { part: string; id: string } }
+) => {
+  const { part, id } = params;
+
+  const PartModel = partModelArray[part as possibleParts];
+
+  if (!PartModel) {
+    return new NextResponse("Invalid part", { status: 400 });
+  }
+  const body = await req.json();
+
+  await PartModel.findByIdAndUpdate(id, body, { new: true });
+
+  try {
+    await connect();
+
+    return new NextResponse(JSON.stringify("Updated"), { status: 201 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }

@@ -66,3 +66,12 @@
   padding: 2px;
   text-align: center;
 }
+
+.MuiToolbar-root	{
+  color: #fff;
+}
+
+.MuiSvgIcon-root{
+  color: #fff;
+  fill: #fff
+}

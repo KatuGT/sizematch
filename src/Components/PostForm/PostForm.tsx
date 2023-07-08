@@ -58,7 +58,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   });
 
   const onSubmit = async (data: partPostProps) => {
-    if (editingModeState.editingMode) {
+    if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
           method: "PUT",
@@ -90,6 +90,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             id: undefined,
             part: undefined,
           });
+          
           sharedValueDispatch({
             type: "",
             group: "RESET_VALUES",
@@ -106,7 +107,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       }
     } else {
       try {
-        const resp = await fetch(`/api/parts/${selectedPart}`, {
+        const resp = await fetch(`/api/parts/${frontSprocket}`, {
           method: "POST",
           body: JSON.stringify({
             ...data,
@@ -143,12 +144,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         console.warn(err);
       }
     }
-
-    sharedValueDispatch({
-      type: "",
-      group: "RESET_VALUES",
-      payload: "",
-    });
   };
 
   const handleChangePart = (e: React.ChangeEvent<HTMLInputElement>) => {

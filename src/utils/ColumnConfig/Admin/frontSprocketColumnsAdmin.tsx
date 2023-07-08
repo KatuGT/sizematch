@@ -301,9 +301,10 @@ export const getLargeSplineConfigColumn = ({
             <DeleteIcon color="error" /> <span>Delete</span>
           </button>
           <button
-            onClick={() =>
-              onClickEdit(possibleParts.FSLargeSpline, params.row._id)
-            }
+            onClick={() => {
+              onClickEdit(possibleParts.FSLargeSpline, params.row);
+              console.log(params.row);
+            }}
             className="flex items-center justify-between"
           >
             <EditIcon color="info" />

@@ -22,7 +22,7 @@ const FSNarrowSpline = ({
 }: FSNarrowSplineProps) => {
   const { state, dispatch } = useContext(SharedValuesContext);
   const { fsNarrowSpline, fsLargeSpline } = state;
-  console.log(fsNarrowSpline, fsLargeSpline);
+  // console.log(fsNarrowSpline, fsLargeSpline);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

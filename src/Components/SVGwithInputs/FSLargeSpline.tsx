@@ -21,7 +21,8 @@ const FSLargeSpline = ({
   onMouseLeave,
 }: FSLargeSplineProps) => {
   const { state, dispatch } = useContext(SharedValuesContext);
-  const { fsLargeSpline } = state;
+  const { fsLargeSpline, fsNarrowSpline } = state;
+  console.log(fsNarrowSpline, fsLargeSpline);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -31,7 +32,7 @@ const FSLargeSpline = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: "FSNarrowSpline",
+      group: "FSLargeSpline",
     });
   };
   return (

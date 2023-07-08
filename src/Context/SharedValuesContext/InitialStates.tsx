@@ -1,7 +1,7 @@
 export const INITIAL_STATE_FSNARROWSPLINE = {
-  make: '',
-  code: '',
-  link:'',
+  make: "",
+  code: "",
+  link: "",
   a_innerMinimumDiameter: "",
   b_innerTeethNumber: "",
   c_innerMaximumDiameter: "",
@@ -10,9 +10,9 @@ export const INITIAL_STATE_FSNARROWSPLINE = {
 };
 
 export const INITIAL_STATE_FSLARGESPLINE = {
-  make: '',
-  code: '',
-  link:'',
+  make: "",
+  code: "",
+  link: "",
   a_innerMinimumDiameter: "",
   b_innerTeethSpacing: "",
   c_innerMaximumDiameter: "",

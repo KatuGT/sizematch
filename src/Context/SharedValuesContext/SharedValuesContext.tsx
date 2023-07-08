@@ -51,24 +51,22 @@ const reducer = (state: StateType, action: ActionType) => {
     case "FSNarrowSpline":
       return {
         ...state,
-        fsNarrowSpline:
-          type === "SET_DATA"
-            ? Object.assign({}, state.fsNarrowSpline, payload)
-            : {
-                ...state.fsNarrowSpline,
-                [type]: payload,
-              },
+        fsNarrowSpline: {
+          ...state.fsNarrowSpline,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_FSNARROWSPLINE>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
+        },
       };
     case "FSLargeSpline":
       return {
         ...state,
-        fsLargeSpline:
-          type === "SET_DATA"
-            ? Object.assign({}, state.fsLargeSpline, payload)
-            : {
-                ...state.fsLargeSpline,
-                [type]: payload,
-              },
+        fsLargeSpline: {
+          ...state.fsLargeSpline,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_FSLARGESPLINE>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
+        },
       };
     case "RESET_VALUES":
       return {

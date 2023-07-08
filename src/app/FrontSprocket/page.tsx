@@ -20,7 +20,7 @@ import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplinePr
 import TableRecomendations from "@/Components/TableRecomendations";
 
 const FrontSprocket = () => {
-  const { dispatch, state } = useContext(SharedValuesContext);
+  const { state } = useContext(SharedValuesContext);
   const { fsNarrowSpline, fsLargeSpline } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 

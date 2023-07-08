@@ -30,7 +30,7 @@ export const POST = async (req: Request, { params }: any) => {
 
     await newPart.save();
 
-    return new NextResponse("Front Sprocket has been added", { status: 201 });
+    return new NextResponse(JSON.stringify(newPart), { status: 201 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
@@ -51,10 +51,10 @@ export const GET = async (req: Request, { params }: any) => {
   };
 
   const parts = await PartModel.find().setOptions(options);
-  console.log(parts);
   
   try {
     await connect();
+
 
     return new NextResponse(JSON.stringify(parts), { status: 201 });
   } catch (err) {

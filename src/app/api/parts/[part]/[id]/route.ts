@@ -71,12 +71,12 @@ export const PUT = async (
   }
   const body = await req.json();
 
-  await PartModel.findByIdAndUpdate(id, body, { new: true });
+  const updatedPart = await PartModel.findByIdAndUpdate(id, body, { new: true });
 
   try {
     await connect();
 
-    return new NextResponse(JSON.stringify("Updated"), { status: 201 });
+    return new NextResponse(JSON.stringify(updatedPart), { status: 201 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }

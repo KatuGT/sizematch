@@ -4,11 +4,10 @@ import {
   InputListPartPost,
   InputPartPost,
 } from "../inputPartPost/InputPartPost";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
 import FSLargeSpline from "../SVGwithInputs/FSLargeSpline";
-
 import Swal from "sweetalert2";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
@@ -24,6 +23,18 @@ import {
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
+  const { dispatch: selectedPartDispatch, state: slectedPartState } =
+    useContext(SelectedPartContext);
+  const { frontSprocket } = slectedPartState;
+
+  const { dispatch: sharedValueDispatch, state: sharedValueState } =
+    useContext(SharedValuesContext);
+  const { fsNarrowSpline, fsLargeSpline } = sharedValueState;
+
+  const { dispatch: EditingModeDispatch, state: editingModeState } =
+    useContext(EditingModeContext);
+  const { editingMode, id, part } = editingModeState;
+
   const [partSchema, setPartSchema] = useState<any>(
     frontSprocketNarrowSplineSchema
   );
@@ -41,37 +52,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     reset,
   } = useForm({
     resolver: yupResolver(completeSchema),
-    mode: "all",
     defaultValues: {
       make: makesOptions[0].displayName,
     },
   });
-  const { dispatch: selectedPartDispatch } = useContext(SelectedPartContext);
-
-  const [selectedPart, setSelectedPart] = useState(
-    possibleParts.FSNarrowSpline
-  );
-
-  const handleChangePart = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const part = e.target.value as possibleParts;
-    setSelectedPart(part);
-    selectedPartDispatch({ type: "CHANGE_FRONTSPROCKET", payload: part });
-  };
-
-  const { dispatch: sharedValueDispatch, state: sharedValueState } =
-    useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline } = sharedValueState;
-
-  const [partToShow, setPartToShow] = useState({
-    make: fsNarrowSpline.make,
-    code: fsNarrowSpline.code,
-    link: fsNarrowSpline.link,
-  });
-
-  const { dispatch: EditingModeDispatch, state: editingModeState } =
-    useContext(EditingModeContext);
-
-  const { editingMode, id, part } = editingModeState;
 
   const onSubmit = async (data: partPostProps) => {
     if (editingModeState.editingMode) {
@@ -82,10 +66,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           headers: {
             "Content-type": "application/json; charset=UTF-8",
           },
-        });
-        EditingModeDispatch({
-          type: "EDIT_MODE",
-          payload: false,
         });
 
         if (resp.ok) {
@@ -102,6 +82,13 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           }).fire({
             icon: "success",
             title: "Edition completed!",
+          });
+
+          EditingModeDispatch({
+            type: "EDIT_MODE",
+            payload: false,
+            id: undefined,
+            part: undefined,
           });
           sharedValueDispatch({
             type: "",
@@ -127,11 +114,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         });
 
         if (resp.ok) {
-          sharedValueDispatch({
-            type: "",
-            group: "RESET_VALUES",
-            payload: "",
-          });
           Swal.mixin({
             toast: true,
             position: "top-end",
@@ -146,8 +128,12 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             icon: "success",
             title: "New part added",
           });
-
           reset();
+          sharedValueDispatch({
+            type: "",
+            group: "RESET_VALUES",
+            payload: "",
+          });
         } else if (resp.status === 409) {
           const errorData = await resp.json();
 
@@ -157,11 +143,46 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         console.warn(err);
       }
     }
+
+    sharedValueDispatch({
+      type: "",
+      group: "RESET_VALUES",
+      payload: "",
+    });
+  };
+
+  const handleChangePart = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const part = e.target.value as possibleParts;
+    selectedPartDispatch({ type: "CHANGE_FRONTSPROCKET", payload: part });
   };
 
   useEffect(() => {
+    sharedValueDispatch({
+      type: "",
+      group: "RESET_VALUES",
+      payload: "",
+    });
+    EditingModeDispatch({
+      type: "EDIT_MODE",
+      payload: false,
+      id: undefined,
+      part: undefined,
+    });
+  }, [EditingModeDispatch, frontSprocket, sharedValueDispatch]);
+
+  const [partToShow, setPartToShow] = useState({
+    make: fsNarrowSpline.make,
+    code: fsNarrowSpline.code,
+    link: fsNarrowSpline.link,
+  });
+
+  const [group, setGroup] = useState<"FSNarrowSpline" | "FSLargeSpline">(
+    "FSNarrowSpline"
+  );
+
+  useEffect(() => {
     const setPartData = () => {
-      switch (selectedPart) {
+      switch (frontSprocket) {
         case possibleParts.FSNarrowSpline:
           setPartSchema(frontSprocketNarrowSplineSchema);
           setPartToShow({
@@ -169,6 +190,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             code: fsNarrowSpline.code,
             link: fsNarrowSpline.link,
           });
+          setGroup("FSNarrowSpline");
           break;
         case possibleParts.FSLargeSpline:
           setPartSchema(frontSprocketLargeSplineSchema);
@@ -177,16 +199,17 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             code: fsLargeSpline.code,
             link: fsLargeSpline.link,
           });
+          setGroup("FSLargeSpline");
           break;
         default:
           break;
       }
     };
     setPartData();
-  }, [fsLargeSpline, fsNarrowSpline, selectedPart]);
+  }, [frontSprocket, fsLargeSpline, fsNarrowSpline]);
 
   const DisplaySVG = () => {
-    switch (selectedPart) {
+    switch (frontSprocket) {
       case possibleParts.FSNarrowSpline:
         return (
           <FSNarrowSpline
@@ -234,24 +257,23 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             <Controller
               control={control}
               name="make"
-              render={({ field: { onChange, value } }) => (
+              render={({ field: { onChange } }) => (
                 <InputListPartPost
                   onChange={(value) => {
                     onChange(value);
-                    console.log(value);
 
                     sharedValueDispatch({
                       type: "SET_DATA",
                       payload: {
                         make: value.target.value,
                       },
-                      group: "FSNarrowSpline",
+                      group: group,
                     });
                   }}
                   id="makes"
                   label="Make"
                   optionsArray={makesOptions}
-                  value={partToShow.make}
+                  value={partToShow.make || ""}
                 />
               )}
             />
@@ -260,20 +282,21 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             <Controller
               control={control}
               name="code"
-              render={({ field: { onChange, value } }) => (
+              render={({ field: { onChange } }) => (
                 <InputPartPost
                   name="code"
                   onChange={(value) => {
                     onChange(value);
+
                     sharedValueDispatch({
                       type: "SET_DATA",
                       payload: {
                         code: value.target.value,
                       },
-                      group: "FSNarrowSpline",
+                      group: group,
                     });
                   }}
-                  value={partToShow.code}
+                  value={partToShow.code || ""}
                   placeholder="31435"
                   id="code"
                   label="Code"
@@ -284,7 +307,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             <Controller
               control={control}
               name="link"
-              render={({ field: { onChange, value } }) => (
+              render={({ field: { onChange } }) => (
                 <InputPartPost
                   name="link"
                   onChange={(value) => {
@@ -292,12 +315,12 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                     sharedValueDispatch({
                       type: "SET_DATA",
                       payload: {
-                        code: value.target.value,
+                        link: value.target.value,
                       },
-                      group: "FSNarrowSpline",
+                      group: group,
                     });
                   }}
-                  value={partToShow.link}
+                  value={partToShow.link || ""}
                   placeholder="www.sizematch.com"
                   id="link"
                   label="Link"
@@ -321,12 +344,11 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                 payload: "",
               });
 
-              reset();
-
               EditingModeDispatch({
                 type: "EDIT_MODE",
                 payload: false,
                 id: undefined,
+                part: undefined,
               });
             }}
           />

@@ -3,7 +3,6 @@ import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model } from "mongoose";
-import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
 interface FSprops {
@@ -15,6 +14,7 @@ const searchModel = async (
   searchQuery: FSprops
 ): Promise<any> => {
   const results = await Model.find(searchQuery);
+
   return results;
 };
 

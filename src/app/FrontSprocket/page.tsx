@@ -1,110 +1,252 @@
 "use client";
-import React, { useCallback, useContext, useEffect } from "react";
-import Table from "@/Components/Table/Table";
+import React, { useContext, useState } from "react";
 import useSWR from "swr";
-import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import FSNarrowSpline from "@/Components/SVGwithInputs/FSNarrowSpline";
+import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import { useForm } from "react-hook-form";
-import { generateSchema } from "@/utils/generateYupSchema";
-import { frontSprocketNarrowSplineSchema } from "@/utils/yupSchemas/FSNarrowSpline";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useHover } from "@/utils/handleHoveredSize";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { FSNarrowSplineTableData } from "@/utils/TableHeadData/FSNarrowSpline";
 import {
-  FSsizeProps,
-  SearchResult,
+  FSNarrowSplinesizeProps,
+  SearchResultFSNarrowSpline,
 } from "@/types-enums-interfaces/FSnarrowSplineProps";
+import {
+  GetLSConfigColumnUser,
+  GetNSConfigColumnUser,
+  useHover,
+} from "@/utils";
+import { FSLargeSpline, FSNarrowSpline } from "@/Components";
+import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplineProps";
+import TableRecomendations from "@/Components/TableRecomendations";
 
 const FrontSprocket = () => {
+  const { state } = useContext(SharedValuesContext);
+  const { fsNarrowSpline, fsLargeSpline } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const { dispatch, state } = useContext(SharedValuesContext);
-  const { fsNarroSpline } = state;
+  //Setea tipo de piñon
+  const [frontSprocketType, setFrontSprocketType] = useState(
+    possibleParts.FSNarrowSpline
+  );
 
-  const transformToParams = useCallback(() => {
+  //crea params para el fetch
+  const transformToParams = () => {
     let count = 0;
     let params = "";
 
-    for (const key in fsNarroSpline) {
-      if (
-        fsNarroSpline.hasOwnProperty(key) &&
-        fsNarroSpline[key as keyof FSsizeProps] !== ""
-      ) {
-        count++;
-        if (count > 1) {
-          params += "&";
+    if (frontSprocketType === possibleParts.FSNarrowSpline) {
+      for (const key in fsNarrowSpline) {
+        if (
+          fsNarrowSpline.hasOwnProperty(key) &&
+          fsNarrowSpline[key as keyof FSNarrowSplinesizeProps] !== ""
+        ) {
+          count++;
+          if (count > 1) {
+            params += "&";
+          }
+          params += `${key}=${encodeURIComponent(
+            fsNarrowSpline[key as keyof FSNarrowSplinesizeProps]
+          )}`;
         }
-        params += `${key}=${encodeURIComponent(
-          fsNarroSpline[key as keyof FSsizeProps]
-        )}`;
+      }
+      if (count < 2) {
+        params = "";
+      }
+    } else {
+      for (const key in fsLargeSpline) {
+        if (
+          fsLargeSpline.hasOwnProperty(key) &&
+          fsLargeSpline[key as keyof FSlargeSplinesizeProps] !== ""
+        ) {
+          count++;
+          if (count > 1) {
+            params += "&";
+          }
+          params += `${key}=${encodeURIComponent(
+            fsLargeSpline[key as keyof FSlargeSplinesizeProps]
+          )}`;
+        }
+      }
+      if (count < 2) {
+        params = "";
       }
     }
-    if (count < 2) {
-      params = "";
-    }
+
     return params;
-  }, [fsNarroSpline]);
-
-  useEffect(() => {
-    transformToParams();
-  }, [fsNarroSpline, transformToParams]);
-
-  const handleFSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-
-    const newValue = value.replace(/[^0-9.]/g, "");
-
-    dispatch({
-      type: name,
-      payload: newValue,
-      group: "FSNarrowSpline",
-    });
   };
 
+  const columnNarrowSpline = GetNSConfigColumnUser({
+    hoveredClass: hoverClass,
+    onMouseEnter: handleHover,
+    onMouseLeave: handleMouseLeave,
+  });
+
+  const columLargeSpline = GetLSConfigColumnUser({
+    hoveredClass: hoverClass,
+    onMouseEnter: handleHover,
+    onMouseLeave: handleMouseLeave,
+  });
+
+  const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFrontSprocketType(e.target.value as possibleParts);
+  };
+
+  //fetch
   const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<SearchResult[]>;
+    fetch(...args).then((res) => res.json()) as Promise<
+      SearchResultFSNarrowSpline[]
+    >;
 
   const params = transformToParams();
 
-  const { data, error, isLoading } = useSWR<SearchResult[]>(
+  const { data, isLoading } = useSWR<SearchResultFSNarrowSpline[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.FSNarrowSpline}/${params}`
+      ? `http://localhost:3000/api/search/${frontSprocketType}/${params}`
       : null,
     fetcher
   );
 
-  let searchResults: SearchResult[] = data || [];
-
-  const completeSchema = generateSchema(frontSprocketNarrowSplineSchema);
+  let searchResults: SearchResultFSNarrowSpline[] = data || [];
 
   const {
     formState: { errors },
     control,
   } = useForm({
-    resolver: yupResolver(completeSchema),
     mode: "onBlur",
   });
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <FSNarrowSpline
-        control={control}
-        errors={errors}
-        hoveredClass={hoverClass}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-      />
-      <Table
-        handleFSChange={handleFSChange}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-        hoverClass={hoverClass}
-        sizes={FSNarrowSplineTableData}
-        searchResults={searchResults}
-        isLoading={isLoading}
-        error={error}
-      />
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[min-content]">
+      <div>
+        <ul className="mb-10 w-[max-content] items-center rounded-lg border border-gray-200 bg-white text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:flex">
+          <li className="w-[max-content] border-b border-gray-200 dark:border-gray-600 sm:border-b-0 sm:border-r">
+            <div className="flex items-center px-3">
+              <input
+                id="horizontal-list-radio-narrow-spline"
+                type="radio"
+                value={possibleParts.FSNarrowSpline}
+                name="splineType"
+                checked={frontSprocketType === possibleParts.FSNarrowSpline}
+                onChange={(e) => handleSprocketType(e)}
+                className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-700"
+              />
+              <label
+                htmlFor="horizontal-list-radio-narrow-spline"
+                className="ml-2 w-[max-content]  py-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Narrow spline
+              </label>
+            </div>
+          </li>
+          <li className="w-[max-content]  border-b border-gray-200 dark:border-gray-600 sm:border-b-0 sm:border-r">
+            <div className="flex items-center px-3">
+              <input
+                id="horizontal-list-radio-large-spline"
+                type="radio"
+                name="splineType"
+                checked={frontSprocketType === possibleParts.FSLargeSpline}
+                value={possibleParts.FSLargeSpline}
+                onChange={(e) => handleSprocketType(e)}
+                className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-700"
+              />
+              <label
+                htmlFor="horizontal-list-radio-large-spline"
+                className="ml-2 w-full py-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Large spline
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {frontSprocketType === possibleParts.FSNarrowSpline ? (
+        <FSNarrowSpline
+          control={control}
+          errors={errors}
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
+      ) : (
+        <FSLargeSpline
+          control={control}
+          errors={errors}
+          hoveredClass={hoverClass}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+        />
+      )}
+
+      <div className="my-20  w-full text-white">
+        <TableRecomendations />
+        <div className="bg-gray-80  h-[400px]">
+          {frontSprocketType === possibleParts.FSNarrowSpline ? (
+            <DataGrid
+              rows={searchResults}
+              columns={columnNarrowSpline}
+              getRowId={(row) => row._id}
+              initialState={{
+                pagination: {
+                  paginationModel: { page: 0, pageSize: 5 },
+                },
+                columns: {
+                  columnVisibilityModel: {
+                    status: false,
+                    _id: false,
+                  },
+                },
+              }}
+              pageSizeOptions={[5, 10]}
+              sx={{ color: "#fff" }}
+              loading={isLoading}
+              slots={{
+                noRowsOverlay: () =>
+                  !params ? (
+                    <GridOverlay>Nothing to show</GridOverlay>
+                  ) : (
+                    <GridOverlay> No results</GridOverlay>
+                  ),
+                noResultsOverlay: () => <div>No results</div>,
+                loadingOverlay: () => (
+                  <GridOverlay>Wait a second...</GridOverlay>
+                ),
+              }}
+            />
+          ) : (
+            <DataGrid
+              rows={searchResults}
+              columns={columLargeSpline}
+              getRowId={(row) => row._id}
+              initialState={{
+                pagination: {
+                  paginationModel: { page: 0, pageSize: 5 },
+                },
+                columns: {
+                  columnVisibilityModel: {
+                    status: false,
+                    _id: false,
+                  },
+                },
+              }}
+              pageSizeOptions={[5, 10]}
+              sx={{ color: "#fff" }}
+              loading={isLoading}
+              slots={{
+                noRowsOverlay: () =>
+                  !params ? (
+                    <GridOverlay>Nothing to show</GridOverlay>
+                  ) : (
+                    <GridOverlay> No results</GridOverlay>
+                  ),
+                noResultsOverlay: () => <div>No results</div>,
+                loadingOverlay: () => (
+                  <GridOverlay>Wait a second...</GridOverlay>
+                ),
+              }}
+            />
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
-import { Model, Document } from "mongoose";
+ import { Model, Document } from "mongoose";
 import { NextResponse } from "next/server";
 
 type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
@@ -17,7 +17,6 @@ export const POST = async (req: Request, { params }: any) => {
 
   const body = await req.json();
 
-  // Get the appropriate model based on the part
   const PartModel = partModelArray[part as possibleParts];
 
   if (!PartModel) {
@@ -31,8 +30,36 @@ export const POST = async (req: Request, { params }: any) => {
 
     await newPart.save();
 
-    return new NextResponse("Front Sprocket has been added", { status: 201 });
+    return new NextResponse(JSON.stringify(newPart), { status: 201 });
   } catch (err) {
+    return new NextResponse("Database Error", { status: 500 });
+  }
+};
+
+export const GET = async (req: Request, { params }: any) => {
+  const { part } = params;
+ 
+  const PartModel = partModelArray[part as possibleParts];
+
+  if (!PartModel) {
+    return new NextResponse("Invalid part", { status: 400 });
+  }
+
+  const options = {
+    bufferCommands: false,
+    bufferTimeoutMS: 30000,
+  };
+
+  const parts = await PartModel.find().setOptions(options);
+  
+  try {
+    await connect();
+
+
+    return new NextResponse(JSON.stringify(parts), { status: 201 });
+  } catch (err) {
+    console.log(err);
+
     return new NextResponse("Database Error", { status: 500 });
   }
 };

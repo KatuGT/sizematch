@@ -4,10 +4,10 @@ import { Controller } from "react-hook-form";
 import FrontSprocketSideNarrowSpline from "../../../public/svgParts/FrontSprocketSideNarrowSpline";
 import Chain from "../../../public/svgParts/Chain";
 import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNarrowSpline";
-// import { useHover } from "@/utils/onMouseEnteredSize";
 import ListItem from "../ListItem/ListItem";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 interface FSNarrowSplineProps extends SVGProps {
   control?: any;
@@ -21,16 +21,18 @@ const FSNarrowSpline = ({
   onMouseEnter,
   onMouseLeave,
 }: FSNarrowSplineProps) => {
-  // const { onMouseEnter, onMouseLeave, hoveredClass } = useHover();
-
   const { state, dispatch } = useContext(SharedValuesContext);
-  const { fsNarroSpline } = state;
+  const { fsNarrowSpline } = state;
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    const newValue = value.replace(/[^0-9.]/g, "");
+
     dispatch({
-      type: e.target.name,
-      payload: e.target.value,
-      group: "FSNarrowSpline",
+      type: name,
+      payload: newValue,
+      group: possibleParts.FSNarrowSpline,
     });
   };
 
@@ -77,7 +79,7 @@ const FSNarrowSpline = ({
           />
         </ul>
       </section>
-      <div className="mb-10 flex flex-col flex-wrap items-center justify-center gap-[50px] mobile:gap-[65px] mobile:flex-row">
+      <div className="mb-10 flex flex-col flex-wrap items-center justify-center gap-[50px] mobile:flex-row mobile:gap-[65px]">
         <div className="relative w-[200px] mobile:w-[300px] laptop:ml-10 laptop:mr-32 ">
           <Controller
             control={control}
@@ -93,7 +95,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.a_innerMinimumDiameter}
+                value={fsNarrowSpline.a_innerMinimumDiameter || ""}
                 placeholder="15.50"
                 position="left-[-70px] top-[37%]  laptop:left-[-100px] laptop:top-[37%]"
                 error={errors?.a_innerMinimumDiameter?.message?.toString()}
@@ -114,7 +116,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.b_innerTeethNumber}
+                value={fsNarrowSpline.b_innerTeethNumber}
                 placeholder="12"
                 position="right-[-65px] laptop:right-[-95px] top-[28%]"
                 error={errors?.b_innerTeethNumber?.message?.toString()}
@@ -135,7 +137,7 @@ const FSNarrowSpline = ({
                   onChange(value);
                   handleOnChange(value);
                 }}
-                value={fsNarroSpline.c_innerMaximumDiameter}
+                value={fsNarrowSpline.c_innerMaximumDiameter}
                 placeholder="20.50"
                 position="bottom-[-30px] left-[34%]"
                 error={errors?.c_innerMaximumDiameter?.message?.toString()}
@@ -165,7 +167,7 @@ const FSNarrowSpline = ({
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsNarroSpline.d_width}
+                  value={fsNarrowSpline.d_width || ""}
                   placeholder="8.5"
                   position="bottom-[-35px] left-[-40%]"
                   error={errors?.d_width?.message?.toString()}
@@ -193,7 +195,7 @@ const FSNarrowSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={fsNarroSpline.e_chain?.replace(/[^0-9.]/g, "") || ""}
+                    value={fsNarrowSpline.e_chain || ""}
                     className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
                     placeholder="520"
                     list="chain"

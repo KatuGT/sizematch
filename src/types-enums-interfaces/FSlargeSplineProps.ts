@@ -1,12 +1,13 @@
-export interface FSNarrowSplinesizeProps {
+export interface FSlargeSplinesizeProps {
   a_innerMinimumDiameter?: string;
-  b_innerTeethNumber?: string;
+  b_innerTeethSpacing?: string;
   c_innerMaximumDiameter?: string;
-  d_width?: string;
-  e_chain?: string;
+  d_centerToCenter?: string;
+  e_width?: string;
+  f_chain?: string;
 }
 
-export interface SearchResultFSNarrowSpline {
+export interface SearchResult {
   _id: string;
   make: string;
   code: string;

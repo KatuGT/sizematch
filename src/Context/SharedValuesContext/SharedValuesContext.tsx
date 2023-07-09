@@ -1,30 +1,39 @@
 "use client";
 import React, { createContext, useReducer } from "react";
-
-const INITIAL_STATE_FSNARROWSPLINE = {
-  a_innerMinimumDiameter: "",
-  b_innerTeethNumber: "",
-  c_innerMaximumDiameter: "",
-  d_width: "",
-  e_chain: "",
-};
-
-const INITIAL_STATE_FSLARGESPLINE = {
-  a_holeTohole: "",
-  b_center: "",
-  c_chain: "",
-};
+import {
+  INITIAL_STATE_FSLARGESPLINE,
+  INITIAL_STATE_FSNARROWSPLINE,
+} from "./InitialStates";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 type StateType = {
-  fsNarroSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
+  fsNarrowSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
 };
 
-type ActionType = {
-  type: string;
-  payload: string;
-  group: "FSNarrowSpline" | "FSLageSpline";
+type SetDataAction = {
+  type: "SET_DATA";
+  payload: Partial<
+    typeof INITIAL_STATE_FSNARROWSPLINE | typeof INITIAL_STATE_FSLARGESPLINE
+  >;
+  group: possibleParts.FSNarrowSpline | possibleParts.FSLargeSpline;
 };
+
+export type ActionType =
+  | SetDataAction
+  | {
+      type: "SET_DATA";
+      payload: Partial<typeof INITIAL_STATE_FSNARROWSPLINE>;
+      group: possibleParts.FSNarrowSpline | possibleParts.FSLargeSpline;
+    }
+  | {
+      type: string;
+      payload: string;
+      group:
+        | possibleParts.FSNarrowSpline
+        | possibleParts.FSLargeSpline
+        | "RESET_VALUES";
+    };
 
 type ContextType = {
   state: StateType;
@@ -33,7 +42,7 @@ type ContextType = {
 
 export const SharedValuesContext = createContext<ContextType>({
   state: {
-    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   },
   dispatch: () => {},
@@ -43,21 +52,31 @@ const reducer = (state: StateType, action: ActionType) => {
   const { group, type, payload } = action;
 
   switch (group) {
-    case "FSNarrowSpline":
+    case possibleParts.FSNarrowSpline:
       return {
         ...state,
-        fsNarroSpline: {
-          ...state.fsNarroSpline,
-          [type]: payload,
+        fsNarrowSpline: {
+          ...state.fsNarrowSpline,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_FSNARROWSPLINE>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
         },
       };
-    case "FSLageSpline":
+    case possibleParts.FSLargeSpline:
       return {
         ...state,
         fsLargeSpline: {
           ...state.fsLargeSpline,
-          [type]: payload,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_FSLARGESPLINE>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
         },
+      };
+    case "RESET_VALUES":
+      return {
+        ...state,
+        fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
+        fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
       };
     default:
       return state;
@@ -70,7 +89,7 @@ export const SharedValuesProvider = ({
   children: React.ReactNode;
 }) => {
   const [state, dispatch] = useReducer(reducer, {
-    fsNarroSpline: INITIAL_STATE_FSNARROWSPLINE,
+    fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
   });
 

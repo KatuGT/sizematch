@@ -1,4 +1,4 @@
 export enum possibleParts {
-  FSNarrowSpline = "frontSprocketNarrowSpline",
-  FSLargeSpline = "frontSprocketLargeSpline",
+  FSNarrowSpline = "FSNarrowSpline",
+  FSLargeSpline = "FSLargeSpline",
 }

@@ -4,7 +4,7 @@ import {
   InputListPartPost,
   InputPartPost,
 } from "../inputPartPost/InputPartPost";
-import { useForm, Controller, useFieldArray } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
 import FSLargeSpline from "../SVGwithInputs/FSLargeSpline";
@@ -50,14 +50,32 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     formState: { errors },
     control,
     reset,
+    watch,
+    setValue,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
-      make: makesOptions[0].displayName,
+      part: {},
     },
   });
 
+  useEffect(() => {
+    if (editingMode) {
+      if (part === possibleParts.FSNarrowSpline) {
+        Object.keys(fsNarrowSpline).forEach((key) => {
+          setValue(key, fsNarrowSpline[key as keyof typeof fsNarrowSpline]);
+        });
+      } else if (part === possibleParts.FSLargeSpline) {
+        Object.keys(fsLargeSpline).forEach((key) => {
+          setValue(key, fsLargeSpline[key as keyof typeof fsLargeSpline]);
+        });
+      }
+    }
+  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, setValue]);
+
   const onSubmit = async (data: partPostProps) => {
+    console.log(data.part);
+
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -90,7 +108,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             id: undefined,
             part: undefined,
           });
-          
+
           sharedValueDispatch({
             type: "",
             group: "RESET_VALUES",
@@ -171,8 +189,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     link: fsNarrowSpline.link,
   });
 
-  const [group, setGroup] = useState<"FSNarrowSpline" | "FSLargeSpline">(
-    "FSNarrowSpline"
+  const [group, setGroup] = useState<possibleParts>(
+    possibleParts.FSNarrowSpline
   );
 
   useEffect(() => {
@@ -185,7 +203,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             code: fsNarrowSpline.code,
             link: fsNarrowSpline.link,
           });
-          setGroup("FSNarrowSpline");
+          setGroup(possibleParts.FSNarrowSpline);
           break;
         case possibleParts.FSLargeSpline:
           setPartSchema(frontSprocketLargeSplineSchema);
@@ -194,7 +212,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             code: fsLargeSpline.code,
             link: fsLargeSpline.link,
           });
-          setGroup("FSLargeSpline");
+          setGroup(possibleParts.FSLargeSpline);
           break;
         default:
           break;

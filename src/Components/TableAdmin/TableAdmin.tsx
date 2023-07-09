@@ -54,7 +54,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
 
     sharedValueDispatch({
-      group: 'FSLargeSpline',
+      group: part as possibleParts,
       payload: {
             ...partData
       },
@@ -97,49 +97,6 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     onClickDelete: handleDelete,
     onClickEdit: handleEdit,
   });
-
-  // const singlePartfetcher = (...args: Parameters<typeof fetch>) =>
-  //   fetch(...args).then((res) => res.json()) as Promise<any>;
-
-  // const { data: singlePart } = useSWR(
-  //   id ? `http://localhost:3000/api/parts/${part}/${id}` : null,
-  //   singlePartfetcher
-  // );
-
-  // useEffect(() => {
-  //   if (frontSprocket === possibleParts.FSNarrowSpline) {
-  //     sharedValueDispatch({
-  //       type: "SET_DATA",
-  //       payload: {
-  //         code: singlePart?.code,
-  //         make: singlePart?.make,
-  //         link: singlePart?.link,
-  //         a_innerMinimumDiameter: singlePart?.a_innerMinimumDiameter,
-  //         b_innerTeethNumber: singlePart?.b_innerTeethNumber,
-  //         c_innerMaximumDiameter: singlePart?.c_innerMaximumDiameter,
-  //         d_width: singlePart?.d_width,
-  //         e_chain: singlePart?.e_chain,
-  //       },
-  //       group: "FSNarrowSpline",
-  //     });
-  //   } else if (frontSprocket === possibleParts.FSLargeSpline) {
-  //     sharedValueDispatch({
-  //       type: "SET_DATA",
-  //       payload: {
-  //         code: singlePart?.code,
-  //         make: singlePart?.make,
-  //         link: singlePart?.link,
-  //         a_innerMinimumDiameter: singlePart?.a_innerMinimumDiameter,
-  //         b_innerTeethSpacing: singlePart?.b_innerTeethSpacing,
-  //         c_innerMaximumDiameter: singlePart?.c_innerMaximumDiameter,
-  //         d_centerToCenter: singlePart?.d_centerToCenter,
-  //         e_chain: singlePart?.e_chain,
-  //         f_chain: singlePart?.f_chain,
-  //       },
-  //       group: "FSLargeSpline",
-  //     });
-  //   }
-  // }, [data, frontSprocket, sharedValueDispatch, singlePart]);
 
   return (
     <div

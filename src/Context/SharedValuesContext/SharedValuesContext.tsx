@@ -4,6 +4,7 @@ import {
   INITIAL_STATE_FSLARGESPLINE,
   INITIAL_STATE_FSNARROWSPLINE,
 } from "./InitialStates";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 type StateType = {
   fsNarrowSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
@@ -15,7 +16,7 @@ type SetDataAction = {
   payload: Partial<
     typeof INITIAL_STATE_FSNARROWSPLINE | typeof INITIAL_STATE_FSLARGESPLINE
   >;
-  group: "FSNarrowSpline" | "FSLargeSpline";
+  group: possibleParts.FSNarrowSpline | possibleParts.FSLargeSpline;
 };
 
 export type ActionType =
@@ -23,12 +24,15 @@ export type ActionType =
   | {
       type: "SET_DATA";
       payload: Partial<typeof INITIAL_STATE_FSNARROWSPLINE>;
-      group: "FSNarrowSpline" | "FSLargeSpline";
+      group: possibleParts.FSNarrowSpline | possibleParts.FSLargeSpline;
     }
   | {
       type: string;
       payload: string;
-      group: "FSNarrowSpline" | "FSLargeSpline" | "RESET_VALUES";
+      group:
+        | possibleParts.FSNarrowSpline
+        | possibleParts.FSLargeSpline
+        | "RESET_VALUES";
     };
 
 type ContextType = {
@@ -48,7 +52,7 @@ const reducer = (state: StateType, action: ActionType) => {
   const { group, type, payload } = action;
 
   switch (group) {
-    case "FSNarrowSpline":
+    case possibleParts.FSNarrowSpline:
       return {
         ...state,
         fsNarrowSpline: {
@@ -58,7 +62,7 @@ const reducer = (state: StateType, action: ActionType) => {
           ...(type !== "SET_DATA" && { [type]: payload }),
         },
       };
-    case "FSLargeSpline":
+    case possibleParts.FSLargeSpline:
       return {
         ...state,
         fsLargeSpline: {

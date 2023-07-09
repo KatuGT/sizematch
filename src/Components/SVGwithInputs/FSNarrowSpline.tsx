@@ -7,6 +7,7 @@ import FrontSprocketNarrowSpline from "../../../public/svgParts/FrontSprocketNar
 import ListItem from "../ListItem/ListItem";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 interface FSNarrowSplineProps extends SVGProps {
   control?: any;
@@ -21,8 +22,7 @@ const FSNarrowSpline = ({
   onMouseLeave,
 }: FSNarrowSplineProps) => {
   const { state, dispatch } = useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline } = state;
-  // console.log(fsNarrowSpline, fsLargeSpline);
+  const { fsNarrowSpline } = state;
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -32,7 +32,7 @@ const FSNarrowSpline = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: "FSNarrowSpline",
+      group: possibleParts.FSNarrowSpline,
     });
   };
 

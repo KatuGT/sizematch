@@ -7,6 +7,7 @@ import FrontSprocketSideLargeSpline from "../../../public/svgParts/FrontSprocket
 import ListItem from "../ListItem/ListItem";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 interface FSLargeSplineProps extends SVGProps {
   control: any;
@@ -22,7 +23,6 @@ const FSLargeSpline = ({
 }: FSLargeSplineProps) => {
   const { state, dispatch } = useContext(SharedValuesContext);
   const { fsLargeSpline, fsNarrowSpline } = state;
-  console.log(fsNarrowSpline, fsLargeSpline);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -32,7 +32,7 @@ const FSLargeSpline = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: "FSLargeSpline",
+      group: possibleParts.FSLargeSpline,
     });
   };
   return (

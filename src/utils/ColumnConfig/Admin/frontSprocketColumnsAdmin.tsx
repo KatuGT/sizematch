@@ -7,7 +7,7 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useContext } from "react";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
-// Front Sprocket NARROW Splie column config
+// Front Sprocket NARROW Spline column config
 interface ColumnsProps extends SVGProps {
   onClickDelete: (id: string | ObjectId) => Promise<void>;
   onClickEdit: (part: string, id: string | ObjectId) => Promise<void>;
@@ -140,7 +140,7 @@ export const GetNarrowSplineConfigColumn = ({
           </button>
           <button
             onClick={() =>
-              onClickEdit(possibleParts.FSNarrowSpline, params.row._id)
+              onClickEdit(possibleParts.FSNarrowSpline, params.row)
             }
             className="flex items-center justify-between"
           >
@@ -155,7 +155,7 @@ export const GetNarrowSplineConfigColumn = ({
   return narrowSplineColumn;
 };
 
-// Front Sprocket LARGE Splie column config
+// Front Sprocket LARGE Spline column config
 export const getLargeSplineConfigColumn = ({
   onClickDelete,
   onClickEdit,
@@ -303,7 +303,6 @@ export const getLargeSplineConfigColumn = ({
           <button
             onClick={() => {
               onClickEdit(possibleParts.FSLargeSpline, params.row);
-              console.log(params.row);
             }}
             className="flex items-center justify-between"
           >

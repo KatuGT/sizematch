@@ -20,3 +20,14 @@ export const INITIAL_STATE_FSLARGESPLINE = {
   e_width: "",
   f_chain: "",
 };
+
+export const INITIAL_STATE_REARSPROCKET = {
+  make: "",
+  code: "",
+  link: "",
+  a_holeDistance: "",
+  b_center: "",
+  c_holeDiameter: "",
+  d_holeCount: "",
+  e_chain: "",
+};

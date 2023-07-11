@@ -1,5 +1,6 @@
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
+import RearSprocket from "@/models/RearSprocketModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model } from "mongoose";
@@ -55,7 +56,9 @@ export const GET = async (req: Request, { params }: any) => {
           searchQuery
         );
         break;
-
+      case possibleParts.RearSprocket:
+        searchResult = await searchModel(RearSprocket, searchQuery);
+        break;
       default:
         break;
     }

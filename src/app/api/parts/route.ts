@@ -1,5 +1,6 @@
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
+import RearSprocket from "@/models/RearSprocketModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model, Document } from "mongoose";
@@ -10,6 +11,7 @@ type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
 const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
+  [possibleParts.RearSprocket]: RearSprocket,
 };
 
 export const GET = async (req: Request) => {

@@ -20,7 +20,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { id, part, editingMode } = editingModeState;
 
   const { state: partState } = useContext(SelectedPartContext);
-  const { frontSprocket } = partState;
+  const { selectedPart } = partState;
   
   const { dispatch: sharedValueDispatch } = useContext(SharedValuesContext);
 
@@ -28,7 +28,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     fetch(...args).then((res) => res.json()) as Promise<any[]>;
 
   const { data, mutate, isLoading } = useSWR<any[]>(
-    `http://localhost:3000/api/parts?part=${frontSprocket}`,
+    `http://localhost:3000/api/parts?part=${selectedPart}`,
     fetcher
   );
   
@@ -71,7 +71,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       denyButtonText: `Don't delete`,
     }).then(async (result) => {
       if (result.isConfirmed) {
-        await fetch(`/api/parts/${frontSprocket}/${id}`, {
+        await fetch(`/api/parts/${selectedPart}/${id}`, {
           method: "DELETE",
         });
         mutate();
@@ -103,7 +103,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       style={{ height: 400, width: "min-content" }}
       className="mx-auto mt-5 bg-gray-800 text-white"
     >
-      {frontSprocket === possibleParts.FSNarrowSpline ? (
+      {selectedPart === possibleParts.FSNarrowSpline ? (
         <DataGrid
           rows={searchResults}
           columns={columnsFSnarrowSpline}

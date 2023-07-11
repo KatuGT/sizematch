@@ -25,7 +25,7 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
     useContext(SelectedPartContext);
-  const { frontSprocket } = slectedPartState;
+  const { selectedPart } = slectedPartState;
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
@@ -125,7 +125,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       }
     } else {
       try {
-        const resp = await fetch(`/api/parts/${frontSprocket}`, {
+        const resp = await fetch(`/api/parts/${selectedPart}`, {
           method: "POST",
           body: JSON.stringify({
             ...data,
@@ -166,7 +166,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const handleChangePart = (e: React.ChangeEvent<HTMLInputElement>) => {
     const part = e.target.value as possibleParts;
-    selectedPartDispatch({ type: "CHANGE_FRONTSPROCKET", payload: part });
+    selectedPartDispatch({ type: "CHANGE_SELECTED_PART", payload: part });
   };
 
   useEffect(() => {
@@ -181,7 +181,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       id: undefined,
       part: undefined,
     });
-  }, [EditingModeDispatch, frontSprocket, sharedValueDispatch]);
+  }, [EditingModeDispatch, selectedPart, sharedValueDispatch]);
 
   const [partToShow, setPartToShow] = useState({
     make: fsNarrowSpline.make,
@@ -195,7 +195,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   useEffect(() => {
     const setPartData = () => {
-      switch (frontSprocket) {
+      switch (selectedPart) {
         case possibleParts.FSNarrowSpline:
           setPartSchema(frontSprocketNarrowSplineSchema);
           setPartToShow({
@@ -219,10 +219,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       }
     };
     setPartData();
-  }, [frontSprocket, fsLargeSpline, fsNarrowSpline]);
+  }, [selectedPart, fsLargeSpline, fsNarrowSpline]);
 
   const DisplaySVG = () => {
-    switch (frontSprocket) {
+    switch (selectedPart) {
       case possibleParts.FSNarrowSpline:
         return (
           <FSNarrowSpline

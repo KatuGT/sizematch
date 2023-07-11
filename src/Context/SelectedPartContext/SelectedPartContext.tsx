@@ -1,20 +1,18 @@
-'use client'
+"use client";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import React, { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
-  frontSprocket: possibleParts.FSNarrowSpline,
-  pistonKit: "2T",
+  selectedPart: possibleParts.FSNarrowSpline,
 };
 
 type StateType = {
-  frontSprocket: string;
-  pistonKit: string;
+  selectedPart: possibleParts;
 };
 
 type ActionType = {
-  type: "CHANGE_FRONTSPROCKET" | "CHANGE_PISTONKIT";
-  payload: string;
+  type: "CHANGE_SELECTED_PART";
+  payload: possibleParts;
 };
 
 export const SelectedPartContext = createContext<{
@@ -27,15 +25,10 @@ export const SelectedPartContext = createContext<{
 
 const reducer = (state: StateType, action: ActionType) => {
   switch (action.type) {
-    case "CHANGE_FRONTSPROCKET":
+    case "CHANGE_SELECTED_PART":
       return {
         ...state,
-        frontSprocket: action.payload,
-      };
-    case "CHANGE_PISTONKIT":
-      return {
-        ...state,
-        pistonKit: action.payload,
+        selectedPart: action.payload,
       };
     default:
       return state;

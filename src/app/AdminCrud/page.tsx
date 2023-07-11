@@ -21,7 +21,7 @@ const AdminCrud = () => {
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         />
-        <div className="mx-auto my-0 w-full p-4">
+        <div className="mx-auto my-0 p-4 w-full laptop:w-[min-content]">
           <TableAdmin
             hoveredClass={hoverClass}
             onMouseEnter={handleHover}

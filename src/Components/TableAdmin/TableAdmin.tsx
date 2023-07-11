@@ -100,8 +100,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   return (
     <div
-      style={{ height: 400, width: "min-content" }}
-      className="mx-auto mt-5 bg-gray-800 text-white"
+      className="mx-auto mt-5 bg-gray-800 text-white h-[400px] w-full"
     >
       {selectedPart === possibleParts.FSNarrowSpline ? (
         <DataGrid

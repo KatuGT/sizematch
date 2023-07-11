@@ -9,4 +9,9 @@ export const partsOptions = [
     displayName: "Front Sprocket (large spline)",
     value: possibleParts.FSLargeSpline,
   },
+
+  {
+    displayName: "Rear Sprocket",
+    value: possibleParts.RearSprocket,
+  },
 ];

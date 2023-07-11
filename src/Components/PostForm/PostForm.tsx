@@ -21,6 +21,7 @@ import {
   partsOptions,
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import RearSprocket from "../SVGwithInputs/RearSprocket";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -50,7 +51,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     formState: { errors },
     control,
     reset,
-    watch,
     setValue,
   } = useForm({
     resolver: yupResolver(completeSchema),
@@ -74,8 +74,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   }, [editingMode, fsLargeSpline, fsNarrowSpline, part, setValue]);
 
   const onSubmit = async (data: partPostProps) => {
-    console.log(data.part);
-
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -243,6 +241,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             onMouseLeave={onMouseLeave}
           />
         );
+      case possibleParts.RearSprocket:
+        return (
+          <RearSprocket
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
       default:
         break;
     }
@@ -255,7 +263,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       )}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto my-0 flex flex-col justify-center gap-10 px-4 mobile:px-0"
+        className="mx-4 my-0 flex flex-col justify-center gap-10 mobile:mx-auto mobile:px-0"
       >
         <div className="flex flex-wrap justify-center gap-3">
           <div className="flex flex-1 flex-col gap-3 px-4 laptop:px-0 ">

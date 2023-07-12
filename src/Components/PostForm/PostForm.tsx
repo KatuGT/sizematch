@@ -22,6 +22,7 @@ import {
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import RearSprocket from "../SVGwithInputs/RearSprocket";
+import { rearSprocketSchema } from "@/utils/yupSchemas/RearSprocket";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -30,7 +31,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline } = sharedValueState;
+  const { fsNarrowSpline, fsLargeSpline, rearSprocket } = sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
@@ -51,11 +52,12 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     formState: { errors },
     control,
     reset,
+    watch,
     setValue,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
-      part: {},
+      make: makesOptions[0].displayName,
     },
   });
 
@@ -74,6 +76,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   }, [editingMode, fsLargeSpline, fsNarrowSpline, part, setValue]);
 
   const onSubmit = async (data: partPostProps) => {
+
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -212,12 +215,21 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           setGroup(possibleParts.FSLargeSpline);
           break;
+        case possibleParts.RearSprocket:
+          setPartSchema(rearSprocketSchema);
+          setPartToShow({
+            make: rearSprocket.make,
+            code: rearSprocket.code,
+            link: rearSprocket.link,
+          });
+          setGroup(possibleParts.RearSprocket);
+          break;
         default:
           break;
       }
     };
     setPartData();
-  }, [selectedPart, fsLargeSpline, fsNarrowSpline]);
+  }, [selectedPart, fsLargeSpline, fsNarrowSpline, rearSprocket]);
 
   const DisplaySVG = () => {
     switch (selectedPart) {

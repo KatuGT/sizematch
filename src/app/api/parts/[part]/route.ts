@@ -3,7 +3,7 @@ import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
- import { Model, Document } from "mongoose";
+import { Model, Document } from "mongoose";
 import { NextResponse } from "next/server";
 
 type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
@@ -12,11 +12,11 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
   [possibleParts.RearSprocket]: RearSprocket,
-
 };
 
 export const POST = async (req: Request, { params }: any) => {
   const { part } = params;
+  console.log(part);
 
   const body = await req.json();
 
@@ -41,7 +41,7 @@ export const POST = async (req: Request, { params }: any) => {
 
 export const GET = async (req: Request, { params }: any) => {
   const { part } = params;
- 
+
   const PartModel = partModelArray[part as possibleParts];
 
   if (!PartModel) {
@@ -54,10 +54,9 @@ export const GET = async (req: Request, { params }: any) => {
   };
 
   const parts = await PartModel.find().setOptions(options);
-  
+
   try {
     await connect();
-
 
     return new NextResponse(JSON.stringify(parts), { status: 201 });
   } catch (err) {

@@ -75,7 +75,7 @@ export const InputListPartPost = ({
           {label}
         </label>
         <select
-          className="text-ellipsis flex w-[80%] mobile:w-full items-center justify-between rounded-full bg-white  p-2.5 text-right font-bold
+          className="flex w-[80%] items-center justify-between text-ellipsis rounded-full bg-white p-2.5  text-right font-bold mobile:w-[min-content]
           "
           name={name}
           id="partList"

@@ -25,9 +25,9 @@ export const INITIAL_STATE_REARSPROCKET = {
   make: "",
   code: "",
   link: "",
-  a_holeDistance: "",
-  b_center: "",
-  c_holeDiameter: "",
-  d_holeCount: "",
+  a_holeDiameter: "",
+  b_numberOfHoles: "",
+  c_holeDistance: "",
+  d_center: "",
   e_chain: "",
 };

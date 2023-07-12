@@ -179,7 +179,7 @@ const FrontSprocket = () => {
 
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80  h-[400px]">
+        <div className="bg-gray-80 h-[400px]">
           {frontSprocketType === possibleParts.FSNarrowSpline ? (
             <DataGrid
               rows={searchResults}

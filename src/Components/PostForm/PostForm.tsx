@@ -21,6 +21,9 @@ import {
   partsOptions,
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import RearSprocket from "../SVGwithInputs/RearSprocket";
+import { rearSprocketSchema } from "@/utils/yupSchemas/RearSprocket";
+import { useSWRConfig } from 'swr'
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -29,7 +32,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline } = sharedValueState;
+  const { fsNarrowSpline, fsLargeSpline, rearSprocket } = sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
@@ -55,7 +58,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
-      part: {},
+      make: makesOptions[0].displayName,
     },
   });
 
@@ -69,13 +72,18 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(fsLargeSpline).forEach((key) => {
           setValue(key, fsLargeSpline[key as keyof typeof fsLargeSpline]);
         });
+      } else if (part === possibleParts.RearSprocket) {
+        Object.keys(rearSprocket).forEach((key) => {
+          setValue(key, rearSprocket[key as keyof typeof rearSprocket]);
+        });
       }
     }
-  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, setValue]);
+  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, rearSprocket, setValue]);
+
+  const { mutate } = useSWRConfig()
+
 
   const onSubmit = async (data: partPostProps) => {
-    console.log(data.part);
-
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -132,7 +140,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           }),
         });
 
-        if (resp.ok) {
+        if (resp.ok) { 
+          mutate(`http://localhost:3000/api/parts?part=${selectedPart}`)
           Swal.mixin({
             toast: true,
             position: "top-end",
@@ -214,12 +223,21 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           setGroup(possibleParts.FSLargeSpline);
           break;
+        case possibleParts.RearSprocket:
+          setPartSchema(rearSprocketSchema);
+          setPartToShow({
+            make: rearSprocket.make,
+            code: rearSprocket.code,
+            link: rearSprocket.link,
+          });
+          setGroup(possibleParts.RearSprocket);
+          break;
         default:
           break;
       }
     };
     setPartData();
-  }, [selectedPart, fsLargeSpline, fsNarrowSpline]);
+  }, [selectedPart, fsLargeSpline, fsNarrowSpline, rearSprocket]);
 
   const DisplaySVG = () => {
     switch (selectedPart) {
@@ -243,6 +261,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             onMouseLeave={onMouseLeave}
           />
         );
+      case possibleParts.RearSprocket:
+        return (
+          <RearSprocket
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
       default:
         break;
     }
@@ -255,7 +283,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       )}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto my-0 flex flex-col justify-center gap-10 px-4 mobile:px-0"
+        className="mx-4 my-0 flex flex-col justify-center gap-10 mobile:mx-auto mobile:px-0"
       >
         <div className="flex flex-wrap justify-center gap-3">
           <div className="flex flex-1 flex-col gap-3 px-4 laptop:px-0 ">

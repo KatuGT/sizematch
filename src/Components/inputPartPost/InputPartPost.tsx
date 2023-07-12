@@ -11,7 +11,7 @@ interface InputPartPostProps {
   className?: string;
   value?: string;
   error?: string;
-  optionsArray?: any[]
+  optionsArray?: any[];
   register?: UseFormRegister<any>;
   handleHover?: React.MouseEventHandler<HTMLTableCellElement>;
   handleMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
@@ -75,16 +75,17 @@ export const InputListPartPost = ({
           {label}
         </label>
         <select
-          className="flex items-center justify-between rounded-full bg-white p-2.5 font-bold text-right"
+          className="flex w-[80%] items-center justify-between text-ellipsis rounded-full bg-white p-2.5  text-right font-bold mobile:w-[min-content]
+          "
           name={name}
           id="partList"
           onChange={onChange}
         >
           <option disabled>--Please choose an option--</option>
-          {optionsArray?.map(item  => (
-          <option key={item.value} value={item.value}>
-            {item.displayName}
-          </option>
+          {optionsArray?.map((item) => (
+            <option key={item.value} value={item.value}>
+              {item.displayName}
+            </option>
           ))}
         </select>
       </div>

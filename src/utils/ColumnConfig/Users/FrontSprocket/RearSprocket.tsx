@@ -4,17 +4,18 @@ import { FSNarrowSplinesizeProps } from "@/types-enums-interfaces/FSnarrowSpline
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
 
 // Front Sprocket NARROW Splie column config
-export const GetNSConfigColumnUser = ({
+export const GetRearSprocketConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
 }: SVGProps) => {
   const { dispatch, state } = useContext(SharedValuesContext);
-  const { fsNarrowSpline } = state;
+  const { rearSprocket } = state;
 
-  const handleFSNSChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleRearSprocketChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
@@ -22,15 +23,15 @@ export const GetNSConfigColumnUser = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: possibleParts.FSNarrowSpline,
+      group: possibleParts.RearSprocket,
     });
   };
 
-  const narrowSplineColumn: GridColDef[] = [
+  const rearSprocketColumn: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
     {
-      field: "a_innerMinimumDiameter",
+      field: "a_holeDiameter",
       headerName: "A",
       width: 90,
       filterable: false,
@@ -52,16 +53,16 @@ export const GetNSConfigColumnUser = ({
             placeholder="20"
             type="text"
             className="custom-input"
-            name="a_innerMinimumDiameter"
-            value={fsNarrowSpline.a_innerMinimumDiameter || ""}
-            onChange={handleFSNSChange}
+            name="a_holeDiameter"
+            value={rearSprocket.a_holeDiameter || ""}
+            onChange={handleRearSprocketChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "b_innerTeethNumber",
+      field: "b_numberOfHoles",
       headerName: "B",
       width: 90,
       disableColumnMenu: true,
@@ -80,20 +81,19 @@ export const GetNSConfigColumnUser = ({
             placeholder="22"
             type="text"
             className="custom-input"
-            name="b_innerTeethNumber"
+            name="b_numberOfHoles"
             value={
-              fsNarrowSpline[
-                "b_innerTeethNumber" as keyof FSNarrowSplinesizeProps
-              ] || ""
+              rearSprocket["b_numberOfHoles" as keyof RearSprocketsizeProps] ||
+              ""
             }
-            onChange={handleFSNSChange}
+            onChange={handleRearSprocketChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "c_innerMaximumDiameter",
+      field: "c_holeDistance",
       headerName: "C",
       width: 90,
       disableColumnMenu: true,
@@ -112,20 +112,19 @@ export const GetNSConfigColumnUser = ({
             placeholder="25.5"
             type="text"
             className="custom-input"
-            name="c_innerMaximumDiameter"
+            name="c_holeDistance"
             value={
-              fsNarrowSpline[
-                "c_innerMaximumDiameter" as keyof FSNarrowSplinesizeProps
-              ] || ""
+              rearSprocket["c_holeDistance" as keyof RearSprocketsizeProps] ||
+              ""
             }
-            onChange={handleFSNSChange}
+            onChange={handleRearSprocketChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "d_width",
+      field: "d_center",
       headerName: "D",
       sortable: false,
       width: 90,
@@ -145,11 +144,11 @@ export const GetNSConfigColumnUser = ({
             placeholder="10.8"
             type="text"
             className="custom-input"
-            name="d_width"
+            name="d_center"
             value={
-              fsNarrowSpline["d_width" as keyof FSNarrowSplinesizeProps] || ""
+              rearSprocket["d_center" as keyof RearSprocketsizeProps] || ""
             }
-            onChange={handleFSNSChange}
+            onChange={handleRearSprocketChange}
           />
         </label>
       ),
@@ -176,10 +175,8 @@ export const GetNSConfigColumnUser = ({
             type="text"
             className="custom-input"
             name="e_chain"
-            value={
-              fsNarrowSpline["e_chain" as keyof FSNarrowSplinesizeProps] || ""
-            }
-            onChange={handleFSNSChange}
+            value={rearSprocket["e_chain" as keyof RearSprocketsizeProps] || ""}
+            onChange={handleRearSprocketChange}
           />
         </div>
       ),
@@ -193,5 +190,5 @@ export const GetNSConfigColumnUser = ({
       renderCell: (params) => <a href={params.row.link}>See more</a>,
     },
   ];
-  return narrowSplineColumn;
+  return rearSprocketColumn;
 };

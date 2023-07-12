@@ -156,7 +156,7 @@ export const GetNarrowSplineConfigColumn = ({
 };
 
 // Front Sprocket LARGE Spline column config
-export const getLargeSplineConfigColumn = ({
+export const GetLargeSplineConfigColumn = ({
   onClickDelete,
   onClickEdit,
   hoveredClass,

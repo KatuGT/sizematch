@@ -17,20 +17,20 @@ const RearSprocketSchema = new Schema(
     link: {
       type: String,
     },
-    a_holeDistance: {
+    a_holeDiameter: {
       type: String,
       required: [true, "Medida A"],
     },
-    b_center: {
+    b_numberOfHoles: {
       type: String,
       required: [true, "Medida B"],
       default: "0",
     },
-    c_holeDiameter: {
+    c_holeDistance: {
       type: String,
       required: [true, "Medida C"],
     },
-    d_holeCount: {
+    d_center: {
       type: String,
       required: [true, "Medida D"],
       default: "0",

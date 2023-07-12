@@ -23,6 +23,7 @@ import {
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import RearSprocket from "../SVGwithInputs/RearSprocket";
 import { rearSprocketSchema } from "@/utils/yupSchemas/RearSprocket";
+import { useSWRConfig } from 'swr'
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -71,12 +72,18 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(fsLargeSpline).forEach((key) => {
           setValue(key, fsLargeSpline[key as keyof typeof fsLargeSpline]);
         });
+      } else if (part === possibleParts.RearSprocket) {
+        Object.keys(rearSprocket).forEach((key) => {
+          setValue(key, rearSprocket[key as keyof typeof rearSprocket]);
+        });
       }
     }
-  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, setValue]);
+  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, rearSprocket, setValue]);
+
+  const { mutate } = useSWRConfig()
+
 
   const onSubmit = async (data: partPostProps) => {
-
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -133,7 +140,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           }),
         });
 
-        if (resp.ok) {
+        if (resp.ok) { 
+          mutate(`http://localhost:3000/api/parts?part=${selectedPart}`)
           Swal.mixin({
             toast: true,
             position: "top-end",

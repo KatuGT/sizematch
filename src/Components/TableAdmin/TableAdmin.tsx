@@ -33,6 +33,10 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     fetcher
   );
 
+  useEffect(() => {
+    mutate();
+  }, [data, mutate]);
+
   let searchResults: any[] = data || [];
 
   useEffect(() => {
@@ -44,7 +48,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         payload: "",
       });
     }
-  }, [editingMode, mutate, sharedValueDispatch]);
+  }, [sharedValueDispatch, editingMode, selectedPart, mutate]);
 
   const handleEdit = useCallback(
     async (part: string, partData: any) => {
@@ -122,8 +126,6 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const [columns, setColumns] = useState(columnsFSnarrowSpline);
 
   useEffect(() => {
-    setColumns(columnsFSnarrowSpline);
-
     switch (selectedPart) {
       case possibleParts.FSLargeSpline:
         setColumns(columnsFSlargeSpline);
@@ -137,7 +139,12 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       default:
         break;
     }
-  }, [columnsFSlargeSpline, columnsFSnarrowSpline, columnsRearSprocket, selectedPart]);
+  }, [
+    columnsFSlargeSpline,
+    columnsFSnarrowSpline,
+    columnsRearSprocket,
+    selectedPart,
+  ]);
 
   return (
     <div className="mx-auto mt-5 h-[400px] w-full bg-gray-800 text-white">
@@ -164,56 +171,6 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
         }}
       />
-
-      {/* {selectedPart === possibleParts.FSNarrowSpline ? (
-        <DataGrid
-          rows={searchResults}
-          columns={columnsFSnarrowSpline}
-          getRowId={(row) => row._id}
-          initialState={{
-            pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
-            },
-            columns: {
-              columnVisibilityModel: {
-                status: false,
-                _id: false,
-              },
-            },
-          }}
-          pageSizeOptions={[5, 10]}
-          sx={{ color: "#fff" }}
-          loading={isLoading}
-          slots={{
-            noRowsOverlay: () => <GridOverlay> No results</GridOverlay>,
-            loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
-          }}
-        />
-      ) : (
-        <DataGrid
-          rows={searchResults}
-          columns={columnsFSlargeSpline}
-          getRowId={(row) => row._id}
-          initialState={{
-            pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
-            },
-            columns: {
-              columnVisibilityModel: {
-                status: false,
-                _id: false,
-              },
-            },
-          }}
-          pageSizeOptions={[5, 10]}
-          sx={{ color: "#fff" }}
-          loading={isLoading}
-          slots={{
-            noRowsOverlay: () => <GridOverlay> No results</GridOverlay>,
-            loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
-          }}
-        />
-      )} */}
     </div>
   );
 };

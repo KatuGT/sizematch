@@ -6,7 +6,6 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
 
-// Front Sprocket NARROW Splie column config
 export const GetRearSprocketConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,

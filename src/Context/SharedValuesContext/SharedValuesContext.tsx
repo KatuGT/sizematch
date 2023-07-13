@@ -1,6 +1,7 @@
 "use client";
 import React, { createContext, useReducer } from "react";
 import {
+  INITIAL_STATE_BRAKEDISC,
   INITIAL_STATE_FSLARGESPLINE,
   INITIAL_STATE_FSNARROWSPLINE,
   INITIAL_STATE_REARSPROCKET,
@@ -11,6 +12,7 @@ type StateType = {
   fsNarrowSpline: typeof INITIAL_STATE_FSNARROWSPLINE;
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
   rearSprocket: typeof INITIAL_STATE_REARSPROCKET;
+  brakeDisc: typeof INITIAL_STATE_BRAKEDISC;
 };
 
 type SetDataAction = {
@@ -19,11 +21,13 @@ type SetDataAction = {
     | typeof INITIAL_STATE_FSNARROWSPLINE
     | typeof INITIAL_STATE_FSLARGESPLINE
     | typeof INITIAL_STATE_REARSPROCKET
+    | typeof INITIAL_STATE_BRAKEDISC
   >;
   group:
     | possibleParts.FSNarrowSpline
     | possibleParts.FSLargeSpline
-    | possibleParts.RearSprocket;
+    | possibleParts.RearSprocket
+    | possibleParts.BrakeDisc;
 };
 
 export type ActionType =
@@ -34,11 +38,13 @@ export type ActionType =
         | typeof INITIAL_STATE_FSNARROWSPLINE
         | typeof INITIAL_STATE_FSLARGESPLINE
         | typeof INITIAL_STATE_REARSPROCKET
+        | typeof INITIAL_STATE_BRAKEDISC
       >;
       group:
         | possibleParts.FSNarrowSpline
         | possibleParts.FSLargeSpline
-        | possibleParts.RearSprocket;
+        | possibleParts.RearSprocket
+        | possibleParts.BrakeDisc;
     }
   | {
       type: string;
@@ -47,6 +53,7 @@ export type ActionType =
         | possibleParts.FSNarrowSpline
         | possibleParts.FSLargeSpline
         | possibleParts.RearSprocket
+        | possibleParts.BrakeDisc
         | "RESET_VALUES";
     };
 
@@ -60,6 +67,7 @@ export const SharedValuesContext = createContext<ContextType>({
     fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
     rearSprocket: INITIAL_STATE_REARSPROCKET,
+    brakeDisc: INITIAL_STATE_BRAKEDISC,
   },
   dispatch: () => {},
 });
@@ -98,12 +106,23 @@ const reducer = (state: StateType, action: ActionType) => {
           ...(type !== "SET_DATA" && { [type]: payload }),
         },
       };
+    case possibleParts.BrakeDisc:
+      return {
+        ...state,
+        brakeDisc: {
+          ...state.brakeDisc,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_BRAKEDISC>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
+        },
+      };
     case "RESET_VALUES":
       return {
         ...state,
         fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
         fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
         rearSprocket: INITIAL_STATE_REARSPROCKET,
+        brakeDisc: INITIAL_STATE_BRAKEDISC,
       };
     default:
       return state;
@@ -119,6 +138,7 @@ export const SharedValuesProvider = ({
     fsNarrowSpline: INITIAL_STATE_FSNARROWSPLINE,
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
     rearSprocket: INITIAL_STATE_REARSPROCKET,
+    brakeDisc: INITIAL_STATE_BRAKEDISC,
   });
 
   return (

@@ -7,42 +7,33 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { useHover } from "@/utils";
 import TableRecomendations from "@/Components/TableRecomendations";
+import { BrakeDisc as BrakeDiscSVG } from "@/Components";
 import {
-  RearSprocketsizeProps,
-  SearchResultRearSprocket,
-} from "@/types-enums-interfaces/RearSprocketProps";
-import { GetRearSprocketConfigColumnUser } from "@/utils/ColumnConfig/Users/RearSprocket";
-import { RearSprocket as RearSprocketSVG } from "@/Components";
+  SearchResultBrakeDisc,
+} from "@/types-enums-interfaces/BrakeDiscProps";
+import { GetBrakeDiscConfigColumnUser } from "@/utils/ColumnConfig/Users/BrakeDisc";
 import CreateParams from "@/utils/createParams";
 
-const RearSprocket = () => {
+const BrakeDisc = () => {
   const { state } = useContext(SharedValuesContext);
-  const { rearSprocket } = state;
+  const { brakeDisc } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const columnRearSprocket = GetRearSprocketConfigColumnUser({
-    hoveredClass: hoverClass,
-    onMouseEnter: handleHover,
-    onMouseLeave: handleMouseLeave,
-  });
-
-  //fetch
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json()) as Promise<
-      SearchResultRearSprocket[]
+      SearchResultBrakeDisc[]
     >;
 
-  // const params = transformToParams();
-  const params = CreateParams({data: rearSprocket});
-  
-  const { data, isLoading } = useSWR<SearchResultRearSprocket[]>(
+   const params = CreateParams({ data: brakeDisc });
+
+  const { data, isLoading } = useSWR<SearchResultBrakeDisc[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.RearSprocket}/${params}`
+      ? `http://localhost:3000/api/search/${possibleParts.BrakeDisc}/${params}`
       : null,
     fetcher
   );
 
-  let searchResults: SearchResultRearSprocket[] = data || [];
+  let searchResults: SearchResultBrakeDisc[] = data || [];
 
   const {
     formState: { errors },
@@ -51,9 +42,14 @@ const RearSprocket = () => {
     mode: "onBlur",
   });
 
+  const columnBrakeDisc = GetBrakeDiscConfigColumnUser({
+    hoveredClass: hoverClass,
+    onMouseEnter: handleHover,
+    onMouseLeave: handleMouseLeave,
+  });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[max-content]">
-      <RearSprocketSVG
+      <BrakeDiscSVG
         control={control}
         errors={errors}
         hoveredClass={hoverClass}
@@ -66,7 +62,7 @@ const RearSprocket = () => {
         <div className="bg-gray-80 h-[400px]">
           <DataGrid
             rows={searchResults}
-            columns={columnRearSprocket}
+            columns={columnBrakeDisc}
             getRowId={(row) => row._id}
             initialState={{
               pagination: {
@@ -99,4 +95,4 @@ const RearSprocket = () => {
   );
 };
 
-export default RearSprocket;
+export default BrakeDisc;

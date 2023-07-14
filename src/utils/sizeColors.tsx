@@ -9,6 +9,12 @@ export const sizeColors = {
   sizeDcolorLight: "#c9389d",
   sizeEcolor: "#88af05",
   sizeEcolorLight: "#cae04b",
-  sizeFcolor: "#b47b01",
+  sizeFcolor: "#fa9d11",
   sizeFcolorLight: "#f68929",
+  sizeGcolor: "#eb46bf",
+  sizeGcolorLight: "#eb25b6",
+  sizeHcolor: "#47dbb9",
+  sizeHcolorLight: "#04f5bd",
+  sizeIcolor: "#ff315d",
+  sizeIcolorLight: "#ff0037",
 };

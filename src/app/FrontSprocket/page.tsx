@@ -18,6 +18,7 @@ import {
 import { FSLargeSpline, FSNarrowSpline } from "@/Components";
 import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplineProps";
 import TableRecomendations from "@/Components/TableRecomendations";
+import CreateParams from "@/utils/createParams";
 
 const FrontSprocket = () => {
   const { state } = useContext(SharedValuesContext);
@@ -28,52 +29,6 @@ const FrontSprocket = () => {
   const [frontSprocketType, setFrontSprocketType] = useState(
     possibleParts.FSNarrowSpline
   );
-
-  //crea params para el fetch
-  const transformToParams = () => {
-    let count = 0;
-    let params = "";
-
-    if (frontSprocketType === possibleParts.FSNarrowSpline) {
-      for (const key in fsNarrowSpline) {
-        if (
-          fsNarrowSpline.hasOwnProperty(key) &&
-          fsNarrowSpline[key as keyof FSNarrowSplinesizeProps] !== ""
-        ) {
-          count++;
-          if (count > 1) {
-            params += "&";
-          }
-          params += `${key}=${encodeURIComponent(
-            fsNarrowSpline[key as keyof FSNarrowSplinesizeProps]
-          )}`;
-        }
-      }
-      if (count < 2) {
-        params = "";
-      }
-    } else {
-      for (const key in fsLargeSpline) {
-        if (
-          fsLargeSpline.hasOwnProperty(key) &&
-          fsLargeSpline[key as keyof FSlargeSplinesizeProps] !== ""
-        ) {
-          count++;
-          if (count > 1) {
-            params += "&";
-          }
-          params += `${key}=${encodeURIComponent(
-            fsLargeSpline[key as keyof FSlargeSplinesizeProps]
-          )}`;
-        }
-      }
-      if (count < 2) {
-        params = "";
-      }
-    }
-
-    return params;
-  };
 
   const columnNarrowSpline = GetNSConfigColumnUser({
     hoveredClass: hoverClass,
@@ -97,8 +52,13 @@ const FrontSprocket = () => {
       SearchResultFSNarrowSpline[]
     >;
 
-  const params = transformToParams();
+  const dataToParams =
+    frontSprocketType === possibleParts.FSNarrowSpline
+      ? fsNarrowSpline
+      : fsLargeSpline;
 
+  const params = CreateParams({ data: dataToParams });
+  
   const { data, isLoading } = useSWR<SearchResultFSNarrowSpline[]>(
     params
       ? `http://localhost:3000/api/search/${frontSprocketType}/${params}`

@@ -31,3 +31,15 @@ export const INITIAL_STATE_REARSPROCKET = {
   d_center: "",
   e_chain: "",
 };
+
+export const INITIAL_STATE_BRAKEDISC = {
+  make: "",
+  code: "",
+  link: "",
+  a_discDiameter: "",
+  b_holeDiameter: "",
+  c_numberOfHoles: "",
+  d_center: "",
+  e_holeDistance: "",
+  f_width: "",
+};

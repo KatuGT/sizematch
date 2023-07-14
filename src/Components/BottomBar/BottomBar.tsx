@@ -12,8 +12,8 @@ const BottomBar = () => {
 
   const partsRoutes: PartsTypes[] = [
     {
-      text: "Break Discs",
-      url: "/Breakdisc",
+      text: "Brake Discs",
+      url: "/BrakeDisc",
     },
 
     {

@@ -14,4 +14,8 @@ export const partsOptions = [
     displayName: "Rear Sprocket",
     value: possibleParts.RearSprocket,
   },
+  {
+    displayName: "Brake Disc",
+    value: possibleParts.BrakeDisc,
+  },
 ];

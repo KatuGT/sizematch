@@ -1,3 +1,4 @@
+import BrakeDisc from "@/models/BrakeDiscModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
@@ -12,7 +13,7 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
   [possibleParts.RearSprocket]: RearSprocket,
-
+  [possibleParts.BrakeDisc]: BrakeDisc,
 };
 
 export const DELETE = async (
@@ -43,14 +44,14 @@ export const GET = async (
   { params }: { params: { part: string; id: string } }
 ) => {
   const { part, id } = params;
-  
+
   const PartModel = partModelArray[part as possibleParts];
 
   if (!PartModel) {
     return new NextResponse("Invalid part", { status: 400 });
   }
 
-  const singlePart = await PartModel.findById({_id: id});
+  const singlePart = await PartModel.findById({ _id: id });
 
   try {
     await connect();
@@ -74,7 +75,9 @@ export const PUT = async (
   }
   const body = await req.json();
 
-  const updatedPart = await PartModel.findByIdAndUpdate(id, body, { new: true });
+  const updatedPart = await PartModel.findByIdAndUpdate(id, body, {
+    new: true,
+  });
 
   try {
     await connect();

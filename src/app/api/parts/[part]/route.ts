@@ -1,3 +1,4 @@
+import BrakeDisc from "@/models/BrakeDiscModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
@@ -12,6 +13,7 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
   [possibleParts.RearSprocket]: RearSprocket,
+  [possibleParts.BrakeDisc]: BrakeDisc,
 };
 
 export const POST = async (req: Request, { params }: any) => {

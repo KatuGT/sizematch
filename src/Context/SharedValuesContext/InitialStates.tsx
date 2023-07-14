@@ -43,3 +43,18 @@ export const INITIAL_STATE_BRAKEDISC = {
   e_holeDistance: "",
   f_width: "",
 };
+
+export const INITIAL_STATE_CONNECTINGROD = {
+  make: "",
+  code: "",
+  link: "",
+  a_bigEnd: "",
+  b_smallEnd: "",
+  c_centerToCenter: "",
+  d_totalLength: "",
+  e_widthBigEnd: "",
+  f_widthSmallEnd: "",
+  g_eyeToEyeCenter: "",
+  h_bigEndPinDiameter: "",
+  i_bigEndPinLength: "",
+};

@@ -26,6 +26,8 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import RearSprocket from "../SVGwithInputs/RearSprocket";
 import { useSWRConfig } from "swr";
 import BrakeDisc from "../SVGwithInputs/BrakeDisc";
+import { connectingRodSchema } from "@/utils/yupSchemas/ConnectingRod";
+import ConnectingRod from "../SVGwithInputs/ConnectingRod";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -34,8 +36,13 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline, rearSprocket, brakeDisc } =
-    sharedValueState;
+  const {
+    fsNarrowSpline,
+    fsLargeSpline,
+    rearSprocket,
+    brakeDisc,
+    connectingRod,
+  } = sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
@@ -88,6 +95,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(brakeDisc).forEach((key) => {
           setValue(key, brakeDisc[key as keyof typeof brakeDisc]);
         });
+      } else if (part === possibleParts.ConnectingRods) {
+        Object.keys(connectingRod).forEach((key) => {
+          setValue(key, connectingRod[key as keyof typeof connectingRod]);
+        });
       }
     }
   }, [
@@ -97,6 +108,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     part,
     rearSprocket,
     brakeDisc,
+    connectingRod,
     setValue,
   ]);
 
@@ -254,12 +266,28 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           setGroup(possibleParts.BrakeDisc);
           break;
+        case possibleParts.ConnectingRods:
+          setPartSchema(connectingRodSchema);
+          setPartToUpdate({
+            make: connectingRod.make,
+            code: connectingRod.code,
+            link: connectingRod.link,
+          });
+          setGroup(possibleParts.ConnectingRods);
+          break;
         default:
           break;
       }
     };
     setPartData();
-  }, [selectedPart, fsLargeSpline, fsNarrowSpline, rearSprocket, brakeDisc]);
+  }, [
+    selectedPart,
+    fsLargeSpline,
+    fsNarrowSpline,
+    rearSprocket,
+    brakeDisc,
+    connectingRod,
+  ]);
 
   const DisplaySVG = () => {
     switch (selectedPart) {
@@ -296,6 +324,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.BrakeDisc:
         return (
           <BrakeDisc
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
+      case possibleParts.ConnectingRods:
+        return (
+          <ConnectingRod
             control={control}
             errors={errors}
             hoveredClass={hoveredClass}

@@ -7,7 +7,7 @@ const ConnectingRodSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["Brembo"],
+      enum: ["TKRJ", "PROX RACING PARTS"],
     },
     code: {
       type: String,
@@ -43,7 +43,6 @@ const ConnectingRodSchema = new Schema(
     },
     g_eyeToEyeCenter: {
       type: String,
-      required: [true, "Medida G"],
     },
     h_bigEndPinDiameter: {
       type: String,

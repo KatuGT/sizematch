@@ -18,4 +18,8 @@ export const partsOptions = [
     displayName: "Brake Disc",
     value: possibleParts.BrakeDisc,
   },
+  {
+    displayName: "Connecting Rod",
+    value: possibleParts.ConnectingRods,
+  },
 ];

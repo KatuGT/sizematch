@@ -45,6 +45,18 @@ const ListItem = ({
       color: "text-sizeFcolor",
       colorLight: "text-sizeFcolorLight",
     },
+    sizeG: {
+      color: "text-sizeGcolor",
+      colorLight: "text-sizeGcolorLight",
+    },
+    sizeH: {
+      color: "text-sizeHcolor",
+      colorLight: "text-sizeHcolorLight",
+    },
+    sizeI: {
+      color: "text-sizeIcolor",
+      colorLight: "text-sizeIcolorLight",
+    },
   });
 
   useEffect(() => {

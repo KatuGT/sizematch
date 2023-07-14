@@ -108,42 +108,45 @@ const RearSprocket = ({
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             />
+
             <div
-              className="mx-auto mt-2 flex gap-2"
+              className="relative mx-auto mt-2 flex flex-col items-center
+              gap-2 desktop:mt-0"
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              <span
-                className={`sizeB ${
-                  hoveredClass === "sizeB"
-                    ? "text-sizeBcolorLight"
-                    : "text-sizeBcolor"
-                } `}
-              >
-                B
-              </span>
               <Controller
                 control={control}
-                name="b_numberOfHoles"
+                name="B_numberOfHoles"
                 render={({ field: { onChange } }) => (
                   <InputSizeEntry
                     hoveredClass={hoveredClass}
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
                     mainClass="sizeB"
-                    name="b_numberOfHoles"
+                    name="B_numberOfHoles"
                     onChange={(value) => {
                       onChange(value);
                       handleOnChange(value);
                     }}
                     value={rearSprocket.b_numberOfHoles || ""}
                     placeholder="6"
-                    position="relative mx-auto"
-                    error={errors?.b_numberOfHoles?.message?.toString()}
+                    position="relative"
+                    error={errors?.B_numberOfHoles?.message?.toString()}
                   />
                 )}
               />
+              <span
+                className={`sizeB text-center ${
+                  hoveredClass === "sizeB"
+                    ? "text-sizeBcolorLight"
+                    : "text-sizeBcolor"
+                } `}
+              >
+                B - Number of holes
+              </span>
             </div>
+
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-center gap-10 laptop:mt-0">

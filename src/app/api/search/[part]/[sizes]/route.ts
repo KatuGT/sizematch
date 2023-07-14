@@ -1,3 +1,4 @@
+import BrakeDisc from "@/models/BrakeDiscModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
@@ -58,6 +59,9 @@ export const GET = async (req: Request, { params }: any) => {
         break;
       case possibleParts.RearSprocket:
         searchResult = await searchModel(RearSprocket, searchQuery);
+        break;
+      case possibleParts.BrakeDisc:
+        searchResult = await searchModel(BrakeDisc, searchQuery);
         break;
       default:
         break;

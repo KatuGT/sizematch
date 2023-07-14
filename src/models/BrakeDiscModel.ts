@@ -7,7 +7,7 @@ const BrakeDiscSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["JT Sprockets"],
+      enum: ["Brembo"],
     },
     code: {
       type: String,

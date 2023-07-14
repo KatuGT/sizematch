@@ -23,9 +23,11 @@ const BrakeDisc = () => {
     fetch(...args).then((res) => res.json()) as Promise<
       SearchResultBrakeDisc[]
     >;
-
+  console.log(brakeDisc);
+  
    const params = CreateParams({ data: brakeDisc });
-
+  console.log(params);
+  
   const { data, isLoading } = useSWR<SearchResultBrakeDisc[]>(
     params
       ? `http://localhost:3000/api/search/${possibleParts.BrakeDisc}/${params}`

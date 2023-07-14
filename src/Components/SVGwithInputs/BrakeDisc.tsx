@@ -137,21 +137,13 @@ const BrakeDisc = ({
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             />
+
             <div
-              className="relative left-[18px] mx-auto mt-2 flex gap-2
-              desktop:mt-0 "
+              className="relative left-[18px] mx-auto mt-2 flex flex-col items-center
+              gap-2 desktop:mt-0"
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              <span
-                className={`sizeC ${
-                  hoveredClass === "sizeC"
-                    ? "text-sizeCcolorLight"
-                    : "text-sizeCcolor"
-                } `}
-              >
-                C
-              </span>
               <Controller
                 control={control}
                 name="c_numberOfHoles"
@@ -173,6 +165,15 @@ const BrakeDisc = ({
                   />
                 )}
               />
+              <span
+                className={`sizeC text-center ${
+                  hoveredClass === "sizeC"
+                    ? "text-sizeCcolorLight"
+                    : "text-sizeCcolor"
+                } `}
+              >
+                C - Number of holes
+              </span>
             </div>
           </div>
         </div>

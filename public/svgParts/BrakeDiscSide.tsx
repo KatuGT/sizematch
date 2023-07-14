@@ -1,4 +1,5 @@
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
+import { sizeColors } from "@/utils";
 import React from "react";
 
 const BrakeDiscSide = ({
@@ -30,78 +31,139 @@ const BrakeDiscSide = ({
           fill: "#656768",
         }}
       />
-      <path
-        d="M98.71 942.716h277.779v4.167H98.71zM98.71 1361.47h277.779v4.167H98.71z"
-        style={{
-          fill: "#93166d",
-        }}
-      />
-      <path
-        d="M132.682 973.45h12.82l-14.133-19.542-13.729 19.542h12.437v361.537h-12.612l13.729 19.542 14.133-19.542h-12.645V973.45Z"
-        style={{
-          fill: "#93166d",
-          fillRule: "nonzero",
-        }}
-      />
-      <text
-        x={22.851}
-        y={1190.29}
-        style={{
-          fontFamily: "&quot",
-          fontSize: "112.5px",
-          fill: "#93166d",
-        }}
-      >
-        {"D"}
-      </text>
-      <path
-        d="M404.986 869.8h235.981v4.167H404.986zM404.986 1444.8h235.981v4.167H404.986z"
-        style={{
-          fill: "#88af05",
-        }}
-      />
-      <path
-        d="M620.645 896.887h12.825l-14.133-19.542-13.729 19.542h12.433v516.663h-12.437l13.729 19.541 14.133-19.541h-12.821V896.887Z"
-        style={{
-          fill: "#88af05",
-          fillRule: "nonzero",
-        }}
-      />
-      <text
-        x={633.204}
-        y={1190.29}
-        style={{
-          fontFamily: "&quot",
-          fontSize: "112.5px",
-          fill: "#88af05",
-        }}
-      >
-        {"E"}
-      </text>
-      <path
-        d="M372.792 2238.12h4.167v46.008h-4.167zM322.967 2238.32h4.167v46.004h-4.167z"
-        style={{
-          fill: "#b47b01",
-        }}
-      />
-      <path
-        d="m371.41 2266.76-19.537-13.729-.004 12.467h-4.338l.138-12-19.7 13.508 19.383 14.358.146-12.741h4.371l-.004 12.275 19.545-14.138Z"
-        style={{
-          fill: "#b47b01",
-          fillRule: "nonzero",
-        }}
-      />
-      <text
-        x={313.914}
-        y={2379.16}
-        style={{
-          fontFamily: "&quot",
-          fontSize: "112.5px",
-          fill: "#b47b01",
-        }}
-      >
-        {"F"}
-      </text>
+      {/* Medida D */}
+      <g>
+        <path
+          d="M98.71 942.716h277.779v4.167H98.71zM98.71 1361.47h277.779v4.167H98.71z"
+          className={`sizeD`}
+          style={{
+            fill:
+              hoveredClass === "sizeD"
+                ? sizeColors.sizeDcolorLight
+                : sizeColors.sizeDcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <path
+          d="M132.682 973.45h12.82l-14.133-19.542-13.729 19.542h12.437v361.537h-12.612l13.729 19.542 14.133-19.542h-12.645V973.45Z"
+          className={`sizeD`}
+          style={{
+            fill:
+              hoveredClass === "sizeD"
+                ? sizeColors.sizeDcolorLight
+                : sizeColors.sizeDcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <text
+          x={22.851}
+          y={1190.29}
+          className={`sizeD`}
+          style={{
+            fontFamily: "&quot",
+            fontSize: 120,
+            fill:
+              hoveredClass === "sizeD"
+                ? sizeColors.sizeDcolorLight
+                : sizeColors.sizeDcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          {"D"}
+        </text>
+      </g>
+
+      {/* Medida E */}
+      <g>
+        <path
+          d="M404.986 869.8h235.981v4.167H404.986zM404.986 1444.8h235.981v4.167H404.986z"
+          className={`sizeE`}
+          style={{
+            fill:
+              hoveredClass === "sizeE"
+                ? sizeColors.sizeEcolorLight
+                : sizeColors.sizeEcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <path
+          d="M620.645 896.887h12.825l-14.133-19.542-13.729 19.542h12.433v516.663h-12.437l13.729 19.541 14.133-19.541h-12.821V896.887Z"
+          className={`sizeE`}
+          style={{
+            fill:
+              hoveredClass === "sizeE"
+                ? sizeColors.sizeEcolorLight
+                : sizeColors.sizeEcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <text
+          x={633.204}
+          y={1190.29}
+          className={`sizeE`}
+          style={{
+            fontFamily: "&quot",
+            fontSize: 120,
+            fill:
+              hoveredClass === "sizeE"
+                ? sizeColors.sizeEcolorLight
+                : sizeColors.sizeEcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          {"E"}
+        </text>
+      </g>
+
+      <g>
+        <path
+          d="M372.792 2238.12h4.167v46.008h-4.167zM322.967 2238.32h4.167v46.004h-4.167z"
+          className={`sizeF`}
+          style={{
+            fill:
+              hoveredClass === "sizeF"
+                ? sizeColors.sizeFcolorLight
+                : sizeColors.sizeFcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <path
+          d="m371.41 2266.76-19.537-13.729-.004 12.467h-4.338l.138-12-19.7 13.508 19.383 14.358.146-12.741h4.371l-.004 12.275 19.545-14.138Z"
+          className={`sizeF`}
+          style={{
+            fill:
+              hoveredClass === "sizeF"
+                ? sizeColors.sizeFcolorLight
+                : sizeColors.sizeFcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <text
+          x={313.914}
+          y={2379.16}
+          className={`sizeF`}
+          style={{
+            fontFamily: "&quot",
+            fontSize: 120,
+            fill:
+              hoveredClass === "sizeF"
+                ? sizeColors.sizeFcolorLight
+                : sizeColors.sizeFcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          {"F"}
+        </text>
+      </g>
     </svg>
   );
 };

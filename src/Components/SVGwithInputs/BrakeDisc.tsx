@@ -85,9 +85,9 @@ const BrakeDisc = ({
           />
         </ul>
       </section>
-      <div className="grid grid-cols-1 gap-x-5 gap-y-5  laptop:grid-cols-2">
-        <div className="mx-auto flex w-[300px] justify-center mobile:w-[450px] laptop:mx-0 laptop:justify-normal">
-          <div className="relative flex w-[300px] flex-col  items-center mobile:w-[400px] laptop:items-end">
+      <div className="grid grid-cols-1 gap-x-5 gap-y-5  laptop:relative laptop:left-16 laptop:grid-cols-2 laptop:gap-x-0 desktop:left-20">
+        <div className="mx-auto flex w-[300px] justify-center mobile:w-[450px] laptop:mx-0 laptop:items-start laptop:justify-end ">
+          <div className="relative flex w-[300px] flex-col  items-center mobile:w-[400px] laptop:items-end desktop:w-[500px]">
             <Controller
               control={control}
               name="a_discDiameter"
@@ -104,7 +104,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.a_discDiameter || ""}
                   placeholder="260"
-                  position="left-[10%] mobile:left-[40%] top-[39%] mobile:top-[48%] laptop:top-[42%] laptop:left-[37%] bg-gray-900"
+                  position="left-[10%]  top-[39%]  mobile:left-[-20%] mobile:top-[41%] laptop:left-[-27%] desktop:left-[-25%] desktop:top-[42%]  bg-gray-900"
                   error={errors?.a_discDiameter?.message?.toString()}
                 />
               )}
@@ -126,7 +126,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.b_holeDiameter || ""}
                   placeholder="10.5"
-                  position="left-[62%] mobile:left-[39%] top-[38%] mobile:top-[48%] laptop:top-[42%] laptop:left-[37%] bg-gray-900"
+                  position="left-[62%] top-[38%] mobile:left-[48%] mobile:top-[48%] laptop:top-[49%] laptop:left-[44%] desktop:left-[46%] bg-gray-900"
                   error={errors?.b_holeDiameter?.message?.toString()}
                 />
               )}
@@ -138,7 +138,8 @@ const BrakeDisc = ({
               onMouseLeave={onMouseLeave}
             />
             <div
-              className="mx-auto mt-2 flex gap-2"
+              className="relative left-[18px] mx-auto mt-2 flex gap-2
+              desktop:mt-0 "
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
@@ -175,8 +176,8 @@ const BrakeDisc = ({
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-col items-center justify-center gap-10 laptop:mt-0">
-          <div className="relative w-[100px] mobile:w-[350px]">
+        <div className="mt-10 flex flex-col items-center justify-center gap-10 laptop:mt-0 laptop:justify-start ">
+          <div className="relative w-[100px] mobile:w-[110px] desktop:w-[130px]">
             <Controller
               control={control}
               name="d_center"
@@ -193,7 +194,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.d_center || ""}
                   placeholder="132"
-                  position="top-[39%] left-[-75%] mobile:left-[98%] mobile:top-[43%] laptop:top-[44%] "
+                  position="top-[39%] left-[-75%] mobile:left-[-70%] mobile:top-[40%] laptop:left-[-95%] desktop:top-[41%] desktop:left-[-85%]"
                   error={errors?.d_center?.message?.toString()}
                 />
               )}
@@ -214,7 +215,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.e_holeDistance || ""}
                   placeholder="150"
-                  position="top-[39%] left-[97%] mobile:left-[98%] mobile:top-[43%] laptop:top-[44%] "
+                  position="top-[39%] left-[97%] mobile:left-[100%] mobile:top-[40%] desktop:top-[41%]"
                   error={errors?.e_holeDistance?.message?.toString()}
                 />
               )}
@@ -240,7 +241,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.f_width || ""}
                   placeholder="5"
-                  position="relative mt-1 left-[8%]"
+                  position="relative mt-1 left-[8%] laptop:left-[-5%] desktop:left-[8%]"
                   error={errors?.f_width?.message?.toString()}
                 />
               )}

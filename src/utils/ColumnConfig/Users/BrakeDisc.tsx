@@ -48,7 +48,7 @@ export const GetBrakeDiscConfigColumnUser = ({
         >
           <span className="custom-input-span">A</span>
           <input
-            placeholder="20"
+            placeholder="260"
             type="text"
             className="custom-input"
             name="a_discDiameter"
@@ -76,7 +76,7 @@ export const GetBrakeDiscConfigColumnUser = ({
         >
           <span className="custom-input-span">B</span>
           <input
-            placeholder="22"
+            placeholder="10.5"
             type="text"
             className="custom-input"
             name="b_holeDiameter"
@@ -106,7 +106,7 @@ export const GetBrakeDiscConfigColumnUser = ({
         >
           <span className="custom-input-span">C</span>
           <input
-            placeholder="25.5"
+            placeholder="6"
             type="text"
             className="custom-input"
             name="c_numberOfHoles"
@@ -137,7 +137,7 @@ export const GetBrakeDiscConfigColumnUser = ({
         >
           <span className="custom-input-span">D</span>
           <input
-            placeholder="10.8"
+            placeholder="132"
             type="text"
             className="custom-input"
             name="d_center"
@@ -165,7 +165,7 @@ export const GetBrakeDiscConfigColumnUser = ({
         >
           <span className="custom-input-span">E</span>
           <input
-            placeholder="520"
+            placeholder="150"
             type="text"
             className="custom-input"
             name="e_holeDistance"
@@ -187,15 +187,15 @@ export const GetBrakeDiscConfigColumnUser = ({
         <div
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
+          className={`sizeF ${
+            hoveredClass === "sizeF"
+              ? "text-sizeFcolorLight"
+              : "text-sizeFcolor"
           } custom-input-wrapper`}
         >
-          <span className="custom-input-span">E</span>
+          <span className="custom-input-span">F</span>
           <input
-            placeholder="520"
+            placeholder="5"
             type="text"
             className="custom-input"
             name="f_width"

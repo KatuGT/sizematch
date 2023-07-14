@@ -1,4 +1,5 @@
 import BrakeDisc from "@/models/BrakeDiscModel";
+import ConnectingRod from "@/models/ConnectigRodModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
@@ -14,7 +15,7 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
   [possibleParts.RearSprocket]: RearSprocket,
   [possibleParts.BrakeDisc]: BrakeDisc,
-
+  [possibleParts.ConnectingRods]: ConnectingRod,
 };
 
 export const GET = async (req: Request) => {

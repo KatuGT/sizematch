@@ -3,6 +3,7 @@ import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplineProps";
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
+import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 // Front Sprocket LARGE Splie column config
 export const GetLSConfigColumnUser = ({
@@ -21,7 +22,7 @@ export const GetLSConfigColumnUser = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: "FSLageSpline",
+      group: possibleParts.FSLargeSpline,
     });
   };
   const largeSplineColumnUser: GridColDef[] = [

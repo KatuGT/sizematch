@@ -14,16 +14,18 @@ import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartC
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 import {
+  brakeDiscSchema,
   frontSprocketLargeSplineSchema,
   frontSprocketNarrowSplineSchema,
   generateSchema,
   makesOptions,
   partsOptions,
+  rearSprocketSchema,
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import RearSprocket from "../SVGwithInputs/RearSprocket";
-import { rearSprocketSchema } from "@/utils/yupSchemas/RearSprocket";
-import { useSWRConfig } from 'swr'
+import { useSWRConfig } from "swr";
+import BrakeDisc from "../SVGwithInputs/BrakeDisc";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -32,7 +34,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
-  const { fsNarrowSpline, fsLargeSpline, rearSprocket } = sharedValueState;
+  const { fsNarrowSpline, fsLargeSpline, rearSprocket, brakeDisc } =
+    sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
@@ -48,17 +51,22 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     [key: string]: string;
   }
 
+  const [partToUpdate, setPartToUpdate] = useState({
+    make: fsNarrowSpline.make,
+    code: fsNarrowSpline.code,
+    link: fsNarrowSpline.link,
+  });
+
   const {
     handleSubmit,
     formState: { errors },
     control,
     reset,
-    watch,
     setValue,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
-      make: makesOptions[0].displayName,
+      make: partToUpdate.make,
     },
   });
 
@@ -76,12 +84,23 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(rearSprocket).forEach((key) => {
           setValue(key, rearSprocket[key as keyof typeof rearSprocket]);
         });
+      } else if (part === possibleParts.BrakeDisc) {
+        Object.keys(brakeDisc).forEach((key) => {
+          setValue(key, brakeDisc[key as keyof typeof brakeDisc]);
+        });
       }
     }
-  }, [editingMode, fsLargeSpline, fsNarrowSpline, part, rearSprocket, setValue]);
+  }, [
+    editingMode,
+    fsLargeSpline,
+    fsNarrowSpline,
+    part,
+    rearSprocket,
+    brakeDisc,
+    setValue,
+  ]);
 
-  const { mutate } = useSWRConfig()
-
+  const { mutate } = useSWRConfig();
 
   const onSubmit = async (data: partPostProps) => {
     if (editingMode) {
@@ -140,8 +159,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           }),
         });
 
-        if (resp.ok) { 
-          mutate(`http://localhost:3000/api/parts?part=${selectedPart}`)
+        if (resp.ok) {
+          mutate(`http://localhost:3000/api/parts?part=${selectedPart}`);
           Swal.mixin({
             toast: true,
             position: "top-end",
@@ -192,12 +211,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
   }, [EditingModeDispatch, selectedPart, sharedValueDispatch]);
 
-  const [partToShow, setPartToShow] = useState({
-    make: fsNarrowSpline.make,
-    code: fsNarrowSpline.code,
-    link: fsNarrowSpline.link,
-  });
-
   const [group, setGroup] = useState<possibleParts>(
     possibleParts.FSNarrowSpline
   );
@@ -207,7 +220,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       switch (selectedPart) {
         case possibleParts.FSNarrowSpline:
           setPartSchema(frontSprocketNarrowSplineSchema);
-          setPartToShow({
+          setPartToUpdate({
             make: fsNarrowSpline.make,
             code: fsNarrowSpline.code,
             link: fsNarrowSpline.link,
@@ -216,7 +229,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           break;
         case possibleParts.FSLargeSpline:
           setPartSchema(frontSprocketLargeSplineSchema);
-          setPartToShow({
+          setPartToUpdate({
             make: fsLargeSpline.make,
             code: fsLargeSpline.code,
             link: fsLargeSpline.link,
@@ -225,19 +238,28 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           break;
         case possibleParts.RearSprocket:
           setPartSchema(rearSprocketSchema);
-          setPartToShow({
+          setPartToUpdate({
             make: rearSprocket.make,
             code: rearSprocket.code,
             link: rearSprocket.link,
           });
           setGroup(possibleParts.RearSprocket);
           break;
+        case possibleParts.BrakeDisc:
+          setPartSchema(brakeDiscSchema);
+          setPartToUpdate({
+            make: brakeDisc.make,
+            code: brakeDisc.code,
+            link: brakeDisc.link,
+          });
+          setGroup(possibleParts.BrakeDisc);
+          break;
         default:
           break;
       }
     };
     setPartData();
-  }, [selectedPart, fsLargeSpline, fsNarrowSpline, rearSprocket]);
+  }, [selectedPart, fsLargeSpline, fsNarrowSpline, rearSprocket, brakeDisc]);
 
   const DisplaySVG = () => {
     switch (selectedPart) {
@@ -264,6 +286,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.RearSprocket:
         return (
           <RearSprocket
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
+      case possibleParts.BrakeDisc:
+        return (
+          <BrakeDisc
             control={control}
             errors={errors}
             hoveredClass={hoveredClass}
@@ -314,7 +346,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                   id="makes"
                   label="Make"
                   optionsArray={makesOptions}
-                  value={partToShow.make || ""}
+                  value={partToUpdate.make || ""}
                 />
               )}
             />
@@ -337,7 +369,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                       group: group,
                     });
                   }}
-                  value={partToShow.code || ""}
+                  value={partToUpdate.code || ""}
                   placeholder="31435"
                   id="code"
                   label="Code"
@@ -361,7 +393,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                       group: group,
                     });
                   }}
-                  value={partToShow.link || ""}
+                  value={partToUpdate.link || ""}
                   placeholder="www.sizematch.com"
                   id="link"
                   label="Link"

@@ -7,7 +7,6 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useContext } from "react";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
-// Front Sprocket NARROW Spline column config
 interface ColumnsProps extends SVGProps {
   onClickDelete: (id: string | ObjectId) => Promise<void>;
   onClickEdit: (part: string, id: string | ObjectId) => Promise<void>;

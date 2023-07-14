@@ -1,8 +1,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
-import { DataGrid, GridColDef, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-
 import { ObjectId } from "mongodb";
 import Swal from "sweetalert2";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
@@ -13,7 +12,8 @@ import {
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
-import { GetRearSprocketConfigColumn } from "@/utils/ColumnConfig/Admin/rearSprocherColumnsAdmin";
+import { GetRearSprocketConfigColumn } from "@/utils/ColumnConfig/Admin/rearSprockerColumnsAdmin";
+import { GetBrakeDiscConfigColumn } from "@/utils/ColumnConfig/Admin/brakeDiscColumnsAdmin";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: EditingModeDispatch, state: editingModeState } =
@@ -123,6 +123,16 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
   }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
 
+  const columnsBrakeDisc = useCallback(() => {
+    return GetBrakeDiscConfigColumn({
+      hoveredClass: hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
+      onClickDelete: handleDelete,
+      onClickEdit: handleEdit,
+    });
+  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
+
   const [columns, setColumns] = useState(columnsFSnarrowSpline);
 
   useEffect(() => {
@@ -136,10 +146,14 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.RearSprocket:
         setColumns(columnsRearSprocket);
         break;
+      case possibleParts.BrakeDisc:
+        setColumns(columnsBrakeDisc);
+        break;
       default:
         break;
     }
   }, [
+    columnsBrakeDisc,
     columnsFSlargeSpline,
     columnsFSnarrowSpline,
     columnsRearSprocket,

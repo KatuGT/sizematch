@@ -3,4 +3,5 @@ export enum possibleParts {
   FSLargeSpline = "FSLargeSpline",
   RearSprocket = "RearSprocket",
   BrakeDisc = "BrakeDisc",
+  ConnectingRods = "ConnectingRods",
 }

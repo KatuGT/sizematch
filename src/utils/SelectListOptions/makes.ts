@@ -9,4 +9,8 @@ export const makesOptions = [
     displayName: "ZF Sprockets",
     value: makes.ZF,
   },
+  {
+    displayName: "Brembo",
+    value: makes.Brembo,
+  },
 ];

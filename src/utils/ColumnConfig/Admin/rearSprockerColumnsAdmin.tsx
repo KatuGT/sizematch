@@ -4,8 +4,6 @@ import EditIcon from "@mui/icons-material/Edit";
 import { ObjectId } from "mongodb";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useContext } from "react";
-import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 
 interface ColumnsProps extends SVGProps {
   onClickDelete: (id: string | ObjectId) => Promise<void>;
@@ -19,7 +17,7 @@ export const GetRearSprocketConfigColumn = ({
   onMouseEnter,
   onMouseLeave,
 }: ColumnsProps) => {
-  const FrontSprocketColumn: GridColDef[] = [
+  const RearSprocketColumn: GridColDef[] = [
     { field: "_id", headerName: "ID", width: 70, sortable: false },
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
@@ -149,5 +147,5 @@ export const GetRearSprocketConfigColumn = ({
     },
   ];
 
-  return FrontSprocketColumn;
+  return RearSprocketColumn;
 };

@@ -267,7 +267,7 @@ export const GetConnectingRodConfigColumnUser = ({
         >
           <span className="custom-input-span">H</span>
           <input
-            placeholder="520"
+            placeholder="16"
             type="text"
             className="custom-input"
             name="h_bigEndPinDiameter"
@@ -299,7 +299,7 @@ export const GetConnectingRodConfigColumnUser = ({
         >
           <span className="custom-input-span">I</span>
           <input
-            placeholder="520"
+            placeholder="40"
             type="text"
             className="custom-input"
             name="i_bigEndPinLength"

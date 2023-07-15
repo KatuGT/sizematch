@@ -4,6 +4,7 @@ export { default as InputSizeEntry } from './InputSizeEntry/InputSizeEntry';
 export { default as ListItem } from './ListItem/ListItem';
 export { default as PostForm } from './PostForm/PostForm';
 export { default as BrakeDisc } from './SVGwithInputs/BrakeDisc';
+export { default as ConnectingRod } from './SVGwithInputs/ConnectingRod';
 export { default as FSLargeSpline } from './SVGwithInputs/FSLargeSpline';
 export { default as FSNarrowSpline } from './SVGwithInputs/FSNarrowSpline';
 export { default as RearSprocket } from './SVGwithInputs/RearSprocket';

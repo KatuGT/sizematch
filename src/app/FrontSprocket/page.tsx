@@ -3,11 +3,9 @@ import React, { useContext, useState } from "react";
 import useSWR from "swr";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import {
-  FSNarrowSplinesizeProps,
   SearchResultFSNarrowSpline,
 } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import {
@@ -16,7 +14,6 @@ import {
   useHover,
 } from "@/utils";
 import { FSLargeSpline, FSNarrowSpline } from "@/Components";
-import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplineProps";
 import TableRecomendations from "@/Components/TableRecomendations";
 import CreateParams from "@/utils/createParams";
 

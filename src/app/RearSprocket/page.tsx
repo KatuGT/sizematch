@@ -7,10 +7,7 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { useHover } from "@/utils";
 import TableRecomendations from "@/Components/TableRecomendations";
-import {
-  RearSprocketsizeProps,
-  SearchResultRearSprocket,
-} from "@/types-enums-interfaces/RearSprocketProps";
+import { SearchResultRearSprocket } from "@/types-enums-interfaces/RearSprocketProps";
 import { GetRearSprocketConfigColumnUser } from "@/utils/ColumnConfig/Users/RearSprocket";
 import { RearSprocket as RearSprocketSVG } from "@/Components";
 import CreateParams from "@/utils/createParams";
@@ -26,15 +23,14 @@ const RearSprocket = () => {
     onMouseLeave: handleMouseLeave,
   });
 
-  //fetch
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json()) as Promise<
       SearchResultRearSprocket[]
     >;
 
   // const params = transformToParams();
-  const params = CreateParams({data: rearSprocket});
-  
+  const params = CreateParams({ data: rearSprocket });
+
   const { data, isLoading } = useSWR<SearchResultRearSprocket[]>(
     params
       ? `http://localhost:3000/api/search/${possibleParts.RearSprocket}/${params}`

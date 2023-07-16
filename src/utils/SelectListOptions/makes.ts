@@ -21,4 +21,8 @@ export const makesOptions = [
     displayName: "TKRJ",
     value: makes.Tkrj,
   },
+  {
+    displayName: "Hot Rods",
+    value: makes.HotRods,
+  },
 ];

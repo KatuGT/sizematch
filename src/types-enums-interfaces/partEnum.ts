@@ -4,4 +4,5 @@ export enum possibleParts {
   RearSprocket = "RearSprocket",
   BrakeDisc = "BrakeDisc",
   ConnectingRods = "ConnectingRods",
+  PistonKit = "PistonKit",
 }

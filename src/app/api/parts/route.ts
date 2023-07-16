@@ -3,6 +3,7 @@ import ConnectingRod from "@/models/ConnectigRodModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
+import PistonKit from "@/models/pistonKit";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model, Document } from "mongoose";
@@ -16,6 +17,7 @@ const partModelArray: Record<possibleParts, PartModel> = {
   [possibleParts.RearSprocket]: RearSprocket,
   [possibleParts.BrakeDisc]: BrakeDisc,
   [possibleParts.ConnectingRods]: ConnectingRod,
+  [possibleParts.PistonKit]: PistonKit,
 };
 
 export const GET = async (req: Request) => {

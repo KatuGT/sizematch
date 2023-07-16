@@ -3,6 +3,7 @@ import ConnectingRod from "@/models/ConnectigRodModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
+import PistonKit from "@/models/pistonKit";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model } from "mongoose";
@@ -66,6 +67,9 @@ export const GET = async (req: Request, { params }: any) => {
         break;
       case possibleParts.ConnectingRods:
         searchResult = await searchModel(ConnectingRod, searchQuery);
+        break;
+      case possibleParts.PistonKit:
+        searchResult = await searchModel(PistonKit, searchQuery);
         break;
       default:
         break;

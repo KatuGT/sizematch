@@ -13,4 +13,16 @@ export const makesOptions = [
     displayName: "Brembo",
     value: makes.Brembo,
   },
+  {
+    displayName: "Prox Racing Parts",
+    value: makes.Prox,
+  },
+  {
+    displayName: "TKRJ",
+    value: makes.Tkrj,
+  },
+  {
+    displayName: "Hot Rods",
+    value: makes.HotRods,
+  },
 ];

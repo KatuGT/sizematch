@@ -2,6 +2,7 @@
 import React, { createContext, useReducer } from "react";
 import {
   INITIAL_STATE_BRAKEDISC,
+  INITIAL_STATE_CONNECTINGROD,
   INITIAL_STATE_FSLARGESPLINE,
   INITIAL_STATE_FSNARROWSPLINE,
   INITIAL_STATE_REARSPROCKET,
@@ -13,6 +14,7 @@ type StateType = {
   fsLargeSpline: typeof INITIAL_STATE_FSLARGESPLINE;
   rearSprocket: typeof INITIAL_STATE_REARSPROCKET;
   brakeDisc: typeof INITIAL_STATE_BRAKEDISC;
+  connectingRod: typeof INITIAL_STATE_CONNECTINGROD;
 };
 
 type SetDataAction = {
@@ -22,12 +24,14 @@ type SetDataAction = {
     | typeof INITIAL_STATE_FSLARGESPLINE
     | typeof INITIAL_STATE_REARSPROCKET
     | typeof INITIAL_STATE_BRAKEDISC
+    | typeof INITIAL_STATE_CONNECTINGROD
   >;
   group:
     | possibleParts.FSNarrowSpline
     | possibleParts.FSLargeSpline
     | possibleParts.RearSprocket
-    | possibleParts.BrakeDisc;
+    | possibleParts.BrakeDisc
+    | possibleParts.ConnectingRods;
 };
 
 export type ActionType =
@@ -39,12 +43,14 @@ export type ActionType =
         | typeof INITIAL_STATE_FSLARGESPLINE
         | typeof INITIAL_STATE_REARSPROCKET
         | typeof INITIAL_STATE_BRAKEDISC
+        | typeof INITIAL_STATE_CONNECTINGROD
       >;
       group:
         | possibleParts.FSNarrowSpline
         | possibleParts.FSLargeSpline
         | possibleParts.RearSprocket
-        | possibleParts.BrakeDisc;
+        | possibleParts.BrakeDisc
+        | possibleParts.ConnectingRods;
     }
   | {
       type: string;
@@ -54,6 +60,7 @@ export type ActionType =
         | possibleParts.FSLargeSpline
         | possibleParts.RearSprocket
         | possibleParts.BrakeDisc
+        | possibleParts.ConnectingRods
         | "RESET_VALUES";
     };
 
@@ -68,6 +75,7 @@ export const SharedValuesContext = createContext<ContextType>({
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
     rearSprocket: INITIAL_STATE_REARSPROCKET,
     brakeDisc: INITIAL_STATE_BRAKEDISC,
+    connectingRod: INITIAL_STATE_CONNECTINGROD,
   },
   dispatch: () => {},
 });
@@ -116,6 +124,16 @@ const reducer = (state: StateType, action: ActionType) => {
           ...(type !== "SET_DATA" && { [type]: payload }),
         },
       };
+    case possibleParts.ConnectingRods:
+      return {
+        ...state,
+        connectingRod: {
+          ...state.connectingRod,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_CONNECTINGROD>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
+        },
+      };
     case "RESET_VALUES":
       return {
         ...state,
@@ -123,6 +141,7 @@ const reducer = (state: StateType, action: ActionType) => {
         fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
         rearSprocket: INITIAL_STATE_REARSPROCKET,
         brakeDisc: INITIAL_STATE_BRAKEDISC,
+        connectingRod: INITIAL_STATE_CONNECTINGROD,
       };
     default:
       return state;
@@ -139,6 +158,7 @@ export const SharedValuesProvider = ({
     fsLargeSpline: INITIAL_STATE_FSLARGESPLINE,
     rearSprocket: INITIAL_STATE_REARSPROCKET,
     brakeDisc: INITIAL_STATE_BRAKEDISC,
+    connectingRod: INITIAL_STATE_CONNECTINGROD,
   });
 
   return (

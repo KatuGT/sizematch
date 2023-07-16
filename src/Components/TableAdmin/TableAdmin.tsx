@@ -14,6 +14,7 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 import { GetRearSprocketConfigColumn } from "@/utils/ColumnConfig/Admin/rearSprockerColumnsAdmin";
 import { GetBrakeDiscConfigColumn } from "@/utils/ColumnConfig/Admin/brakeDiscColumnsAdmin";
+import { GetConnectingRodConfigColumn } from "@/utils/ColumnConfig/Admin/connectingRodColumnsAdmin";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: EditingModeDispatch, state: editingModeState } =
@@ -133,6 +134,16 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
   }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
 
+  const columnsConnectingRod = useCallback(() => {
+    return GetConnectingRodConfigColumn({
+      hoveredClass: hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
+      onClickDelete: handleDelete,
+      onClickEdit: handleEdit,
+    });
+  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
+
   const [columns, setColumns] = useState(columnsFSnarrowSpline);
 
   useEffect(() => {
@@ -149,11 +160,15 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.BrakeDisc:
         setColumns(columnsBrakeDisc);
         break;
+      case possibleParts.ConnectingRods:
+        setColumns(columnsConnectingRod);
+        break;
       default:
         break;
     }
   }, [
     columnsBrakeDisc,
+    columnsConnectingRod,
     columnsFSlargeSpline,
     columnsFSnarrowSpline,
     columnsRearSprocket,

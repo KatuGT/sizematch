@@ -84,9 +84,16 @@ const PistonKit = ({
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
           />
+          <ListItem
+            classSize="sizeG"
+            text="G - Stroke"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
+          />
         </ul>
       </section>
-      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:mt-10 desktop:flex-row desktop:gap-4">
+      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:mt-10 desktop:flex-row desktop:gap-4 desktop:left-16">
         <div className="relative mt-10 w-[200px] mobile:w-[250px] laptop:w-[350px] laptop:items-end desktop:mt-0 desktop:w-[500px]">
           <Controller
             control={control}
@@ -178,7 +185,7 @@ const PistonKit = ({
             onMouseLeave={onMouseLeave}
           />
         </div>
-        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:flex-row mobile:justify-between laptop:w-full laptop:justify-between desktop:justify-center desktop:gap-20">
+        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:flex-row mobile:gap-20 mobile:w-full desktop:justify-center desktop:gap-20">
           <div className="relative mx-auto w-[195px] mobile:mx-0 mobile:w-[250px]  laptop:w-[355px]">
             <Controller
               control={control}
@@ -210,7 +217,7 @@ const PistonKit = ({
           </div>
           <div
             className="laptop: relative mr-0 w-[80px] mobile:mr-16
-          mobile:w-[100px] desktop:w-[150px]"
+          mobile:w-[110px] laptop:w-[150px]"
           >
             <Controller
               control={control}
@@ -228,7 +235,7 @@ const PistonKit = ({
                   }}
                   value={pistonKit.b_pinDiameter || ""}
                   placeholder="15"
-                  position="left-[-7%] top-[-11%] mobile:left-[4%] mobile:top-[-8%] laptop:left-[-8%] desktop:left-[2%] desktop:top-[-5%] bg-gray-900"
+                  position="left-[-7%] top-[-11%] mobile:left-[4%] mobile:top-[-8%] laptop:left-[3%] laptop:top-[-5%] bg-gray-900"
                   error={errors?.b_pinDiameter?.message?.toString()}
                 />
               )}
@@ -250,7 +257,7 @@ const PistonKit = ({
                   }}
                   value={pistonKit.f_pinLength || ""}
                   placeholder="48"
-                  position="left-[100%] top-[55%] mobile:top-[56%] laptop:left-[96%] desktop:left-[95%] desktop:top-[57.5%] bg-gray-900"
+                  position="left-[100%] top-[55%] mobile:top-[56%] laptop:left-[96%] laptop:top-[58%] desktop:left-[95%] desktop:top-[57.5%] bg-gray-900"
                   error={errors?.f_pinLength?.message?.toString()}
                 />
               )}
@@ -269,23 +276,40 @@ const PistonKit = ({
           control={control}
           name="g_stroke"
           render={({ field: { onChange } }) => (
-            <InputSizeEntry
-              hoveredClass={hoveredClass}
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-              mainClass="sizeF"
-              name="g_stroke"
-              onChange={(value) => {
-                onChange(value);
-                handleOnChange(value);
-              }}
-              value={pistonKit.g_stroke || ""}
-              placeholder="4"
-              position=" relative"
-              error={errors?.g_stroke?.message?.toString()}
-            />
+            <div className="flex rounded-lg border border-gray-500  bg-gray-600 text-white">
+              <label className="flex gap-2 border-r border-gray-500 px-3 py-2">
+                <input
+                  type="radio"
+                  name="g_stroke"
+                  value="2"
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                />
+                <span>2 Stroke</span>
+              </label>
+
+              <label className="flex gap-2 px-3 py-2">
+                <input
+                  type="radio"
+                  name="g_stroke"
+                  value="4"
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                />
+                <span>4 Stroke</span>
+              </label>
+            </div>
           )}
         />
+        {errors.g_stroke && (
+          <p className="bottom-[-20px] text-xs text-red-600">
+            {errors.g_stroke.message}
+          </p>
+        )}
       </div>
     </div>
   );

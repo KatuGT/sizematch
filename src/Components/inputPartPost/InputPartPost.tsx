@@ -1,5 +1,3 @@
-import { FrontSprocketType } from "@/utils/FSInputData";
-import { useEffect } from "react";
 import { UseFormRegister, FieldError } from "react-hook-form";
 
 interface InputPartPostProps {
@@ -57,7 +55,7 @@ export const InputPartPost = ({
   );
 };
 
-export const InputListPartPost = ({
+export const InputList = ({
   id,
   label,
   name,

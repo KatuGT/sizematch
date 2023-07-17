@@ -2,10 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useForm, Controller } from "react-hook-form";
 import { Button } from "../Button/button";
-import {
-  InputListPartPost,
-  InputPartPost,
-} from "../inputPartPost/InputPartPost";
+import { InputList, InputPartPost } from "../inputPartPost/InputPartPost";
 import { yupResolver } from "@hookform/resolvers/yup";
 import BrakeDisc from "../SVGwithInputs/BrakeDisc";
 import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
@@ -29,11 +26,12 @@ import {
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useSWRConfig } from "swr";
+import { DisplaySVG } from "@/utils/displaySVG";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
-  const { dispatch: selectedPartDispatch, state: slectedPartState } =
+  const { dispatch: selectedPartDispatch, state: selectedPartState } =
     useContext(SelectedPartContext);
-  const { selectedPart } = slectedPartState;
+  const { selectedPart } = selectedPartState;
 
   const { dispatch: sharedValueDispatch, state: sharedValueState } =
     useContext(SharedValuesContext);
@@ -306,63 +304,6 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     pistonKit,
   ]);
 
-  const DisplaySVG = () => {
-    switch (selectedPart) {
-      case possibleParts.FSNarrowSpline:
-        return (
-          <FSNarrowSpline
-            control={control}
-            errors={errors}
-            hoveredClass={hoveredClass}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          />
-        );
-      case possibleParts.FSLargeSpline:
-        return (
-          <FSLargeSpline
-            control={control}
-            errors={errors}
-            hoveredClass={hoveredClass}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          />
-        );
-      case possibleParts.RearSprocket:
-        return (
-          <RearSprocket
-            control={control}
-            errors={errors}
-            hoveredClass={hoveredClass}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          />
-        );
-      case possibleParts.BrakeDisc:
-        return (
-          <BrakeDisc
-            control={control}
-            errors={errors}
-            hoveredClass={hoveredClass}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          />
-        );
-      case possibleParts.PistonKit:
-        return (
-          <PistonKit
-            control={control}
-            errors={errors}
-            hoveredClass={hoveredClass}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          />
-        );
-      default:
-        break;
-    }
-  };
-
   return (
     <div className="flex w-full max-w-[1000px] flex-col items-center justify-center">
       {editingMode && (
@@ -374,7 +315,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       >
         <div className="flex flex-wrap justify-center gap-3">
           <div className="flex flex-1 flex-col gap-3 px-4 laptop:px-0 ">
-            <InputListPartPost
+            <InputList
               onChange={handleChangePart}
               id="bikePart"
               label="Part"
@@ -386,7 +327,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
               control={control}
               name="make"
               render={({ field: { onChange } }) => (
-                <InputListPartPost
+                <InputList
                   onChange={(value) => {
                     onChange(value);
 
@@ -459,7 +400,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             />
           </div>
         </div>
-        {DisplaySVG()}
+        {
+          <DisplaySVG
+            part={selectedPart}
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        }
         <div className="flex justify-center gap-4">
           <Button type="submit" text={editingMode ? "Edit" : "Send"} />
           <Button

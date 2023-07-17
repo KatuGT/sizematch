@@ -3,17 +3,16 @@ import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
 
-export const GetRearSprocketConfigColumnUser = ({
+export const GetPistonKitConfigColumnUser = ({
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
 }: SVGProps) => {
   const { dispatch, state } = useContext(SharedValuesContext);
-  const { rearSprocket } = state;
+  const { pistonKit } = state;
 
-  const handleRearSprocketChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePistonKitChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     const newValue = value.replace(/[^0-9.]/g, "");
@@ -21,7 +20,7 @@ export const GetRearSprocketConfigColumnUser = ({
     dispatch({
       type: name,
       payload: newValue,
-      group: possibleParts.RearSprocket,
+      group: possibleParts.PistonKit,
     });
   };
 
@@ -29,7 +28,7 @@ export const GetRearSprocketConfigColumnUser = ({
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
     {
-      field: "a_holeDiameter",
+      field: "a_compressionHight1",
       headerName: "A",
       width: 90,
       filterable: false,
@@ -48,19 +47,19 @@ export const GetRearSprocketConfigColumnUser = ({
         >
           <span className="custom-input-span">A</span>
           <input
-            placeholder="20"
+            placeholder="22.5"
             type="text"
             className="custom-input"
-            name="a_holeDiameter"
-            value={rearSprocket.a_holeDiameter || ""}
-            onChange={handleRearSprocketChange}
+            name="a_compressionHight1"
+            value={pistonKit.a_compressionHight1 || ""}
+            onChange={handlePistonKitChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "b_numberOfHoles",
+      field: "b_pinDiameter",
       headerName: "B",
       width: 90,
       disableColumnMenu: true,
@@ -76,22 +75,19 @@ export const GetRearSprocketConfigColumnUser = ({
         >
           <span className="custom-input-span">B</span>
           <input
-            placeholder="22"
+            placeholder="15"
             type="text"
             className="custom-input"
-            name="b_numberOfHoles"
-            value={
-              rearSprocket["b_numberOfHoles" as keyof RearSprocketsizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
+            name="b_pinDiameter"
+            value={pistonKit.b_pinDiameter || ""}
+            onChange={handlePistonKitChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "c_holeDistance",
+      field: "c_compressionHight2",
       headerName: "C",
       width: 90,
       disableColumnMenu: true,
@@ -107,22 +103,19 @@ export const GetRearSprocketConfigColumnUser = ({
         >
           <span className="custom-input-span">C</span>
           <input
-            placeholder="25.5"
+            placeholder="22"
             type="text"
             className="custom-input"
-            name="c_holeDistance"
-            value={
-              rearSprocket["c_holeDistance" as keyof RearSprocketsizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
+            name="c_compressionHight2"
+            value={pistonKit.c_compressionHight2 || ""}
+            onChange={handlePistonKitChange}
           />
         </label>
       ),
       sortable: false,
     },
     {
-      field: "d_center",
+      field: "d_bore",
       headerName: "D",
       sortable: false,
       width: 90,
@@ -139,20 +132,18 @@ export const GetRearSprocketConfigColumnUser = ({
         >
           <span className="custom-input-span">D</span>
           <input
-            placeholder="10.8"
+            placeholder="63.5"
             type="text"
             className="custom-input"
-            name="d_center"
-            value={
-              rearSprocket["d_center" as keyof RearSprocketsizeProps] || ""
-            }
-            onChange={handleRearSprocketChange}
+            name="d_bore"
+            value={pistonKit.d_bore || ""}
+            onChange={handlePistonKitChange}
           />
         </label>
       ),
     },
     {
-      field: "e_chain",
+      field: "e_length",
       headerName: "E",
       sortable: false,
       width: 90,
@@ -169,12 +160,68 @@ export const GetRearSprocketConfigColumnUser = ({
         >
           <span className="custom-input-span">E</span>
           <input
-            placeholder="520"
+            placeholder="45.5"
             type="text"
             className="custom-input"
-            name="e_chain"
-            value={rearSprocket["e_chain" as keyof RearSprocketsizeProps] || ""}
-            onChange={handleRearSprocketChange}
+            name="e_length"
+            value={pistonKit.e_length || ""}
+            onChange={handlePistonKitChange}
+          />
+        </div>
+      ),
+    },
+    {
+      field: "f_pinLength",
+      headerName: "F",
+      sortable: false,
+      width: 90,
+      disableColumnMenu: true,
+      renderHeader: () => (
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          className={`sizeF ${
+            hoveredClass === "sizeF"
+              ? "text-sizeFcolorLight"
+              : "text-sizeFcolor"
+          } custom-input-wrapper`}
+        >
+          <span className="custom-input-span">F</span>
+          <input
+            placeholder="48"
+            type="text"
+            className="custom-input"
+            name="f_pinLength"
+            value={pistonKit.f_pinLength || ""}
+            onChange={handlePistonKitChange}
+          />
+        </div>
+      ),
+    },
+    {
+      field: "g_stroke",
+      headerName: "G",
+      sortable: false,
+      width: 90,
+      disableColumnMenu: true,
+      renderHeader: () => (
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          className={`sizeG ${
+            hoveredClass === "sizeG"
+              ? "text-sizeGcolorLight"
+              : "text-sizeGcolor"
+          } custom-input-wrapper`}
+        >
+          <span className="custom-input-span">G</span>
+          <input
+            placeholder="4"
+            type="text"
+            className="custom-input"
+            name="g_stroke"
+            value={pistonKit.g_stroke || ""}
+            onChange={handlePistonKitChange}
           />
         </div>
       ),

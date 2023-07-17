@@ -26,7 +26,7 @@ export const POST = async (req: Request, { params }: any) => {
   const body = await req.json();
 
   const { code } = body;
-  console.log(code);
+  console.log(body);
 
   const PartModel = partModelArray[part as possibleParts];
 
@@ -49,6 +49,8 @@ export const POST = async (req: Request, { params }: any) => {
 
     return new NextResponse(JSON.stringify(newPart), { status: 201 });
   } catch (err) {
+    console.log(err);
+    
     return new NextResponse("Database Error", { status: 500 });
   }
 };

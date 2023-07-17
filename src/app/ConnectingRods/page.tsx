@@ -8,11 +8,12 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import {
   useHover,
 } from "@/utils";
-import { ConnectingRod } from "@/Components";
+// import { ConnectingRod } from "@/Components";
 import TableRecomendations from "@/Components/TableRecomendations";
 import CreateParams from "@/utils/createParams";
 import { SearchResultConnectingRod } from "@/types-enums-interfaces/ConnectingRodProps";
 import { GetConnectingRodConfigColumnUser } from "@/utils/ColumnConfig/Users/ConnectingRod";
+import { ConnectingRod } from "@/Components";
 
 const ConnectingRods = () => {
   const { state } = useContext(SharedValuesContext);

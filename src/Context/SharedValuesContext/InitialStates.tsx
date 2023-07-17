@@ -58,3 +58,17 @@ export const INITIAL_STATE_CONNECTINGROD = {
   h_bigEndPinDiameter: "",
   i_bigEndPinLength: "",
 };
+
+export const INITIAL_STATE_PISTONKIT = {
+  make: "",
+  code: "",
+  link: "",
+  a_compressionHight1: "",
+  b_pinDiameter: "",
+  c_compressionHight2: "",
+  d_bore: "",
+  e_length: "",
+  f_pinLength: "",
+  g_stroke: "",
+
+};

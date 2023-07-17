@@ -1,33 +1,34 @@
 import React, { useContext, useEffect, useState } from "react";
+import Swal from "sweetalert2";
+import { useForm, Controller } from "react-hook-form";
 import { Button } from "../Button/button";
 import {
   InputListPartPost,
   InputPartPost,
 } from "../inputPartPost/InputPartPost";
-import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import BrakeDisc from "../SVGwithInputs/BrakeDisc";
 import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
 import FSLargeSpline from "../SVGwithInputs/FSLargeSpline";
-import Swal from "sweetalert2";
+import PistonKit from "../SVGwithInputs/PistonKit";
+import RearSprocket from "../SVGwithInputs/RearSprocket";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 import {
   brakeDiscSchema,
+  connectingRodSchema,
   frontSprocketLargeSplineSchema,
   frontSprocketNarrowSplineSchema,
+  rearSprocketSchema,
+  pistonKitSchema,
   generateSchema,
   makesOptions,
   partsOptions,
-  rearSprocketSchema,
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import RearSprocket from "../SVGwithInputs/RearSprocket";
 import { useSWRConfig } from "swr";
-import BrakeDisc from "../SVGwithInputs/BrakeDisc";
-import { connectingRodSchema } from "@/utils/yupSchemas/ConnectingRod";
-import ConnectingRod from "../SVGwithInputs/ConnectingRod";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: slectedPartState } =
@@ -42,6 +43,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     rearSprocket,
     brakeDisc,
     connectingRod,
+    pistonKit,
   } = sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
@@ -99,6 +101,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(connectingRod).forEach((key) => {
           setValue(key, connectingRod[key as keyof typeof connectingRod]);
         });
+      } else if (part === possibleParts.PistonKit) {
+        Object.keys(pistonKit).forEach((key) => {
+          setValue(key, pistonKit[key as keyof typeof pistonKit]);
+        });
       }
     }
   }, [
@@ -109,6 +115,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     rearSprocket,
     brakeDisc,
     connectingRod,
+    pistonKit,
     setValue,
   ]);
 
@@ -275,6 +282,15 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           setGroup(possibleParts.ConnectingRods);
           break;
+        case possibleParts.PistonKit:
+          setPartSchema(pistonKitSchema);
+          setPartToUpdate({
+            make: pistonKit.make,
+            code: pistonKit.code,
+            link: pistonKit.link,
+          });
+          setGroup(possibleParts.PistonKit);
+          break;
         default:
           break;
       }
@@ -287,6 +303,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     rearSprocket,
     brakeDisc,
     connectingRod,
+    pistonKit,
   ]);
 
   const DisplaySVG = () => {
@@ -331,9 +348,9 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             onMouseLeave={onMouseLeave}
           />
         );
-      case possibleParts.ConnectingRods:
+      case possibleParts.PistonKit:
         return (
-          <ConnectingRod
+          <PistonKit
             control={control}
             errors={errors}
             hoveredClass={hoveredClass}

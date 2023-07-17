@@ -7,7 +7,7 @@ const PistonKitSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["JT Sprockets"],
+      enum: ["TKRJ"],
     },
     code: {
       type: String,
@@ -44,6 +44,7 @@ const PistonKitSchema = new Schema(
     },
     g_stroke: {
       type: String,
+      enum: ["2", "4"],
       required: [true, "Medida G"],
     },
   },

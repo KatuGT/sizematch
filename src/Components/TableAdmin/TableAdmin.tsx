@@ -5,16 +5,17 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { ObjectId } from "mongodb";
 import Swal from "sweetalert2";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
-import {
-  GetNarrowSplineConfigColumn,
-  GetLargeSplineConfigColumn,
-} from "@/utils/ColumnConfig/Admin/frontSprocketColumnsAdmin";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
-import { GetRearSprocketConfigColumn } from "@/utils/ColumnConfig/Admin/rearSprockerColumnsAdmin";
-import { GetBrakeDiscConfigColumn } from "@/utils/ColumnConfig/Admin/brakeDiscColumnsAdmin";
-import { GetConnectingRodConfigColumn } from "@/utils/ColumnConfig/Admin/connectingRodColumnsAdmin";
+import {
+  GetBrakeDiscConfigColumn,
+  GetConnectingRodConfigColumn,
+  GetLargeSplineConfigColumn,
+  GetNarrowSplineConfigColumn,
+  GetPistonKitConfigColumn,
+  GetRearSprocketConfigColumn,
+} from "@/utils";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: EditingModeDispatch, state: editingModeState } =
@@ -144,6 +145,16 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
   }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
 
+  const columnsPistonKit = useCallback(() => {
+    return GetPistonKitConfigColumn({
+      hoveredClass: hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
+      onClickDelete: handleDelete,
+      onClickEdit: handleEdit,
+    });
+  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
+
   const [columns, setColumns] = useState(columnsFSnarrowSpline);
 
   useEffect(() => {
@@ -163,6 +174,9 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.ConnectingRods:
         setColumns(columnsConnectingRod);
         break;
+      case possibleParts.PistonKit:
+        setColumns(columnsPistonKit);
+        break;
       default:
         break;
     }
@@ -172,6 +186,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     columnsFSlargeSpline,
     columnsFSnarrowSpline,
     columnsRearSprocket,
+    columnsPistonKit,
     selectedPart,
   ]);
 

@@ -7,6 +7,7 @@ export { default as BrakeDisc } from './SVGwithInputs/BrakeDisc';
 export { default as ConnectingRod } from './SVGwithInputs/ConnectingRod';
 export { default as FSLargeSpline } from './SVGwithInputs/FSLargeSpline';
 export { default as FSNarrowSpline } from './SVGwithInputs/FSNarrowSpline';
+export { default as PistonKit } from './SVGwithInputs/PistonKit';
 export { default as RearSprocket } from './SVGwithInputs/RearSprocket';
 export { default as TableAdmin } from './TableAdmin/TableAdmin';
 export { default as TableRecomendations } from './TableRecomendations';

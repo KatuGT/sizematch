@@ -22,4 +22,8 @@ export const partsOptions = [
     displayName: "Connecting Rod",
     value: possibleParts.ConnectingRods,
   },
+  {
+    displayName: "Piston Kit",
+    value: possibleParts.PistonKit,
+  },
 ];

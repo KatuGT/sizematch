@@ -5,4 +5,5 @@ export enum possibleParts {
   BrakeDisc = "BrakeDisc",
   ConnectingRods = "ConnectingRods",
   PistonKit = "PistonKit",
+  Valve = "Valve",
 }

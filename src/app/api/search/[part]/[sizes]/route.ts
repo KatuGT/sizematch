@@ -3,6 +3,7 @@ import ConnectingRod from "@/models/ConnectigRodModel";
 import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
+import Valve from "@/models/ValveModel";
 import PistonKit from "@/models/pistonKit";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
@@ -70,6 +71,9 @@ export const GET = async (req: Request, { params }: any) => {
         break;
       case possibleParts.PistonKit:
         searchResult = await searchModel(PistonKit, searchQuery);
+        break;
+      case possibleParts.Valve:
+        searchResult = await searchModel(Valve, searchQuery);
         break;
       default:
         break;

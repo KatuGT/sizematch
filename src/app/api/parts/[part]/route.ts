@@ -28,7 +28,6 @@ export const POST = async (req: Request, { params }: any) => {
   const body = await req.json();
 
   const { code } = body;
-  console.log(body);
 
   const PartModel = partModelArray[part as possibleParts];
 
@@ -39,7 +38,9 @@ export const POST = async (req: Request, { params }: any) => {
   const codeExist = await PartModel.findOne({ code });
 
   if (codeExist) {
-    return new NextResponse(`The code ${code} already exist.`, { status: 400 });
+    return new NextResponse(JSON.stringify(`The code ${code} already exist.`), {
+      status: 404,
+    });
   }
 
   const newPart = new PartModel(body);
@@ -51,8 +52,12 @@ export const POST = async (req: Request, { params }: any) => {
 
     return new NextResponse(JSON.stringify(newPart), { status: 201 });
   } catch (err) {
-    console.log(err);
-    
-    return new NextResponse("Database Error", { status: 500 });
+    if (err instanceof Error) {
+      console.log(err.message);
+
+      return new NextResponse(err.message, { status: 500 });
+    } else {
+      console.log("Unexpected error", err);
+    }
   }
 };

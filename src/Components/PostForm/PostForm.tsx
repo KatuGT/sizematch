@@ -120,7 +120,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   ]);
 
   const { mutate } = useSWRConfig();
-
+  const [error, setError] = useState("");
   const onSubmit = async (data: partPostProps) => {
     if (editingMode) {
       try {
@@ -200,13 +200,18 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             group: "RESET_VALUES",
             payload: "",
           });
-        } else if (resp.status === 409) {
+        } else if (resp.status === 404) {
           const errorData = await resp.json();
+          setError(errorData);
 
-          throw new Error(errorData.message);
+          throw new Error(errorData);
         }
       } catch (err) {
-        console.warn(err);
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          console.log("Unexpected front error", err);
+        }
       }
     }
   };
@@ -444,6 +449,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           />
         </div>
       </form>
+      {error && <span className="text-red-700 mt-2">{error}</span>}
     </div>
   );
 };

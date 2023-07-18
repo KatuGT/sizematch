@@ -4,11 +4,6 @@ import { useForm, Controller } from "react-hook-form";
 import { Button } from "../Button/button";
 import { InputList, InputPartPost } from "../inputPartPost/InputPartPost";
 import { yupResolver } from "@hookform/resolvers/yup";
-import BrakeDisc from "../SVGwithInputs/BrakeDisc";
-import FSNarrowSpline from "../SVGwithInputs/FSNarrowSpline";
-import FSLargeSpline from "../SVGwithInputs/FSLargeSpline";
-import PistonKit from "../SVGwithInputs/PistonKit";
-import RearSprocket from "../SVGwithInputs/RearSprocket";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SelectedPartContext } from "@/Context/SelectedPartContext/SelectedPartContext";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
@@ -23,6 +18,7 @@ import {
   generateSchema,
   makesOptions,
   partsOptions,
+  valveSchema,
 } from "@/utils";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useSWRConfig } from "swr";
@@ -42,6 +38,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     brakeDisc,
     connectingRod,
     pistonKit,
+    valve,
   } = sharedValueState;
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
@@ -103,6 +100,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         Object.keys(pistonKit).forEach((key) => {
           setValue(key, pistonKit[key as keyof typeof pistonKit]);
         });
+      } else if (part === possibleParts.Valve) {
+        Object.keys(valve).forEach((key) => {
+          setValue(key, valve[key as keyof typeof valve]);
+        });
       }
     }
   }, [
@@ -114,6 +115,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     brakeDisc,
     connectingRod,
     pistonKit,
+    valve,
     setValue,
   ]);
 
@@ -289,6 +291,15 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           setGroup(possibleParts.PistonKit);
           break;
+        case possibleParts.Valve:
+          setPartSchema(valveSchema);
+          setPartToUpdate({
+            make: valve.make,
+            code: valve.code,
+            link: valve.link,
+          });
+          setGroup(possibleParts.Valve);
+          break;
         default:
           break;
       }
@@ -302,6 +313,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     brakeDisc,
     connectingRod,
     pistonKit,
+    valve,
   ]);
 
   return (

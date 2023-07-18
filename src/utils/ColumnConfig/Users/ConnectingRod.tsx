@@ -319,7 +319,7 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a href={params.row.link}>See more</a>,
+      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
     },
   ];
   return ConnectingRodColumn;

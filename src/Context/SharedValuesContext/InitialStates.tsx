@@ -70,5 +70,13 @@ export const INITIAL_STATE_PISTONKIT = {
   e_length: "",
   f_pinLength: "",
   g_stroke: "",
+};
 
+export const INITIAL_STATE_VALVE = {
+  make: "",
+  code: "",
+  link: "",
+  a_stemDiameter: "",
+  b_totalLength: "",
+  c_head: "",
 };

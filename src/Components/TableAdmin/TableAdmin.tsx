@@ -15,6 +15,7 @@ import {
   GetNarrowSplineConfigColumn,
   GetPistonKitConfigColumn,
   GetRearSprocketConfigColumn,
+  GetValveConfigColumn,
 } from "@/utils";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
@@ -155,6 +156,16 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     });
   }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
 
+  const columnsValve = useCallback(() => {
+    return GetValveConfigColumn({
+      hoveredClass: hoveredClass,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
+      onClickDelete: handleDelete,
+      onClickEdit: handleEdit,
+    });
+  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
+
   const [columns, setColumns] = useState(columnsFSnarrowSpline);
 
   useEffect(() => {
@@ -177,6 +188,9 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
       case possibleParts.PistonKit:
         setColumns(columnsPistonKit);
         break;
+      case possibleParts.Valve:
+        setColumns(columnsValve);
+        break;
       default:
         break;
     }
@@ -187,6 +201,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     columnsFSnarrowSpline,
     columnsRearSprocket,
     columnsPistonKit,
+    columnsValve,
     selectedPart,
   ]);
 

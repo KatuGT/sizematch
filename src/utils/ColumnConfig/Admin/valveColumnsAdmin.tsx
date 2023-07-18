@@ -10,19 +10,19 @@ interface ColumnsProps extends SVGProps {
   onClickEdit: (part: string, id: string | ObjectId) => Promise<void>;
 }
 
-export const GetPistonKitConfigColumn = ({
+export const GetValveConfigColumn = ({
   onClickDelete,
   onClickEdit,
   hoveredClass,
   onMouseEnter,
   onMouseLeave,
 }: ColumnsProps) => {
-  const PistonKitColumn: GridColDef[] = [
+  const ValveColumn: GridColDef[] = [
     { field: "_id", headerName: "ID", width: 70, sortable: false },
     { field: "make", headerName: "Make", width: 130, sortable: false },
     { field: "code", headerName: "Code", width: 130 },
     {
-      field: "a_compressionHight1",
+      field: "a_stemDiameter",
       headerName: "A",
       width: 70,
       disableColumnMenu: true,
@@ -42,7 +42,7 @@ export const GetPistonKitConfigColumn = ({
       sortable: false,
     },
     {
-      field: "b_pinDiameter",
+      field: "b_totalLength",
       headerName: "B",
       width: 70,
       disableColumnMenu: true,
@@ -62,7 +62,7 @@ export const GetPistonKitConfigColumn = ({
       sortable: false,
     },
     {
-      field: "c_compressionHight2",
+      field: "c_head",
       headerName: "C",
       width: 70,
       disableColumnMenu: true,
@@ -80,86 +80,6 @@ export const GetPistonKitConfigColumn = ({
         </div>
       ),
       sortable: false,
-    },
-    {
-      field: "d_bore",
-      headerName: "D",
-      sortable: false,
-      width: 70,
-      disableColumnMenu: true,
-      renderHeader: () => (
-        <div
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          }`}
-        >
-          D
-        </div>
-      ),
-    },
-    {
-      field: "e_length",
-      headerName: "E",
-      sortable: false,
-      width: 70,
-      disableColumnMenu: true,
-      renderHeader: () => (
-        <div
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          }`}
-        >
-          E
-        </div>
-      ),
-    },
-    {
-      field: "f_pinLength",
-      headerName: "F",
-      sortable: false,
-      width: 70,
-      disableColumnMenu: true,
-      renderHeader: () => (
-        <div
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          className={`sizeF ${
-            hoveredClass === "sizeF"
-              ? "text-sizeFcolorLight"
-              : "text-sizeFcolor"
-          }`}
-        >
-          F
-        </div>
-      ),
-    },
-    {
-      field: "g_stroke",
-      headerName: "G",
-      sortable: false,
-      width: 70,
-      disableColumnMenu: true,
-      renderHeader: () => (
-        <div
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          className={`sizeG ${
-            hoveredClass === "sizeG"
-              ? "text-sizeGcolorLight"
-              : "text-sizeGcolor"
-          }`}
-        >
-          G
-        </div>
-      ),
     },
     {
       field: "link",
@@ -183,7 +103,7 @@ export const GetPistonKitConfigColumn = ({
             <DeleteIcon color="error" /> <span>Delete</span>
           </button>
           <button
-            onClick={() => onClickEdit(possibleParts.PistonKit, params.row)}
+            onClick={() => onClickEdit(possibleParts.Valve, params.row)}
             className="flex items-center justify-between"
           >
             <EditIcon color="info" />
@@ -194,5 +114,5 @@ export const GetPistonKitConfigColumn = ({
     },
   ];
 
-  return PistonKitColumn;
+  return ValveColumn;
 };

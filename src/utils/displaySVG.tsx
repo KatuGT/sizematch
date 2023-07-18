@@ -5,6 +5,7 @@ import {
   FSNarrowSpline,
   PistonKit,
   RearSprocket,
+  Valve,
 } from "@/Components";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
@@ -84,6 +85,16 @@ export const DisplaySVG = ({
           onMouseLeave={onMouseLeave}
         />
       );
+      case possibleParts.Valve:
+        return (
+          <Valve
+            control={control}
+            errors={errors}
+            hoveredClass={hoveredClass}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          />
+        );
     default:
       break;
   }

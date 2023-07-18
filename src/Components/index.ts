@@ -9,6 +9,7 @@ export { default as FSLargeSpline } from './SVGwithInputs/FSLargeSpline';
 export { default as FSNarrowSpline } from './SVGwithInputs/FSNarrowSpline';
 export { default as PistonKit } from './SVGwithInputs/PistonKit';
 export { default as RearSprocket } from './SVGwithInputs/RearSprocket';
+export { default as Valve } from './SVGwithInputs/Valve';
 export { default as TableAdmin } from './TableAdmin/TableAdmin';
 export { default as TableRecomendations } from './TableRecomendations';
 export { default as TopBar } from './TopBar/TopBar';

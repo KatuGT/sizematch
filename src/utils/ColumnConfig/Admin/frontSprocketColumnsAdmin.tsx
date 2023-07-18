@@ -122,7 +122,7 @@ export const GetNarrowSplineConfigColumn = ({
       headerName: "Link",
       width: 90,
       sortable: false,
-      renderCell: (params) => <a href={params.row.link}>See more</a>,
+      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
     },
     {
       field: "actions",
@@ -284,7 +284,7 @@ export const GetLargeSplineConfigColumn = ({
       headerName: "Link",
       width: 90,
       sortable: false,
-      renderCell: (params) => <a href={params.row.link}>Link</a>,
+      renderCell: (params) => <a target="_blank" href={params.row.link}>Link</a>,
     },
     {
       field: "actions",

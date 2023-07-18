@@ -26,4 +26,8 @@ export const partsOptions = [
     displayName: "Piston Kit",
     value: possibleParts.PistonKit,
   },
+  {
+    displayName: "Valve",
+    value: possibleParts.Valve,
+  },
 ];

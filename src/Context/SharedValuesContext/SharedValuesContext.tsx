@@ -7,6 +7,7 @@ import {
   INITIAL_STATE_FSNARROWSPLINE,
   INITIAL_STATE_PISTONKIT,
   INITIAL_STATE_REARSPROCKET,
+  INITIAL_STATE_VALVE,
 } from "./InitialStates";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
@@ -17,6 +18,7 @@ type StateType = {
   brakeDisc: typeof INITIAL_STATE_BRAKEDISC;
   connectingRod: typeof INITIAL_STATE_CONNECTINGROD;
   pistonKit: typeof INITIAL_STATE_PISTONKIT;
+  valve: typeof INITIAL_STATE_VALVE;
 };
 
 type SetDataAction = {
@@ -28,6 +30,7 @@ type SetDataAction = {
     | typeof INITIAL_STATE_BRAKEDISC
     | typeof INITIAL_STATE_CONNECTINGROD
     | typeof INITIAL_STATE_PISTONKIT
+    | typeof INITIAL_STATE_VALVE
   >;
   group:
     | possibleParts.FSNarrowSpline
@@ -35,7 +38,8 @@ type SetDataAction = {
     | possibleParts.RearSprocket
     | possibleParts.BrakeDisc
     | possibleParts.ConnectingRods
-    | possibleParts.PistonKit;
+    | possibleParts.PistonKit
+    | possibleParts.Valve;
 };
 
 export type ActionType =
@@ -49,6 +53,7 @@ export type ActionType =
         | typeof INITIAL_STATE_BRAKEDISC
         | typeof INITIAL_STATE_CONNECTINGROD
         | typeof INITIAL_STATE_PISTONKIT
+        | typeof INITIAL_STATE_VALVE
       >;
       group:
         | possibleParts.FSNarrowSpline
@@ -56,7 +61,8 @@ export type ActionType =
         | possibleParts.RearSprocket
         | possibleParts.BrakeDisc
         | possibleParts.ConnectingRods
-        | possibleParts.PistonKit;
+        | possibleParts.PistonKit
+        | possibleParts.Valve;
     }
   | {
       type: string;
@@ -68,6 +74,7 @@ export type ActionType =
         | possibleParts.BrakeDisc
         | possibleParts.ConnectingRods
         | possibleParts.PistonKit
+        | possibleParts.Valve
         | "RESET_VALUES";
     };
 
@@ -84,6 +91,7 @@ export const SharedValuesContext = createContext<ContextType>({
     brakeDisc: INITIAL_STATE_BRAKEDISC,
     connectingRod: INITIAL_STATE_CONNECTINGROD,
     pistonKit: INITIAL_STATE_PISTONKIT,
+    valve: INITIAL_STATE_VALVE,
   },
   dispatch: () => {},
 });
@@ -152,6 +160,16 @@ const reducer = (state: StateType, action: ActionType) => {
           ...(type !== "SET_DATA" && { [type]: payload }),
         },
       };
+    case possibleParts.Valve:
+      return {
+        ...state,
+        valve: {
+          ...state.valve,
+          ...(type === "SET_DATA" &&
+            (payload as Partial<typeof INITIAL_STATE_VALVE>)),
+          ...(type !== "SET_DATA" && { [type]: payload }),
+        },
+      };
     case "RESET_VALUES":
       return {
         ...state,
@@ -161,6 +179,7 @@ const reducer = (state: StateType, action: ActionType) => {
         brakeDisc: INITIAL_STATE_BRAKEDISC,
         connectingRod: INITIAL_STATE_CONNECTINGROD,
         pistonKit: INITIAL_STATE_PISTONKIT,
+        valve: INITIAL_STATE_VALVE,
       };
     default:
       return state;
@@ -179,6 +198,7 @@ export const SharedValuesProvider = ({
     brakeDisc: INITIAL_STATE_BRAKEDISC,
     connectingRod: INITIAL_STATE_CONNECTINGROD,
     pistonKit: INITIAL_STATE_PISTONKIT,
+    valve: INITIAL_STATE_VALVE,
   });
 
   return (

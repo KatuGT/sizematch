@@ -57,6 +57,15 @@ const handler = NextAuth({
       }
       return session;
     },
+    async signIn({ user }) {
+      const isAllowedToSignIn = user.email === '93katu@gmail.com'
+      if (isAllowedToSignIn) {
+        return true
+      } else {
+        return false
+
+      }
+    }
   },
   pages: {
     error: "/",

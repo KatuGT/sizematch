@@ -41,7 +41,7 @@ const partsRoutes: PartsTypes[] = [
 ];
 
 const Topbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const pathname = usePathname();
   return (

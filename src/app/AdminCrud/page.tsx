@@ -4,6 +4,8 @@ import TableAdmin from "@/Components/TableAdmin/TableAdmin";
 import { EditingModeProvider } from "@/Context/EditingMode/EditingModeContext";
 import { useHover } from "@/utils/handleHoveredSize";
 import { Metadata } from "next";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Size Match - Post Parts",
@@ -13,6 +15,14 @@ export const metadata: Metadata = {
 const AdminCrud = () => {
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
+  const { status, data } = useSession();
+
+  const router = useRouter();
+
+  if (status === "unauthenticated" || data?.user?.role !== "ADMIN") {
+    return router.push("/");
+  }
+
   return (
     <EditingModeProvider>
       <div className="mx-auto my-5 flex w-full flex-col items-center justify-center">
@@ -21,7 +31,7 @@ const AdminCrud = () => {
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         />
-        <div className="mx-auto my-0 p-4 w-full laptop:w-min">
+        <div className="mx-auto my-0 w-full p-4 laptop:w-min">
           <TableAdmin
             hoveredClass={hoverClass}
             onMouseEnter={handleHover}

@@ -4,7 +4,7 @@ import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
 import Valve from "@/models/ValveModel";
-import PistonKit from "@/models/pistonKit";
+import PistonKit from "@/models/pistonKitModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model, Document } from "mongoose";

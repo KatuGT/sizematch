@@ -4,7 +4,7 @@ import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
 import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
 import RearSprocket from "@/models/RearSprocketModel";
 import Valve from "@/models/ValveModel";
-import PistonKit from "@/models/pistonKit";
+import PistonKit from "@/models/pistonKitModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
 import { Model, Document } from "mongoose";
@@ -57,7 +57,7 @@ export const POST = async (req: Request, { params }: any) => {
 
       return new NextResponse(err.message, { status: 500 });
     } else {
-      console.log("Unexpected error", err);
+      console.log("Unexpected error on part/id", err);
     }
   }
 };

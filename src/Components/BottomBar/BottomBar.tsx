@@ -7,9 +7,9 @@ const BottomBar = () => {
 ;
 
   return (
-    <nav className="flex h-[80px] justify-center bg-black px-2">
-      
-    </nav>
+    <footer className="flex h-[80px] justify-center bg-black text-white py-2 px-4">
+      <Link href='/PrivacyPolicy'>Privacy policy</Link>
+    </footer>
   );
 };
 

@@ -4,7 +4,6 @@ import { redirect, useRouter } from "next/navigation";
 import React from "react";
 
 const Login = () => {
-
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const target = e.target as HTMLFormElement;
@@ -50,7 +49,9 @@ const Login = () => {
         </form>
       </div>
     );
-  } else {
+  }
+
+  if (status === "authenticated") {
     return (
       <button
         type="submit"

@@ -2,14 +2,9 @@
 import React from "react";
 import { BiUpArrowAlt } from "react-icons/bi";
 import Link from "next/link";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 const PrivacyPolicy = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="relative">

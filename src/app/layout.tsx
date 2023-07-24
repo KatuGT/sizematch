@@ -25,7 +25,7 @@ export default function RootLayout({
         <SharedValuesProvider>
           <SelectedPartProvider>
             <body className={inter.className}>
-              <div className="flex min-h-screen flex-col justify-between bg-gray-900">
+              <div className="flex min-h-screen relative flex-col justify-between bg-gray-900">
                 <Topbar />
                 {children}
                 <BottomBar />

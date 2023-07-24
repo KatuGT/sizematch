@@ -1,21 +1,13 @@
-"use client";
-
-import { OrbitControls, Stage } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Piston from "@/3Dcomponents/Piston";
-
 export default function Home() {
   return (
-    <main className="relative flex h-full flex-1 items-center justify-center bg-[#111]">
-      <div className="absolute text-[200px] text-white inset-0 text-center top-[15%] font-bold" >Piston kit</div>
-      <div className="flex-1 h-[700px]">
-        <Canvas>
-          <Stage environment="studio" intensity={0.3}>
-            <Piston />
-          </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
-        </Canvas>
-      </div>
+    <main
+      className="bg-hero-image relative grid w-full grow place-items-center	
+     bg-[url('../../public/PortadaHome.webp')] bg-cover bg-left-top text-white laptop:block laptop:bg-left"
+    >
+      <h2 className="absolute right-0 top-1/3 max-w-2xl p-5 text-3xl backdrop-blur laptop:max-w-4xl laptop:text-6xl">
+        Find Your Perfect Fit! Input the Size, Discover the Code. Get the Right
+        Spare Part Hassle-Free.
+      </h2>
     </main>
   );
 }

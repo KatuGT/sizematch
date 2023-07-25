@@ -14,6 +14,12 @@ import CreateParams from "@/utils/createParams";
 import { SearchResultConnectingRod } from "@/types-enums-interfaces/ConnectingRodProps";
 import { GetConnectingRodConfigColumnUser } from "@/utils/ColumnConfig/Users/ConnectingRod";
 import { ConnectingRod } from "@/Components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Connecting rods",
+  description: "Find the perfect fit for you connecting rod",
+};
 
 const ConnectingRods = () => {
   const { state } = useContext(SharedValuesContext);

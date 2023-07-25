@@ -1,5 +1,11 @@
 "use client";
 import { useForm } from "react-hook-form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Contact",
+  description: "Get in touch with us!",
+};
 
 type messageProps = {
   subject: string;

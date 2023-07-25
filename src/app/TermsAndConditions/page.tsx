@@ -3,6 +3,12 @@ import React from "react";
 import { BiUpArrowAlt } from "react-icons/bi";
 import Link from "next/link";
 import { scrollToTop } from "@/utils/scrollToTop";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Terms and Conditions",
+  description: "Read about our terms & conditions",
+};
 
 const TermsAndConditions = () => {
   return (

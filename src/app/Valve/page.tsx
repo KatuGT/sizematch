@@ -11,7 +11,12 @@ import {} from "@/types-enums-interfaces/RearSprocketProps";
 import { Valve as ValveSVG } from "@/Components";
 import CreateParams from "@/utils/createParams";
 import { SearchResultValve } from "@/types-enums-interfaces/ValveProps";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Size Match - Rear Sprocket",
+  description: "Find the perfect fit for your valves",
+};
 const Valve = () => {
   const { state } = useContext(SharedValuesContext);
   const { valve } = state;

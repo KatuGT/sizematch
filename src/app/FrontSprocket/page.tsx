@@ -16,6 +16,12 @@ import {
 import { FSLargeSpline, FSNarrowSpline } from "@/Components";
 import TableRecomendations from "@/Components/TableRecomendations";
 import CreateParams from "@/utils/createParams";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Front Sptockets",
+  description: "Find the perfect fit for your front sprocket.",
+};
 
 const FrontSprocket = () => {
   const { state } = useContext(SharedValuesContext);

@@ -11,6 +11,12 @@ import { SearchResultRearSprocket } from "@/types-enums-interfaces/RearSprocketP
 import { GetRearSprocketConfigColumnUser } from "@/utils/ColumnConfig/Users/RearSprocket";
 import { RearSprocket as RearSprocketSVG } from "@/Components";
 import CreateParams from "@/utils/createParams";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Rear Sprocket",
+  description: "Find the perfect fit for your rear sprocket",
+};
 
 const RearSprocket = () => {
   const { state } = useContext(SharedValuesContext);

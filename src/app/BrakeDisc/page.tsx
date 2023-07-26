@@ -8,11 +8,15 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { useHover } from "@/utils";
 import TableRecomendations from "@/Components/TableRecomendations";
 import { BrakeDisc as BrakeDiscSVG } from "@/Components";
-import {
-  SearchResultBrakeDisc,
-} from "@/types-enums-interfaces/BrakeDiscProps";
+import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { GetBrakeDiscConfigColumnUser } from "@/utils/ColumnConfig/Users/BrakeDisc";
 import CreateParams from "@/utils/createParams";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Brake Disc",
+  description: "Find the perfect fit for your brake disc.",
+};
 
 const BrakeDisc = () => {
   const { state } = useContext(SharedValuesContext);
@@ -23,9 +27,9 @@ const BrakeDisc = () => {
     fetch(...args).then((res) => res.json()) as Promise<
       SearchResultBrakeDisc[]
     >;
-  
-   const params = CreateParams({ data: brakeDisc });
-  
+
+  const params = CreateParams({ data: brakeDisc });
+
   const { data, isLoading } = useSWR<SearchResultBrakeDisc[]>(
     params
       ? `http://localhost:3000/api/search/${possibleParts.BrakeDisc}/${params}`

@@ -11,6 +11,12 @@ import { PistonKit as PistonKitSVG } from "@/Components";
 import CreateParams from "@/utils/createParams";
 import { SearchResultPistonKit } from "@/types-enums-interfaces/PistonKitProps";
 import { GetPistonKitConfigColumnUser } from "@/utils/ColumnConfig/Users/PistonKit";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Piston Kit",
+  description: "Find the perfect fit for your piston kit.",
+};
 
 const PistonKit = () => {
   const { state } = useContext(SharedValuesContext);

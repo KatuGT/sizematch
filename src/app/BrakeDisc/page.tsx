@@ -23,10 +23,8 @@ const BrakeDisc = () => {
     fetch(...args).then((res) => res.json()) as Promise<
       SearchResultBrakeDisc[]
     >;
-  console.log(brakeDisc);
   
    const params = CreateParams({ data: brakeDisc });
-  console.log(params);
   
   const { data, isLoading } = useSWR<SearchResultBrakeDisc[]>(
     params
@@ -35,7 +33,7 @@ const BrakeDisc = () => {
     fetcher
   );
 
-  let searchResults: SearchResultBrakeDisc[] = data || [];
+  let searchResults: SearchResultBrakeDisc[] = data|| [];
 
   const {
     formState: { errors },

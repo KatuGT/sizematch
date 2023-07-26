@@ -2,6 +2,10 @@ import { makes } from "@/types-enums-interfaces/makesEnum";
 
 export const makesOptions = [
   {
+    displayName: "Please choose an option",
+    value: '',
+  },
+  {
     displayName: "JT Sprockets",
     value: makes.JT,
   },

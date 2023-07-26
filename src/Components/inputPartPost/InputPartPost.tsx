@@ -79,7 +79,6 @@ export const InputList = ({
           id="partList"
           onChange={onChange}
         >
-          <option disabled>Please choose an option</option>
           {optionsArray?.map((item) => (
             <option key={item.value} value={item.value}>
               {item.displayName}

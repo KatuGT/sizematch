@@ -40,7 +40,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     mutate();
   }, [data, mutate]);
 
-  let searchResults: any[] = data || [];
+  let searchResults: any[] = data  || [];
 
   useEffect(() => {
     mutate();

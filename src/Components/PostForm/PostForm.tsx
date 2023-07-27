@@ -67,16 +67,12 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     control,
     reset,
     setValue,
-    watch,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
       make: partToUpdate.make,
     },
   });
-
-  // console.log(watch('make'));
-  // console.log(partToUpdate);
 
   useEffect(() => {
     if (editingMode) {

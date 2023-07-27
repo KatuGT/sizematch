@@ -147,7 +147,7 @@ const Contact = () => {
         )}
       </form>
       <p className="mt-4 text-white">
-        You can also send as a email to info@sizematch.net
+       - You can also send us an email at info@sizematch.net
       </p>
       {error && <p className="mt-2 text-red-700">{error}</p>}
     </div>

@@ -23,7 +23,8 @@ export const rearSprocketSchema = {
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
-    .max(4, "Enter a valid value"),
+    .max(4, "Enter a valid value")
+    .required("Required"),
   e_chain: yup
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")

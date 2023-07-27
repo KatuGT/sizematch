@@ -36,7 +36,7 @@ const Valve = () => {
 
   const { data, isLoading } = useSWR<SearchResultValve[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.Valve}/${params}`
+      ? `/api/search/${possibleParts.Valve}/${params}`
       : null,
     fetcher
   );

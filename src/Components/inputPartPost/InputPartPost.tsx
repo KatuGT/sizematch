@@ -63,6 +63,7 @@ export const InputList = ({
   error,
   optionsArray,
   onChange,
+  value
 }: InputPartPostProps) => {
   return (
     <div>
@@ -78,6 +79,7 @@ export const InputList = ({
           name={name}
           id="partList"
           onChange={onChange}
+          value={value}
         >
           {optionsArray?.map((item) => (
             <option key={item.value} value={item.value}>

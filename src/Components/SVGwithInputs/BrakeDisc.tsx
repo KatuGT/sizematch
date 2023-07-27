@@ -98,13 +98,15 @@ const BrakeDisc = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeA"
                   name="a_discDiameter"
+                  darkColor="text-sizeAcolor"
+                  ligthColor="text-sizeAcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
                   }}
                   value={brakeDisc.a_discDiameter || ""}
                   placeholder="260"
-                  position="left-[10%]  top-[39%]  mobile:left-[-20%] mobile:top-[41%] laptop:left-[-27%] desktop:left-[-25%] desktop:top-[42%]  bg-gray-900"
+                  position="left-[10%] top-[39%] mobile:left-[-20%] mobile:top-[41%] laptop:top-[35%] laptop:left-[-27%] desktop:left-[-25%] desktop:top-[45%] bg-gray-900"
                   error={errors?.a_discDiameter?.message?.toString()}
                 />
               )}
@@ -120,6 +122,8 @@ const BrakeDisc = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeB"
                   name="b_holeDiameter"
+                  darkColor="text-sizeBcolor"
+                  ligthColor="text-sizeBcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -144,6 +148,15 @@ const BrakeDisc = ({
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
+              <span
+                className={`sizeC text-center ${
+                  hoveredClass === "sizeC"
+                    ? "text-sizeCcolorLight"
+                    : "text-sizeCcolor"
+                } `}
+              >
+                C - Number of holes
+              </span>
               <Controller
                 control={control}
                 name="c_numberOfHoles"
@@ -154,6 +167,8 @@ const BrakeDisc = ({
                     onMouseLeave={onMouseLeave}
                     mainClass="sizeC"
                     name="c_numberOfHoles"
+                    darkColor="text-sizeCcolor"
+                    ligthColor="text-sizeCcolorLight"
                     onChange={(value) => {
                       onChange(value);
                       handleOnChange(value);
@@ -165,15 +180,6 @@ const BrakeDisc = ({
                   />
                 )}
               />
-              <span
-                className={`sizeC text-center ${
-                  hoveredClass === "sizeC"
-                    ? "text-sizeCcolorLight"
-                    : "text-sizeCcolor"
-                } `}
-              >
-                C - Number of holes
-              </span>
             </div>
           </div>
         </div>
@@ -189,6 +195,8 @@ const BrakeDisc = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
                   name="d_center"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -210,6 +218,8 @@ const BrakeDisc = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
                   name="e_holeDistance"
+                  darkColor="text-sizeEcolor"
+                  ligthColor="text-sizeEcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -236,6 +246,8 @@ const BrakeDisc = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeF"
                   name="f_width"
+                  darkColor="text-sizeFcolor"
+                  ligthColor="text-sizeFcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);

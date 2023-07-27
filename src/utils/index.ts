@@ -19,7 +19,7 @@ export * from './TableHeadData/FSNarrowSpline';
 export { default as createParams } from './createParams';
 export * from './displaySVG';
 export * from './generateYupSchema';
-export * from './handleHoveredSize';
+export * from './useHover';
 export * from './sizeColors';
 export * from './yupSchemas/BrakeDisc';
 export * from './yupSchemas/ConnectingRod';

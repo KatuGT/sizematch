@@ -90,6 +90,8 @@ const FSNarrowSpline = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeA"
+                darkColor="text-sizeAcolor"
+                ligthColor="text-sizeAcolorLight"
                 name="a_innerMinimumDiameter"
                 onChange={(value) => {
                   onChange(value);
@@ -111,6 +113,8 @@ const FSNarrowSpline = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeB"
+                darkColor="text-sizeBcolor"
+                ligthColor="text-sizeBcolorLight"
                 name="b_innerTeethNumber"
                 onChange={(value) => {
                   onChange(value);
@@ -132,6 +136,8 @@ const FSNarrowSpline = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeC"
+                darkColor="text-sizeCcolor"
+                ligthColor="text-sizeCcolorLight"
                 name="c_innerMaximumDiameter"
                 onChange={(value) => {
                   onChange(value);
@@ -162,6 +168,8 @@ const FSNarrowSpline = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
                   name="d_width"
                   onChange={(value) => {
                     onChange(value);
@@ -186,7 +194,7 @@ const FSNarrowSpline = ({
               control={control}
               name="e_chain"
               render={({ field: { onChange } }) => (
-                <div className=" absolute bottom-[5%] right-[-100%] flex flex-col">
+                <div className=" absolute bottom-[5%] right-[-100%] flex flex-col bg-slate-950 focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700">
                   <input
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
@@ -196,7 +204,11 @@ const FSNarrowSpline = ({
                       handleOnChange(value);
                     }}
                     value={fsNarrowSpline.e_chain || ""}
-                    className={`sizeE borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1 text-white`}
+                    className={`sizeE ${
+                      hoveredClass === "sizeE"
+                        ? "text-sizeEcolorLight"
+                        : "text-sizeEcolor"
+                    } borde-gray-200 w-[100px] rounded-md border border-solid bg-transparent px-1`}
                     placeholder="520"
                     list="chain"
                   />

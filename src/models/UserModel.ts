@@ -8,22 +8,25 @@ const userSchema = new Schema(
       type: String,
       unique: true,
       required: true,
+      trim: true,
     },
     email: {
       type: String,
       unique: true,
       required: true,
+      trim: true,
     },
     password: {
       type: String,
       required: true,
+      trim: true,
     },
     role: {
-        type: String,
-        required: true,
-        default: 'USER',
-        enum: ['USER', 'ADMIN']
-      },
+      type: String,
+      required: true,
+      default: "USER",
+      enum: ["USER", "ADMIN"],
+    },
   },
   { timestamps: true }
 );

@@ -110,7 +110,7 @@ const ConnectingRod = ({
           />
         </ul>
       </section>
-      <div className="relative flex flex-col items-center justify-center gap-10 laptop:flex-row laptop:left-20 desktop:gap-0 ">
+      <div className="relative flex flex-col items-center justify-center gap-10 laptop:left-20 laptop:flex-row desktop:gap-0 ">
         <div>
           <div className="relative mb-14 mt-10 w-[300px] flex-col items-center mobile:w-[400px] laptop:items-end desktop:w-[600px]">
             <Controller
@@ -123,6 +123,8 @@ const ConnectingRod = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeA"
                   name="a_bigEnd"
+                  darkColor="text-sizeAcolor"
+                  ligthColor="text-sizeAcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -144,6 +146,8 @@ const ConnectingRod = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeB"
                   name="b_smallEnd"
+                  darkColor="text-sizeBcolor"
+                  ligthColor="text-sizeBcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -164,6 +168,8 @@ const ConnectingRod = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeC"
+                  darkColor="text-sizeCcolor"
+                  ligthColor="text-sizeCcolorLight"
                   name="c_centerToCenter"
                   onChange={(value) => {
                     onChange(value);
@@ -193,6 +199,8 @@ const ConnectingRod = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
                   name="d_totalLength"
                   onChange={(value) => {
                     onChange(value);
@@ -215,6 +223,8 @@ const ConnectingRod = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
+                  darkColor="text-sizeEcolor"
+                  ligthColor="text-sizeEcolorLight"
                   name="e_widthBigEnd"
                   onChange={(value) => {
                     onChange(value);
@@ -237,6 +247,8 @@ const ConnectingRod = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeF"
+                  darkColor="text-sizeFcolor"
+                  ligthColor="text-sizeFcolorLight"
                   name="f_widthSmallEnd"
                   onChange={(value) => {
                     onChange(value);
@@ -259,6 +271,8 @@ const ConnectingRod = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeG"
+                  darkColor="text-sizeGcolor"
+                  ligthColor="text-sizeGcolorLight"
                   name="g_eyeToEyeCenter"
                   onChange={(value) => {
                     onChange(value);
@@ -290,6 +304,8 @@ const ConnectingRod = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeH"
+                darkColor="text-sizeHcolor"
+                ligthColor="text-sizeHcolorLight"
                 name="h_bigEndPinDiameter"
                 onChange={(value) => {
                   onChange(value);
@@ -312,6 +328,8 @@ const ConnectingRod = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeI"
+                darkColor="text-sizeIcolor"
+                ligthColor="text-sizeIcolorLight"
                 name="i_bigEndPinLength"
                 onChange={(value) => {
                   onChange(value);

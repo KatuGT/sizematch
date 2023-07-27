@@ -8,6 +8,7 @@ const ValveSchema = new Schema(
       type: String,
       required: [true, "Marca requerida"],
       enum: ["TKRJ"],
+      trim: true,
     },
     code: {
       type: String,
@@ -16,18 +17,22 @@ const ValveSchema = new Schema(
     },
     link: {
       type: String,
+      trim: true,
     },
     a_stemDiameter: {
       type: String,
       required: [true, "Medida A"],
+      trim: true,
     },
     b_totalLength: {
       type: String,
       required: [true, "Medida B"],
+      trim: true,
     },
     c_head: {
       type: String,
       required: [true, "Medida C"],
+      trim: true,
     },
   },
   { timestamps: true }

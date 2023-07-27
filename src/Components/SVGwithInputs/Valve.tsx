@@ -58,11 +58,10 @@ const Valve = ({
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
           />
-
         </ul>
       </section>
       <div className="my-5">
-        <div className="relative mt-10 w-[200px] mx-auto">
+        <div className="relative mx-auto mt-10 w-[200px]">
           <Controller
             control={control}
             name="a_stemDiameter"
@@ -72,6 +71,8 @@ const Valve = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeA"
+                darkColor="text-sizeAcolor"
+                ligthColor="text-sizeAcolorLight"
                 name="a_stemDiameter"
                 onChange={(value) => {
                   onChange(value);
@@ -93,6 +94,8 @@ const Valve = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeB"
+                darkColor="text-sizeBcolor"
+                ligthColor="text-sizeBcolorLight"
                 name="b_totalLength"
                 onChange={(value) => {
                   onChange(value);
@@ -114,6 +117,8 @@ const Valve = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeC"
+                darkColor="text-sizeCcolor"
+                ligthColor="text-sizeCcolorLight"
                 name="c_head"
                 onChange={(value) => {
                   onChange(value);

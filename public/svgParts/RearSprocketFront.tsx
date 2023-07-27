@@ -37,7 +37,7 @@ const RearSprocketFront = ({
           className={`sizeB`}
           style={{
             display: hoveredClass === "sizeA" ? "block" : "none",
-            fill: sizeColors.sizeAcolor,
+            fill: sizeColors.sizeAcolorLight,
           }}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}

@@ -6,6 +6,7 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
 import { ConnectingRodSizeProps } from "@/types-enums-interfaces/ConnectingRodProps";
+import InputForChart from "@/Components/InputForChart";
 
 export const GetConnectingRodConfigColumnUser = ({
   hoveredClass,
@@ -39,25 +40,19 @@ export const GetConnectingRodConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.a_bigEnd || ""}
+          label="A"
+          placeholder="22"
+          name="a_bigEnd"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="22"
-            type="text"
-            className="custom-input"
-            name="a_bigEnd"
-            value={connectingRod.a_bigEnd || ""}
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -67,27 +62,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.b_smallEnd || ""}
+          label="B"
+          placeholder="14"
+          name="b_smallEnd"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="14"
-            type="text"
-            className="custom-input"
-            name="b_smallEnd"
-            value={
-              connectingRod["b_smallEnd" as keyof ConnectingRodSizeProps] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -97,29 +84,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.c_centerToCenter || ""}
+          label="C"
+          placeholder="80"
+          name="c_centerToCenter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="80"
-            type="text"
-            className="custom-input"
-            name="c_centerToCenter"
-            value={
-              connectingRod[
-                "c_centerToCenter" as keyof ConnectingRodSizeProps
-              ] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -130,28 +107,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.d_totalLength || ""}
+          label="D"
+          placeholder="106.25"
+          name="d_totalLength"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="105.25"
-            type="text"
-            className="custom-input"
-            name="d_totalLength"
-            value={
-              connectingRod["d_totalLength" as keyof ConnectingRodSizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -161,28 +129,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.e_widthBigEnd || ""}
+          label="E"
+          placeholder="13.5"
+          name="e_widthBigEnd"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="13.5"
-            type="text"
-            className="custom-input"
-            name="e_widthBigEnd"
-            value={
-              connectingRod["e_widthBigEnd" as keyof ConnectingRodSizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -192,29 +151,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeFcolor"
+          ligthColor="text-sizeFcolorLight"
+          mainClass="sizeF"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.f_widthSmallEnd || ""}
+          label="F"
+          placeholder="10.5"
+          name="f_widthSmallEnd"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeF ${
-            hoveredClass === "sizeF"
-              ? "text-sizeFcolorLight"
-              : "text-sizeFcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">F</span>
-          <input
-            placeholder="10.5"
-            type="text"
-            className="custom-input"
-            name="f_widthSmallEnd"
-            value={
-              connectingRod[
-                "f_widthSmallEnd" as keyof ConnectingRodSizeProps
-              ] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -224,29 +173,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeGcolor"
+          ligthColor="text-sizeGcolorLight"
+          mainClass="sizeG"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.g_eyeToEyeCenter || ""}
+          label="G"
+          placeholder="60.5"
+          name="g_eyeToEyeCenter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeG ${
-            hoveredClass === "sizeG"
-              ? "text-sizeGcolorLight"
-              : "text-sizeGcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">G</span>
-          <input
-            placeholder="60.5"
-            type="text"
-            className="custom-input"
-            name="g_eyeToEyeCenter"
-            value={
-              connectingRod[
-                "g_eyeToEyeCenter" as keyof ConnectingRodSizeProps
-              ] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -256,29 +195,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeHcolor"
+          ligthColor="text-sizeHcolorLight"
+          mainClass="sizeH"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.h_bigEndPinDiameter || ""}
+          label="H"
+          placeholder="16"
+          name="h_bigEndPinDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeH ${
-            hoveredClass === "sizeH"
-              ? "text-sizeHcolorLight"
-              : "text-sizeHcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">H</span>
-          <input
-            placeholder="16"
-            type="text"
-            className="custom-input"
-            name="h_bigEndPinDiameter"
-            value={
-              connectingRod[
-                "h_bigEndPinDiameter" as keyof ConnectingRodSizeProps
-              ] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -288,29 +217,19 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeIcolor"
+          ligthColor="text-sizeIcolorLight"
+          mainClass="sizeI"
+          onChange={handleRearSprocketChange}
+          value={connectingRod.i_bigEndPinLength || ""}
+          label="I"
+          placeholder="40"
+          name="i_bigEndPinLength"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeI ${
-            hoveredClass === "sizeI"
-              ? "text-sizeIcolorLight"
-              : "text-sizeIcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">I</span>
-          <input
-            placeholder="40"
-            type="text"
-            className="custom-input"
-            name="i_bigEndPinLength"
-            value={
-              connectingRod[
-                "i_bigEndPinLength" as keyof ConnectingRodSizeProps
-              ] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -319,7 +238,11 @@ export const GetConnectingRodConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return ConnectingRodColumn;

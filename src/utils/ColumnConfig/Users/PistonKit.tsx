@@ -3,6 +3,7 @@ import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import InputForChart from "@/Components/InputForChart";
 
 export const GetPistonKitConfigColumnUser = ({
   hoveredClass,
@@ -36,25 +37,19 @@ export const GetPistonKitConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handlePistonKitChange}
+          value={pistonKit.a_compressionHight1 || ""}
+          label="A"
+          placeholder="22.5"
+          name="a_compressionHight1"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="22.5"
-            type="text"
-            className="custom-input"
-            name="a_compressionHight1"
-            value={pistonKit.a_compressionHight1 || ""}
-            onChange={handlePistonKitChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -64,25 +59,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handlePistonKitChange}
+          value={pistonKit.b_pinDiameter || ""}
+          label="B"
+          placeholder="15"
+          name="b_pinDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="15"
-            type="text"
-            className="custom-input"
-            name="b_pinDiameter"
-            value={pistonKit.b_pinDiameter || ""}
-            onChange={handlePistonKitChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -92,25 +81,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handlePistonKitChange}
+          value={pistonKit.c_compressionHight2 || ""}
+          label="C"
+          placeholder="22"
+          name="c_compressionHight2"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="22"
-            type="text"
-            className="custom-input"
-            name="c_compressionHight2"
-            value={pistonKit.c_compressionHight2 || ""}
-            onChange={handlePistonKitChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -121,25 +104,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handlePistonKitChange}
+          value={pistonKit.d_bore || ""}
+          label="D"
+          placeholder="63.5"
+          name="d_bore"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="63.5"
-            type="text"
-            className="custom-input"
-            name="d_bore"
-            value={pistonKit.d_bore || ""}
-            onChange={handlePistonKitChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -149,25 +126,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
+          onChange={handlePistonKitChange}
+          value={pistonKit.e_length || ""}
+          label="E"
+          placeholder="45.5"
+          name="e_length"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="45.5"
-            type="text"
-            className="custom-input"
-            name="e_length"
-            value={pistonKit.e_length || ""}
-            onChange={handlePistonKitChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -177,25 +148,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeFcolor"
+          ligthColor="text-sizeFcolorLight"
+          mainClass="sizeF"
+          onChange={handlePistonKitChange}
+          value={pistonKit.f_pinLength || ""}
+          label="F"
+          placeholder="48"
+          name="f_pinLength"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeF ${
-            hoveredClass === "sizeF"
-              ? "text-sizeFcolorLight"
-              : "text-sizeFcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">F</span>
-          <input
-            placeholder="48"
-            type="text"
-            className="custom-input"
-            name="f_pinLength"
-            value={pistonKit.f_pinLength || ""}
-            onChange={handlePistonKitChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -205,25 +170,19 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeGcolor"
+          ligthColor="text-sizeGcolorLight"
+          mainClass="sizeG"
+          onChange={handlePistonKitChange}
+          value={pistonKit.g_stroke || ""}
+          label="G"
+          placeholder="4"
+          name="g_stroke"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeG ${
-            hoveredClass === "sizeG"
-              ? "text-sizeGcolorLight"
-              : "text-sizeGcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">G</span>
-          <input
-            placeholder="4"
-            type="text"
-            className="custom-input"
-            name="g_stroke"
-            value={pistonKit.g_stroke || ""}
-            onChange={handlePistonKitChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -232,7 +191,11 @@ export const GetPistonKitConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return rearSprocketColumn;

@@ -67,12 +67,16 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     control,
     reset,
     setValue,
+    watch,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
       make: partToUpdate.make,
     },
   });
+
+  // console.log(watch('make'));
+  // console.log(partToUpdate);
 
   useEffect(() => {
     if (editingMode) {
@@ -160,7 +164,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             group: "RESET_VALUES",
             payload: "",
           });
-          reset();
+          reset({ keepDefaultValues: true });
         } else if (resp.status === 409) {
           const errorData = await resp.json();
 
@@ -179,7 +183,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         });
 
         if (resp.ok) {
-          mutate(`http://localhost:3000/api/parts?part=${selectedPart}`);
+          mutate(`/api/parts?part=${selectedPart}`);
           Swal.mixin({
             toast: true,
             position: "top-end",
@@ -360,6 +364,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                   label="Make"
                   optionsArray={makesOptions}
                   value={partToUpdate.make || ""}
+                  error={errors?.make?.message?.toString()}
                 />
               )}
             />
@@ -449,7 +454,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           />
         </div>
       </form>
-      {error && <span className="text-red-700 mt-2">{error}</span>}
+      {error && <span className="mt-2 text-red-700">{error}</span>}
     </div>
   );
 };

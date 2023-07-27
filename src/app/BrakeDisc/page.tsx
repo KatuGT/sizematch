@@ -32,7 +32,7 @@ const BrakeDisc = () => {
 
   const { data, isLoading } = useSWR<SearchResultBrakeDisc[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.BrakeDisc}/${params}`
+      ? `/api/search/${possibleParts.BrakeDisc}/${params}`
       : null,
     fetcher
   );

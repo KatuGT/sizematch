@@ -1,5 +1,6 @@
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
-import React from "react";
+import { sizeColors } from "@/utils";
+import React, { useEffect, useState } from "react";
 import { UseFormRegister } from "react-hook-form";
 
 interface InputSizeEntryProps extends SVGProps {
@@ -9,6 +10,8 @@ interface InputSizeEntryProps extends SVGProps {
   position: string;
   error?: string;
   mainClass?: string;
+  ligthColor: string;
+  darkColor: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   register?: UseFormRegister<any>;
 }
@@ -19,11 +22,15 @@ const InputSizeEntry = ({
   position,
   error,
   mainClass,
+  darkColor,
+  ligthColor,
+  hoveredClass,
   onChange,
   register,
   onMouseEnter,
   onMouseLeave,
 }: InputSizeEntryProps) => {
+ 
   return (
     <div
       className={`${mainClass} first-letter:borde-gray-200 absolute ${position} `}
@@ -33,7 +40,9 @@ const InputSizeEntry = ({
       <div className="relative">
         <input
           type="text"
-          className={`${mainClass} flex w-[70px] laptop:w-[100px] flex-col rounded-md border border-solid bg-transparent px-1 text-white`}
+          className={`${mainClass} ${
+            hoveredClass === mainClass ? ligthColor : darkColor
+          } flex w-[70px] flex-col rounded-md border border-solid bg-slate-950 px-1  focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700 laptop:w-[100px]`}
           placeholder={placeholder}
           name={name}
           value={value?.replace(/[^0-9.]/g, "") || ""}

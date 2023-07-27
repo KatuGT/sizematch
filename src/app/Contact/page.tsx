@@ -1,6 +1,10 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { Metadata } from "next";
+import Swal from "sweetalert2";
+import { useState } from "react";
+import LoadingIcon from "../../../public/LoadingRing.svg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Size Match - Contact",
@@ -17,10 +21,47 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<messageProps>();
-
-  const onSubmit = (data: messageProps) => console.log(data);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const onSubmit = async (data: messageProps) => {
+    setIsLoading(true);
+    const resp = await fetch(`/api/contact`, {
+      method: "POST",
+      body: JSON.stringify({
+        ...data,
+      }),
+    });
+    try {
+      if (resp.ok) {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Message sent",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        reset();
+        setIsLoading(false);
+      } else {
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: "Something went wrong",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        console.warn("Unexpected contact form error", error);
+      }
+    }
+  };
 
   return (
     <div className="mx-auto  max-w-xl p-2">
@@ -89,10 +130,26 @@ const Contact = () => {
             </p>
           )}
         </div>
-        <button className="rounded-lg bg-white p-2 hover:bg-transparent hover:text-white hover:outline hover:outline-white ">
-          Send
-        </button>
+
+        {isLoading ? (
+          <div className="mx-auto">
+            <Image
+              alt="Loading Icon"
+              src={LoadingIcon}
+              height={50}
+              width={50}
+            />
+          </div>
+        ) : (
+          <button className="rounded-lg bg-white p-2 hover:bg-transparent hover:text-white hover:outline hover:outline-white ">
+            Send
+          </button>
+        )}
       </form>
+      <p className="mt-4 text-white">
+       - You can also send us an email at info@sizematch.net
+      </p>
+      {error && <p className="mt-2 text-red-700">{error}</p>}
     </div>
   );
 };

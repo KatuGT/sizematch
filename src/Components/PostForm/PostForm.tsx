@@ -67,16 +67,12 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     control,
     reset,
     setValue,
-    watch,
   } = useForm({
     resolver: yupResolver(completeSchema),
     defaultValues: {
       make: partToUpdate.make,
     },
   });
-
-  // console.log(watch('make'));
-  // console.log(partToUpdate);
 
   useEffect(() => {
     if (editingMode) {
@@ -412,7 +408,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                     });
                   }}
                   value={partToUpdate.link || ""}
-                  placeholder="www.sizematch.com"
+                  placeholder="www.sizematch.net"
                   id="link"
                   label="Link"
                   type="url"

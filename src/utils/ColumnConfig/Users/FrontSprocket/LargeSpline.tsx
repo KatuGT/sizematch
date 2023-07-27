@@ -4,6 +4,7 @@ import { FSlargeSplinesizeProps } from "@/types-enums-interfaces/FSlargeSplinePr
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import InputForChart from "@/Components/InputForChart";
 
 // Front Sprocket LARGE Splie column config
 export const GetLSConfigColumnUser = ({
@@ -35,25 +36,19 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.a_innerMinimumDiameter || ""}
+          label="A"
+          placeholder="15.50"
+          name="a_innerMinimumDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="15.50"
-            type="text"
-            className="custom-input"
-            name="a_innerMinimumDiameter"
-            value={fsLargeSpline.a_innerMinimumDiameter}
-            onChange={handleFSLSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -64,25 +59,19 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.b_innerTeethSpacing || ""}
+          label="B"
+          placeholder="12"
+          name="b_innerTeethSpacing"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="12"
-            type="text"
-            className="custom-input"
-            name="b_innerTeethSpacing"
-            value={fsLargeSpline.b_innerTeethSpacing}
-            onChange={handleFSLSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -93,25 +82,19 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.c_innerMaximumDiameter || ""}
+          label="C"
+          placeholder="20.50"
+          name="c_innerMaximumDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="20.50"
-            type="text"
-            className="custom-input"
-            name="c_innerMaximumDiameter"
-            value={fsLargeSpline.c_innerMaximumDiameter}
-            onChange={handleFSLSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -123,25 +106,19 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.d_centerToCenter || ""}
+          label="D"
+          placeholder="36"
+          name="d_centerToCenter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="36"
-            type="text"
-            className="custom-input"
-            name="d_centerToCenter"
-            value={fsLargeSpline.d_centerToCenter}
-            onChange={handleFSLSChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -152,25 +129,19 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.e_width || ""}
+          label="E"
+          placeholder="10.2"
+          name="e_width"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="10.2"
-            type="text"
-            className="custom-input"
-            name="e_width"
-            value={fsLargeSpline.e_width}
-            onChange={handleFSLSChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -188,13 +159,13 @@ export const GetLSConfigColumnUser = ({
             hoveredClass === "sizeF"
               ? "text-sizeFcolorLight"
               : "text-sizeFcolor"
-          } custom-input-wrapper`}
+          } custom-input-wrapper `}
         >
           <span className="custom-input-span">F</span>
           <input
             placeholder="520"
             type="text"
-            className="custom-input"
+            className="custom-input bg-slate-950 focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700"
             name="f_chain"
             value={fsLargeSpline.f_chain}
             onChange={handleFSLSChange}
@@ -219,7 +190,7 @@ export const GetLSConfigColumnUser = ({
       disableColumnMenu: true,
       headerAlign: "center",
       renderCell: (params) => <a href={params.row.link}>Link</a>,
-    },   
+    },
   ];
 
   return largeSplineColumnUser;

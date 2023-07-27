@@ -42,7 +42,7 @@ const ConnectingRods = () => {
   
   const { data, isLoading } = useSWR<SearchResultConnectingRod[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.ConnectingRods}/${params}`
+      ? `/api/search/${possibleParts.ConnectingRods}/${params}`
       : null,
     fetcher
   );

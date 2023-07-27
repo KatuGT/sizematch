@@ -32,7 +32,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     fetch(...args).then((res) => res.json()) as Promise<any[]>;
 
   const { data, mutate, isLoading } = useSWR<any[]>(
-    `http://localhost:3000/api/parts?part=${selectedPart}`,
+    `/api/parts?part=${selectedPart}`,
     fetcher
   );
 

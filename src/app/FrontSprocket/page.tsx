@@ -64,7 +64,7 @@ const FrontSprocket = () => {
   
   const { data, isLoading } = useSWR<SearchResultFSNarrowSpline[]>(
     params
-      ? `http://localhost:3000/api/search/${frontSprocketType}/${params}`
+      ? `/api/search/${frontSprocketType}/${params}`
       : null,
     fetcher
   );

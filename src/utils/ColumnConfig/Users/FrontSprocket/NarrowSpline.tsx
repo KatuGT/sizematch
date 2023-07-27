@@ -4,6 +4,7 @@ import { FSNarrowSplinesizeProps } from "@/types-enums-interfaces/FSnarrowSpline
 import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
+import InputForChart from "@/Components/InputForChart";
 
 // Front Sprocket NARROW Splie column config
 export const GetNSConfigColumnUser = ({
@@ -38,25 +39,19 @@ export const GetNSConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleFSNSChange}
+          value={fsNarrowSpline.a_innerMinimumDiameter || ""}
+          label="A"
+          placeholder="15.50"
+          name="a_innerMinimumDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="20"
-            type="text"
-            className="custom-input"
-            name="a_innerMinimumDiameter"
-            value={fsNarrowSpline.a_innerMinimumDiameter || ""}
-            onChange={handleFSNSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -66,29 +61,19 @@ export const GetNSConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleFSNSChange}
+          value={fsNarrowSpline.b_innerTeethNumber || ""}
+          label="B"
+          placeholder="12"
+          name="b_innerTeethNumber"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="22"
-            type="text"
-            className="custom-input"
-            name="b_innerTeethNumber"
-            value={
-              fsNarrowSpline[
-                "b_innerTeethNumber" as keyof FSNarrowSplinesizeProps
-              ] || ""
-            }
-            onChange={handleFSNSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -98,29 +83,19 @@ export const GetNSConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleFSNSChange}
+          value={fsNarrowSpline.c_innerMaximumDiameter || ""}
+          label="C"
+          placeholder="20.50"
+          name="c_innerMaximumDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="25.5"
-            type="text"
-            className="custom-input"
-            name="c_innerMaximumDiameter"
-            value={
-              fsNarrowSpline[
-                "c_innerMaximumDiameter" as keyof FSNarrowSplinesizeProps
-              ] || ""
-            }
-            onChange={handleFSNSChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -131,27 +106,19 @@ export const GetNSConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleFSNSChange}
+          value={fsNarrowSpline.d_width || ""}
+          label="D"
+          placeholder="8.5"
+          name="d_width"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="10.8"
-            type="text"
-            className="custom-input"
-            name="d_width"
-            value={
-              fsNarrowSpline["d_width" as keyof FSNarrowSplinesizeProps] || ""
-            }
-            onChange={handleFSNSChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -161,27 +128,19 @@ export const GetNSConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
+          onChange={handleFSNSChange}
+          value={fsNarrowSpline.e_chain || ""}
+          label="E"
+          placeholder="520"
+          name="e_chain"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="520"
-            type="text"
-            className="custom-input"
-            name="e_chain"
-            value={
-              fsNarrowSpline["e_chain" as keyof FSNarrowSplinesizeProps] || ""
-            }
-            onChange={handleFSNSChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -190,7 +149,11 @@ export const GetNSConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return narrowSplineColumn;

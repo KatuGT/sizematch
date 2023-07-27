@@ -1,3 +1,4 @@
+export { default as AuthProvider } from './AuthProvider';
 export { default as BottomBar } from './BottomBar/BottomBar';
 export * from './Button/button';
 export { default as InputSizeEntry } from './InputSizeEntry/InputSizeEntry';

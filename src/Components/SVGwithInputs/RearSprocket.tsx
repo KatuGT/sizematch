@@ -90,6 +90,8 @@ const RearSprocket = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeA"
+                  darkColor="text-sizeAcolor"
+                  ligthColor="text-sizeAcolorLight"
                   name="a_holeDiameter"
                   onChange={(value) => {
                     onChange(value);
@@ -115,27 +117,6 @@ const RearSprocket = ({
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              <Controller
-                control={control}
-                name="B_numberOfHoles"
-                render={({ field: { onChange } }) => (
-                  <InputSizeEntry
-                    hoveredClass={hoveredClass}
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
-                    mainClass="sizeB"
-                    name="B_numberOfHoles"
-                    onChange={(value) => {
-                      onChange(value);
-                      handleOnChange(value);
-                    }}
-                    value={rearSprocket.b_numberOfHoles || ""}
-                    placeholder="6"
-                    position="relative"
-                    error={errors?.B_numberOfHoles?.message?.toString()}
-                  />
-                )}
-              />
               <span
                 className={`sizeB text-center ${
                   hoveredClass === "sizeB"
@@ -145,8 +126,30 @@ const RearSprocket = ({
               >
                 B - Number of holes
               </span>
+              <Controller
+                control={control}
+                name="B_numberOfHoles"
+                render={({ field: { onChange } }) => (
+                  <InputSizeEntry
+                    hoveredClass={hoveredClass}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                    mainClass="sizeB"
+                    darkColor="text-sizeBcolor"
+                    ligthColor="text-sizeBcolorLight"
+                    name="B_numberOfHoles"
+                    onChange={(value) => {
+                      onChange(value);
+                      handleOnChange(value);
+                    }}
+                    value={rearSprocket.b_numberOfHoles || ""}
+                    placeholder="6"
+                    position="relative"
+                    error={errors?.b_numberOfHoles?.message?.toString()}
+                  />
+                )}
+              />
             </div>
-
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-center gap-10 laptop:mt-0">
@@ -160,6 +163,8 @@ const RearSprocket = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeC"
+                  darkColor="text-sizeCcolor"
+                  ligthColor="text-sizeCcolorLight"
                   name="c_holeDistance"
                   onChange={(value) => {
                     onChange(value);
@@ -182,6 +187,8 @@ const RearSprocket = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
                   name="d_center"
                   onChange={(value) => {
                     onChange(value);
@@ -218,6 +225,8 @@ const RearSprocket = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
+                  darkColor="text-sizeEcolor"
+                  ligthColor="text-sizeEcolorLight"
                   name="e_chain"
                   onChange={(value) => {
                     onChange(value);

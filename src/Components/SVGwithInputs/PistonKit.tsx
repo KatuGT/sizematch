@@ -93,7 +93,7 @@ const PistonKit = ({
           />
         </ul>
       </section>
-      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:mt-10 desktop:flex-row desktop:gap-4 desktop:left-16">
+      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:left-16 desktop:mt-10 desktop:flex-row desktop:gap-4">
         <div className="relative mt-10 w-[200px] mobile:w-[250px] laptop:w-[350px] laptop:items-end desktop:mt-0 desktop:w-[500px]">
           <Controller
             control={control}
@@ -104,6 +104,8 @@ const PistonKit = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeA"
+                darkColor="text-sizeAcolor"
+                ligthColor="text-sizeAcolorLight"
                 name="a_compressionHight1"
                 onChange={(value) => {
                   onChange(value);
@@ -125,6 +127,8 @@ const PistonKit = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeB"
+                darkColor="text-sizeBcolor"
+                ligthColor="text-sizeBcolorLight"
                 name="b_pinDiameter"
                 onChange={(value) => {
                   onChange(value);
@@ -146,6 +150,8 @@ const PistonKit = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeC"
+                darkColor="text-sizeCcolor"
+                ligthColor="text-sizeCcolorLight"
                 name="c_compressionHight2"
                 onChange={(value) => {
                   onChange(value);
@@ -167,6 +173,8 @@ const PistonKit = ({
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 mainClass="sizeD"
+                darkColor="text-sizeDcolor"
+                ligthColor="text-sizeDcolorLight"
                 name="d_bore"
                 onChange={(value) => {
                   onChange(value);
@@ -185,7 +193,7 @@ const PistonKit = ({
             onMouseLeave={onMouseLeave}
           />
         </div>
-        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:flex-row mobile:gap-20 mobile:w-full desktop:justify-center desktop:gap-20">
+        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:w-full mobile:flex-row mobile:gap-20 desktop:justify-center desktop:gap-20">
           <div className="relative mx-auto w-[195px] mobile:mx-0 mobile:w-[250px]  laptop:w-[355px]">
             <Controller
               control={control}
@@ -196,6 +204,8 @@ const PistonKit = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
+                  darkColor="text-sizeEcolor"
+                  ligthColor="text-sizeEcolorLight"
                   name="e_length"
                   onChange={(value) => {
                     onChange(value);
@@ -228,6 +238,8 @@ const PistonKit = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeB"
+                  darkColor="text-sizeBcolor"
+                  ligthColor="text-sizeBcolorLight"
                   name="b_pinDiameter"
                   onChange={(value) => {
                     onChange(value);
@@ -250,6 +262,8 @@ const PistonKit = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeF"
+                  darkColor="text-sizeFcolor"
+                  ligthColor="text-sizeFcolorLight"
                   name="f_pinLength"
                   onChange={(value) => {
                     onChange(value);

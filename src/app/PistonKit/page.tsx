@@ -39,7 +39,7 @@ const PistonKit = () => {
 
   const { data, isLoading } = useSWR<SearchResultPistonKit[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.PistonKit}/${params}`
+      ? `/api/search/${possibleParts.PistonKit}/${params}`
       : null,
     fetcher
   );

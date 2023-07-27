@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
+import InputForChart from "@/Components/InputForChart";
 
 export const GetValveConfigColumnUser = ({
   hoveredClass,
@@ -37,25 +38,19 @@ export const GetValveConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleValveChange}
+          value={valve.a_stemDiameter || ""}
+          label="A"
+          placeholder="5.5"
+          name="a_stemDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="5.5"
-            type="text"
-            className="custom-input"
-            name="a_stemDiameter"
-            value={valve.a_stemDiameter || ""}
-            onChange={handleValveChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -65,25 +60,19 @@ export const GetValveConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleValveChange}
+          value={valve.b_totalLength || ""}
+          label="B"
+          placeholder="66"
+          name="b_totalLength"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="66"
-            type="text"
-            className="custom-input"
-            name="b_totalLength"
-            value={valve.b_totalLength || ""}
-            onChange={handleValveChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -93,25 +82,19 @@ export const GetValveConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleValveChange}
+          value={valve.c_head || ""}
+          label="C"
+          placeholder="23"
+          name="c_head"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="23"
-            type="text"
-            className="custom-input"
-            name="c_head"
-            value={valve.c_head || ""}
-            onChange={handleValveChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -121,7 +104,11 @@ export const GetValveConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return rearSprocketColumn;

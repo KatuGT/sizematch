@@ -8,6 +8,7 @@ const RearSprocketSchema = new Schema(
       type: String,
       required: [true, "Marca requerida"],
       enum: ["JT Sprockets"],
+      trim: true,
     },
     code: {
       type: String,
@@ -16,28 +17,34 @@ const RearSprocketSchema = new Schema(
     },
     link: {
       type: String,
+      trim: true,
     },
     a_holeDiameter: {
       type: String,
       required: [true, "Medida A"],
+      trim: true,
     },
     b_numberOfHoles: {
       type: String,
       required: [true, "Medida B"],
       default: "0",
+      trim: true,
     },
     c_holeDistance: {
       type: String,
       required: [true, "Medida C"],
+      trim: true,
     },
     d_center: {
       type: String,
       required: [true, "Medida D"],
+      trim: true,
       default: "0",
     },
     e_chain: {
       type: String,
       required: [true, "Medida E"],
+      trim: true,
     },
   },
   { timestamps: true }

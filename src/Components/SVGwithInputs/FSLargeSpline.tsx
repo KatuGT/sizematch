@@ -97,6 +97,8 @@ const FSLargeSpline = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeA"
+                  darkColor="text-sizeAcolor"
+                  ligthColor="text-sizeAcolorLight"
                   name="a_innerMinimumDiameter"
                   onChange={(value) => {
                     onChange(value);
@@ -118,6 +120,8 @@ const FSLargeSpline = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeB"
+                  darkColor="text-sizeBcolor"
+                  ligthColor="text-sizeBcolorLight"
                   name="b_innerTeethSpacing"
                   onChange={(value) => {
                     onChange(value);
@@ -140,6 +144,8 @@ const FSLargeSpline = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeC"
+                  darkColor="text-sizeCcolor"
+                  ligthColor="text-sizeCcolorLight"
                   name="c_innerMaximumDiameter"
                   onChange={(value) => {
                     onChange(value);
@@ -171,6 +177,8 @@ const FSLargeSpline = ({
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeD"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
                   name="d_centerToCenter"
                   onChange={(value) => {
                     onChange(value);
@@ -194,6 +202,8 @@ const FSLargeSpline = ({
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
                   name="e_width"
+                  darkColor="text-sizeEcolor"
+                  ligthColor="text-sizeEcolorLight"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -216,7 +226,7 @@ const FSLargeSpline = ({
               control={control}
               name="f_chain"
               render={({ field: { onChange } }) => (
-                <div className="absolute bottom-[5%] right-[-75%] flex flex-col laptop:right-[-100%]">
+                <div className="absolute bottom-[5%] right-[-75%] flex flex-col laptop:right-[-100%] ">
                   <input
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
@@ -226,7 +236,11 @@ const FSLargeSpline = ({
                     }}
                     value={fsLargeSpline.f_chain || ""}
                     name="f_chain"
-                    className={`sizeF borde-gray-200 w-[70px] rounded-md border border-solid bg-transparent px-1 text-white laptop:w-[100px]`}
+                    className={`sizeF borde-gray-200 w-[70px] rounded-md border border-solid px-1 ${
+                      hoveredClass === "sizeF"
+                        ? "text-sizeFcolorLight"
+                        : "text-sizeFcolor"
+                    } bg-slate-950 focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700 laptop:w-[100px]`}
                     placeholder="520"
                     list="chain"
                   />

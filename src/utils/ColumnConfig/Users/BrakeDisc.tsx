@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { BrakeDiscsizeProps } from "@/types-enums-interfaces/BrakeDiscProps";
+import InputForChart from "@/Components/InputForChart";
 
 export const GetBrakeDiscConfigColumnUser = ({
   hoveredClass,
@@ -37,25 +38,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.a_discDiameter || ""}
+          label="A"
+          placeholder="260"
+          name="a_discDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="260"
-            type="text"
-            className="custom-input"
-            name="a_discDiameter"
-            value={brakeDisc.a_discDiameter || ""}
-            onChange={handleBrakeDiscChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -65,27 +60,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.b_holeDiameter || ""}
+          label="B"
+          placeholder="10.5"
+          name="b_holeDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="10.5"
-            type="text"
-            className="custom-input"
-            name="b_holeDiameter"
-            value={
-              brakeDisc["b_holeDiameter" as keyof BrakeDiscsizeProps] || ""
-            }
-            onChange={handleBrakeDiscChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -95,27 +82,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.c_numberOfHoles || ""}
+          label="C"
+          placeholder="6"
+          name="c_numberOfHoles"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="6"
-            type="text"
-            className="custom-input"
-            name="c_numberOfHoles"
-            value={
-              brakeDisc["c_numberOfHoles" as keyof BrakeDiscsizeProps] || ""
-            }
-            onChange={handleBrakeDiscChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -126,25 +105,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.d_center || ""}
+          label="D"
+          placeholder="132"
+          name="d_center"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="132"
-            type="text"
-            className="custom-input"
-            name="d_center"
-            value={brakeDisc["d_center" as keyof BrakeDiscsizeProps] || ""}
-            onChange={handleBrakeDiscChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -154,27 +127,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.e_holeDistance || ""}
+          label="E"
+          placeholder="150"
+          name="e_holeDistance"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="150"
-            type="text"
-            className="custom-input"
-            name="e_holeDistance"
-            value={
-              brakeDisc["e_holeDistance" as keyof BrakeDiscsizeProps] || ""
-            }
-            onChange={handleBrakeDiscChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -184,25 +149,19 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeFcolor"
+          ligthColor="text-sizeFcolorLight"
+          mainClass="sizeF"
+          onChange={handleBrakeDiscChange}
+          value={brakeDisc.f_width || ""}
+          label="F"
+          placeholder="5"
+          name="f_width"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeF ${
-            hoveredClass === "sizeF"
-              ? "text-sizeFcolorLight"
-              : "text-sizeFcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">F</span>
-          <input
-            placeholder="5"
-            type="text"
-            className="custom-input"
-            name="f_width"
-            value={brakeDisc["f_width" as keyof BrakeDiscsizeProps] || ""}
-            onChange={handleBrakeDiscChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -211,7 +170,11 @@ export const GetBrakeDiscConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return brakeDiscColumn;

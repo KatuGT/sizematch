@@ -39,7 +39,7 @@ const RearSprocket = () => {
 
   const { data, isLoading } = useSWR<SearchResultRearSprocket[]>(
     params
-      ? `http://localhost:3000/api/search/${possibleParts.RearSprocket}/${params}`
+      ? `/api/search/${possibleParts.RearSprocket}/${params}`
       : null,
     fetcher
   );

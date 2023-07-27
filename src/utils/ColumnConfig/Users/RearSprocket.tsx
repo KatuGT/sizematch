@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { RearSprocketsizeProps } from "@/types-enums-interfaces/RearSprocketProps";
+import InputForChart from "@/Components/InputForChart";
 
 export const GetRearSprocketConfigColumnUser = ({
   hoveredClass,
@@ -37,25 +38,19 @@ export const GetRearSprocketConfigColumnUser = ({
       headerAlign: "center",
 
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeAcolor"
+          ligthColor="text-sizeAcolorLight"
+          mainClass="sizeA"
+          onChange={handleRearSprocketChange}
+          value={rearSprocket.a_holeDiameter || ""}
+          label="A"
+          placeholder="10"
+          name="a_holeDiameter"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeA ${
-            hoveredClass === "sizeA"
-              ? "text-sizeAcolorLight"
-              : "text-sizeAcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">A</span>
-          <input
-            placeholder="20"
-            type="text"
-            className="custom-input"
-            name="a_holeDiameter"
-            value={rearSprocket.a_holeDiameter || ""}
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -65,28 +60,19 @@ export const GetRearSprocketConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeBcolor"
+          ligthColor="text-sizeBcolorLight"
+          mainClass="sizeB"
+          onChange={handleRearSprocketChange}
+          value={rearSprocket.b_numberOfHoles || ""}
+          label="B"
+          placeholder="6"
+          name="b_numberOfHoles"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeB ${
-            hoveredClass === "sizeB"
-              ? "text-sizeBcolorLight"
-              : "text-sizeBcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">B</span>
-          <input
-            placeholder="22"
-            type="text"
-            className="custom-input"
-            name="b_numberOfHoles"
-            value={
-              rearSprocket["b_numberOfHoles" as keyof RearSprocketsizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -96,28 +82,19 @@ export const GetRearSprocketConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeCcolor"
+          ligthColor="text-sizeCcolorLight"
+          mainClass="sizeC"
+          onChange={handleRearSprocketChange}
+          value={rearSprocket.c_holeDistance || ""}
+          label="C"
+          placeholder="150"
+          name="c_holeDistance"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeC ${
-            hoveredClass === "sizeC"
-              ? "text-sizeCcolorLight"
-              : "text-sizeCcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">C</span>
-          <input
-            placeholder="25.5"
-            type="text"
-            className="custom-input"
-            name="c_holeDistance"
-            value={
-              rearSprocket["c_holeDistance" as keyof RearSprocketsizeProps] ||
-              ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
       sortable: false,
     },
@@ -128,27 +105,19 @@ export const GetRearSprocketConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <label
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleRearSprocketChange}
+          value={rearSprocket.d_center || ""}
+          label="D"
+          placeholder="125"
+          name="d_center"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeD ${
-            hoveredClass === "sizeD"
-              ? "text-sizeDcolorLight"
-              : "text-sizeDcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">D</span>
-          <input
-            placeholder="10.8"
-            type="text"
-            className="custom-input"
-            name="d_center"
-            value={
-              rearSprocket["d_center" as keyof RearSprocketsizeProps] || ""
-            }
-            onChange={handleRearSprocketChange}
-          />
-        </label>
+        />
       ),
     },
     {
@@ -158,25 +127,19 @@ export const GetRearSprocketConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       renderHeader: () => (
-        <div
+        <InputForChart
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
+          onChange={handleRearSprocketChange}
+          value={rearSprocket.e_chain || ""}
+          label="E"
+          placeholder="520"
+          name="e_chain"
+          hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeE ${
-            hoveredClass === "sizeE"
-              ? "text-sizeEcolorLight"
-              : "text-sizeEcolor"
-          } custom-input-wrapper`}
-        >
-          <span className="custom-input-span">E</span>
-          <input
-            placeholder="520"
-            type="text"
-            className="custom-input"
-            name="e_chain"
-            value={rearSprocket["e_chain" as keyof RearSprocketsizeProps] || ""}
-            onChange={handleRearSprocketChange}
-          />
-        </div>
+        />
       ),
     },
     {
@@ -185,7 +148,11 @@ export const GetRearSprocketConfigColumnUser = ({
       width: 90,
       disableColumnMenu: true,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
   ];
   return rearSprocketColumn;

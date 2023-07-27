@@ -20,6 +20,7 @@ const BottomBar = () => {
         <Link href="/PrivacyPolicy">Privacy Policy</Link>
         <Link href="/TermsAndConditions">Terms & Conditions</Link>
         <Link href="/Contact">Contact</Link>
+        <Link href="/Contact">Cookies</Link>
         <Link href="/Donate" className="text-center">
           <Image
             src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"

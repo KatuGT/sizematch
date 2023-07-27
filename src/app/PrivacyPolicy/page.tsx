@@ -124,11 +124,11 @@ const PrivacyPolicy = () => {
             <p>
               <strong>Website</strong> refers to Size Match, accessible from{" "}
               <a
-                href="www.sizematch.com"
+                href="www.sizematch.net"
                 rel="external nofollow noopener"
                 target="_blank"
               >
-                www.sizematch.com
+                www.sizematch.net
               </a>
             </p>
           </li>
@@ -530,11 +530,11 @@ const PrivacyPolicy = () => {
           <li className="mt-2">
             By visiting this page on our website:{" "}
             <Link
-              href="www.sizematch.com/contact"
+              href="www.sizematch.net/contact"
               rel="external nofollow noopener"
               target="_blank"
             >
-              www.sizematch.com/contact
+              www.sizematch.net/contact
             </Link>
           </li>
         </ul>

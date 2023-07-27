@@ -412,7 +412,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
                     });
                   }}
                   value={partToUpdate.link || ""}
-                  placeholder="www.sizematch.com"
+                  placeholder="www.sizematch.net"
                   id="link"
                   label="Link"
                   type="url"

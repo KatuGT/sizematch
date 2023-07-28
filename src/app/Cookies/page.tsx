@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cookies = () => {
   return (
-    <div>Cookies</div>
+    <div>In progess...</div>
   )
 }
 

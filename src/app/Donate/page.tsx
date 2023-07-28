@@ -1,5 +1,12 @@
-import Image from "next/image";
 import React from "react";
+import DonateForm from "./DonateForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Donate please",
+  description:
+    "If want to say 'Thank you' with a donation, that would be wonderful ",
+};
 
 const Donate = () => {
   return (
@@ -15,22 +22,7 @@ const Donate = () => {
           few extra cents in your account, you could use the button below. 😉
         </p>
       </div>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="XANCF372AP5NJ" />
-        <input
-          type="image"
-          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-          name="submit"
-          title="PayPal - The safer, easier way to pay online!"
-          alt="Donate with PayPal button"
-        />
-        <Image
-          alt=""
-          src="https://www.paypal.com/en_AR/i/scr/pixel.gif"
-          width={1}
-          height={1}
-        />
-      </form>
+      <DonateForm />
       <p>I promise I will keep making it grow as much as it can.</p>
     </div>
   );

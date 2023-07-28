@@ -1,9 +1,7 @@
-"use client";
 import React from "react";
-import { BiUpArrowAlt } from "react-icons/bi";
 import Link from "next/link";
-import { scrollToTop } from "@/utils/scrollToTop";
 import { Metadata } from "next";
+import UpButtom from "@/Components/UpButtom/UpButtom";
 
 export const metadata: Metadata = {
   title: "Size Match - Terms and Conditions",
@@ -315,11 +313,7 @@ const TermsAndConditions = () => {
           </li>
         </ul>
       </div>
-      <div className="fixed bottom-4 right-4 grid h-9 w-9 place-items-center bg-white">
-        <button onClick={scrollToTop}>
-          <BiUpArrowAlt size={30} />
-        </button>
-      </div>
+      <UpButtom/>
     </div>
   );
 };

@@ -41,6 +41,7 @@ const ContactForn = () => {
         reset();
         setIsLoading(false);
       } else {
+        setIsLoading(false);
         Swal.fire({
           position: "top-end",
           icon: "error",
@@ -52,8 +53,10 @@ const ContactForn = () => {
     } catch (error) {
       if (error instanceof Error) {
         setError(error.message);
+        setIsLoading(false);
       } else {
         console.warn("Unexpected contact form error", error);
+        setIsLoading(false);
       }
     }
   };

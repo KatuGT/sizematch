@@ -19,8 +19,6 @@ export const POST = async (req: Request) => {
     return new NextResponse("Messaje send", { status: 201 });
   } catch (error) {
     if (error instanceof Error) {
-      console.log(error.message);
-
       return new NextResponse(error.message, { status: 500 });
     } else {
       console.log("Unexpected error on contact route", error);

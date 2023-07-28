@@ -19,7 +19,7 @@ const Contact = () => {
       </p>
       <ContactForn />
       <p className="mt-4 text-white">
-        - You can also send us an email at info@sizematch.net
+        - You can also send us an email at sizematchinfo@gmail.com
       </p>
     </div>
   );

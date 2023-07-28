@@ -1,19 +1,13 @@
 "use client";
-import PostForm from "@/Components/PostForm/PostForm";
-import TableAdmin from "@/Components/TableAdmin/TableAdmin";
-import { EditingModeProvider } from "@/Context/EditingMode/EditingModeContext";
-import { useHover } from "@/utils/useHover";
-import { Metadata } from "next";
-import { useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
+import { PostForm, TableAdmin } from '@/Components';
+import { EditingModeProvider } from '@/Context/EditingMode/EditingModeContext';
+import { useHover } from '@/utils';
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
+import React from 'react'
 
-export const metadata: Metadata = {
-  title: "Size Match - Post Parts",
-  description: "Post a new sparepart or edit a existing one",
-};
-
-const AdminCrud = () => {
-  const { handleHover, handleMouseLeave, hoverClass } = useHover();
+const FormAndTable = () => {
+    const { handleHover, handleMouseLeave, hoverClass } = useHover();
   const { status } = useSession();
 
   if (status === "authenticated") {
@@ -40,6 +34,6 @@ const AdminCrud = () => {
   if (status === "unauthenticated") {
     redirect("/");
   }
-};
+}
 
-export default AdminCrud;
+export default FormAndTable

@@ -1,18 +1,14 @@
-"use client";
 import React from "react";
-import { BiUpArrowAlt } from "react-icons/bi";
 import Link from "next/link";
-import { scrollToTop } from "@/utils/scrollToTop";
 import { Metadata } from "next";
+import UpButtom from "@/Components/UpButtom/UpButtom";
 
 export const metadata: Metadata = {
   title: "Size Match - Privacy Policy",
   description: "Read about our privacy policy",
 };
 
-
 const PrivacyPolicy = () => {
-
   return (
     <div className="relative">
       <div className="mx-auto max-w-3xl p-2 text-white">
@@ -539,11 +535,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
       </div>
-      <div className="fixed bottom-4 right-4 grid h-9 w-9 place-items-center bg-white">
-        <button onClick={scrollToTop}>
-          <BiUpArrowAlt size={30} />
-        </button>
-      </div>
+      <UpButtom/>
     </div>
   );
 };

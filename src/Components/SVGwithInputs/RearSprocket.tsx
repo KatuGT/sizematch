@@ -128,7 +128,7 @@ const RearSprocket = ({
               </span>
               <Controller
                 control={control}
-                name="B_numberOfHoles"
+                name="b_numberOfHoles"
                 render={({ field: { onChange } }) => (
                   <InputSizeEntry
                     hoveredClass={hoveredClass}
@@ -137,7 +137,7 @@ const RearSprocket = ({
                     mainClass="sizeB"
                     darkColor="text-sizeBcolor"
                     ligthColor="text-sizeBcolorLight"
-                    name="B_numberOfHoles"
+                    name="b_numberOfHoles"
                     onChange={(value) => {
                       onChange(value);
                       handleOnChange(value);

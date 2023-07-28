@@ -9,6 +9,7 @@ import AuthProvider from "@/Components/AuthProvider";
 LogRocket.init("ozqtga/sizematch");
 const inter = Inter({ subsets: ["latin"] });
 import { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "Size Match",
@@ -33,6 +34,7 @@ export default function RootLayout({
               <div className="relative flex min-h-screen flex-col justify-between bg-gray-900">
                 <Topbar />
                 {children}
+                <Analytics />
                 <BottomBar />
               </div>
             </body>

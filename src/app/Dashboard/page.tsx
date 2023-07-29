@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const Dashboard = () => {
-  <FormAndTable />;
+  return <FormAndTable />;
 };
 
 export default Dashboard;

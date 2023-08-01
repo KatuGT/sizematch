@@ -21,7 +21,7 @@ export const POST = async (req: Request) => {
     if (err instanceof Error) {
       return new NextResponse(err.message, { status: 500 });
     } else {
-      console.log("Unexpected error on auth/register", err);
+      console.warn("Unexpected error on auth/register", err);
     }
   }
 };

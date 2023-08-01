@@ -20,7 +20,16 @@ export const GetRearSprocketConfigColumn = ({
   const RearSprocketColumn: GridColDef[] = [
     { field: "_id", headerName: "ID", width: 70, sortable: false },
     { field: "make", headerName: "Make", width: 130, sortable: false },
-    { field: "code", headerName: "Code", width: 130 },
+    {
+      field: "code",
+      headerName: "Code",
+      width: 130,
+      sortComparator: (v1, v2) => {
+        const num1 = parseInt(v1.slice(3));
+        const num2 = parseInt(v2.slice(3));
+        return num1 - num2;
+      },
+    },
     {
       field: "a_holeDiameter",
       headerName: "A",
@@ -121,7 +130,11 @@ export const GetRearSprocketConfigColumn = ({
       headerName: "Link",
       width: 90,
       sortable: false,
-      renderCell: (params) => <a target="_blank" href={params.row.link}>See more</a>,
+      renderCell: (params) => (
+        <a target="_blank" href={params.row.link}>
+          See more
+        </a>
+      ),
     },
     {
       field: "actions",

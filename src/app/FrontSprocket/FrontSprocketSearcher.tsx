@@ -18,6 +18,7 @@ import {
   FSNarrowSpline,
   TableRecomendations,
 } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const FrontSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -136,13 +137,21 @@ const FrontSprocketSearcher = () => {
 
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 h-[400px] mb-20">
           {frontSprocketType === possibleParts.FSNarrowSpline ? (
             <DataGrid
               rows={searchResults}
               columns={columnNarrowSpline}
               getRowId={(row) => row._id}
               initialState={{
+                sorting: {
+                  sortModel: [
+                    {
+                      field: 'code',
+                      sort: 'asc',
+                    },
+                  ],
+                },
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
@@ -175,6 +184,14 @@ const FrontSprocketSearcher = () => {
               columns={columLargeSpline}
               getRowId={(row) => row._id}
               initialState={{
+                sorting: {
+                  sortModel: [
+                    {
+                      field: 'code',
+                      sort: 'asc',
+                    },
+                  ],
+                },
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
@@ -203,6 +220,7 @@ const FrontSprocketSearcher = () => {
             />
           )}
         </div>
+        <MeasurementDistributionTips />
       </div>
     </div>
   );

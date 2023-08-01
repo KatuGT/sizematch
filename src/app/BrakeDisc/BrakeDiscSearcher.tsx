@@ -10,6 +10,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const BrakeDiscSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -44,7 +45,7 @@ const BrakeDiscSearcher = () => {
   });
 
   return (
-    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[max-content]">
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
       <BrakeDiscSVG
         control={control}
         errors={errors}
@@ -54,12 +55,20 @@ const BrakeDiscSearcher = () => {
       />
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 mb-20  h-[400px]">
           <DataGrid
             rows={searchResults}
             columns={columnBrakeDisc}
             getRowId={(row) => row._id}
             initialState={{
+              sorting: {
+                sortModel: [
+                  {
+                    field: "code",
+                    sort: "asc",
+                  },
+                ],
+              },
               pagination: {
                 paginationModel: { page: 0, pageSize: 5 },
               },
@@ -85,6 +94,7 @@ const BrakeDiscSearcher = () => {
             }}
           />
         </div>
+        <MeasurementDistributionTips />
       </div>
     </div>
   );

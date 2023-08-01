@@ -128,7 +128,7 @@ const FSLargeSpline = ({
                     handleOnChange(value);
                   }}
                   value={fsLargeSpline.b_innerTeethSpacing || ""}
-                  placeholder="12"
+                  placeholder="4"
                   position="right-[-68px] top-[35%]
                 laptop:right-[-95px] laptop:top-[37%]"
                   error={errors?.b_innerTeethSpacing?.message?.toString()}

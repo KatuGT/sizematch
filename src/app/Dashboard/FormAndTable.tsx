@@ -9,7 +9,6 @@ import React from 'react'
 const FormAndTable = () => {
     const { handleHover, handleMouseLeave, hoverClass } = useHover();
   const { status } = useSession();
-  console.log(status);
   
   if (status === "authenticated") {
     return (

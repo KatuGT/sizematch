@@ -195,6 +195,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             title: "New part added",
           });
           reset();
+          setError('');
           sharedValueDispatch({
             type: "",
             group: "RESET_VALUES",
@@ -210,7 +211,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         if (err instanceof Error) {
           setError(err.message);
         } else {
-          console.log("Unexpected front error", err);
+          console.warn("Unexpected front error", err);
         }
       }
     }

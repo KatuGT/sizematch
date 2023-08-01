@@ -10,6 +10,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { RearSprocket as RearSprocketSVG } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const RearSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -44,7 +45,7 @@ const RearSprocketSearcher = () => {
     mode: "onBlur",
   });
   return (
-    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[max-content]">
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content] laptop:w-full">
       <RearSprocketSVG
         control={control}
         errors={errors}
@@ -61,6 +62,14 @@ const RearSprocketSearcher = () => {
             columns={columnRearSprocket}
             getRowId={(row) => row._id}
             initialState={{
+              sorting: {
+                sortModel: [
+                  {
+                    field: 'code',
+                    sort: 'asc',
+                  },
+                ],
+              },
               pagination: {
                 paginationModel: { page: 0, pageSize: 5 },
               },
@@ -87,6 +96,8 @@ const RearSprocketSearcher = () => {
           />
         </div>
       </div>
+      <MeasurementDistributionTips/>
+     
     </div>
   );
 };

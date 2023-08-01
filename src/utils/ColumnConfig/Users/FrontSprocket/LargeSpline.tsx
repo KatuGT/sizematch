@@ -28,7 +28,16 @@ export const GetLSConfigColumnUser = ({
   };
   const largeSplineColumnUser: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
-    { field: "code", headerName: "Code", width: 130 },
+    {
+      field: "code",
+      headerName: "Code",
+      width: 130,
+      sortComparator: (v1, v2) => {
+        const num1 = parseInt(v1.slice(3));
+        const num2 = parseInt(v2.slice(3));
+        return num1 - num2;
+      },
+    },
     {
       field: "a_innerMinimumDiameter",
       headerName: "A",
@@ -66,7 +75,7 @@ export const GetLSConfigColumnUser = ({
           onChange={handleFSLSChange}
           value={fsLargeSpline.b_innerTeethSpacing || ""}
           label="B"
-          placeholder="12"
+          placeholder="4"
           name="b_innerTeethSpacing"
           hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}

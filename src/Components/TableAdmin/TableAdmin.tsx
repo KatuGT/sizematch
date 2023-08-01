@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
@@ -96,112 +96,37 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     [mutate, selectedPart]
   );
 
-  const columnsFSnarrowSpline = useCallback(() => {
-    return GetNarrowSplineConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsFSlargeSpline = useCallback(() => {
-    return GetLargeSplineConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsRearSprocket = useCallback(() => {
-    return GetRearSprocketConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsBrakeDisc = useCallback(() => {
-    return GetBrakeDiscConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsConnectingRod = useCallback(() => {
-    return GetConnectingRodConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsPistonKit = useCallback(() => {
-    return GetPistonKitConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsValve = useCallback(() => {
-    return GetValveConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const [columns, setColumns] = useState(columnsFSnarrowSpline);
-
-  useEffect(() => {
-    switch (selectedPart) {
-      case possibleParts.FSLargeSpline:
-        setColumns(columnsFSlargeSpline);
-        break;
-      case possibleParts.FSNarrowSpline:
-        setColumns(columnsFSnarrowSpline);
-        break;
-      case possibleParts.RearSprocket:
-        setColumns(columnsRearSprocket);
-        break;
-      case possibleParts.BrakeDisc:
-        setColumns(columnsBrakeDisc);
-        break;
-      case possibleParts.ConnectingRods:
-        setColumns(columnsConnectingRod);
-        break;
-      case possibleParts.PistonKit:
-        setColumns(columnsPistonKit);
-        break;
-      case possibleParts.Valve:
-        setColumns(columnsValve);
-        break;
-      default:
-        break;
+  const columnsConfig = useMemo(() => {
+    return {
+      [possibleParts.FSLargeSpline]: GetLargeSplineConfigColumn,
+      [possibleParts.FSNarrowSpline]: GetNarrowSplineConfigColumn,
+      [possibleParts.RearSprocket]: GetRearSprocketConfigColumn,
+      [possibleParts.BrakeDisc]: GetBrakeDiscConfigColumn,
+      [possibleParts.ConnectingRods]: GetConnectingRodConfigColumn,
+      [possibleParts.PistonKit]: GetPistonKitConfigColumn,
+      [possibleParts.Valve]: GetValveConfigColumn,
+    };
+  }, []);
+  
+  const columns = useMemo(() => {
+    const getConfigColumn = columnsConfig[selectedPart];
+    if (getConfigColumn) {
+      return getConfigColumn({
+        hoveredClass: hoveredClass,
+        onMouseEnter: onMouseEnter,
+        onMouseLeave: onMouseLeave,
+        onClickDelete: handleDelete,
+        onClickEdit: handleEdit,
+      });
     }
+    return [];
   }, [
-    columnsBrakeDisc,
-    columnsConnectingRod,
-    columnsFSlargeSpline,
-    columnsFSnarrowSpline,
-    columnsRearSprocket,
-    columnsPistonKit,
-    columnsValve,
+    columnsConfig,
+    handleDelete,
+    handleEdit,
+    hoveredClass,
+    onMouseEnter,
+    onMouseLeave,
     selectedPart,
   ]);
 
@@ -211,7 +136,16 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         rows={searchResults}
         columns={columns}
         getRowId={(row) => row._id}
+
         initialState={{
+          sorting: {
+            sortModel: [
+              {
+                field: 'code',
+                sort: 'asc',
+              },
+            ],
+          },
           pagination: {
             paginationModel: { page: 0, pageSize: 5 },
           },

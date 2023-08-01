@@ -10,6 +10,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const PistonKitSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -27,7 +28,6 @@ const PistonKitSearcher = () => {
       SearchResultPistonKit[]
     >;
 
-  // const params = transformToParams();
   const params = CreateParams({ data: pistonKit });
 
   const { data, isLoading } = useSWR<SearchResultPistonKit[]>(
@@ -55,12 +55,20 @@ const PistonKitSearcher = () => {
 
       <div className="my-20 w-full text-white laptop:mx-auto laptop:max-w-[min-content]">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 h-[400px] mb-20">
           <DataGrid
             rows={searchResults}
             columns={columnPistonKit}
             getRowId={(row) => row._id}
             initialState={{
+              sorting: {
+                sortModel: [
+                  {
+                    field: 'code',
+                    sort: 'asc',
+                  },
+                ],
+              },
               pagination: {
                 paginationModel: { page: 0, pageSize: 5 },
               },
@@ -86,6 +94,7 @@ const PistonKitSearcher = () => {
             }}
           />
         </div>
+      <MeasurementDistributionTips />
       </div>
     </div>
   );

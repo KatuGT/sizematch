@@ -36,7 +36,7 @@ export const GET = async (req: Request) => {
 
     return new NextResponse(JSON.stringify(result), { status: 200 });
   } catch (error) {
-    console.log("Get product error", error);
+    console.warn("Get product error", error);
 
     return new NextResponse("error", { status: 500 });
   }

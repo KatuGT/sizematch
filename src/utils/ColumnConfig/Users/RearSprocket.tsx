@@ -28,7 +28,11 @@ export const GetRearSprocketConfigColumnUser = ({
 
   const rearSprocketColumn: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
-    { field: "code", headerName: "Code", width: 130 },
+    { field: "code", headerName: "Code", width: 130, sortComparator: (v1, v2) => {
+      const num1 = parseInt(v1.slice(3));
+      const num2 = parseInt(v2.slice(3));
+      return num1 - num2;
+    } },
     {
       field: "a_holeDiameter",
       headerName: "A",
@@ -45,7 +49,7 @@ export const GetRearSprocketConfigColumnUser = ({
           onChange={handleRearSprocketChange}
           value={rearSprocket.a_holeDiameter || ""}
           label="A"
-          placeholder="10"
+          placeholder="10.5"
           name="a_holeDiameter"
           hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}

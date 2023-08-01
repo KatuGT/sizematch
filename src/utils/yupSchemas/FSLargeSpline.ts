@@ -11,7 +11,7 @@ export const frontSprocketLargeSplineSchema = {
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
-    .max(2, "Enter a valid value")
+    .max(4, "Enter a valid value")
     .required("Required"),
   c_innerMaximumDiameter: yup
     .string()
@@ -28,7 +28,7 @@ export const frontSprocketLargeSplineSchema = {
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
-    .max(3, "Enter a valid value"),
+    .max(5, "Enter a valid value"),
   f_chain: yup
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")

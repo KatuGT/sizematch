@@ -16,7 +16,7 @@ export const GetPistonKitConfigColumnUser = ({
   const handlePistonKitChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    const newValue = value.replace(/[^0-9.]/g, "");
+    const newValue = value.replace(/[^0-9.]/g, "").substring(0, 7);
 
     dispatch({
       type: name,

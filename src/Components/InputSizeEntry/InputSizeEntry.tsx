@@ -50,7 +50,7 @@ const InputSizeEntry = ({
           {...(register && name && { ...register(name) })}
         />
         {error && (
-          <span className="absolute bottom-[-20px] text-xs text-red-600">
+          <span className="text-xs text-red-600 leading-[.1rem]">
             {error}
           </span>
         )}

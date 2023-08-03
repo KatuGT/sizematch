@@ -80,4 +80,5 @@ export const INITIAL_STATE_VALVE = {
   a_stemDiameter: "",
   b_totalLength: "",
   c_head: "",
+  d_type: "",
 };

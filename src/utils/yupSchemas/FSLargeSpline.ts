@@ -20,7 +20,7 @@ export const frontSprocketLargeSplineSchema = {
     .max(6, "Enter a valid value")
     .test(
       "is-greater-than-a_innerMinimumDiameter",
-      "'C-inner Maximum Diameter' must be greater than 'A-Inner Minimum Diameter'",
+      "'C - Inner Maximum Diameter' must be greater than 'A - Inner Minimum Diameter'",
       function (value) {
         const c_innerMaximumDiameter = value ? parseFloat(value) : undefined;
         const a_innerMinimumDiameter = this.parent.a_innerMinimumDiameter

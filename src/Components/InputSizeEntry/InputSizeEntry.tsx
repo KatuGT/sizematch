@@ -38,33 +38,33 @@ const InputSizeEntry = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <label className="relative">
-        <input
-          type="text"
-          className={`${mainClass} ${
-            hoveredClass === mainClass ? ligthColor : darkColor
-          } flex w-[90px] flex-col rounded-md border border-solid bg-slate-950 px-1  focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700 laptop:w-[100px]`}
-          placeholder={placeholder}
-          name={name}
-          value={value?.replace(/[^0-9.]/g, "") || ""}
-          onChange={onChange}
-          {...(register && name && { ...register(name) })}
-        />
-        {isMilimeter && (
-          <span
-            className={`textp absolute right-1 top-[1px] ${
-              !value ? "text-gray-400" : "text-white"
-            } bg-slate-950`}
-          >
-            mm
-          </span>
-        )}
-      </label>
+      <div className="relative">
+        <label className="relative">
+          <input
+            type="text"
+            className={`${mainClass} ${
+              hoveredClass === mainClass ? ligthColor : darkColor
+            } flex w-[90px] flex-col rounded-md border border-solid bg-slate-950 px-1  focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700 laptop:w-[100px]`}
+            placeholder={placeholder}
+            name={name}
+            value={value?.replace(/[^0-9.]/g, "") || ""}
+            onChange={onChange}
+            {...(register && name && { ...register(name) })}
+          />
+          {isMilimeter && (
+            <span
+              className={`textp absolute right-1 top-[1px] ${
+                !value ? "text-gray-400" : "text-white"
+              } bg-slate-950`}
+            >
+              mm
+            </span>
+          )}
+        </label>
       {error && (
-        <span className="absolute -bottom-3 text-xs leading-[.1rem] text-red-600">
-          {error}
-        </span>
+        <span className="absolute text-xs text-red-600 w-[150%]">{error}</span>
       )}
+      </div>
     </div>
   );
 };

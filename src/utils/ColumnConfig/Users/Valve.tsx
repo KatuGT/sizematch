@@ -99,6 +99,28 @@ export const GetValveConfigColumnUser = ({
       sortable: false,
     },
     {
+      field: "d_type",
+      headerName: "D",
+      width: 90,
+      disableColumnMenu: true,
+      renderHeader: () => (
+        <InputForChart
+          darkColor="text-sizeDcolor"
+          ligthColor="text-sizeDcolorLight"
+          mainClass="sizeD"
+          onChange={handleValveChange}
+          value={valve.d_type || ""}
+          label="D"
+          placeholder="23"
+          name="d_type"
+          hoveredClass={hoveredClass}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+      ),
+      sortable: false,
+    },
+    {
       field: "link",
       headerName: "Link",
       width: 90,

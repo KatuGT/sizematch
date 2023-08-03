@@ -99,7 +99,7 @@ const RearSprocket = ({
                   }}
                   value={rearSprocket.a_holeDiameter || ""}
                   placeholder="10.5"
-                  position="left-[32%] mobile:left-[40%] top-[45%] mobile:top-[48%] laptop:top-[42%] laptop:left-[37%]"
+                  position="left-[28%] top-[42%] mobile:left-[40%]  mobile:top-[48%] laptop:top-[42%] laptop:left-[37%]"
                   error={errors?.a_holeDiameter?.message?.toString()}
                 />
               )}

@@ -82,6 +82,26 @@ export const GetValveConfigColumn = ({
       sortable: false,
     },
     {
+      field: "d_type",
+      headerName: "D",
+      width: 70,
+      disableColumnMenu: true,
+      renderHeader: () => (
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          className={`sizeD ${
+            hoveredClass === "sizeD"
+              ? "text-sizeDcolorLight"
+              : "text-sizeDcolor"
+          }`}
+        >
+          D
+        </div>
+      ),
+      sortable: false,
+    },
+    {
       field: "link",
       headerName: "Link",
       width: 90,

@@ -39,6 +39,6 @@ export const pistonKitSchema = {
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
-    .max(2, "Enter a valid value")
+    .max(3, "Enter a valid value")
     .required("Required"),
 };

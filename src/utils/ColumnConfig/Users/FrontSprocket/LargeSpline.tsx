@@ -108,7 +108,7 @@ export const GetLSConfigColumnUser = ({
       sortable: false,
     },
     {
-      field: "d_centerToCenter",
+      field: "d_innerTeethNumber",
       headerName: "D",
       sortable: false,
       width: 90,
@@ -120,10 +120,10 @@ export const GetLSConfigColumnUser = ({
           ligthColor="text-sizeDcolorLight"
           mainClass="sizeD"
           onChange={handleFSLSChange}
-          value={fsLargeSpline.d_centerToCenter || ""}
+          value={fsLargeSpline.d_innerTeethNumber || ""}
           label="D"
-          placeholder="36"
-          name="d_centerToCenter"
+          placeholder="6"
+          name="d_innerTeethNumber"
           hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -131,7 +131,7 @@ export const GetLSConfigColumnUser = ({
       ),
     },
     {
-      field: "e_width",
+      field: "e_centerToCenter",
       headerName: "E",
       sortable: false,
       width: 90,
@@ -139,14 +139,14 @@ export const GetLSConfigColumnUser = ({
       headerAlign: "center",
       renderHeader: () => (
         <InputForChart
-          darkColor="text-sizeDcolor"
-          ligthColor="text-sizeDcolorLight"
-          mainClass="sizeD"
+          darkColor="text-sizeEcolor"
+          ligthColor="text-sizeEcolorLight"
+          mainClass="sizeE"
           onChange={handleFSLSChange}
-          value={fsLargeSpline.e_width || ""}
+          value={fsLargeSpline.e_centerToCenter || ""}
           label="E"
-          placeholder="10.2"
-          name="e_width"
+          placeholder="36"
+          name="e_centerToCenter"
           hoveredClass={hoveredClass}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -154,8 +154,31 @@ export const GetLSConfigColumnUser = ({
       ),
     },
     {
-      field: "f_chain",
+      field: "f_width",
       headerName: "F",
+      sortable: false,
+      width: 90,
+      disableColumnMenu: true,
+      headerAlign: "center",
+      renderHeader: () => (
+        <InputForChart
+          darkColor="text-sizeFcolor"
+          ligthColor="text-sizeFcolorLight"
+          mainClass="sizeF"
+          onChange={handleFSLSChange}
+          value={fsLargeSpline.f_width || ""}
+          label="F"
+          placeholder="10.2"
+          name="f_width"
+          hoveredClass={hoveredClass}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+      ),
+    },
+    {
+      field: "g_chain",
+      headerName: "G",
       sortable: false,
       width: 90,
       disableColumnMenu: true,
@@ -164,19 +187,19 @@ export const GetLSConfigColumnUser = ({
         <label
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          className={`sizeF ${
-            hoveredClass === "sizeF"
-              ? "text-sizeFcolorLight"
-              : "text-sizeFcolor"
+          className={`sizeG ${
+            hoveredClass === "sizeG"
+              ? "text-sizeGcolorLight"
+              : "text-sizeGcolor"
           } custom-input-wrapper `}
         >
-          <span className="custom-input-span">F</span>
+          <span className="custom-input-span">G</span>
           <input
             placeholder="520"
             type="text"
             className="custom-input bg-slate-950 focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700"
-            name="f_chain"
-            value={fsLargeSpline.f_chain}
+            name="g_chain"
+            value={fsLargeSpline.g_chain}
             onChange={handleFSLSChange}
             list="LargeSplainChain"
           />

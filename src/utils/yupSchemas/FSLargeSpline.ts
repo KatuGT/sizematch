@@ -32,17 +32,22 @@ export const frontSprocketLargeSplineSchema = {
       }
     )
     .required("Required"),
-  d_centerToCenter: yup
+  d_innerTeethNumber: yup
+    .string()
+    .matches(/^\d*\.?\d+$/, "Invalid number")
+    .trim()
+    .max(1, "Enter a valid value"),
+  e_centerToCenter: yup
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
     .max(6, "Enter a valid value"),
-  e_width: yup
+  f_width: yup
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
     .max(5, "Enter a valid value"),
-  f_chain: yup
+  g_chain: yup
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()

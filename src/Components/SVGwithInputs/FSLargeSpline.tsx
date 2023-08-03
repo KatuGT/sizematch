@@ -63,7 +63,7 @@ const FSLargeSpline = ({
 
           <ListItem
             classSize="sizeD"
-            text="D - Center to center"
+            text="D - Inner teeth count"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
@@ -71,14 +71,22 @@ const FSLargeSpline = ({
 
           <ListItem
             classSize="sizeE"
-            text="E - Width"
+            text="E - Center to center"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
+          />
+
+          <ListItem
+            classSize="sizeF"
+            text="F - Width"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
           />
           <ListItem
-            classSize="sizeF"
-            text="F - Pitch"
+            classSize="sizeG"
+            text="G - Pitch"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
@@ -153,8 +161,33 @@ const FSLargeSpline = ({
                   }}
                   value={fsLargeSpline.c_innerMaximumDiameter || ""}
                   placeholder="20.50"
-                  position="bottom-[-30px] left-[34%] mobile:left-[40%]"
+                  position="bottom-[-30px] left-[34%] mobile:left-[34%]"
                   error={errors?.c_innerMaximumDiameter?.message?.toString()}
+                />
+              )}
+            />
+
+            <Controller
+              control={control}
+              name="d_innerTeethNumber"
+              render={({ field: { onChange } }) => (
+                <InputSizeEntry
+                  hoveredClass={hoveredClass}
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
+                  mainClass="sizeD"
+                  darkColor="text-sizeDcolor"
+                  ligthColor="text-sizeDcolorLight"
+                  name="d_innerTeethNumber"
+                  isMilimeter={false}
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                  value={fsLargeSpline.d_innerTeethNumber || ""}
+                  placeholder="6"
+                  position="bottom-[20px] left-[82%] mobile:left-[80%] "
+                  error={errors?.d_innerTeethNumber?.message?.toString()}
                 />
               )}
             />
@@ -167,51 +200,51 @@ const FSLargeSpline = ({
           </div>
         </div>
         <div className="flex items-center justify-evenly gap-5 ">
-          <div className="relative w-[45px]  self-start mobile:w-[57px]">
+          <div className="relative w-[45px] self-start mobile:w-[57px]">
             <Controller
               control={control}
-              name="d_centerToCenter"
-              render={({ field: { onChange } }) => (
-                <InputSizeEntry
-                  hoveredClass={hoveredClass}
-                  onMouseEnter={onMouseEnter}
-                  onMouseLeave={onMouseLeave}
-                  mainClass="sizeD"
-                  darkColor="text-sizeDcolor"
-                  ligthColor="text-sizeDcolorLight"
-                  name="d_centerToCenter"
-                  onChange={(value) => {
-                    onChange(value);
-                    handleOnChange(value);
-                  }}
-                  value={fsLargeSpline.d_centerToCenter || ""}
-                  placeholder="36"
-                  position="top-[39%] left-[50px] mobile:top-[40%] mobile:left-[60px]"
-                  error={errors?.d_centerToCenter?.message?.toString()}
-                />
-              )}
-            />
-
-            <Controller
-              control={control}
-              name="e_width"
+              name="e_centerToCenter"
               render={({ field: { onChange } }) => (
                 <InputSizeEntry
                   hoveredClass={hoveredClass}
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                   mainClass="sizeE"
-                  name="e_width"
                   darkColor="text-sizeEcolor"
                   ligthColor="text-sizeEcolorLight"
+                  name="e_centerToCenter"
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
                   }}
-                  value={fsLargeSpline.e_width || ""}
+                  value={fsLargeSpline.e_centerToCenter || ""}
+                  placeholder="36"
+                  position="top-[39%] left-[50px] mobile:top-[40%] mobile:left-[60px]"
+                  error={errors?.e_centerToCenter?.message?.toString()}
+                />
+              )}
+            />
+
+            <Controller
+              control={control}
+              name="f_width"
+              render={({ field: { onChange } }) => (
+                <InputSizeEntry
+                  hoveredClass={hoveredClass}
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
+                  mainClass="sizeF"
+                  name="f_width"
+                  darkColor="text-sizeFcolor"
+                  ligthColor="text-sizeFcolorLight"
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                  value={fsLargeSpline.f_width || ""}
                   placeholder="10.2"
                   position="bottom-[-20px] left-[-23px] laptop:left-[-40px]"
-                  error={errors?.e_width?.message?.toString()}
+                  error={errors?.f_width?.message?.toString()}
                 />
               )}
             />
@@ -224,7 +257,7 @@ const FSLargeSpline = ({
           <div className="relative w-[100px] self-end">
             <Controller
               control={control}
-              name="f_chain"
+              name="g_chain"
               render={({ field: { onChange } }) => (
                 <div className="absolute bottom-[5%] right-[-75%] flex flex-col laptop:right-[-100%] ">
                   <input
@@ -234,12 +267,12 @@ const FSLargeSpline = ({
                       onChange(value);
                       handleOnChange(value);
                     }}
-                    value={fsLargeSpline.f_chain || ""}
-                    name="f_chain"
-                    className={`sizeF borde-gray-200 w-[70px] rounded-md border border-solid px-1 ${
-                      hoveredClass === "sizeF"
-                        ? "text-sizeFcolorLight"
-                        : "text-sizeFcolor"
+                    value={fsLargeSpline.g_chain || ""}
+                    name="g_chain"
+                    className={`sizeG borde-gray-200 w-[70px] rounded-md border border-solid px-1 ${
+                      hoveredClass === "sizeG"
+                        ? "text-sizeGcolorLight"
+                        : "text-sizeGcolor"
                     } bg-slate-950 focus:border-slate-600 focus:shadow-md focus:outline-slate-700 focus-visible:outline-slate-700 laptop:w-[100px]`}
                     placeholder="520"
                     list="chain"
@@ -252,17 +285,17 @@ const FSLargeSpline = ({
                     <option value="428" />
                     <option value="420" />
                   </datalist>
-                  {errors?.f_chain?.message && (
+                  {errors?.g_chain?.message && (
                     <span className="absolute bottom-[-20px] text-xs text-red-600">
-                      {errors?.f_chain?.message.toString()}
+                      {errors?.g_chain?.message.toString()}
                     </span>
                   )}
                 </div>
               )}
             />
             <Chain
-              className="sizeF"
-              identificator="F"
+              className="sizeG"
+              identificator="G"
               hoveredClass={hoveredClass}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}

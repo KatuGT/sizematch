@@ -245,7 +245,7 @@ export const GetLargeSplineConfigColumn = ({
       sortable: false,
     },
     {
-      field: "d_centerToCenter",
+      field: "d_innerTeethNumber",
       headerName: "D",
       sortable: false,
       width: 90,
@@ -264,7 +264,7 @@ export const GetLargeSplineConfigColumn = ({
       ),
     },
     {
-      field: "e_width",
+      field: "e_centerToCenter",
       headerName: "E",
       sortable: false,
       width: 90,
@@ -283,7 +283,7 @@ export const GetLargeSplineConfigColumn = ({
       ),
     },
     {
-      field: "f_chain",
+      field: "f_width",
       headerName: "F",
       sortable: false,
       width: 90,
@@ -298,6 +298,25 @@ export const GetLargeSplineConfigColumn = ({
           }`}
         >
           F
+        </div>
+      ),
+    },
+    {
+      field: "g_chain",
+      headerName: "G",
+      sortable: false,
+      width: 90,
+      renderHeader: () => (
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          className={`sizeG ${
+            hoveredClass === "sizeG"
+              ? "text-sizeGcolorLight"
+              : "text-sizeGcolor"
+          }`}
+        >
+          G
         </div>
       ),
     },

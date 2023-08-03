@@ -35,18 +35,22 @@ const FrontSprocketLargeSchema = new Schema(
       required: [true, "Medida C"],
       trim: true,
     },
-    d_centerToCenter: {
+    d_innerTeethNumber: {
       type: String,
       required: [true, "Medida D"],
       trim: true,
-      default: "0",
     },
-    e_width: {
+    e_centerToCenter: {
+      type: String,
+      required: [true, "Medida E"],
+      trim: true,
+    },
+    f_width: {
       type: String,
     },
-    f_chain: {
+    g_chain: {
       type: String,
-      required: [true, "Medida F"],
+      required: [true, "Medida G"],
       trim: true,
     },
   },

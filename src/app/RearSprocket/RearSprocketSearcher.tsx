@@ -84,7 +84,18 @@ const RearSprocketSearcher = () => {
               },
             }}
             pageSizeOptions={[5, 10]}
-            sx={{ color: "#fff" }}
+            sx={{
+              color: "#fff",
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "#020617",
+              },
+              "& .MuiDataGrid-row:nth-child(even)": {
+                backgroundColor: "#1e293b",
+              },
+              "& .MuiDataGrid-cell:nth-child(n+3)":{
+                justifyContent: 'center'
+              }
+            }}
             loading={isLoading}
             slots={{
               noRowsOverlay: () =>

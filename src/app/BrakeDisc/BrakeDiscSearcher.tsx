@@ -1,5 +1,4 @@
 "use client";
-
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
@@ -11,6 +10,7 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import { alpha, styled } from "@mui/material/styles";
 
 const BrakeDiscSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -44,7 +44,7 @@ const BrakeDiscSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: brakeDisc,
     part: possibleParts.BrakeDisc,
-    arrayPartData: brakeDiscTable
+    arrayPartData: brakeDiscTable,
   });
 
   return (
@@ -83,7 +83,19 @@ const BrakeDiscSearcher = () => {
               },
             }}
             pageSizeOptions={[5, 10]}
-            sx={{ color: "#fff" }}
+            sx={{
+              color: "#fff",
+              "& .MuiDataGrid-columnHeaders":{
+                backgroundColor: "#020617",
+
+              },
+              "& .MuiDataGrid-row:nth-child(even)": {
+                backgroundColor: "#1e293b",
+              },
+              "& .MuiDataGrid-cell:nth-child(n+3)":{
+                justifyContent: 'center'
+              }
+            }}
             loading={isLoading}
             slots={{
               noRowsOverlay: () =>

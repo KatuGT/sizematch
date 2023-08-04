@@ -58,6 +58,13 @@ const Valve = ({
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
           />
+          <ListItem
+            classSize="sizeD"
+            text="D - Type"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
+          />
         </ul>
       </section>
       <div className="my-5">
@@ -139,7 +146,7 @@ const Valve = ({
           />
         </div>
       </div>
-      <div className="mt-16 flex justify-center">
+      <div className="mt-16 flex flex-col items-center justify-center">
         <Controller
           control={control}
           name="d_type"
@@ -176,7 +183,7 @@ const Valve = ({
           )}
         />
         {errors.d_type && (
-          <p className="bottom-[-20px] text-xs text-red-600">
+          <p className="text-xs text-red-600">
             {errors.d_type.message}
           </p>
         )}

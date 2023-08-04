@@ -23,7 +23,7 @@ const ValveSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: valve,
     part: possibleParts.Valve,
-    arrayPartData: valveTable
+    arrayPartData: valveTable,
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>
@@ -82,7 +82,18 @@ const ValveSearcher = () => {
               },
             }}
             pageSizeOptions={[5, 10]}
-            sx={{ color: "#fff" }}
+            sx={{
+              color: "#fff",
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "#020617",
+              },
+              "& .MuiDataGrid-row:nth-child(even)": {
+                backgroundColor: "#1e293b",
+              },
+              "& .MuiDataGrid-cell:nth-child(n+3)":{
+                justifyContent: 'center'
+              }
+            }}
             loading={isLoading}
             slots={{
               noRowsOverlay: () =>

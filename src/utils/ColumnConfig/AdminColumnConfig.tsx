@@ -1,6 +1,7 @@
 import { GridColDef, GridCellParams } from "@mui/x-data-grid";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
+import LaunchIcon from "@mui/icons-material/Launch";
 import { ObjectId } from "mongodb";
 import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
@@ -31,12 +32,13 @@ export const GetBAdminColumnConfigColumn = ({
   part,
 }: ColumnsProps) => {
   const column: GridColDef[] = [
-    { field: "_id", headerName: "ID", width: 70, sortable: false },
-    { field: "make", headerName: "Make", width: 130, sortable: false },
+    { field: "_id", headerName: "ID", width: 70 },
+    { field: "make", headerName: "Make", width: 130 },
     {
       field: "code",
       headerName: "Code",
       width: 130,
+      filterable: true,
       sortComparator: (v1, v2) => {
         if (v1.includes("JT") && v2.includes("JT")) {
           const num1 = parseInt(v1.slice(3));
@@ -65,17 +67,17 @@ export const GetBAdminColumnConfigColumn = ({
             {data.headerName}
           </div>
         ),
-        sortable: false,
       };
     }) as GridColDef[]),
     {
       field: "link",
       headerName: "Link",
-      width: 90,
+      width: 100,
       sortable: false,
       renderCell: (params) => (
         <a target="_blank" href={params.row.link}>
-          See more
+          <LaunchIcon />
+          <span> See more</span>
         </a>
       ),
     },

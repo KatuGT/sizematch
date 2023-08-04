@@ -13,6 +13,7 @@ import {
   INITIAL_STATE_REARSPROCKET,
   INITIAL_STATE_VALVE,
 } from "@/Context/SharedValuesContext/InitialStates";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 type arrayPartDataProps = {
   field: string;
@@ -80,7 +81,7 @@ export const GetUserColumnConfig = ({
           width: 90,
           filterable: false,
           disableColumnMenu: true,
-          headerAlign: "center",
+          headerAlign: "center",          
           renderHeader: () => (
             <InputForChart
               darkColor={data.darkColor}
@@ -142,12 +143,13 @@ export const GetUserColumnConfig = ({
     {
       field: "link",
       headerName: "Link",
-      width: 90,
+      width: 110,
       disableColumnMenu: true,
       sortable: false,
       renderCell: (params) => (
         <a target="_blank" href={params.row.link}>
-          See more
+          <LaunchIcon />
+          <span> See more</span>
         </a>
       ),
     },

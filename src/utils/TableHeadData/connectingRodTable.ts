@@ -1,4 +1,4 @@
-export const connectingRodUserTable = [
+export const connectingRodTable = [
   {
     field: "a_bigEnd",
     headerName: "A",

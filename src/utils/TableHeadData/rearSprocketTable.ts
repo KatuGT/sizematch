@@ -1,4 +1,4 @@
-export const rearSprocketUserTable = [
+export const rearSprocketTable = [
   {
     field: "a_holeDiameter",
     headerName: "A",

@@ -1,4 +1,4 @@
-export const brakeDiscUserTable = [
+export const brakeDiscTable = [
   {
     field: "a_discDiameter",
     headerName: "A",

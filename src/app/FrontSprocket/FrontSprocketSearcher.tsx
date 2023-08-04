@@ -6,8 +6,8 @@ import { SearchResultFSNarrowSpline } from "@/types-enums-interfaces/FSnarrowSpl
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import {
 
-  FSlargeSplineUserTable,
-  FSnarrowSplineUserTable,
+  FSlargeSplineTable,
+  FSnarrowSplineTable,
   GetUserColumnConfig,
   useHover,
 } from "@/utils";
@@ -38,7 +38,7 @@ const FrontSprocketSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: fsNarrowSpline,
     part: possibleParts.FSNarrowSpline,
-    arraPartData: FSnarrowSplineUserTable
+    arrayPartData: FSnarrowSplineTable
   });
 
   const columLargeSpline = GetUserColumnConfig({
@@ -47,7 +47,7 @@ const FrontSprocketSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: fsLargeSpline,
     part: possibleParts.FSLargeSpline,
-    arraPartData: FSlargeSplineUserTable
+    arrayPartData: FSlargeSplineTable
   });
 
   const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {

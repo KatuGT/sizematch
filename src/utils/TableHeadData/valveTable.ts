@@ -1,4 +1,4 @@
-export const valveUserTable = [
+export const valveTable = [
   {
     field: "a_stemDiameter",
     headerName: "A",

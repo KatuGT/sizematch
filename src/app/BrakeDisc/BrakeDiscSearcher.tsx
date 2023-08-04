@@ -3,7 +3,7 @@
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { GetUserColumnConfig, brakeDiscUserTable, useHover } from "@/utils";
+import { GetUserColumnConfig, brakeDiscTable, useHover } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
@@ -44,7 +44,7 @@ const BrakeDiscSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: brakeDisc,
     part: possibleParts.BrakeDisc,
-    arraPartData: brakeDiscUserTable
+    arrayPartData: brakeDiscTable
   });
 
   return (

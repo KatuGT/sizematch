@@ -14,7 +14,7 @@ import {
   INITIAL_STATE_VALVE,
 } from "@/Context/SharedValuesContext/InitialStates";
 
-type arraPartDataProps = {
+type arrayPartDataProps = {
   field: string;
   headerName: string;
   darkColor: string;
@@ -35,7 +35,7 @@ type contextDataType =
 interface ColumnProps extends SVGProps {
   contextData: contextDataType;
   part: possibleParts;
-  arraPartData: arraPartDataProps[];
+  arrayPartData: arrayPartDataProps[];
 }
 
 export const GetUserColumnConfig = ({
@@ -44,7 +44,7 @@ export const GetUserColumnConfig = ({
   onMouseLeave,
   contextData,
   part,
-  arraPartData,
+  arrayPartData,
 }: ColumnProps) => {
   const { dispatch } = useContext(SharedValuesContext);
 
@@ -55,20 +55,24 @@ export const GetUserColumnConfig = ({
 
     dispatch({
       type: name,
-      payload:  name === "d_type" ? value : newValue,
+      payload: name === "d_type" ? value : newValue,
       group: part,
     });
   };
 
-  const brakeDiscColumn: GridColDef[] = [
+  const column: GridColDef[] = [
     { field: "make", headerName: "Make", width: 130, sortable: false },
-    { field: "code", headerName: "Code", width: 130,
-    sortComparator: (v1, v2) => {
-      const num1 = parseInt(v1.slice(3));
-      const num2 = parseInt(v2.slice(3));
-      return num1 - num2;
-    }, },
-    ...(arraPartData.map((data) => {
+    {
+      field: "code",
+      headerName: "Code",
+      width: 130,
+      sortComparator: (v1, v2) => {
+        const num1 = parseInt(v1.slice(3));
+        const num2 = parseInt(v2.slice(3));
+        return num1 - num2;
+      },
+    },
+    ...(arrayPartData.map((data) => {
       if (!data.field.includes("chain")) {
         return {
           field: data.field,
@@ -148,5 +152,5 @@ export const GetUserColumnConfig = ({
       ),
     },
   ];
-  return brakeDiscColumn;
+  return column;
 };

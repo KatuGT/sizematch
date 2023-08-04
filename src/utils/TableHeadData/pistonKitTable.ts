@@ -1,4 +1,4 @@
-export const pistonKitUserTable = [
+export const pistonKitTable = [
   {
     field: "a_compressionHight1",
     headerName: "A",

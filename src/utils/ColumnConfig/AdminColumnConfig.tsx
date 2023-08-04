@@ -1,8 +1,8 @@
-import { GridCellParams, GridColDef } from "@mui/x-data-grid";
-import { SVGProps } from "@/types-enums-interfaces/SVGProps";
-import { ObjectId } from "mongodb";
+import { GridColDef, GridCellParams } from "@mui/x-data-grid";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
+import { ObjectId } from "mongodb";
+import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 
 type arrayPartDataProps = {
@@ -14,35 +14,39 @@ type arrayPartDataProps = {
   placeholder: string;
 };
 
-interface ColumnProps extends SVGProps {
-  arrayPartData: arrayPartDataProps[];
-  part: possibleParts
+interface ColumnsProps extends SVGProps {
   onClickDelete: (id: string | ObjectId) => Promise<void>;
   onClickEdit: (part: string, id: string | ObjectId) => Promise<void>;
+  part: possibleParts;
+  arrayPartData: arrayPartDataProps[];
 }
 
-export const GetAdminColumnConfig = ({
+export const GetBAdminColumnConfigColumn = ({
   onClickDelete,
   onClickEdit,
-  hoveredClass,
   onMouseEnter,
   onMouseLeave,
+  hoveredClass,
   arrayPartData,
-  part
-}: ColumnProps) => {
-
+  part,
+}: ColumnsProps) => {
   const column: GridColDef[] = [
+    { field: "_id", headerName: "ID", width: 70, sortable: false },
     { field: "make", headerName: "Make", width: 130, sortable: false },
     {
       field: "code",
       headerName: "Code",
       width: 130,
       sortComparator: (v1, v2) => {
-        const num1 = parseInt(v1.slice(3));
-        const num2 = parseInt(v2.slice(3));
-        return num1 - num2;
+        if (v1.includes("JT") && v2.includes("JT")) {
+          const num1 = parseInt(v1.slice(3));
+          const num2 = parseInt(v2.slice(3));
+          return num1 - num2;
+        }
+        return 0;
       },
     },
+
     ...(arrayPartData.map((data) => {
       return {
         field: data.field,
@@ -55,7 +59,7 @@ export const GetAdminColumnConfig = ({
             className={`${data.mainClass} ${
               hoveredClass === data.mainClass
                 ? data.ligthColor
-                : data.darkColor
+                : data.ligthColor
             }`}
           >
             {data.headerName}
@@ -68,7 +72,6 @@ export const GetAdminColumnConfig = ({
       field: "link",
       headerName: "Link",
       width: 90,
-      disableColumnMenu: true,
       sortable: false,
       renderCell: (params) => (
         <a target="_blank" href={params.row.link}>
@@ -99,5 +102,6 @@ export const GetAdminColumnConfig = ({
       ),
     },
   ];
+
   return column;
 };

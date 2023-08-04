@@ -1,4 +1,4 @@
-export const FSlargeSplineUserTable = [
+export const FSlargeSplineTable = [
   {
     field: "a_innerMinimumDiameter",
     headerName: "A",

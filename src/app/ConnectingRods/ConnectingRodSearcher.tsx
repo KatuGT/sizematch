@@ -4,7 +4,7 @@ import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultConnectingRod } from "@/types-enums-interfaces/ConnectingRodProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { GetUserColumnConfig, connectingRodUserTable, useHover } from "@/utils";
+import { GetUserColumnConfig, connectingRodTable, useHover } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import Image from "next/image";
@@ -24,7 +24,7 @@ const ConnectingRodSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: connectingRod,
     part: possibleParts.ConnectingRods,
-    arraPartData: connectingRodUserTable
+    arrayPartData: connectingRodTable
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>

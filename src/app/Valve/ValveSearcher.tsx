@@ -3,7 +3,7 @@ import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultValve } from "@/types-enums-interfaces/ValveProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useHover, GetValveConfigColumnUser } from "@/utils";
+import { useHover, GetUserColumnConfig, valveUserTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
@@ -17,10 +17,13 @@ const ValveSearcher = () => {
   const { valve } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const columnValve = GetValveConfigColumnUser({
+  const columnValve = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: valve,
+    part: possibleParts.Valve,
+    arraPartData: valveUserTable
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>

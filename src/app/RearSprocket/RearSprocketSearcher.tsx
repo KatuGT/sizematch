@@ -3,7 +3,7 @@ import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultRearSprocket } from "@/types-enums-interfaces/RearSprocketProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useHover, GetRearSprocketConfigColumnUser } from "@/utils";
+import { useHover, GetUserColumnConfig, rearSprocketUserTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
@@ -17,10 +17,13 @@ const RearSprocketSearcher = () => {
   const { rearSprocket } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const columnRearSprocket = GetRearSprocketConfigColumnUser({
+  const columnRearSprocket = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: rearSprocket,
+    part: possibleParts.RearSprocket,
+    arraPartData: rearSprocketUserTable
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>

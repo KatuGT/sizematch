@@ -5,8 +5,10 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { SearchResultFSNarrowSpline } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import {
-  GetLSConfigColumnUser,
-  GetNSConfigColumnUser,
+
+  FSlargeSplineUserTable,
+  FSnarrowSplineUserTable,
+  GetUserColumnConfig,
   useHover,
 } from "@/utils";
 import CreateParams from "@/utils/createParams";
@@ -30,16 +32,22 @@ const FrontSprocketSearcher = () => {
     possibleParts.FSNarrowSpline
   );
 
-  const columnNarrowSpline = GetNSConfigColumnUser({
+  const columnNarrowSpline = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: fsNarrowSpline,
+    part: possibleParts.FSNarrowSpline,
+    arraPartData: FSnarrowSplineUserTable
   });
 
-  const columLargeSpline = GetLSConfigColumnUser({
+  const columLargeSpline = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: fsLargeSpline,
+    part: possibleParts.FSLargeSpline,
+    arraPartData: FSlargeSplineUserTable
   });
 
   const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {

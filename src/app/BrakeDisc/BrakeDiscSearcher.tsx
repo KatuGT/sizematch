@@ -3,7 +3,7 @@
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { GetBrakeDiscConfigColumnUser, useHover } from "@/utils";
+import { GetUserColumnConfig, brakeDiscUserTable, useHover } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
@@ -38,10 +38,13 @@ const BrakeDiscSearcher = () => {
     mode: "onBlur",
   });
 
-  const columnBrakeDisc = GetBrakeDiscConfigColumnUser({
+  const columnBrakeDisc = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: brakeDisc,
+    part: possibleParts.BrakeDisc,
+    arraPartData: brakeDiscUserTable
   });
 
   return (

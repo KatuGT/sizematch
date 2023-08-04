@@ -1,0 +1,58 @@
+export const FSlargeSplineUserTable = [
+  {
+    field: "a_innerMinimumDiameter",
+    headerName: "A",
+    darkColor: "text-sizeAcolor",
+    ligthColor: "text-sizeAcolorLight",
+    mainClass: "sizeA",
+    placeholder: "15.5",
+  },
+  {
+    field: "b_innerTeethSpacing",
+    headerName: "B",
+    darkColor: "text-sizeBcolor",
+    ligthColor: "text-sizeBcolorLight",
+    mainClass: "sizeB",
+    placeholder: "4",
+  },
+  {
+    field: "c_innerMaximumDiameter",
+    headerName: "C",
+    darkColor: "text-sizeCcolor",
+    ligthColor: "text-sizeCcolorLight",
+    mainClass: "sizeC",
+    placeholder: "20.5",
+  },
+  {
+    field: "d_innerTeethNumber",
+    headerName: "D",
+    darkColor: "text-sizeDcolor",
+    ligthColor: "text-sizeDcolorLight",
+    mainClass: "sizeD",
+    placeholder: "6",
+  },
+  {
+    field: "e_centerToCenter",
+    headerName: "E",
+    darkColor: "text-sizeEcolor",
+    ligthColor: "text-sizeEcolorLight",
+    mainClass: "sizeE",
+    placeholder: "36",
+  },
+  {
+    field: "f_width",
+    headerName: "F",
+    darkColor: "text-sizeFcolor",
+    ligthColor: "text-sizeFcolorLight",
+    mainClass: "sizeF",
+    placeholder: "10.2",
+  },
+  {
+    field: "g_chain",
+    headerName: "G",
+    darkColor: "text-sizeGcolor",
+    ligthColor: "text-sizeGcolorLight",
+    mainClass: "sizeG",
+    placeholder: "520",
+  }
+];

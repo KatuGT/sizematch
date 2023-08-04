@@ -3,7 +3,7 @@ import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultPistonKit } from "@/types-enums-interfaces/PistonKitProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useHover, GetPistonKitConfigColumnUser } from "@/utils";
+import { useHover, GetUserColumnConfig, pistonKitUserTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
@@ -17,10 +17,13 @@ const PistonKitSearcher = () => {
   const { pistonKit } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const columnPistonKit = GetPistonKitConfigColumnUser({
+  const columnPistonKit = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: pistonKit,
+    part: possibleParts.PistonKit,
+    arraPartData: pistonKitUserTable
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>

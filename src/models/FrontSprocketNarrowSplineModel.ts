@@ -26,10 +26,8 @@ const FrontSprocketNarrowSplineSchema = new Schema(
     },
     b_innerTeethNumber: {
       type: String,
-      // required: [true, "Medida B"],
+      required: [true, "Medida B"],
       trim: true,
-
-      default: "0",
     },
     c_innerMaximumDiameter: {
       type: String,
@@ -38,9 +36,7 @@ const FrontSprocketNarrowSplineSchema = new Schema(
     },
     d_width: {
       type: String,
-      // required: [true, "Medida D"],
       trim: true,
-
       default: "0",
     },
     e_chain: {

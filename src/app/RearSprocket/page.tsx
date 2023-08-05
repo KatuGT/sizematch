@@ -7,7 +7,9 @@ export const metadata: Metadata = {
 };
 
 const RearSprocket = () => {
-  return <RearSprocketSearcher />;
+  return (
+      <RearSprocketSearcher />
+  );
 };
 
 export default RearSprocket;

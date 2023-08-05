@@ -1,4 +1,10 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+'use client'
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+} from "react";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import useSWR from "swr";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
@@ -9,13 +15,14 @@ import { SVGProps } from "@/types-enums-interfaces/SVGProps";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { EditingModeContext } from "@/Context/EditingMode/EditingModeContext";
 import {
-  GetBrakeDiscConfigColumn,
-  GetConnectingRodConfigColumn,
-  GetLargeSplineConfigColumn,
-  GetNarrowSplineConfigColumn,
-  GetPistonKitConfigColumn,
-  GetRearSprocketConfigColumn,
-  GetValveConfigColumn,
+  FSlargeSplineTable,
+  FSnarrowSplineTable,
+  GetBAdminColumnConfigColumn,
+  brakeDiscTable,
+  connectingRodTable,
+  pistonKitTable,
+  rearSprocketTable,
+  valveTable,
 } from "@/utils";
 
 const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
@@ -40,7 +47,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     mutate();
   }, [data, mutate]);
 
-  let searchResults: any[] = data  || [];
+  let searchResults: any[] = data || [];
 
   useEffect(() => {
     mutate();
@@ -96,122 +103,54 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     [mutate, selectedPart]
   );
 
-  const columnsFSnarrowSpline = useCallback(() => {
-    return GetNarrowSplineConfigColumn({
-      hoveredClass: hoveredClass,
+  const columnsConfig = useMemo(() => {
+    return {
+      [possibleParts.FSLargeSpline]: FSlargeSplineTable,
+      [possibleParts.FSNarrowSpline]: FSnarrowSplineTable,
+      [possibleParts.RearSprocket]: rearSprocketTable,
+      [possibleParts.BrakeDisc]: brakeDiscTable,
+      [possibleParts.ConnectingRods]: connectingRodTable,
+      [possibleParts.PistonKit]: pistonKitTable,
+      [possibleParts.Valve]: valveTable,
+    };
+  }, []);
+
+  const columns = useMemo(() => {
+    return GetBAdminColumnConfigColumn({
       onMouseEnter: onMouseEnter,
       onMouseLeave: onMouseLeave,
       onClickDelete: handleDelete,
       onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsFSlargeSpline = useCallback(() => {
-    return GetLargeSplineConfigColumn({
       hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
+      arrayPartData: columnsConfig[selectedPart],
+      part: selectedPart,
     });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsRearSprocket = useCallback(() => {
-    return GetRearSprocketConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsBrakeDisc = useCallback(() => {
-    return GetBrakeDiscConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsConnectingRod = useCallback(() => {
-    return GetConnectingRodConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsPistonKit = useCallback(() => {
-    return GetPistonKitConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const columnsValve = useCallback(() => {
-    return GetValveConfigColumn({
-      hoveredClass: hoveredClass,
-      onMouseEnter: onMouseEnter,
-      onMouseLeave: onMouseLeave,
-      onClickDelete: handleDelete,
-      onClickEdit: handleEdit,
-    });
-  }, [handleDelete, handleEdit, hoveredClass, onMouseEnter, onMouseLeave]);
-
-  const [columns, setColumns] = useState(columnsFSnarrowSpline);
-
-  useEffect(() => {
-    switch (selectedPart) {
-      case possibleParts.FSLargeSpline:
-        setColumns(columnsFSlargeSpline);
-        break;
-      case possibleParts.FSNarrowSpline:
-        setColumns(columnsFSnarrowSpline);
-        break;
-      case possibleParts.RearSprocket:
-        setColumns(columnsRearSprocket);
-        break;
-      case possibleParts.BrakeDisc:
-        setColumns(columnsBrakeDisc);
-        break;
-      case possibleParts.ConnectingRods:
-        setColumns(columnsConnectingRod);
-        break;
-      case possibleParts.PistonKit:
-        setColumns(columnsPistonKit);
-        break;
-      case possibleParts.Valve:
-        setColumns(columnsValve);
-        break;
-      default:
-        break;
-    }
   }, [
-    columnsBrakeDisc,
-    columnsConnectingRod,
-    columnsFSlargeSpline,
-    columnsFSnarrowSpline,
-    columnsRearSprocket,
-    columnsPistonKit,
-    columnsValve,
+    columnsConfig,
+    handleDelete,
+    handleEdit,
+    hoveredClass,
+    onMouseEnter,
+    onMouseLeave,
     selectedPart,
   ]);
-
+  
   return (
+    
     <div className="mx-auto mt-5 h-[400px] w-full bg-gray-800 text-white">
       <DataGrid
         rows={searchResults}
         columns={columns}
         getRowId={(row) => row._id}
         initialState={{
+          sorting: {
+            sortModel: [
+              {
+                field: "code",
+                sort: "asc",
+              },
+            ],
+          },
           pagination: {
             paginationModel: { page: 0, pageSize: 5 },
           },
@@ -223,7 +162,18 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           },
         }}
         pageSizeOptions={[5, 10]}
-        sx={{ color: "#fff" }}
+        sx={{
+          color: "#fff",
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: "#020617",
+          },
+          "& .MuiDataGrid-row:nth-child(even)": {
+            backgroundColor: "#1e293b",
+          },
+          "& .MuiDataGrid-cell:nth-child(n+3)": {
+            justifyContent: "center",
+          },
+        }}
         loading={isLoading}
         slots={{
           noRowsOverlay: () => <GridOverlay> No results</GridOverlay>,

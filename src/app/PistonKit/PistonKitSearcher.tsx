@@ -3,23 +3,27 @@ import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultPistonKit } from "@/types-enums-interfaces/PistonKitProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useHover, GetPistonKitConfigColumnUser } from "@/utils";
+import { useHover, GetUserColumnConfig, pistonKitTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const PistonKitSearcher = () => {
   const { state } = useContext(SharedValuesContext);
   const { pistonKit } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  const columnPistonKit = GetPistonKitConfigColumnUser({
+  const columnPistonKit = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: pistonKit,
+    part: possibleParts.PistonKit,
+    arrayPartData: pistonKitTable
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>
@@ -27,7 +31,6 @@ const PistonKitSearcher = () => {
       SearchResultPistonKit[]
     >;
 
-  // const params = transformToParams();
   const params = CreateParams({ data: pistonKit });
 
   const { data, isLoading } = useSWR<SearchResultPistonKit[]>(
@@ -55,12 +58,20 @@ const PistonKitSearcher = () => {
 
       <div className="my-20 w-full text-white laptop:mx-auto laptop:max-w-[min-content]">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 h-[400px] mb-20">
           <DataGrid
             rows={searchResults}
             columns={columnPistonKit}
             getRowId={(row) => row._id}
             initialState={{
+              sorting: {
+                sortModel: [
+                  {
+                    field: 'code',
+                    sort: 'asc',
+                  },
+                ],
+              },
               pagination: {
                 paginationModel: { page: 0, pageSize: 5 },
               },
@@ -72,7 +83,18 @@ const PistonKitSearcher = () => {
               },
             }}
             pageSizeOptions={[5, 10]}
-            sx={{ color: "#fff" }}
+            sx={{
+              color: "#fff",
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "#020617",
+              },
+              "& .MuiDataGrid-row:nth-child(even)": {
+                backgroundColor: "#1e293b",
+              },
+              "& .MuiDataGrid-cell:nth-child(n+3)":{
+                justifyContent: 'center'
+              }
+            }}
             loading={isLoading}
             slots={{
               noRowsOverlay: () =>
@@ -86,6 +108,7 @@ const PistonKitSearcher = () => {
             }}
           />
         </div>
+      <MeasurementDistributionTips />
       </div>
     </div>
   );

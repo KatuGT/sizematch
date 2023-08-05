@@ -25,11 +25,11 @@ const Valve = ({
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    const newValue = value.replace(/[^0-9.]/g, "");
+    const newValue = value.replace(/[^0-9.]/g, "").substring(0, 7);
 
     dispatch({
       type: name,
-      payload: newValue,
+      payload: name === "d_type" ? value : newValue,
       group: possibleParts.Valve,
     });
   };
@@ -54,6 +54,13 @@ const Valve = ({
           <ListItem
             classSize="sizeC"
             text="C - Head diameter"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            hoveredClass={hoveredClass}
+          />
+          <ListItem
+            classSize="sizeD"
+            text="D - Type"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             hoveredClass={hoveredClass}
@@ -126,7 +133,7 @@ const Valve = ({
                 }}
                 value={valve.c_head || ""}
                 placeholder="23"
-                position="left-[26%] top-[101%] desktop:left-[19%] bg-gray-900"
+                position="left-[20%] top-[101%] desktop:left-[19%] bg-gray-900"
                 error={errors?.c_head?.message?.toString()}
               />
             )}
@@ -138,6 +145,48 @@ const Valve = ({
             onMouseLeave={onMouseLeave}
           />
         </div>
+      </div>
+      <div className="mt-16 flex flex-col items-center justify-center">
+        <Controller
+          control={control}
+          name="d_type"
+          render={({ field: { onChange } }) => (
+            <div className="flex rounded-lg border border-gray-500  bg-gray-600 text-white">
+              <label className="flex gap-2 border-r border-gray-500 px-3 py-2">
+                <input
+                  type="radio"
+                  name="d_type"
+                  value="IN"
+                  checked={valve.d_type === "IN"}
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                />
+                <span>IN</span>
+              </label>
+
+              <label className="flex gap-2 px-3 py-2">
+                <input
+                  type="radio"
+                  name="d_type"
+                  value="EX"
+                  checked={valve.d_type === "EX"}
+                  onChange={(value) => {
+                    onChange(value);
+                    handleOnChange(value);
+                  }}
+                />
+                <span>EX</span>
+              </label>
+            </div>
+          )}
+        />
+        {errors.d_type && (
+          <p className="text-xs text-red-600">
+            {errors.d_type.message}
+          </p>
+        )}
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const PistonKit = ({
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    const newValue = value.replace(/[^0-9.]/g, "");
+    const newValue = value.replace(/[^0-9.]/g, "").substring(0, 7);
 
     dispatch({
       type: name,
@@ -93,7 +93,7 @@ const PistonKit = ({
           />
         </ul>
       </section>
-      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:left-16 desktop:mt-10 desktop:flex-row desktop:gap-4">
+      <div className="relative flex flex-col items-center justify-center gap-10 mobile:gap-16 laptop:gap-5 desktop:mt-10 desktop:flex-row desktop:gap-4">
         <div className="relative mt-10 w-[200px] mobile:w-[250px] laptop:w-[350px] laptop:items-end desktop:mt-0 desktop:w-[500px]">
           <Controller
             control={control}
@@ -193,7 +193,7 @@ const PistonKit = ({
             onMouseLeave={onMouseLeave}
           />
         </div>
-        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:w-full mobile:flex-row mobile:gap-20 desktop:justify-center desktop:gap-20">
+        <div className="flex w-[90%] flex-col justify-center items-center gap-5 mobile:w-full mobile:flex-row mobile:gap-20 desktop:gap-0">
           <div className="relative mx-auto w-[195px] mobile:mx-0 mobile:w-[250px]  laptop:w-[355px]">
             <Controller
               control={control}
@@ -227,7 +227,7 @@ const PistonKit = ({
           </div>
           <div
             className="laptop: relative mr-0 w-[80px] mobile:mr-16
-          mobile:w-[110px] laptop:w-[150px]"
+          mobile:w-[110px] laptop:w-[150px] laptop:mr-0 laptop:right-[-5rem]"
           >
             <Controller
               control={control}
@@ -289,13 +289,14 @@ const PistonKit = ({
         <Controller
           control={control}
           name="g_stroke"
-          render={({ field: { onChange } }) => (
+          render={({ field: { onChange, value } }) => (
             <div className="flex rounded-lg border border-gray-500  bg-gray-600 text-white">
               <label className="flex gap-2 border-r border-gray-500 px-3 py-2">
                 <input
                   type="radio"
                   name="g_stroke"
                   value="2"
+                  checked={pistonKit.g_stroke === "2"}
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);
@@ -309,6 +310,7 @@ const PistonKit = ({
                   type="radio"
                   name="g_stroke"
                   value="4"
+                  checked={pistonKit.g_stroke === "4"}
                   onChange={(value) => {
                     onChange(value);
                     handleOnChange(value);

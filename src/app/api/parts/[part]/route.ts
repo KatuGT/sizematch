@@ -53,11 +53,11 @@ export const POST = async (req: Request, { params }: any) => {
     return new NextResponse(JSON.stringify(newPart), { status: 201 });
   } catch (err) {
     if (err instanceof Error) {
-      console.log(err.message);
+      console.warn(err.message);
 
       return new NextResponse(err.message, { status: 500 });
     } else {
-      console.log("Unexpected error on part/id", err);
+      console.warn("Unexpected error on part/id", err);
     }
   }
 };

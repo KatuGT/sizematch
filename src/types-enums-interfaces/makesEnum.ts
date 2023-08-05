@@ -4,5 +4,6 @@ export enum makes {
   Brembo = "Brembo",
   Prox = "PROX RACING PARTS",
   Tkrj = "TKRJ",
-  HotRods = "Hot Rods"
+  Royal = "ROYAL",
+  HotRods = "HOT RODS"
 }

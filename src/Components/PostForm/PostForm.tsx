@@ -121,7 +121,10 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { mutate } = useSWRConfig();
   const [error, setError] = useState("");
+  const [disabledButton, setDisabledButton] = useState(false);
+
   const onSubmit = async (data: partPostProps) => {
+    setDisabledButton(true);
     if (editingMode) {
       try {
         const resp = await fetch(`/api/parts/${part}/${id}`, {
@@ -133,6 +136,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         });
 
         if (resp.ok) {
+          setDisabledButton(false);
+
           Swal.mixin({
             toast: true,
             position: "top-end",
@@ -162,6 +167,8 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           });
           reset({ keepDefaultValues: true });
         } else if (resp.status === 409) {
+          setDisabledButton(false);
+
           const errorData = await resp.json();
 
           throw new Error(errorData.message);
@@ -179,6 +186,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
         });
 
         if (resp.ok) {
+          setDisabledButton(false);
           mutate(`/api/parts?part=${selectedPart}`);
           Swal.mixin({
             toast: true,
@@ -195,22 +203,26 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             title: "New part added",
           });
           reset();
+          setError("");
           sharedValueDispatch({
             type: "",
             group: "RESET_VALUES",
             payload: "",
           });
         } else if (resp.status === 404) {
+          setDisabledButton(false);
           const errorData = await resp.json();
           setError(errorData);
 
           throw new Error(errorData);
         }
       } catch (err) {
+        setDisabledButton(false);
+
         if (err instanceof Error) {
           setError(err.message);
         } else {
-          console.log("Unexpected front error", err);
+          console.warn("Unexpected front error", err);
         }
       }
     }
@@ -429,7 +441,11 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           />
         }
         <div className="flex justify-center gap-4">
-          <Button type="submit" text={editingMode ? "Edit" : "Send"} />
+          <Button
+            type="submit"
+            text={editingMode ? "Edit" : "Send"}
+            disabled={disabledButton}
+          />
           <Button
             type="button"
             text={editingMode ? "Cancel" : "Reset"}

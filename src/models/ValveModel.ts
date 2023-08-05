@@ -34,6 +34,12 @@ const ValveSchema = new Schema(
       required: [true, "Medida C"],
       trim: true,
     },
+    d_type: {
+      type: String,
+      required: [true, "Medida D"],
+      enum: ["IN", "EX"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );

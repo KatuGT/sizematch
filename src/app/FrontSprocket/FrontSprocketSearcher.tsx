@@ -5,8 +5,10 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { SearchResultFSNarrowSpline } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import {
-  GetLSConfigColumnUser,
-  GetNSConfigColumnUser,
+
+  FSlargeSplineTable,
+  FSnarrowSplineTable,
+  GetUserColumnConfig,
   useHover,
 } from "@/utils";
 import CreateParams from "@/utils/createParams";
@@ -18,6 +20,7 @@ import {
   FSNarrowSpline,
   TableRecomendations,
 } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const FrontSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -29,16 +32,22 @@ const FrontSprocketSearcher = () => {
     possibleParts.FSNarrowSpline
   );
 
-  const columnNarrowSpline = GetNSConfigColumnUser({
+  const columnNarrowSpline = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: fsNarrowSpline,
+    part: possibleParts.FSNarrowSpline,
+    arrayPartData: FSnarrowSplineTable
   });
 
-  const columLargeSpline = GetLSConfigColumnUser({
+  const columLargeSpline = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: fsLargeSpline,
+    part: possibleParts.FSLargeSpline,
+    arrayPartData: FSlargeSplineTable
   });
 
   const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -136,13 +145,21 @@ const FrontSprocketSearcher = () => {
 
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 h-[400px] mb-20">
           {frontSprocketType === possibleParts.FSNarrowSpline ? (
             <DataGrid
               rows={searchResults}
               columns={columnNarrowSpline}
               getRowId={(row) => row._id}
               initialState={{
+                sorting: {
+                  sortModel: [
+                    {
+                      field: 'code',
+                      sort: 'asc',
+                    },
+                  ],
+                },
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
@@ -154,7 +171,18 @@ const FrontSprocketSearcher = () => {
                 },
               }}
               pageSizeOptions={[5, 10]}
-              sx={{ color: "#fff" }}
+              sx={{
+                color: "#fff",
+                "& .MuiDataGrid-columnHeaders": {
+                  backgroundColor: "#020617",
+                },
+                "& .MuiDataGrid-row:nth-child(even)": {
+                  backgroundColor: "#1e293b",
+                },
+                "& .MuiDataGrid-cell:nth-child(n+3)":{
+                  justifyContent: 'center'
+                }
+              }}
               loading={isLoading}
               slots={{
                 noRowsOverlay: () =>
@@ -175,6 +203,14 @@ const FrontSprocketSearcher = () => {
               columns={columLargeSpline}
               getRowId={(row) => row._id}
               initialState={{
+                sorting: {
+                  sortModel: [
+                    {
+                      field: 'code',
+                      sort: 'asc',
+                    },
+                  ],
+                },
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
@@ -186,7 +222,18 @@ const FrontSprocketSearcher = () => {
                 },
               }}
               pageSizeOptions={[5, 10]}
-              sx={{ color: "#fff" }}
+              sx={{
+                color: "#fff",
+                "& .MuiDataGrid-columnHeaders": {
+                  backgroundColor: "#020617",
+                },
+                "& .MuiDataGrid-row:nth-child(even)": {
+                  backgroundColor: "#1e293b",
+                },
+                "& .MuiDataGrid-cell:nth-child(n+3)":{
+                  justifyContent: 'center'
+                }
+              }}
               loading={isLoading}
               slots={{
                 noRowsOverlay: () =>
@@ -203,6 +250,7 @@ const FrontSprocketSearcher = () => {
             />
           )}
         </div>
+        <MeasurementDistributionTips />
       </div>
     </div>
   );

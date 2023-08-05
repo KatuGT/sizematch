@@ -21,7 +21,7 @@ export const POST = async (req: Request) => {
     if (error instanceof Error) {
       return new NextResponse(error.message, { status: 500 });
     } else {
-      console.log("Unexpected error on contact route", error);
+      console.warn("Unexpected error on contact route", error);
     }
   }
 };

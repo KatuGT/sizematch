@@ -23,7 +23,18 @@ export const rearSprocketSchema = {
     .string()
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
-    .max(4, "Enter a valid value")
+    .max(6, "Enter a valid value")
+    .test(
+      "is-smallest-than-c-holeDistance",
+      "'D-Center'  must be smallest than 'C-Hole Distance'",
+      function (value) {
+        const d_center = value ? parseFloat(value) : undefined;
+        const c_holeDistance = this.parent.c_holeDistance
+          ? parseFloat(this.parent.c_holeDistance)
+          : undefined;
+        return c_holeDistance && d_center ? d_center < c_holeDistance : true;
+      }
+    )
     .required("Required"),
   e_chain: yup
     .string()

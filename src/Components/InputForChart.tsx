@@ -38,7 +38,7 @@ const InputForChart = ({
       <input
         placeholder={placeholder}
         type="text"
-        className="custom-input bg-slate-950 focus:outline-slate-700 focus:border-slate-600 focus:shadow-md focus-visible:outline-slate-700"
+        className="custom-input bg-slate-900 focus:outline-slate-700 focus:border-slate-600 focus:shadow-md focus-visible:outline-slate-700"
         name={name}
         value={value}
         onChange={onChange}

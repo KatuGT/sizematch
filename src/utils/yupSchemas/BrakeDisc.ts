@@ -29,6 +29,17 @@ export const brakeDiscSchema = {
     .matches(/^\d*\.?\d+$/, "Invalid number")
     .trim()
     .max(6, "Enter a valid value")
+    .test(
+      "is-greater-than-d_center",
+      "'E-Hole Distance' must be greater than 'D-Center'",
+      function (value) {
+        const e_holeDistance = value ? parseFloat(value) : undefined;
+        const d_center = this.parent.d_center
+          ? parseFloat(this.parent.d_center)
+          : undefined;
+        return e_holeDistance && d_center ? e_holeDistance > d_center : true;
+      }
+    )
     .required("Required"),
   f_width: yup
     .string()

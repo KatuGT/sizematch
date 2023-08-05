@@ -1,15 +1,15 @@
 "use client";
-
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
 import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { GetBrakeDiscConfigColumnUser, useHover } from "@/utils";
+import { GetUserColumnConfig, brakeDiscTable, useHover } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
+import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
 
 const BrakeDiscSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -37,14 +37,17 @@ const BrakeDiscSearcher = () => {
     mode: "onBlur",
   });
 
-  const columnBrakeDisc = GetBrakeDiscConfigColumnUser({
+  const columnBrakeDisc = GetUserColumnConfig({
     hoveredClass: hoverClass,
     onMouseEnter: handleHover,
     onMouseLeave: handleMouseLeave,
+    contextData: brakeDisc,
+    part: possibleParts.BrakeDisc,
+    arrayPartData: brakeDiscTable,
   });
 
   return (
-    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[max-content]">
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
       <BrakeDiscSVG
         control={control}
         errors={errors}
@@ -54,12 +57,20 @@ const BrakeDiscSearcher = () => {
       />
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px]">
+        <div className="bg-gray-80 mb-20  h-[400px]">
           <DataGrid
             rows={searchResults}
             columns={columnBrakeDisc}
             getRowId={(row) => row._id}
             initialState={{
+              sorting: {
+                sortModel: [
+                  {
+                    field: "code",
+                    sort: "asc",
+                  },
+                ],
+              },
               pagination: {
                 paginationModel: { page: 0, pageSize: 5 },
               },
@@ -71,7 +82,18 @@ const BrakeDiscSearcher = () => {
               },
             }}
             pageSizeOptions={[5, 10]}
-            sx={{ color: "#fff" }}
+            sx={{
+              color: "#fff",
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "#020617",
+              },
+              "& .MuiDataGrid-row:nth-child(even)": {
+                backgroundColor: "#1e293b",
+              },
+              "& .MuiDataGrid-cell:nth-child(n+3)": {
+                justifyContent: "center",
+              },
+            }}
             loading={isLoading}
             slots={{
               noRowsOverlay: () =>
@@ -85,6 +107,7 @@ const BrakeDiscSearcher = () => {
             }}
           />
         </div>
+        <MeasurementDistributionTips />
       </div>
     </div>
   );

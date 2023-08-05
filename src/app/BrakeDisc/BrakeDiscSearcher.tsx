@@ -10,7 +10,6 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import { alpha, styled } from "@mui/material/styles";
 
 const BrakeDiscSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -85,16 +84,15 @@ const BrakeDiscSearcher = () => {
             pageSizeOptions={[5, 10]}
             sx={{
               color: "#fff",
-              "& .MuiDataGrid-columnHeaders":{
+              "& .MuiDataGrid-columnHeaders": {
                 backgroundColor: "#020617",
-
               },
               "& .MuiDataGrid-row:nth-child(even)": {
                 backgroundColor: "#1e293b",
               },
-              "& .MuiDataGrid-cell:nth-child(n+3)":{
-                justifyContent: 'center'
-              }
+              "& .MuiDataGrid-cell:nth-child(n+3)": {
+                justifyContent: "center",
+              },
             }}
             loading={isLoading}
             slots={{

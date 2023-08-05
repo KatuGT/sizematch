@@ -81,7 +81,7 @@ export const GET = async (req: Request, { params }: any) => {
 
     return new NextResponse(JSON.stringify(searchResult), { status: 200 });
   } catch (error) {
-    console.log(error);
+    console.warn(error);
     return new NextResponse("Error", { status: 500 });
   }
 };

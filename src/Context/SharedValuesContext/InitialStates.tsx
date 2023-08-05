@@ -16,9 +16,10 @@ export const INITIAL_STATE_FSLARGESPLINE = {
   a_innerMinimumDiameter: "",
   b_innerTeethSpacing: "",
   c_innerMaximumDiameter: "",
-  d_centerToCenter: "",
-  e_width: "",
-  f_chain: "",
+  d_innerTeethNumber: "",
+  e_centerToCenter: "",
+  f_width: "",
+  g_chain: "",
 };
 
 export const INITIAL_STATE_REARSPROCKET = {
@@ -79,4 +80,5 @@ export const INITIAL_STATE_VALVE = {
   a_stemDiameter: "",
   b_totalLength: "",
   c_head: "",
+  d_type: "",
 };

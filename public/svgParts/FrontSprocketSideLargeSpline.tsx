@@ -22,63 +22,70 @@ const FrontSprocketSideLargeSpline = ({
         fill: "#656768",
       }}
     />
-    <path
-      d="m24.154 1088.44-.004-17.363 726.658-.092v17.363l-726.654.092ZM20.546 2994.86v-17.358l722.237-.092v17.359l-722.237.091ZM683.871 1271.1l-.217-93.579-51.683-.346 58.7-72.704 57.412 73.504-50.871-.358.242 104.829h-.117l.005 1514.22.241 104.921 51.684.345-58.696 72.705-57.413-73.505 50.867.363-.242-104.829h.059v-1525.57h.029Z"
-      className={`sizeD`}
-      style={{
-        fill:
-          hoveredClass === "sizeD"
-            ? sizeColors.sizeDcolorLight
-            : sizeColors.sizeDcolor,
-      }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    />
-    <text
-      x={758.146}
-      y={2113.55}
-      className={`sizeD`}
-      style={{
-        fontFamily: "&quot",
-        fontSize: 208,
-        fill:
-          hoveredClass === "sizeD"
-            ? sizeColors.sizeDcolorLight
-            : sizeColors.sizeDcolor,
-      }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
-      {"D"}
-    </text>
-    <path
-      d="M72.711 3754.17h17.358l.092 285.612H72.802l-.091-285.612ZM371.046 3754.17h17.358l.092 285.612h-17.359l-.091-285.612ZM133.874 4016.34v21.748l-36.15-30.549 36.15-30.55v23.903l197.045-.067v-23.836l36.15 30.55-36.15 30.549v-21.815l-197.045.067Z"
-      style={{
-        fill:
-          hoveredClass === "sizeE"
-            ? sizeColors.sizeEcolorLight
-            : sizeColors.sizeEcolor,
-      }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    />
-    <text
-      x={158.808}
-      y={4259.76}
-      className={`sizeE`}
-      style={{
-        fontFamily: "&quot",
-        fontSize: 208,
-        fill:
-          hoveredClass === "sizeE"
-            ? sizeColors.sizeEcolorLight
-            : sizeColors.sizeEcolor,
-      }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
-      {"E"}
-    </text>
+
+    {/* Medida E */}
+    <g>
+      <path
+        d="m24.154 1088.44-.004-17.363 726.658-.092v17.363l-726.654.092ZM20.546 2994.86v-17.358l722.237-.092v17.359l-722.237.091ZM683.871 1271.1l-.217-93.579-51.683-.346 58.7-72.704 57.412 73.504-50.871-.358.242 104.829h-.117l.005 1514.22.241 104.921 51.684.345-58.696 72.705-57.413-73.505 50.867.363-.242-104.829h.059v-1525.57h.029Z"
+        className={`sizeE`}
+        style={{
+          fill:
+            hoveredClass === "sizeE"
+              ? sizeColors.sizeEcolorLight
+              : sizeColors.sizeEcolor,
+        }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
+      <text
+        x={758.146}
+        y={2113.55}
+        className={`sizeE`}
+        style={{
+          fontFamily: "&quot",
+          fontSize: 208,
+          fill:
+            hoveredClass === "sizeE"
+              ? sizeColors.sizeEcolorLight
+              : sizeColors.sizeEcolor,
+        }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {"E"}
+      </text>
+    </g>
+    {/* Medida F */}
+    <g>
+      <path
+        d="M72.711 3754.17h17.358l.092 285.612H72.802l-.091-285.612ZM371.046 3754.17h17.358l.092 285.612h-17.359l-.091-285.612ZM133.874 4016.34v21.748l-36.15-30.549 36.15-30.55v23.903l197.045-.067v-23.836l36.15 30.55-36.15 30.549v-21.815l-197.045.067Z"
+        style={{
+          fill:
+            hoveredClass === "sizeF"
+              ? sizeColors.sizeFcolorLight
+              : sizeColors.sizeFcolor,
+        }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
+      <text
+        x={158.808}
+        y={4259.76}
+        className={`sizeF`}
+        style={{
+          fontFamily: "&quot",
+          fontSize: 208,
+          fill:
+            hoveredClass === "sizeF"
+              ? sizeColors.sizeFcolorLight
+              : sizeColors.sizeFcolor,
+        }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {"F"}
+      </text>
+    </g>
   </svg>
 );
 export default FrontSprocketSideLargeSpline;

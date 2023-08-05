@@ -35,6 +35,13 @@ const Chain = ({
         });
         break;
 
+      case "G":
+        setCurrentColor({
+          color: sizeColors.sizeGcolor,
+          lightColor: sizeColors.sizeGcolorLight,
+        });
+        break;
+
       default:
         break;
     }

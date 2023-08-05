@@ -133,6 +133,7 @@ const FrontSprocketLargeSpline = ({
           {"B"}
         </text>
       </g>
+
       {/* {Medida C empieza} */}
       <g>
         <path
@@ -183,6 +184,39 @@ const FrontSprocketLargeSpline = ({
             fill: sizeColors.sizeCcolorLight,
           }}
         />
+      </g>
+
+      {/* {Medida D empieza} */}
+      <g>
+        <path
+          d="m3795.18 3714.83-857.079-1204.02 14.147-10.071 856.732 1203.53 56.365-43.101 13.547 151.097-142.268-52.665 58.556-44.778Z"
+          className={`sizeD`}
+          style={{
+            fill:
+              hoveredClass === "sizeD"
+                ? sizeColors.sizeDcolorLight
+                : sizeColors.sizeDcolor,
+          }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
+        <text
+          x={3893.66}
+          y={3914.18}
+          className={`sizeD`}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          style={{
+            fontFamily: "&quot",
+            fontSize: 208,
+            fill:
+              hoveredClass === "sizeD"
+                ? sizeColors.sizeDcolorLight
+                : sizeColors.sizeDcolor,
+          }}
+        >
+          {"D"}
+        </text>
       </g>
     </svg>
   );

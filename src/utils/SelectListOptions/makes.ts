@@ -29,4 +29,8 @@ export const makesOptions = [
     displayName: "Hot Rods",
     value: makes.HotRods,
   },
+  {
+    displayName: "Royal",
+    value: makes.Royal,
+  },
 ];

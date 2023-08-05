@@ -27,7 +27,7 @@ const RearSprocket = ({
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    const newValue = value.replace(/[^0-9.]/g, "");
+    const newValue = value.replace(/[^0-9.]/g, "").substring(0, 7);
 
     dispatch({
       type: name,
@@ -78,7 +78,7 @@ const RearSprocket = ({
           />
         </ul>
       </section>
-      <div className="grid grid-cols-1 gap-x-5 gap-y-5  laptop:grid-cols-2">
+      <div className="relative grid grid-cols-1 gap-x-72  gap-y-5 laptop:left-[-70px] laptop:grid-cols-2">
         <div className="mx-auto flex w-[300px] justify-center mobile:w-[450px] laptop:mx-0 laptop:justify-normal">
           <div className="relative flex w-[200px] flex-col  items-center mobile:w-[400px] laptop:items-end">
             <Controller
@@ -98,8 +98,8 @@ const RearSprocket = ({
                     handleOnChange(value);
                   }}
                   value={rearSprocket.a_holeDiameter || ""}
-                  placeholder="10"
-                  position="left-[32%] mobile:left-[40%] top-[45%] mobile:top-[48%] laptop:top-[42%] laptop:left-[37%]"
+                  placeholder="10.5"
+                  position="left-[28%] top-[42%] mobile:left-[40%]  mobile:top-[48%] laptop:top-[42%] laptop:left-[37%]"
                   error={errors?.a_holeDiameter?.message?.toString()}
                 />
               )}

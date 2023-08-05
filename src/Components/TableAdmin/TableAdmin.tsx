@@ -167,12 +167,9 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: "#020617",
           },
-          "& .MuiDataGrid-row:nth-child(even)": {
+          "& .MuiDataGrid-row:nth-of-type(even)": {
             backgroundColor: "#1e293b",
-          },
-          "& .MuiDataGrid-cell:nth-child(n+3)": {
-            justifyContent: "center",
-          },
+          },         
         }}
         loading={isLoading}
         slots={{

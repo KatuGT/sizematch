@@ -7,7 +7,7 @@ const ConnectingRodSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["TKRJ", "PROX RACING PARTS", "HOT RODS", "ROYAL"],
+      enum: ["TKRJ", "PROX RACING PARTS", "HOT RODS", "ROYAL", "VESRAH"],
       trim: true,
     },
     code: {

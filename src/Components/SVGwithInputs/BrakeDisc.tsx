@@ -7,6 +7,8 @@ import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesC
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import BrakeDiscFront from "../../../public/svgParts/BrakeDiscFront";
 import BrakeDiscSide from "../../../public/svgParts/BrakeDiscSide";
+import BrakeDiscFrontV2 from "../../../public/svgParts/BrakeDiscFrontV2";
+import BrakeDiscSidev2 from "../../../public/svgParts/BrakeDiscSidev2";
 
 interface BrakeDiscProps extends SVGProps {
   control: any;
@@ -106,7 +108,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.a_discDiameter || ""}
                   placeholder="260"
-                  position="left-[10%] top-[35%] mobile:left-[-25%] mobile:top-[38%] laptop:top-[35%] laptop:left-[-27%] desktop:left-[-25%] desktop:top-[40%] bg-gray-900"
+                  position="left-[10%] top-[37%] mobile:top-[41%] laptop:top-[40%] laptop:left-[-27%] desktop:left-[-23%] desktop:top-[42%] bg-gray-900"
                   error={errors?.a_discDiameter?.message?.toString()}
                 />
               )}
@@ -130,13 +132,13 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.b_holeDiameter || ""}
                   placeholder="10.5"
-                  position="left-[62%] top-[35%] mobile:left-[48%] mobile:top-[48%] laptop:top-[49%] laptop:left-[44%] desktop:left-[46%] bg-gray-900"
+                  position="left-[42%] top-[30%] mobile:left-[46%] mobile:top-[32%] desktop:left-[46%] bg-gray-900"
                   error={errors?.b_holeDiameter?.message?.toString()}
                 />
               )}
             />
 
-            <BrakeDiscFront
+            <BrakeDiscFrontV2
               hoveredClass={hoveredClass}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
@@ -204,7 +206,7 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.d_center || ""}
                   placeholder="132"
-                  position="top-[43%] left-[-92%] mobile:left-[-85%] mobile:top-[43%] laptop:left-[-100%] desktop:top-[44%] desktop:left-[-83%]"
+                  position="top-[41.5%] left-[-92%] mobile:left-[-85%] laptop:left-[-100%] desktop:top-[42%] desktop:left-[-83%]"
                   error={errors?.d_center?.message?.toString()}
                 />
               )}
@@ -227,12 +229,12 @@ const BrakeDisc = ({
                   }}
                   value={brakeDisc.e_holeDistance || ""}
                   placeholder="150"
-                  position="top-[43%] left-[97%] mobile:left-[100%] mobile:top-[43%] desktop:top-[44%]"
+                  position="top-[41.5%] left-[105%] desktop:top-[42%]"
                   error={errors?.e_holeDistance?.message?.toString()}
                 />
               )}
             />
-            <BrakeDiscSide
+            <BrakeDiscSidev2
               hoveredClass={hoveredClass}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}

@@ -87,10 +87,10 @@ const ValveSearcher = () => {
               "& .MuiDataGrid-columnHeaders": {
                 backgroundColor: "#020617",
               },
-              "& .MuiDataGrid-row:nth-child(even)": {
+              "& .MuiDataGrid-row:nth-of-type(even)": {
                 backgroundColor: "#1e293b",
               },
-              "& .MuiDataGrid-cell:nth-child(n+3)":{
+              "& .MuiDataGrid-cell:nth-of-type(n+3)":{
                 justifyContent: 'center'
               }
             }}

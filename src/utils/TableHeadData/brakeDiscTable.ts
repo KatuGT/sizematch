@@ -21,7 +21,7 @@ export const brakeDiscTable = [
     darkColor: "text-sizeCcolor",
     ligthColor: "text-sizeCcolorLight",
     mainClass: "sizeC",
-    placeholder: "6",
+    placeholder: "5",
   },
   {
     field: "d_center",

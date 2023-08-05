@@ -177,7 +177,7 @@ const BrakeDisc = ({
                       handleOnChange(value);
                     }}
                     value={brakeDisc.c_numberOfHoles || ""}
-                    placeholder="6"
+                    placeholder="5"
                     position="relative"
                     error={errors?.c_numberOfHoles?.message?.toString()}
                   />

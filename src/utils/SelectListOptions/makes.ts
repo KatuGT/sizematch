@@ -33,4 +33,8 @@ export const makesOptions = [
     displayName: "Royal",
     value: makes.Royal,
   },
+  {
+    displayName: "Vesrah",
+    value: makes.Vesrah,
+  },
 ];

@@ -7,7 +7,7 @@ const ValveSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["TKRJ"],
+      enum: ["TKRJ", "VESRAH"],
       trim: true,
     },
     code: {

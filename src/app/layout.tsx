@@ -6,10 +6,11 @@ import { SharedValuesProvider } from "@/Context/SharedValuesContext/SharedValues
 import { SelectedPartProvider } from "@/Context/SelectedPartContext/SelectedPartContext";
 import LogRocket from "logrocket";
 import AuthProvider from "@/Components/AuthProvider";
-LogRocket.init("ozqtga/sizematch");
-const inter = Inter({ subsets: ["latin"] });
 import { Metadata } from "next";
-import Script from "next/script";
+import CookiesConcent from "@/Components/CookiesConcent";
+import GoogleAnalitycs from "@/Components/GoogleAnalitycs";
+const inter = Inter({ subsets: ["latin"] });
+LogRocket.init("ozqtga/sizematch");
 
 export const metadata: Metadata = {
   title: "Size Match",
@@ -25,19 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?${process.env.GA_MEASUREMENT_ID}`}
+        <GoogleAnalitycs
+          GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
         />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', ${process.env.GA_MEASUREMENT_ID});
-        `}
-        </Script>
-
         <link rel="icon" href="favicon.ico" />
       </head>
 
@@ -50,6 +41,7 @@ export default function RootLayout({
                 {children}
                 <BottomBar />
               </div>
+              <CookiesConcent />
             </body>
           </SelectedPartProvider>
         </SharedValuesProvider>

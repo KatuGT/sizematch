@@ -12,13 +12,13 @@ const TermsAndConditions = () => {
   return (
     <div className="relative">
       <div className="mx-auto max-w-3xl p-2 text-white">
-        <h1 className="mt-6 text-4xl font-bold">Terms and Conditions</h1>
+        <h2 className="mt-6 text-4xl font-bold">Terms and Conditions</h2>
         <p className="mb-1 text-xs">Last updated: July 22, 2023</p>
         <p>
           Please read these terms and conditions carefully before using Our
           Service.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Interpretation and Definitions</h1>
+        <h2 className="mt-6 text-2xl font-bold">Interpretation and Definitions</h2>
         <h2 className="my-1 font-bold">Interpretation</h2>
         <p>
           The words of which the initial letter is capitalized have meanings
@@ -105,7 +105,7 @@ const TermsAndConditions = () => {
             </p>
           </li>
         </ul>
-        <h1 className="mt-6 text-2xl font-bold">Acknowledgment</h1>
+        <h2 className="mt-6 text-2xl font-bold">Acknowledgment</h2>
         <p>
           These are the Terms and Conditions governing the use of this Service
           and the agreement that operates between You and the Company. These
@@ -136,7 +136,7 @@ const TermsAndConditions = () => {
           rights and how the law protects You. Please read Our Privacy Policy
           carefully before using Our Service.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Links to Other Websites</h1>
+        <h2 className="mt-6 text-2xl font-bold">Links to Other Websites</h2>
         <p>
           Our Service may contain links to third-party web sites or services
           that are not owned or controlled by the Company.
@@ -154,7 +154,7 @@ const TermsAndConditions = () => {
           We strongly advise You to read the terms and conditions and privacy
           policies of any third-party web sites or services that You visit.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Termination</h1>
+        <h2 className="mt-6 text-2xl font-bold">Termination</h2>
         <p>
           We may terminate or suspend Your access immediately, without prior
           notice or liability, for any reason whatsoever, including without
@@ -164,7 +164,7 @@ const TermsAndConditions = () => {
           Upon termination, Your right to use the Service will cease
           immediately.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Limitation of Liability</h1>
+        <h2 className="mt-6 text-2xl font-bold">Limitation of Liability</h2>
         <p>
           Notwithstanding any damages that You might incur, the entire liability
           of the Company and any of its suppliers under any provision of this
@@ -192,7 +192,7 @@ const TermsAndConditions = () => {
           states, each party&apos;s liability will be limited to the greatest extent
           permitted by law.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h1>
+        <h2 className="mt-6 text-2xl font-bold">&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h2>
         <p>
           The Service is provided to You &quot;AS IS&quot; and &quot;AS
           AVAILABLE&quot; and with all faults and defects without warranty of
@@ -232,25 +232,25 @@ const TermsAndConditions = () => {
           set forth in this section shall be applied to the greatest extent
           enforceable under applicable law.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Governing Law</h1>
+        <h2 className="mt-6 text-2xl font-bold">Governing Law</h2>
         <p>
           The laws of the Country, excluding its conflicts of law rules, shall
           govern this Terms and Your use of the Service. Your use of the
           Application may also be subject to other local, state, national, or
           international laws.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Disputes Resolution</h1>
+        <h2 className="mt-6 text-2xl font-bold">Disputes Resolution</h2>
         <p>
           If You have any concern or dispute about the Service, You agree to
           first try to resolve the dispute informally by contacting the Company.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">For European Union (EU) Users</h1>
+        <h2 className="mt-6 text-2xl font-bold">For European Union (EU) Users</h2>
         <p>
           If You are a European Union consumer, you will benefit from any
           mandatory provisions of the law of the country in which you are
           resident in.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">United States Legal Compliance</h1>
+        <h2 className="mt-6 text-2xl font-bold">United States Legal Compliance</h2>
         <p>
           You represent and warrant that (i) You are not located in a country
           that is subject to the United States government embargo, or that has
@@ -258,7 +258,7 @@ const TermsAndConditions = () => {
           supporting&quot; country, and (ii) You are not listed on any United
           States government list of prohibited or restricted parties.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Severability and Waiver</h1>
+        <h2 className="mt-6 text-2xl font-bold">Severability and Waiver</h2>
         <h2 className="my-1 font-bold">Severability</h2>
         <p>
           If any provision of these Terms is held to be unenforceable or
@@ -275,13 +275,13 @@ const TermsAndConditions = () => {
           performance at any time thereafter nor shall the waiver of a breach
           constitute a waiver of any subsequent breach.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Translation Interpretation</h1>
+        <h2 className="mt-6 text-2xl font-bold">Translation Interpretation</h2>
         <p>
           These Terms and Conditions may have been translated if We have made
           them available to You on our Service. You agree that the original
           English text shall prevail in the case of a dispute.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Changes to These Terms and Conditions</h1>
+        <h2 className="mt-6 text-2xl font-bold">Changes to These Terms and Conditions</h2>
         <p>
           We reserve the right, at Our sole discretion, to modify or replace
           these Terms at any time. If a revision is material We will make
@@ -295,7 +295,7 @@ const TermsAndConditions = () => {
           do not agree to the new terms, in whole or in part, please stop using
           the website and the Service.
         </p>
-        <h1 className="mt-6 text-2xl font-bold">Contact Us</h1>
+        <h2 className="mt-6 text-2xl font-bold">Contact Us</h2>
         <p>
           If you have any questions about these Terms and Conditions, You can
           contact us:

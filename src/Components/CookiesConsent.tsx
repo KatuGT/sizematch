@@ -19,7 +19,8 @@ const CookiesConsent = () => {
         const newValue = cookieConsent ? 'granted' : 'denied'
 
         window.gtag("consent", 'update', {
-            'analytics_storage': newValue
+            'analytics_storage': newValue,
+            'ad_storage': newValue
         });
 
         setLocalStorage("cookie_consent", cookieConsent)

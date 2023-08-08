@@ -9,6 +9,7 @@ import AuthProvider from "@/Components/AuthProvider";
 LogRocket.init("ozqtga/sizematch");
 const inter = Inter({ subsets: ["latin"] });
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Size Match",
@@ -23,9 +24,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <head>
-        <link rel='icon' href='favicon.ico'/>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?${process.env.GA_MEASUREMENT_ID}`}
+        />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', ${process.env.GA_MEASUREMENT_ID});
+        `}
+        </Script>
+
+        <link rel="icon" href="favicon.ico" />
       </head>
+
       <AuthProvider>
         <SharedValuesProvider>
           <SelectedPartProvider>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import CookieConsent from "react-cookie-consent";
 
-const CookiesConcent = () => {
+const CookiesConsent = () => {
 
     const [cookieConsent, setCookieConsent] = useState(false);
 
@@ -45,7 +45,7 @@ const CookiesConcent = () => {
           </Link>{" "}
           and{" "}
           <Link href="Cookies" className="underline">
-            Privacy policy
+            Cookies policy
           </Link>
         </p>
       </CookieConsent>
@@ -53,4 +53,4 @@ const CookiesConcent = () => {
   );
 };
 
-export default CookiesConcent;
+export default CookiesConsent;

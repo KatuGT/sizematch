@@ -7,7 +7,7 @@ import { SelectedPartProvider } from "@/Context/SelectedPartContext/SelectedPart
 import LogRocket from "logrocket";
 import AuthProvider from "@/Components/AuthProvider";
 import { Metadata } from "next";
-import CookiesConcent from "@/Components/CookiesConcent";
+import CookiesCoscent from "@/Components/CookiesConsent";
 import GoogleAnalitycs from "@/Components/GoogleAnalitycs";
 const inter = Inter({ subsets: ["latin"] });
 LogRocket.init("ozqtga/sizematch");
@@ -41,7 +41,7 @@ export default function RootLayout({
                 {children}
                 <BottomBar />
               </div>
-              <CookiesConcent />
+              <CookiesCoscent />
             </body>
           </SelectedPartProvider>
         </SharedValuesProvider>

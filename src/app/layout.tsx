@@ -30,6 +30,11 @@ export default function RootLayout({
           GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
         />
         <link rel="icon" href="favicon.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233124551272393"
+          crossOrigin="anonymous"
+        ></script>
       </head>
 
       <AuthProvider>

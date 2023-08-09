@@ -74,6 +74,7 @@ const Topbar = () => {
               return (
                 <li key={item.url} className="flex-1">
                   <Link
+                    onClick={() => setToggle(false)}
                     href={item.url}
                     className="after:hoverUnderline relative flex h-full flex-1 items-center justify-center py-6 text-center text-white after:hover:opacity-100  "
                   >

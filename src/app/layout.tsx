@@ -29,6 +29,7 @@ export default function RootLayout({
         <GoogleAnalitycs
           GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
         />
+        <meta name="google-site-verification" content="jeAwxEi3dXKu6vBYuxPbRIoM7iFYUVhd1r8FDW3r6nc" />
         <link rel="icon" href="favicon.ico" />
         <script
           async

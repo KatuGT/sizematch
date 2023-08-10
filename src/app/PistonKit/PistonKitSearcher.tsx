@@ -11,6 +11,7 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import Adsterra from "@/Components/Adsterra";
 
 const PistonKitSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -48,6 +49,9 @@ const PistonKitSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4">
+      
+      <Adsterra/>
+      
       <PistonKitSVG
         control={control}
         errors={errors}

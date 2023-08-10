@@ -11,6 +11,7 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { Valve as ValveSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import Adsterra from "@/Components/Adsterra";
 
 const ValveSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -47,6 +48,9 @@ const ValveSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content]">
+      
+      <Adsterra/>
+
       <ValveSVG
         control={control}
         errors={errors}

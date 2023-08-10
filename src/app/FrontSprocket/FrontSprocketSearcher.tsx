@@ -21,6 +21,7 @@ import {
   TableRecomendations,
 } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import Adsterra from "@/Components/Adsterra";
 
 const FrontSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -83,6 +84,7 @@ const FrontSprocketSearcher = () => {
 
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-[min-content]">
+      <Adsterra/>
       <div>
         <ul className="mb-10 w-[max-content] items-center rounded-lg border border-gray-200 bg-white text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:flex">
           <li className="w-[max-content] border-b border-gray-200 dark:border-gray-600 sm:border-b-0 sm:border-r">
@@ -125,6 +127,7 @@ const FrontSprocketSearcher = () => {
           </li>
         </ul>
       </div>
+
       {frontSprocketType === possibleParts.FSNarrowSpline ? (
         <FSNarrowSpline
           control={control}

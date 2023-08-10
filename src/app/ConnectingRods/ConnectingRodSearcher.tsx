@@ -12,6 +12,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import F3 from "../../../public/F3.webp";
+import Adsterra from "@/Components/Adsterra";
 
 const ConnectingRodSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -24,7 +25,7 @@ const ConnectingRodSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: connectingRod,
     part: possibleParts.ConnectingRods,
-    arrayPartData: connectingRodTable
+    arrayPartData: connectingRodTable,
   });
 
   const fetcher = (...args: Parameters<typeof fetch>) =>
@@ -50,6 +51,7 @@ const ConnectingRodSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
+      <Adsterra />
       <ConnectingRod
         control={control}
         errors={errors}
@@ -69,8 +71,8 @@ const ConnectingRodSearcher = () => {
               sorting: {
                 sortModel: [
                   {
-                    field: 'code',
-                    sort: 'asc',
+                    field: "code",
+                    sort: "asc",
                   },
                 ],
               },
@@ -93,9 +95,9 @@ const ConnectingRodSearcher = () => {
               "& .MuiDataGrid-row:nth-of-type(even)": {
                 backgroundColor: "#1e293b",
               },
-              "& .MuiDataGrid-cell:nth-of-type(n+3)":{
-                justifyContent: 'center'
-              }
+              "& .MuiDataGrid-cell:nth-of-type(n+3)": {
+                justifyContent: "center",
+              },
             }}
             loading={isLoading}
             slots={{

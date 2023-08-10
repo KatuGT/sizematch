@@ -36,6 +36,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233124551272393"
           crossOrigin="anonymous"
         ></script>
+        
       </head>
 
       <AuthProvider>

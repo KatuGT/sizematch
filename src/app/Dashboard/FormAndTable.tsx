@@ -13,13 +13,13 @@ const FormAndTable = () => {
   if (status === "authenticated") {
     return (
       <EditingModeProvider>
-        <div className="mx-auto my-5 flex w-full flex-col items-center justify-center">
+        <div className="mx-auto my-5 flex w-full flex-col items-center justify-center laptop:w-full laptop:max-w-[min-content]">
           <PostForm
             hoveredClass={hoverClass}
             onMouseEnter={handleHover}
             onMouseLeave={handleMouseLeave}
           />
-          <div className="mx-auto my-0 w-full p-4 laptop:w-min">
+          <div className="mx-auto my-0 w-full p-4">
             <TableAdmin
               hoveredClass={hoverClass}
               onMouseEnter={handleHover}

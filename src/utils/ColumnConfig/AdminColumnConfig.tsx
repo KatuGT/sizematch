@@ -45,7 +45,7 @@ export const GetBAdminColumnConfigColumn = ({
           const num2 = parseInt(v2.slice(3));
           return num1 - num2;
         }
-        return 0;
+        return v1 - v2;
       },
     },
 

@@ -16,7 +16,7 @@ const ConnectingRodPin = ({
         strokeLinejoin: "round",
         strokeMiterlimit: 2,
       }}
-      viewBox="0 0 2001 429"
+      viewBox="0 0 1680 429"
     >
       <path
         d="M0 .456h2000.31v427.652H0z"

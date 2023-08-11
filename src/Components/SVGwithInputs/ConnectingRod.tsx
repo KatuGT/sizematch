@@ -294,7 +294,7 @@ const ConnectingRod = ({
           </div>
         </div>
 
-        <div className="relative flex w-[300px] mobile:w-[400px] desktop:w-[500px]">
+        <div className="relative flex w-[300px] mobile:w-[340px] desktop:w-[500px]">
           <Controller
             control={control}
             name="h_bigEndPinDiameter"
@@ -337,7 +337,7 @@ const ConnectingRod = ({
                 }}
                 value={connectingRod.i_bigEndPinLength || ""}
                 placeholder="40"
-                position="left-[49%] top-[100%] mobile:left-[52%] mobile:top-[96%] laptop:left-[48%] desktop:left-[50%] bg-gray-900"
+                position="left-[56%] top-[100%] mobile:left-[59%] mobile:top-[96%] laptop:left-[58%] desktop:left-[62%] bg-gray-900"
                 error={errors?.i_bigEndPinLength?.message?.toString()}
               />
             )}

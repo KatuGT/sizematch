@@ -137,7 +137,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   
   return (
     
-    <div className="mx-auto mt-5 h-[400px] w-full bg-gray-800 text-white">
+    <div className="mx-auto mt-5 h-[400px] bg-gray-800 text-white">
       <DataGrid
         rows={searchResults}
         columns={columns}

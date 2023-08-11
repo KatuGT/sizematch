@@ -68,9 +68,12 @@ export const GetUserColumnConfig = ({
       headerName: "Code",
       width: 130,
       sortComparator: (v1, v2) => {
-        const num1 = parseInt(v1.slice(3));
-        const num2 = parseInt(v2.slice(3));
-        return num1 - num2;
+        if (v1.includes("JT") && v2.includes("JT")) {
+          const num1 = parseInt(v1.slice(3));
+          const num2 = parseInt(v2.slice(3));
+          return num1 - num2;
+        }
+        return v1 - v2;
       },
     },
     ...(arrayPartData.map((data) => {

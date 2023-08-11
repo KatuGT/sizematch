@@ -1,11 +1,12 @@
+'use client'
 import React, { useEffect, useMemo, useRef } from "react";
 
 const Adsterra = () => {
   const banner = useRef<HTMLDivElement>(null);
-
+  
   const atOptions = useMemo(
     () => ({
-      key: process.env.NEXT_PUBLIC_ADSTERRA_KEY ,
+      key: process.env.NEXT_PUBLIC_ADSTERRA_KEY,
       format: "iframe",
       height: 60,
       width: 468,
@@ -15,6 +16,7 @@ const Adsterra = () => {
   );
 
   useEffect(() => {
+    
     const currentBanner = banner.current;
     const adsterraScript = document.createElement("script");
     if (currentBanner && !currentBanner.firstChild) {

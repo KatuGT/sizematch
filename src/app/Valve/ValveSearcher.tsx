@@ -5,7 +5,7 @@ import { SearchResultValve } from "@/types-enums-interfaces/ValveProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, valveTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid, GridColDef, GridOverlay, GridRowsProp } from "@mui/x-data-grid";
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
@@ -46,6 +46,22 @@ const ValveSearcher = () => {
   } = useForm({
     mode: "onBlur",
   });
+
+
+  const rows: GridRowsProp = [
+    { id: 1, col1: 'Hello', col2: 'World' },
+    { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
+    { id: 3, col1: 'MUI', col2: 'is Amazing' },
+    { id: 4, col1: 'MUI', col2: 'is Amazing' },
+    { id: 5, col1: 'MUI', col2: 'is Amazing' },
+    { id: 6, col1: 'MUI', col2: 'Mundo' },
+  ];
+
+  const columnsDos: GridColDef[] = [
+    { field: 'col1', headerName: 'Column 1', width: 150 },
+    { field: 'col2', headerName: 'Column 2', width: 150 },
+  ];
+
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content]">
       
@@ -61,7 +77,19 @@ const ValveSearcher = () => {
 
       <div className="my-20  mb-20 w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 mb-20 h-[400px]">
+      <p className="text-white">- first attemp works</p>
+          <DataGrid rows={rows} columns={columnsDos}
+          
+          sx={{
+            color: "#fff",
+            "& .MuiDataGrid-columnHeaders": {
+              backgroundColor: "#020617",
+            },
+       
+          }}/>
+        <div className="bg-gray-80 mb-20 h-[400px] mt-5">
+
+
           <DataGrid
             rows={searchResults}
             columns={columnValve}

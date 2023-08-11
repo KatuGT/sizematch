@@ -15,7 +15,7 @@ LogRocket.init("ozqtga/sizematch");
 export const metadata: Metadata = {
   title: "Size Match",
   description:
-    "Find Your Perfect Fit! Input the Size, Discover the Code. Get the Right Spare Part Hassle-Free.",
+    "Effortlessly Find Motorcycle Parts – Input Size, Reveal Code, Get the Right Fit! Hassle-Free Spare Part Discovery for Your Bike's Perfect Match.",
 };
 
 export default function RootLayout({

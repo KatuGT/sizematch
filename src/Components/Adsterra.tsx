@@ -35,7 +35,7 @@ const Adsterra = () => {
 
   return (
     <div
-      className="mx-2 my-5 items-center justify-center border border-gray-200 text-center text-white"
+      className="mx-2 my-5 hidden mobile:block items-center justify-center border border-gray-200 text-center text-white"
       ref={banner}
     ></div>
   );

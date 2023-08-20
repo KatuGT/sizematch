@@ -38,7 +38,7 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const fetcher = (...args: Parameters<typeof fetch>) =>
     fetch(...args).then((res) => res.json()) as Promise<any[]>;
 
-  const { data, mutate, isLoading } = useSWR<any[]>(
+  const { data, mutate, isLoading } = useSWR<any>(
     `/api/parts?part=${selectedPart}`,
     fetcher
   );
@@ -46,8 +46,8 @@ const TableAdmin = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   useEffect(() => {
     mutate();
   }, [data, mutate]);
-
-  let searchResults: any[] = data || [];
+ 
+  let searchResults: any[] = data?.result || [];
 
   useEffect(() => {
     mutate();

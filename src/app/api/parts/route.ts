@@ -33,8 +33,14 @@ export const GET = async (req: Request) => {
     await connect();
 
     const result = await PartModel.find();
+    const count = await PartModel.countDocuments();
 
-    return new NextResponse(JSON.stringify(result), { status: 200 });
+    const response = {
+      result,
+      count,
+    };
+
+    return new NextResponse(JSON.stringify(response), { status: 200 });
   } catch (error) {
     console.warn("Get product error", error);
 

@@ -36,8 +36,11 @@ module.exports = {
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-image": "url('/public/PortadaHome.webp)",
+        "pattern": "url('/public/landingImg/bg-patter.svg)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };

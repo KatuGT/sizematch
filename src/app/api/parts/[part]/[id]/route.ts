@@ -1,26 +1,8 @@
-import BrakeDisc from "@/models/BrakeDiscModel";
-import ConnectingRod from "@/models/ConnectigRodModel";
-import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
-import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
-import RearSprocket from "@/models/RearSprocketModel";
-import Valve from "@/models/ValveModel";
-import PistonKit from "@/models/pistonKitModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
-import { Model, Document } from "mongoose";
+import { partModelArray } from "@/utils/partModelsMap";
 import { NextResponse } from "next/server";
 
-type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
-
-const partModelArray: Record<possibleParts, PartModel> = {
-  [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
-  [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
-  [possibleParts.RearSprocket]: RearSprocket,
-  [possibleParts.BrakeDisc]: BrakeDisc,
-  [possibleParts.ConnectingRods]: ConnectingRod,
-  [possibleParts.PistonKit]: PistonKit,
-  [possibleParts.Valve]: Valve,
-};
 
 export const DELETE = async (
   req: Request,

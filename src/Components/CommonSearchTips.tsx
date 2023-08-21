@@ -14,7 +14,7 @@ export const MeasurementDistributionTips = () => {
 
 export const ReutilisableTip = ({ text }: { text: string }) => {
   return (
-    <div>
+    <div className="rounded-lg border border-gray-700 p-4 text-white mt-4">
       <p>💡 {text} </p>
     </div>
   );

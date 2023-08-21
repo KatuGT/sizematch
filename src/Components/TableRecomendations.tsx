@@ -14,6 +14,9 @@ const TableRecomendations = () => {
           correct.
         </li>
         <li className="text-xs">
+          - If you encounter a 0 (zero) in the table, it is likely because that particular measurement is not provided by the brand.
+        </li>
+        <li className="text-xs">
           - If you notice any errors, please
           <Link href="/Contact">
             <span className="underline"> contact us.</span>

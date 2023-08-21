@@ -7,7 +7,7 @@ const PistonKitSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["TKRJ"],
+      enum: ["TKRJ", "VHM"],
       trim: true,
     },
     code: {

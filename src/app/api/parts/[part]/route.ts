@@ -1,26 +1,8 @@
-import BrakeDisc from "@/models/BrakeDiscModel";
-import ConnectingRod from "@/models/ConnectigRodModel";
-import FrontSprocketLargeSpline from "@/models/FrontSprocketLargeSplineModel";
-import FrontSprocketNarrowSpline from "@/models/FrontSprocketNarrowSplineModel";
-import RearSprocket from "@/models/RearSprocketModel";
-import Valve from "@/models/ValveModel";
-import PistonKit from "@/models/pistonKitModel";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import connect from "@/utils/db";
-import { Model, Document } from "mongoose";
+import { partModelArray } from "@/utils/partModelsMap";
 import { NextResponse } from "next/server";
 
-type PartModel = Model<Document<any, any, any>, {}, {}, {}>;
-
-const partModelArray: Record<possibleParts, PartModel> = {
-  [possibleParts.FSLargeSpline]: FrontSprocketLargeSpline,
-  [possibleParts.FSNarrowSpline]: FrontSprocketNarrowSpline,
-  [possibleParts.RearSprocket]: RearSprocket,
-  [possibleParts.BrakeDisc]: BrakeDisc,
-  [possibleParts.ConnectingRods]: ConnectingRod,
-  [possibleParts.PistonKit]: PistonKit,
-  [possibleParts.Valve]: Valve,
-};
 
 export const POST = async (req: Request, { params }: any) => {
   const { part } = params;
@@ -54,8 +36,7 @@ export const POST = async (req: Request, { params }: any) => {
   } catch (err) {
     if (err instanceof Error) {
       console.warn(err.message);
-
-      return new NextResponse(err.message, { status: 500 });
+      return new NextResponse(JSON.stringify(err.message), { status: 500 });
     } else {
       console.warn("Unexpected error on part/id", err);
     }

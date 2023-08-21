@@ -7,4 +7,6 @@ export enum makes {
   Royal = "ROYAL",
   HotRods = "HOT RODS",
   Vesrah = "VESRAH",
+  VHM = "VHM",
+  Moto_Master = "Moto-Master",
 }

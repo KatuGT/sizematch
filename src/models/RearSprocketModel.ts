@@ -7,7 +7,7 @@ const RearSprocketSchema = new Schema(
     make: {
       type: String,
       required: [true, "Marca requerida"],
-      enum: ["JT Sprockets"],
+      enum: ["JT Sprockets", "Moto-Master"],
       trim: true,
     },
     code: {

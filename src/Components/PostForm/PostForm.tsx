@@ -167,15 +167,25 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             payload: "",
           });
           reset({ keepDefaultValues: true });
-        } else if (resp.status === 409) {
+        } else if (resp.status === 404) {
           setDisabledButton(false);
 
           const errorData = await resp.json();
 
           throw new Error(errorData.message);
-        }
+        }else if (resp.status === 500) {
+          setDisabledButton(false);
+          const errorData = await resp.json();
+          setError(errorData);
+          
+          throw new Error(errorData);
+      }
       } catch (err) {
-        console.warn(err);
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          console.warn("Unexpected front error", err);
+        }
       }
     } else {
       try {
@@ -211,12 +221,20 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
             payload: "",
           });
         } else if (resp.status === 404) {
+          console.log(resp);
           setDisabledButton(false);
           const errorData = await resp.json();
           setError(errorData);
 
           throw new Error(errorData);
-        }
+
+        } else if (resp.status === 500) {
+          setDisabledButton(false);
+          const errorData = await resp.json();
+          setError(errorData);
+          
+          throw new Error(errorData);
+      }
       } catch (err) {
         setDisabledButton(false);
 

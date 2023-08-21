@@ -193,7 +193,7 @@ const PistonKit = ({
             onMouseLeave={onMouseLeave}
           />
         </div>
-        <div className="flex w-[90%] flex-col justify-center items-center gap-5 mobile:w-full mobile:flex-row mobile:gap-20 desktop:gap-0">
+        <div className="flex w-[90%] flex-col items-center justify-center gap-5 mobile:w-full mobile:flex-row mobile:gap-20 desktop:gap-0">
           <div className="relative mx-auto w-[195px] mobile:mx-0 mobile:w-[250px]  laptop:w-[355px]">
             <Controller
               control={control}
@@ -227,7 +227,7 @@ const PistonKit = ({
           </div>
           <div
             className="laptop: relative mr-0 w-[80px] mobile:mr-16
-          mobile:w-[110px] laptop:w-[150px] laptop:mr-0 laptop:right-[-5rem]"
+          mobile:w-[110px] laptop:right-[-5rem] laptop:mr-0 laptop:w-[150px]"
           >
             <Controller
               control={control}
@@ -285,7 +285,7 @@ const PistonKit = ({
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center justify-center">
         <Controller
           control={control}
           name="g_stroke"

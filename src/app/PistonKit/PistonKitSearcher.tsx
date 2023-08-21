@@ -10,7 +10,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
-import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import { MeasurementDistributionTips, ReutilisableTip } from "@/Components/CommonSearchTips";
 import Adsterra from "@/Components/Adsterra";
 
 const PistonKitSearcher = () => {
@@ -113,6 +113,7 @@ const PistonKitSearcher = () => {
           />
         </div>
       <MeasurementDistributionTips />
+      <ReutilisableTip text="If you are searching for a piston kit with a flat top, you can enter the same measurement for both A and C."/>
       </div>
     </div>
   );

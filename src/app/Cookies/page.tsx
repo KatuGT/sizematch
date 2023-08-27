@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Cookies = () => {
+  
   return (
     <div className="relative">
       <div className="mx-auto max-w-3xl p-2 text-white">

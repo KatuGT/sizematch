@@ -150,7 +150,7 @@ export const GetUserColumnConfig = ({
       disableColumnMenu: true,
       sortable: false,
       renderCell: (params) => (
-        <a target="_blank" href={params.row.link}>
+        <a target="_blank" rel="nofollow" href={params.row.link}>
           <LaunchIcon />
           <span> See more</span>
         </a>

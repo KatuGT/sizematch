@@ -4,6 +4,13 @@ import ContactForn from "./ContactForm";
 export const metadata: Metadata = {
   title: "Size Match - Contact",
   description: "Get in touch with us!",
+  metadataBase: new URL('https://www.sizematch.net/'),
+  alternates: {
+    canonical: 'Contact',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
 };
 
 const Contact = () => {

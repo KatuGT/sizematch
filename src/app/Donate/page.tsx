@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   title: "Size Match - Donate please",
   description:
     "If want to say 'Thank you' with a donation, that would be wonderful ",
+  metadataBase: new URL("https://www.sizematch.net/"),
+  alternates: {
+    canonical: "Donate",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
 };
 
 const Donate = () => {

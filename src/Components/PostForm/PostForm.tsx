@@ -1,6 +1,5 @@
-'use client'
+"use client";
 import React, { useContext, useEffect, useState } from "react";
-import Swal from "sweetalert2";
 import { useForm, Controller } from "react-hook-form";
 import { Button } from "../Button/button";
 import { InputList, InputPartPost } from "../inputPartPost/InputPartPost";
@@ -24,6 +23,9 @@ import {
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useSWRConfig } from "swr";
 import { DisplaySVG } from "@/utils/displaySVG";
+import { usePart } from "../useSetValueForm";
+import handleResponse from "../handleFormResponse";
+import { setPartData } from "@/utils/setPartData";
 
 const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   const { dispatch: selectedPartDispatch, state: selectedPartState } =
@@ -44,6 +46,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const { dispatch: EditingModeDispatch, state: editingModeState } =
     useContext(EditingModeContext);
+
   const { editingMode, id, part } = editingModeState;
 
   const [partSchema, setPartSchema] = useState<any>(
@@ -75,50 +78,7 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
     },
   });
 
-  useEffect(() => {
-    if (editingMode) {
-      if (part === possibleParts.FSNarrowSpline) {
-        Object.keys(fsNarrowSpline).forEach((key) => {
-          setValue(key, fsNarrowSpline[key as keyof typeof fsNarrowSpline]);
-        });
-      } else if (part === possibleParts.FSLargeSpline) {
-        Object.keys(fsLargeSpline).forEach((key) => {
-          setValue(key, fsLargeSpline[key as keyof typeof fsLargeSpline]);
-        });
-      } else if (part === possibleParts.RearSprocket) {
-        Object.keys(rearSprocket).forEach((key) => {
-          setValue(key, rearSprocket[key as keyof typeof rearSprocket]);
-        });
-      } else if (part === possibleParts.BrakeDisc) {
-        Object.keys(brakeDisc).forEach((key) => {
-          setValue(key, brakeDisc[key as keyof typeof brakeDisc]);
-        });
-      } else if (part === possibleParts.ConnectingRods) {
-        Object.keys(connectingRod).forEach((key) => {
-          setValue(key, connectingRod[key as keyof typeof connectingRod]);
-        });
-      } else if (part === possibleParts.PistonKit) {
-        Object.keys(pistonKit).forEach((key) => {
-          setValue(key, pistonKit[key as keyof typeof pistonKit]);
-        });
-      } else if (part === possibleParts.Valve) {
-        Object.keys(valve).forEach((key) => {
-          setValue(key, valve[key as keyof typeof valve]);
-        });
-      }
-    }
-  }, [
-    editingMode,
-    fsLargeSpline,
-    fsNarrowSpline,
-    part,
-    rearSprocket,
-    brakeDisc,
-    connectingRod,
-    pistonKit,
-    valve,
-    setValue,
-  ]);
+  usePart({ part, setValue });
 
   const { mutate } = useSWRConfig();
   const [error, setError] = useState("");
@@ -126,123 +86,36 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
 
   const onSubmit = async (data: partPostProps) => {
     setDisabledButton(true);
-    if (editingMode) {
-      try {
-        const resp = await fetch(`/api/parts/${part}/${id}`, {
-          method: "PUT",
+    try {
+      const resp = await fetch(
+        `/api/parts/${editingMode ? `${part}/${id}` : selectedPart}`,
+        {
+          method: editingMode ? "PUT" : "POST",
           body: JSON.stringify({ ...data }),
           headers: {
             "Content-type": "application/json; charset=UTF-8",
           },
-        });
-
-        if (resp.ok) {
-          setDisabledButton(false);
-
-          Swal.mixin({
-            toast: true,
-            position: "top-end",
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-              toast.addEventListener("mouseenter", Swal.stopTimer);
-              toast.addEventListener("mouseleave", Swal.resumeTimer);
-            },
-          }).fire({
-            icon: "success",
-            title: "Edition completed!",
-          });
-
-          EditingModeDispatch({
-            type: "EDIT_MODE",
-            payload: false,
-            id: undefined,
-            part: undefined,
-          });
-
-          sharedValueDispatch({
-            type: "",
-            group: "RESET_VALUES",
-            payload: "",
-          });
-          reset({ keepDefaultValues: true });
-        } else if (resp.status === 404) {
-          setDisabledButton(false);
-
-          const errorData = await resp.json();
-
-          throw new Error(errorData.message);
-        }else if (resp.status === 500) {
-          setDisabledButton(false);
-          const errorData = await resp.json();
-          setError(errorData);
-          
-          throw new Error(errorData);
-      }
-      } catch (err) {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          console.warn("Unexpected front error", err);
         }
-      }
-    } else {
-      try {
-        const resp = await fetch(`/api/parts/${selectedPart}`, {
-          method: "POST",
-          body: JSON.stringify({
-            ...data,
-          }),
-        });
+      );
 
-        if (resp.ok) {
-          setDisabledButton(false);
-          mutate(`/api/parts?part=${selectedPart}`);
-          Swal.mixin({
-            toast: true,
-            position: "top-end",
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-              toast.addEventListener("mouseenter", Swal.stopTimer);
-              toast.addEventListener("mouseleave", Swal.resumeTimer);
-            },
-          }).fire({
-            icon: "success",
-            title: "New part added",
-          });
-          reset();
-          setError("");
-          sharedValueDispatch({
-            type: "",
-            group: "RESET_VALUES",
-            payload: "",
-          });
-        } else if (resp.status === 404) {
-          console.log(resp);
-          setDisabledButton(false);
-          const errorData = await resp.json();
-          setError(errorData);
+      await handleResponse(
+        resp,
+        setDisabledButton,
+        setError,
+        editingMode,
+        EditingModeDispatch,
+        sharedValueDispatch,
+        reset,
+        mutate,
+        selectedPart
+      );
+    } catch (err) {
+      setDisabledButton(false);
 
-          throw new Error(errorData);
-
-        } else if (resp.status === 500) {
-          setDisabledButton(false);
-          const errorData = await resp.json();
-          setError(errorData);
-          
-          throw new Error(errorData);
-      }
-      } catch (err) {
-        setDisabledButton(false);
-
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          console.warn("Unexpected front error", err);
-        }
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        console.warn("Unexpected front error", err);
       }
     }
   };
@@ -271,76 +144,31 @@ const PostForm = ({ hoveredClass, onMouseEnter, onMouseLeave }: SVGProps) => {
   );
 
   useEffect(() => {
-    const setPartData = () => {
-      switch (selectedPart) {
-        case possibleParts.FSNarrowSpline:
-          setPartSchema(frontSprocketNarrowSplineSchema);
-          setPartToUpdate({
-            make: fsNarrowSpline.make,
-            code: fsNarrowSpline.code,
-            link: fsNarrowSpline.link,
-          });
-          setGroup(possibleParts.FSNarrowSpline);
-          break;
-        case possibleParts.FSLargeSpline:
-          setPartSchema(frontSprocketLargeSplineSchema);
-          setPartToUpdate({
-            make: fsLargeSpline.make,
-            code: fsLargeSpline.code,
-            link: fsLargeSpline.link,
-          });
-          setGroup(possibleParts.FSLargeSpline);
-          break;
-        case possibleParts.RearSprocket:
-          setPartSchema(rearSprocketSchema);
-          setPartToUpdate({
-            make: rearSprocket.make,
-            code: rearSprocket.code,
-            link: rearSprocket.link,
-          });
-          setGroup(possibleParts.RearSprocket);
-          break;
-        case possibleParts.BrakeDisc:
-          setPartSchema(brakeDiscSchema);
-          setPartToUpdate({
-            make: brakeDisc.make,
-            code: brakeDisc.code,
-            link: brakeDisc.link,
-          });
-          setGroup(possibleParts.BrakeDisc);
-          break;
-        case possibleParts.ConnectingRods:
-          setPartSchema(connectingRodSchema);
-          setPartToUpdate({
-            make: connectingRod.make,
-            code: connectingRod.code,
-            link: connectingRod.link,
-          });
-          setGroup(possibleParts.ConnectingRods);
-          break;
-        case possibleParts.PistonKit:
-          setPartSchema(pistonKitSchema);
-          setPartToUpdate({
-            make: pistonKit.make,
-            code: pistonKit.code,
-            link: pistonKit.link,
-          });
-          setGroup(possibleParts.PistonKit);
-          break;
-        case possibleParts.Valve:
-          setPartSchema(valveSchema);
-          setPartToUpdate({
-            make: valve.make,
-            code: valve.code,
-            link: valve.link,
-          });
-          setGroup(possibleParts.Valve);
-          break;
-        default:
-          break;
-      }
+    const partData = () => {
+      setPartData(
+        selectedPart,
+        setPartSchema,
+        setPartToUpdate,
+        setGroup,
+        possibleParts,
+        frontSprocketNarrowSplineSchema,
+        fsNarrowSpline,
+        frontSprocketLargeSplineSchema,
+        fsLargeSpline,
+        rearSprocketSchema,
+        rearSprocket,
+        brakeDiscSchema,
+        brakeDisc,
+        connectingRodSchema,
+        connectingRod,
+        pistonKitSchema,
+        pistonKit,
+        valveSchema,
+        valve
+      );
     };
-    setPartData();
+
+    partData();
   }, [
     selectedPart,
     fsLargeSpline,

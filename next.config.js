@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['www.paypalobjects.com', 'www.paypal.com', 'i.imgur.com'],
-      },
-}
+  images: {
+    domains: ["www.paypalobjects.com", "www.paypal.com", "i.imgur.com"],
+  },
+};
 
-module.exports = nextConfig
+const withNextIntl = require("next-intl/plugin")("./i18n.ts");
+
+module.exports = withNextIntl(nextConfig);

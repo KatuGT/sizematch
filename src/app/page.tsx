@@ -2,9 +2,10 @@ import Image from "next/image";
 import LinealParts from "./../../public/landingImg/tool.webp";
 import PartCounter from "@/Components/PartCounter/PartCounter";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("Index");
 
   return (
     <main className="bg-gray-950 text-gray-300">
@@ -14,7 +15,7 @@ export default function Home() {
       >
         <div className="max-w-2xl backdrop-blur ">
           <h2 className="top-1/3 mb-2 text-8xl font-bold mix-blend-screen">
-            Find Your Perfect Fit
+            {t("mainTittle")}
           </h2>
           <p> Input the size</p>
           <p> Discover the code</p>
@@ -35,8 +36,8 @@ export default function Home() {
             </span>
           </p>
         </div>
-        <div className="flex flex-col  laptop:flex-row items-center justify-around py-8">
-          <article className="max-w-3xl p-8 flex-1 desktop:flex-none">
+        <div className="flex flex-col  items-center justify-around py-8 laptop:flex-row">
+          <article className="max-w-3xl flex-1 p-8 desktop:flex-none">
             <h3 className="max-w-xl text-5xl font-semibold">
               Introducing Our Part Finder: Your Motorcycle&apos;s Best Friend
             </h3>
@@ -48,7 +49,7 @@ export default function Home() {
               make it happen.
             </p>
           </article>
-          <figure className="p-8 flex-1 desktop:flex-none">
+          <figure className="flex-1 p-8 desktop:flex-none">
             <Image
               src={LinealParts}
               alt="Connecting rod finder"
@@ -58,7 +59,7 @@ export default function Home() {
           </figure>
         </div>
       </div>
-      <div className="grid h-min p-8 place-items-center bg-slate-500 bg-[url('./../../public/landingImg/bg-patter.svg')] bg-repeat">
+      <div className="grid h-min place-items-center bg-slate-500 bg-[url('./../../public/landingImg/bg-patter.svg')] bg-repeat p-8">
         <p className="max-w-5xl text-center text-4xl font-medium text-slate-950">
           Whether you&rsquo;re a garage guru or just love to get your hands
           dirty, our part finder is designed for riders like you. No more

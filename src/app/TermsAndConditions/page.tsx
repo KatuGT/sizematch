@@ -6,11 +6,11 @@ import UpButtom from "@/Components/UpButtom/UpButtom";
 export const metadata: Metadata = {
   title: "Size Match - Terms and Conditions",
   description: "Read about our terms & conditions",
-  metadataBase: new URL('https://www.sizematch.net/'),
   alternates: {
     canonical: 'TermsAndConditions',
     languages: {
-      'en-US': '/en-US',
+      'en-US': '/en-US/TermsAndConditions',
+      'es-ES': '/es-ES/TermsAndConditions',
     },
   },
 };

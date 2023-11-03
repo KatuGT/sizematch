@@ -13,6 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 LogRocket.init("ozqtga/sizematch");
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sizematch.net"),
   title: "Size Match",
   description:
     "Effortlessly Find Motorcycle Parts – Input Size, Reveal Code, Get the Right Fit! Hassle-Free Spare Part Discovery for Your Bike's Perfect Match.",

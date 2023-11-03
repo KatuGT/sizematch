@@ -1,5 +1,18 @@
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Size Match - Cookies",
+  description: "Cookies  policy",
+  alternates: {
+    canonical: 'Cookies',
+    languages: {
+      'en-US': '/en-US/Cookies',
+      'es-ES': '/es-ES/Cookies',
+    },
+  },
+};
 
 const Cookies = () => {
   

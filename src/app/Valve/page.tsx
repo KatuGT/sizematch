@@ -4,11 +4,11 @@ import ValveSearcher from "./ValveSearcher";
 export const metadata: Metadata = {
   title: "Size Match - Rear Sprocket",
   description: "Find the perfect fit for your valves",
-  metadataBase: new URL("https://www.sizematch.net/"),
   alternates: {
     canonical: "Valve",
     languages: {
-      "en-US": "/en-US",
+      "en-US": "/en-US/Valve",
+      "es-ES": "/es-ES/Valve",
     },
   },
 };

@@ -116,6 +116,7 @@ const FSNarrowSpline = ({
                 darkColor="text-sizeBcolor"
                 ligthColor="text-sizeBcolorLight"
                 name="b_innerTeethNumber"
+                isMilimeter={false}
                 onChange={(value) => {
                   onChange(value);
                   handleOnChange(value);

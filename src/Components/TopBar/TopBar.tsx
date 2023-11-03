@@ -45,7 +45,7 @@ const Topbar = () => {
 
   const pathname = usePathname();
   return (
-    <nav className="flex items-center bg-black px-2 pb-3 pt-3 mobile:py-0">
+    <nav className="flex items-center bg-black px-5 pb-3 pt-3 mobile:py-0">
       <div className="flex h-full w-full flex-wrap items-center justify-between mobile:flex-nowrap mobile:gap-5">
         <Link href="/" className="relative h-[50px] w-[130px]">
           <Image

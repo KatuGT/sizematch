@@ -6,11 +6,11 @@ import UpButtom from "@/Components/UpButtom/UpButtom";
 export const metadata: Metadata = {
   title: "Size Match - Privacy Policy",
   description: "Read about our privacy policy",
-  metadataBase: new URL('https://www.sizematch.net/'),
   alternates: {
     canonical: 'PrivacyPolicy',
     languages: {
-      'en-US': '/en-US',
+      'en-US': '/en-US/PrivacyPolicy',
+      'es-ES': '/es-ES/PrivacyPolicy',
     },
   },
 };

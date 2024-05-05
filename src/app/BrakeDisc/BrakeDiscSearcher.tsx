@@ -10,7 +10,6 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
 
 const BrakeDiscSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -49,7 +48,6 @@ const BrakeDiscSearcher = () => {
 
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
-      <Adsterra/>
       <BrakeDiscSVG
         control={control}
         errors={errors}

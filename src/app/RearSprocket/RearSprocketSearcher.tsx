@@ -11,7 +11,6 @@ import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { RearSprocket as RearSprocketSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
 
 const RearSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -50,8 +49,6 @@ const RearSprocketSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content] laptop:w-full">
-      <Adsterra/>
-
       <RearSprocketSVG
         control={control}
         errors={errors}

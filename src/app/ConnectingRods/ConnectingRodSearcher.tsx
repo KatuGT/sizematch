@@ -12,8 +12,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import F3 from "../../../public/F3.webp";
-import Adsterra from "@/Components/Adsterra";
-
+ 
 const ConnectingRodSearcher = () => {
   const { state } = useContext(SharedValuesContext);
   const { connectingRod } = state;
@@ -51,8 +50,7 @@ const ConnectingRodSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
-      <Adsterra />
-      <ConnectingRod
+       <ConnectingRod
         control={control}
         errors={errors}
         hoveredClass={hoverClass}

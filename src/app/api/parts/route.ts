@@ -7,7 +7,7 @@ export const GET = async (req: Request) => {
   const url = new URL(req.url);
 
   const part = url.searchParams.get("part");
-
+  
   const PartModel = partModelArray[part as possibleParts];
 
   try {

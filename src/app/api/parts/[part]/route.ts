@@ -6,12 +6,14 @@ import { NextResponse } from "next/server";
 
 export const POST = async (req: Request, { params }: any) => {
   const { part } = params;
-
   const body = await req.json();
 
   const { code } = body;
 
   const PartModel = partModelArray[part as possibleParts];
+
+  console.log(part);
+
 
   if (!PartModel) {
     return new NextResponse("Invalid part", { status: 400 });

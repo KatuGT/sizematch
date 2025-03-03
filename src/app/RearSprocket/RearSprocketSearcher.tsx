@@ -1,16 +1,14 @@
 "use client";
 import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultRearSprocket } from "@/types-enums-interfaces/RearSprocketProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, rearSprocketTable } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
-import React, { useContext } from "react";
+import { DataGrid } from "@mui/x-data-grid";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import useSWR from "swr";
 import { RearSprocket as RearSprocketSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
+import { filterData } from "@/utils/filteredData";
 
 const RearSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -23,23 +21,23 @@ const RearSprocketSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: rearSprocket,
     part: possibleParts.RearSprocket,
-    arrayPartData: rearSprocketTable
+    arrayPartData: rearSprocketTable,
   });
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<
-      SearchResultRearSprocket[]
-    >;
+  const [data, setData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
-  // const params = transformToParams();
-  const params = CreateParams({ data: rearSprocket });
+  useEffect(() => {
+    fetch("/data/RearSprocket.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Error cargando JSON:", err));
+  }, []);
 
-  const { data, isLoading } = useSWR<SearchResultRearSprocket[]>(
-    params ? `/api/search/${possibleParts.RearSprocket}/${params}` : null,
-    fetcher
-  );
-
-  let searchResults: SearchResultRearSprocket[] = data || [];
+  useEffect(() => {
+    if (data && data?.length === 0) return;
+    setFilteredData(filterData(data, rearSprocket as any));
+  }, [data, rearSprocket]);
 
   const {
     formState: { errors },
@@ -47,8 +45,10 @@ const RearSprocketSearcher = () => {
   } = useForm({
     mode: "onBlur",
   });
+
   return (
-    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content] laptop:w-full">
+    <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
+ 
       <RearSprocketSVG
         control={control}
         errors={errors}
@@ -61,15 +61,15 @@ const RearSprocketSearcher = () => {
         <TableRecomendations />
         <div className="bg-gray-80 h-[400px]">
           <DataGrid
-            rows={searchResults}
+            rows={filteredData}
             columns={columnRearSprocket}
-            getRowId={(row) => row._id}
+            getRowId={(row) => row._id.$oid}
             initialState={{
               sorting: {
                 sortModel: [
                   {
-                    field: 'code',
-                    sort: 'asc',
+                    field: "code",
+                    sort: "asc",
                   },
                 ],
               },
@@ -92,26 +92,14 @@ const RearSprocketSearcher = () => {
               "& .MuiDataGrid-row:nth-of-type(even)": {
                 backgroundColor: "#1e293b",
               },
-              "& .MuiDataGrid-cell:nth-of-type(n+3)":{
-                justifyContent: 'center'
-              }
-            }}
-            loading={isLoading}
-            slots={{
-              noRowsOverlay: () =>
-                !params ? (
-                  <GridOverlay>Nothing to show</GridOverlay>
-                ) : (
-                  <GridOverlay> No results</GridOverlay>
-                ),
-              noResultsOverlay: () => <div>No results</div>,
-              loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
+              "& .MuiDataGrid-cell:nth-of-type(n+3)": {
+                justifyContent: "center",
+              },
             }}
           />
         </div>
       </div>
-      <MeasurementDistributionTips/>
-     
+      <MeasurementDistributionTips />
     </div>
   );
 };

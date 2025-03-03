@@ -2,8 +2,7 @@ import Image from "next/image";
 import LinealParts from "./../../public/landingImg/tool.webp";
 import PartCounter from "@/Components/PartCounter/PartCounter";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
-import { useRef } from "react";
-
+ 
 export default function Home() {
 
   return (

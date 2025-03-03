@@ -1,20 +1,15 @@
 "use client";
 import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultValve } from "@/types-enums-interfaces/ValveProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, valveTable } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import {
-  DataGrid,
-  GridOverlay,
-} from "@mui/x-data-grid";
-import React, { useContext } from "react";
+import { DataGrid } from "@mui/x-data-grid";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import useSWR from "swr";
 import { Valve as ValveSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
- 
+import { filterData } from "@/utils/filteredData";
+
 const ValveSearcher = () => {
   const { state } = useContext(SharedValuesContext);
   const { valve } = state;
@@ -29,18 +24,20 @@ const ValveSearcher = () => {
     arrayPartData: valveTable,
   });
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<SearchResultValve[]>;
+  const [data, setData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
-  // const params = transformToParams();
-  const params = CreateParams({ data: valve });
+  useEffect(() => {
+    fetch("/data/Valve.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Error cargando JSON:", err));
+  }, []);
 
-  const { data, isLoading } = useSWR<SearchResultValve[]>(
-    params ? `/api/search/${possibleParts.Valve}/${params}` : null,
-    fetcher
-  );
-
-  let searchResults: SearchResultValve[] = data || [];
+  useEffect(() => {
+    if (data && data?.length === 0) return;
+    setFilteredData(filterData(data, valve as any));
+  }, [data, valve]);
 
   const {
     formState: { errors },
@@ -65,9 +62,9 @@ const ValveSearcher = () => {
 
         <div className="bg-gray-80 mb-20 mt-5 h-[400px]">
           <DataGrid
-            rows={searchResults}
+            rows={filteredData}
             columns={columnValve}
-            getRowId={(row) => row._id}
+            getRowId={(row) => row._id.$oid}
             initialState={{
               sorting: {
                 sortModel: [
@@ -99,17 +96,6 @@ const ValveSearcher = () => {
               "& .MuiDataGrid-cell:nth-of-type(n+3)": {
                 justifyContent: "center",
               },
-            }}
-            loading={isLoading}
-            slots={{
-              noRowsOverlay: () =>
-                !params ? (
-                  <GridOverlay>Nothing to show</GridOverlay>
-                ) : (
-                  <GridOverlay> No results</GridOverlay>
-                ),
-              noResultsOverlay: () => <div>No results</div>,
-              loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
             }}
           />
         </div>

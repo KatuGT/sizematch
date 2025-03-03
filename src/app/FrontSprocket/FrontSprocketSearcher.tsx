@@ -1,33 +1,29 @@
 "use client";
 
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultFSNarrowSpline } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import {
-
   FSlargeSplineTable,
   FSnarrowSplineTable,
   GetUserColumnConfig,
   useHover,
 } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import useSWR from "swr";
 import { useForm } from "react-hook-form";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import {
   FSLargeSpline,
   FSNarrowSpline,
   TableRecomendations,
 } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
- 
+import { filterData } from "@/utils/filteredData";
+
 const FrontSprocketSearcher = () => {
   const { state } = useContext(SharedValuesContext);
   const { fsNarrowSpline, fsLargeSpline } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  //Setea tipo de piñon
   const [frontSprocketType, setFrontSprocketType] = useState(
     possibleParts.FSNarrowSpline
   );
@@ -38,7 +34,7 @@ const FrontSprocketSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: fsNarrowSpline,
     part: possibleParts.FSNarrowSpline,
-    arrayPartData: FSnarrowSplineTable
+    arrayPartData: FSnarrowSplineTable,
   });
 
   const columLargeSpline = GetUserColumnConfig({
@@ -47,32 +43,42 @@ const FrontSprocketSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: fsLargeSpline,
     part: possibleParts.FSLargeSpline,
-    arrayPartData: FSlargeSplineTable
+    arrayPartData: FSlargeSplineTable,
   });
 
   const handleSprocketType = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFrontSprocketType(e.target.value as possibleParts);
   };
 
-  //fetch
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<
-      SearchResultFSNarrowSpline[]
-    >;
+  const [data, setData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
-  const dataToParams =
-    frontSprocketType === possibleParts.FSNarrowSpline
-      ? fsNarrowSpline
-      : fsLargeSpline;
+  useEffect(() => {
+    if (frontSprocketType === possibleParts.FSNarrowSpline) {
+      fetch("/data/FSNarrowSpline.json")
+        .then((res) => res.json())
+        .then((json) => setData(json))
+        .catch((err) => console.error("Error cargando JSON:", err));
+    } else {
+      fetch("/data/FSLargeSpline.json")
+        .then((res) => res.json())
+        .then((json) => setData(json))
+        .catch((err) => console.error("Error cargando JSON:", err));
+    }
+  }, [frontSprocketType]);
 
-  const params = CreateParams({ data: dataToParams });
+  useEffect(() => {
+    if (data && data?.length === 0) return;
 
-  const { data, isLoading } = useSWR<SearchResultFSNarrowSpline[]>(
-    params ? `/api/search/${frontSprocketType}/${params}` : null,
-    fetcher
-  );
-
-  let searchResults: SearchResultFSNarrowSpline[] = data || [];
+    setFilteredData(
+      filterData(
+        data,
+        frontSprocketType === possibleParts.FSNarrowSpline
+          ? (fsNarrowSpline as any)
+          : (fsLargeSpline as any)
+      )
+    );
+  }, [data, fsNarrowSpline, fsLargeSpline, frontSprocketType]);
 
   const {
     formState: { errors },
@@ -146,18 +152,18 @@ const FrontSprocketSearcher = () => {
 
       <div className="my-20  w-full text-white">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px] mb-20">
+        <div className="bg-gray-80 mb-20 h-[400px]">
           {frontSprocketType === possibleParts.FSNarrowSpline ? (
             <DataGrid
-              rows={searchResults}
+              rows={filteredData}
               columns={columnNarrowSpline}
-              getRowId={(row) => row._id}
+              getRowId={(row) => row._id.$oid}
               initialState={{
                 sorting: {
                   sortModel: [
                     {
-                      field: 'code',
-                      sort: 'asc',
+                      field: "code",
+                      sort: "asc",
                     },
                   ],
                 },
@@ -180,35 +186,22 @@ const FrontSprocketSearcher = () => {
                 "& .MuiDataGrid-row:nth-of-type(even)": {
                   backgroundColor: "#1e293b",
                 },
-                "& .MuiDataGrid-cell:nth-of-type(n+3)":{
-                  justifyContent: 'center'
-                }
-              }}
-              loading={isLoading}
-              slots={{
-                noRowsOverlay: () =>
-                  !params ? (
-                    <GridOverlay>Nothing to show</GridOverlay>
-                  ) : (
-                    <GridOverlay> No results</GridOverlay>
-                  ),
-                noResultsOverlay: () => <div>No results</div>,
-                loadingOverlay: () => (
-                  <GridOverlay>Wait a second...</GridOverlay>
-                ),
+                "& .MuiDataGrid-cell:nth-of-type(n+3)": {
+                  justifyContent: "center",
+                },
               }}
             />
           ) : (
             <DataGrid
-              rows={searchResults}
+              rows={filteredData}
               columns={columLargeSpline}
-              getRowId={(row) => row._id}
+              getRowId={(row) => row._id.$oid}
               initialState={{
                 sorting: {
                   sortModel: [
                     {
-                      field: 'code',
-                      sort: 'asc',
+                      field: "code",
+                      sort: "asc",
                     },
                   ],
                 },
@@ -231,22 +224,9 @@ const FrontSprocketSearcher = () => {
                 "& .MuiDataGrid-row:nth-of-type(even)": {
                   backgroundColor: "#1e293b",
                 },
-                "& .MuiDataGrid-cell:nth-of-type(n+3)":{
-                  justifyContent: 'center'
-                }
-              }}
-              loading={isLoading}
-              slots={{
-                noRowsOverlay: () =>
-                  !params ? (
-                    <GridOverlay>Nothing to show</GridOverlay>
-                  ) : (
-                    <GridOverlay> No results</GridOverlay>
-                  ),
-                noResultsOverlay: () => <div>No results</div>,
-                loadingOverlay: () => (
-                  <GridOverlay>Wait a second...</GridOverlay>
-                ),
+                "& .MuiDataGrid-cell:nth-of-type(n+3)": {
+                  justifyContent: "center",
+                },
               }}
             />
           )}

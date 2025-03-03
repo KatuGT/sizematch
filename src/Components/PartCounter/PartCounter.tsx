@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import useSWR from "swr";
 import valve from "../../../public/landingImg/valve.webp";
 import FSLargeSpline from "../../../public/landingImg/FSLargeSpline.webp";
 import FSNarrowSpline from "../../../public/landingImg/FSNarrowSpline.webp";
@@ -10,7 +9,7 @@ import RearSprocket from "../../../public/landingImg/rearSprocket.webp";
 import Piston from "../../../public/landingImg/piston.webp";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type PartCounter = {
   part: possibleParts;
@@ -18,9 +17,14 @@ type PartCounter = {
 
 const PartCounter = ({ part }: PartCounter) => {
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<any[]>;
-  const { data } = useSWR<any>(`/api/parts?part=${part}`, fetcher);
+   const [data, setData] = useState<any[]>([]); 
+      
+    useEffect(() => {
+      fetch(`/data/${part}.json`)
+        .then((res) => res.json())
+        .then((json) => setData(json))
+        .catch((err) => console.error("Error cargando JSON:", err));
+    }, [part]);
 
   const mappedParts = {
     [possibleParts.BrakeDisc]: "Brake Discs",
@@ -62,7 +66,7 @@ const PartCounter = ({ part }: PartCounter) => {
           className="relative top-[-40px] flex  w-[150px] flex-col rounded-md border border-solid border-blue-300 p-2 text-center backdrop-blur-sm"
         >
           <span className="whitespace-pre-line">{actualPartName}</span>
-          <span className="text-xl font-bold">{data?.count} </span>
+          <span className="text-xl font-bold">{data?.length} </span>
         </div>
       </Link>
     </div>

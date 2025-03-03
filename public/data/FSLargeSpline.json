@@ -1,0 +1,1803 @@
+[{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF542",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF542/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:23:26.312Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:27:00.510Z"
+  },
+  "__v": 0,
+  "f_width": "8.5"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f2"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF249",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF249/",
+  "a_innerMinimumDiameter": "14",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "30",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T19:17:20.219Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T03:02:04.010Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF275",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF275/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:25:42.661Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:08:37.931Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF252",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF252/",
+  "a_innerMinimumDiameter": "15",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "26",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T19:15:07.108Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T03:05:12.719Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF251",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF251/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T19:16:39.844Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T03:02:44.918Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c908"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF292",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF292/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "15",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:47:29.304Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:14:42.208Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c932"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1559",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1559/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "35.5",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:28:22.635Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:45:25.744Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c939"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF718",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF718/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "30",
+  "f_width": "8.5",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:54:45.527Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:40:31.605Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c941"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1407",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1407/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "7.1",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:32:14.850Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:42:16.190Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c943"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1450",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1450/",
+  "a_innerMinimumDiameter": "23",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "28",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "8.3",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:33:51.561Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:43:21.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c933"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF567",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF567/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T21:29:36.787Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:38:51.244Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c944"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1552",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1552/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:36:01.860Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:44:46.848Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF338",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF338/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "10.7",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:52:07.806Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:19:34.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c927"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF419",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF419/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T21:07:32.982Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:21:31.327Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1325",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1325/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:24:53.431Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:41:23.843Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8fe"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF337",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF337/",
+  "a_innerMinimumDiameter": "19",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "36",
+  "f_width": "9.5",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:31:50.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:18:56.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c903"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF286",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF286/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "41",
+  "f_width": "13.5",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:42:57.895Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:12:04.274Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1043",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1043/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "16",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T20:52:44.154Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:40:51.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF563",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF563/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "26",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T20:57:34.479Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:38:36.895Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c935"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF571",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF571/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "12",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T21:32:12.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:40:09.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1467",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1467/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T22:19:50.671Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:43:41.658Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF328",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF328/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:24:31.280Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:16:37.627Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c905"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF294",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF294/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "41",
+  "f_width": "17.5",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T19:44:23.317Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:15:15.310Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c909"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF306",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF306/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "10",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:49:04.906Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:15:44.351Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c925"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF416",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF416/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:03:05.546Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:20:33.532Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF555",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF555/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "7.1",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:24:14.232Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:28:57.625Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF274",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF274/",
+  "a_innerMinimumDiameter": "15",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "30",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T19:18:19.864Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:08:03.615Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c915"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF424",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF424/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T20:21:01.775Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:22:12.376Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c916"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF507",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF507/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "8.8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T20:21:36.807Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:25:03.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c922"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF428",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF428/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:00:01.287Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:22:53.286Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c923"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF425",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF425/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "29",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T21:02:04.150Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:22:36.994Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c937"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF575",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF575/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:37:21.246Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:40:20.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f4"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1263",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1263/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "g_chain": "426",
+  "createdAt": {
+    "$date": "2023-07-30T19:19:20.189Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:41:03.172Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF247",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF247/",
+  "a_innerMinimumDiameter": "14",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "28",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T19:15:54.116Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T03:01:33.259Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8fa"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF287",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF287/",
+  "a_innerMinimumDiameter": "17",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:27:14.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:12:19.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF417",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF417/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "30",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T20:12:10.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:20:50.176Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c917"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF506",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF506/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "10",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T20:22:35.269Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:24:48.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c902"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF291",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF291/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "13.4",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T19:40:13.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:14:21.469Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF329",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF329/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "7",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:21:22.594Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:16:53.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c921"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1425",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1425/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "29",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T20:59:22.554Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:42:44.740Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF546",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF546/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T21:19:58.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:27:43.743Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF561",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF561/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "13",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T21:25:02.478Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:38:06.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8ff"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF266",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF266/",
+  "a_innerMinimumDiameter": "17.5",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "7.1",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:35:00.327Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T03:05:36.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c900"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF283",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF283/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "41",
+  "f_width": "11",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:37:22.702Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:11:04.889Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c906"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF289",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF289/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "11.5",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:45:33.105Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:13:35.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c904"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF293",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF293/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "41",
+  "f_width": "13.5",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T19:43:44.647Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:14:58.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF270",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF270/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "8.5",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:20:43.496Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:07:29.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF288",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF288/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "12.7",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:50:01.928Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:12:48.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF509",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF509/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "11",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T20:27:40.506Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:25:21.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c924"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF422",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF422/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "29",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:02:29.031Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:21:56.936Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c938"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF568",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF568/",
+  "a_innerMinimumDiameter": "26",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "30",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T21:40:11.579Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:39:07.508Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1336",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1336/",
+  "a_innerMinimumDiameter": "19",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "36",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:07:02.279Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:41:55.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1350",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1350/",
+  "a_innerMinimumDiameter": "19",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "36",
+  "f_width": "9.5",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:26:24.661Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:42:02.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c929"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1448",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1448/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "10",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T21:12:23.449Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:43:12.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF429",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF429/",
+  "a_innerMinimumDiameter": "17",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T20:57:55.082Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:23:08.693Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8f7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF327",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF327/",
+  "a_innerMinimumDiameter": "17.5",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "7.8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:22:44.163Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:16:17.271Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8fb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF278",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF278/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "8",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T19:29:37.810Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:09:27.527Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c907"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF290",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF290/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "36",
+  "f_width": "11",
+  "g_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T19:46:06.263Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:14:00.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF331",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF331/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "10.7",
+  "g_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-30T19:59:40.722Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:17:18.509Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c910"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1540",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1540/",
+  "a_innerMinimumDiameter": "14",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T20:13:49.206Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:44:34.624Z"
+  },
+  "__v": 0,
+  "f_width": "9.3"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c920"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF413",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF413/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "7.1",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T20:58:53.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:19:51.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c931"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1573",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1573/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "38",
+  "e_centerToCenter": "38",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:27:27.933Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T21:27:27.933Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c942"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1445",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1445/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:33:13.437Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:43:00.978Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c901"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1265",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1265/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "39",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:38:38.862Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:41:13.388Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1554",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1554/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "9",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T20:10:00.447Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:45:08.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c90e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF418",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF418/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T20:11:34.974Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:21:10.816Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c911"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF505",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF505/",
+  "a_innerMinimumDiameter": "14",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T20:14:34.352Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:24:14.833Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c928"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF420",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF420/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T21:11:19.433Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:21:45.170Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF562",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF562/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T21:20:22.551Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:38:18.515Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c934"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1553",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1553/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "36",
+  "f_width": "8.5",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:30:43.296Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:44:58.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1501",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1501/",
+  "a_innerMinimumDiameter": "14",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "17",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "7.2",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T22:16:04.311Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:43:59.973Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8fc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF276",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF276/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "8.8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:30:19.633Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:09:03.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c912"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF569",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF569/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T20:17:59.697Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:39:50.257Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1903",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1903/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "34",
+  "e_centerToCenter": "34",
+  "f_width": "7.1",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T20:48:24.866Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T20:48:24.866Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c926"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1408",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1408/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "29",
+  "f_width": "7.1",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:04:50.615Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:42:27.453Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c936"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF431",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF431/",
+  "a_innerMinimumDiameter": "18",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "22",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:32:54.134Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:23:22.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c93e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1329",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1329/",
+  "a_innerMinimumDiameter": "17",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "34",
+  "f_width": "7",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:26:03.461Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:41:34.228Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c92a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF438",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF438/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "0",
+  "f_width": "10",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T21:13:58.459Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:23:40.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c8fd"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF281",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF281/",
+  "a_innerMinimumDiameter": "22",
+  "b_innerTeethSpacing": "6",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "42",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T19:30:57.923Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:09:58.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c91d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF548",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF548/",
+  "a_innerMinimumDiameter": "16",
+  "b_innerTeethSpacing": "4",
+  "c_innerMaximumDiameter": "20",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "30",
+  "g_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T20:54:57.870Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:28:44.135Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c930"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF547",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF547/",
+  "a_innerMinimumDiameter": "13",
+  "b_innerTeethSpacing": "3.5",
+  "c_innerMaximumDiameter": "16",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "28",
+  "g_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T21:25:29.398Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:28:30.430Z"
+  },
+  "__v": 0,
+  "f_width": "0"
+},
+{
+  "_id": {
+    "$oid": "64cae3fec733f98432d9c940"
+  },
+  "make": "JT Sprockets",
+  "code": "JTF1041",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTF1041/",
+  "a_innerMinimumDiameter": "21",
+  "b_innerTeethSpacing": "5",
+  "c_innerMaximumDiameter": "25",
+  "d_innerTeethNumber": "6",
+  "e_centerToCenter": "39",
+  "f_width": "8",
+  "g_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:29:26.163Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T17:40:39.410Z"
+  },
+  "__v": 0
+}]

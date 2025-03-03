@@ -8,11 +8,12 @@ import { GetUserColumnConfig, connectingRodTable, useHover } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
 import Image from "next/image";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import F3 from "../../../public/F3.webp";
 import Adsterra from "@/Components/Adsterra";
+import { filterData } from "@/utils/filteredData";
 
 const ConnectingRodSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -28,20 +29,22 @@ const ConnectingRodSearcher = () => {
     arrayPartData: connectingRodTable,
   });
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<
-      SearchResultConnectingRod[]
-    >;
-
-  // const params = transformToParams();
-  const params = CreateParams({ data: connectingRod });
-
-  const { data, isLoading } = useSWR<SearchResultConnectingRod[]>(
-    params ? `/api/search/${possibleParts.ConnectingRods}/${params}` : null,
-    fetcher
-  );
-
-  let searchResults: SearchResultConnectingRod[] = data || [];
+  const [data, setData] = useState<any[]>([]); 
+   const [filteredData, setFilteredData] = useState<any[]>([]); 
+ 
+    
+   useEffect(() => {
+     fetch("/data/ConnectingRods.json")
+       .then((res) => res.json())
+       .then((json) => setData(json))
+       .catch((err) => console.error("Error cargando JSON:", err));
+   }, []);
+ 
+   useEffect(() => {
+     if (data && data?.length === 0) return;
+     setFilteredData(filterData(data, connectingRod as any));
+   }, [data, connectingRod]);
+ 
 
   const {
     formState: { errors },
@@ -51,7 +54,6 @@ const ConnectingRodSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:w-full laptop:max-w-[min-content]">
-      <Adsterra />
       <ConnectingRod
         control={control}
         errors={errors}
@@ -64,9 +66,9 @@ const ConnectingRodSearcher = () => {
         <TableRecomendations />
         <div className="bg-gray-80 mb-20 h-[400px]">
           <DataGrid
-            rows={searchResults}
+            rows={filteredData}
             columns={columnRearSprocket}
-            getRowId={(row) => row._id}
+            getRowId={(row) => row._id.$oid}
             initialState={{
               sorting: {
                 sortModel: [
@@ -99,17 +101,7 @@ const ConnectingRodSearcher = () => {
                 justifyContent: "center",
               },
             }}
-            loading={isLoading}
-            slots={{
-              noRowsOverlay: () =>
-                !params ? (
-                  <GridOverlay>Nothing to show</GridOverlay>
-                ) : (
-                  <GridOverlay> No results</GridOverlay>
-                ),
-              noResultsOverlay: () => <div>No results</div>,
-              loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
-            }}
+
           />
         </div>
         <MeasurementDistributionTips />

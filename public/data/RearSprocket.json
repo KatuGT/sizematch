@@ -1,0 +1,6820 @@
+[{
+  "_id": {
+    "$oid": "64adf0ed0c099261d590a305"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR210SC",
+  "link": "http://www.jtsprockets.com/catalogue/part/JTR210SC/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-12T00:16:45.679Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-12T17:10:40.086Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e88b078ce0a2ef84e440"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR24",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR24/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "120",
+  "d_center": "105",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T22:47:39.324Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:47:39.324Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e8fc078ce0a2ef84e450"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR23",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR23/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "120",
+  "d_center": "102.2",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T22:49:32.554Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:49:32.554Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e91e078ce0a2ef84e456"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1133",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1133/",
+  "a_holeDiameter": "6.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "123",
+  "d_center": "108",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T22:50:06.997Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:50:06.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e945078ce0a2ef84e45c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1131",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1131/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "105",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T22:50:45.561Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:50:45.561Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e965078ce0a2ef84e462"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1132",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1132/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "102.2",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T22:51:17.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:51:17.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e988078ce0a2ef84e468"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR696",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR696/",
+  "a_holeDiameter": "7.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "123",
+  "d_center": "108",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T22:51:52.262Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:51:52.262Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e9e7078ce0a2ef84e46e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR20",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR20/",
+  "a_holeDiameter": "0",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:53:27.273Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:53:27.273Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6e9fe078ce0a2ef84e474"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR19",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR19/",
+  "a_holeDiameter": "0",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:53:50.134Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:53:50.134Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ea18078ce0a2ef84e47b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR701",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR701/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "62",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:54:16.943Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:54:16.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ea35078ce0a2ef84e481"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR5",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR5/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:54:45.725Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:54:45.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ea5b078ce0a2ef84e487"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR22",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR22/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "106",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:55:23.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:55:23.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ea7c078ce0a2ef84e48d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR703",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR703/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:55:56.065Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:55:56.065Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eaaf078ce0a2ef84e493"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR25",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR25/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "123",
+  "d_center": "108",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T22:56:47.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:56:47.418Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eada078ce0a2ef84e499"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1135",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1135/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "105",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T22:57:30.885Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:57:30.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eaf8078ce0a2ef84e49f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR16",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR16/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "96",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:58:00.470Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:58:00.470Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eb0e078ce0a2ef84e4a5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR18",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR18/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "90",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:58:22.414Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:58:22.414Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eb41078ce0a2ef84e4ab"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR28",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR28/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "150",
+  "d_center": "116.2",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T22:59:13.987Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T22:59:13.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eb74078ce0a2ef84e4b1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR21",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR21/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "62",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:00:04.794Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:00:04.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eb91078ce0a2ef84e4b7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR706",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR706/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "152",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:00:33.664Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:00:33.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ebb6078ce0a2ef84e4bd"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR702",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR702/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:01:10.979Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:01:10.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ebca078ce0a2ef84e4c3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR713",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR713/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:01:30.256Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:01:30.256Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ebf3078ce0a2ef84e4c9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR15",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR15/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "100",
+  "d_center": "76",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:02:11.329Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:02:11.329Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ec0e078ce0a2ef84e4cf"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1141",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1141/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:02:38.027Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:02:38.027Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ec36078ce0a2ef84e4d5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1140",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1140/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:03:18.392Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:03:18.392Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ec51078ce0a2ef84e4db"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR210",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR210/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:03:45.079Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:03:45.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ec78078ce0a2ef84e4e1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR8",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR8/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "152",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:04:24.426Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:04:24.426Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ec92078ce0a2ef84e4e8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR9",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR9/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "154",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:04:50.680Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:04:50.680Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ecb2078ce0a2ef84e4ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR6",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR6/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "168",
+  "d_center": "140",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:05:22.617Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:05:22.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ecd6078ce0a2ef84e4f5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR3",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR3/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "168",
+  "d_center": "140",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:05:58.243Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:05:58.243Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ecfe078ce0a2ef84e4fb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR10",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR10/",
+  "a_holeDiameter": "1.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "140",
+  "d_center": "119",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:06:38.624Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:06:38.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ed1c078ce0a2ef84e501"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR7",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR7/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "130.8",
+  "d_center": "110",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:07:08.461Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:07:08.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ed3a078ce0a2ef84e507"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR75",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR75/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "130.8",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:07:38.935Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:07:38.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6edba078ce0a2ef84e511"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1163",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1163/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "95",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:09:46.897Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:09:46.897Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6edd1078ce0a2ef84e517"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR13",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR13/",
+  "a_holeDiameter": "7.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:10:09.960Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:10:09.960Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eded078ce0a2ef84e51d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR698",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR698/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:10:37.123Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:10:37.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ee1f078ce0a2ef84e523"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR714",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR714/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "134",
+  "d_center": "115",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:11:27.454Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:11:27.454Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ee3a078ce0a2ef84e529"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1022",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1022/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "90",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:11:54.504Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:11:54.504Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ee5a078ce0a2ef84e52f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR828",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR828/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "170",
+  "d_center": "148",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:12:26.081Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:12:26.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ee96078ce0a2ef84e535"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR718",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR718/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "134",
+  "d_center": "115",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:13:26.205Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:13:26.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eeb3078ce0a2ef84e53b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR729",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR729/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "152",
+  "d_center": "130",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:13:55.872Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:13:55.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eecb078ce0a2ef84e541"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1079",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1079/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:14:19.664Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:14:19.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6eee9078ce0a2ef84e547"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR263",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR263/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "70",
+  "d_center": "54",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:14:49.201Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:14:49.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ef0a078ce0a2ef84e54d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR211",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR211/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "70",
+  "d_center": "54",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:15:22.286Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:15:22.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ef42078ce0a2ef84e553"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1134",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1134/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "105",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:16:18.959Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:16:18.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ef5e078ce0a2ef84e559"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR817",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR817/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:16:46.575Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:16:46.575Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ef92078ce0a2ef84e55f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR735",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR735/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "124",
+  "d_center": "100",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:17:38.877Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:17:38.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6efac078ce0a2ef84e565"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR746",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR746/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "124",
+  "d_center": "100",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:18:04.630Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:18:04.630Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6effe078ce0a2ef84e56b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR751",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR751/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "144",
+  "d_center": "127.5",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:19:26.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:19:26.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f01d078ce0a2ef84e571"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR744",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR744/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "124",
+  "d_center": "100",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:19:57.282Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:19:57.282Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f03c078ce0a2ef84e577"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR491",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR491/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "108",
+  "d_center": "90",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:20:28.310Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:20:28.310Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f08e078ce0a2ef84e57d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR752",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR752/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "144",
+  "d_center": "127.5",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:21:50.509Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:21:50.509Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f0bd078ce0a2ef84e583"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR745",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR745/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "124",
+  "d_center": "100",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:22:37.997Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:22:37.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f0ef078ce0a2ef84e589"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR765",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR765/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "103",
+  "d_center": "73",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:23:27.150Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:23:27.150Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f13f078ce0a2ef84e58f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR761",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR761/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "154",
+  "d_center": "135",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-30T23:24:47.841Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:24:47.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f177078ce0a2ef84e595"
+  },
+  "make": "JT Sprockets",
+  "code": "JTA762",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTA762/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "154",
+  "d_center": "135",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:25:43.163Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:25:43.163Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f19b078ce0a2ef84e59b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR763",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR763/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "154",
+  "d_center": "135",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:26:19.892Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:26:19.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f1c2078ce0a2ef84e5a1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR766",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR766/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "103",
+  "d_center": "73",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:26:58.384Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:26:58.384Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f209078ce0a2ef84e5a7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR606",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR606/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:28:09.483Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:28:09.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f223078ce0a2ef84e5ad"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR485",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR485/",
+  "a_holeDiameter": "7.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:28:35.105Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:28:35.105Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f23d078ce0a2ef84e5b3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR604",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR604/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:29:01.310Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:29:01.310Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f257078ce0a2ef84e5b9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR602",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR602/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "54",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:29:27.499Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:29:27.499Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f28b078ce0a2ef84e5bf"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR600",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR600/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "54",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:30:19.114Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:30:19.114Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f2ad078ce0a2ef84e5c5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR611",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR611/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "111",
+  "d_center": "86",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:30:53.007Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:30:53.007Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f2db078ce0a2ef84e5cb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR245/2",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR245_2/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:31:39.042Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:31:39.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f31d078ce0a2ef84e5d1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR610",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR610/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:32:45.404Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:32:45.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f35a078ce0a2ef84e5d7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR7082",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR7082/",
+  "a_holeDiameter": "12",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "82.6",
+  "d_center": "50.2",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:33:46.295Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:33:46.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f378078ce0a2ef84e5dd"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR7086",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR7086/",
+  "a_holeDiameter": "12",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "82.6",
+  "d_center": "50.2",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:34:16.749Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:34:16.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f3b1078ce0a2ef84e5e3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR810",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR810/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "78",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:35:13.702Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:35:13.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f3cf078ce0a2ef84e5e9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR256",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR256/",
+  "a_holeDiameter": "0",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "82",
+  "d_center": "50",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:35:43.127Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:35:43.127Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f3e8078ce0a2ef84e5ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR257",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR257/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "70",
+  "d_center": "54",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:36:08.049Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:37:03.659Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f43a078ce0a2ef84e5fa"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1203",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1203/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "70",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:37:30.991Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:37:30.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f47d078ce0a2ef84e600"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR239",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR239/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "3",
+  "c_holeDistance": "90",
+  "d_center": "70",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:38:37.840Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:38:37.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f495078ce0a2ef84e606"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR216",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR216/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "3",
+  "c_holeDistance": "72",
+  "d_center": "50",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:39:01.818Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:39:01.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f4af078ce0a2ef84e60c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR255",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR255/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "3",
+  "c_holeDistance": "54",
+  "d_center": "29.2",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:39:27.158Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:39:27.158Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f521078ce0a2ef84e612"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR214",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR214/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:41:21.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:41:21.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f541078ce0a2ef84e618"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR241",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR241/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "68",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:41:53.675Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:41:53.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f55a078ce0a2ef84e61e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR262",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR262/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "70",
+  "d_center": "54",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:42:18.348Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:42:18.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f5bb078ce0a2ef84e624"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR809/2",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR809_2/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:43:55.719Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:43:55.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f5d9078ce0a2ef84e62a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR999",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR999/",
+  "a_holeDiameter": "0",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "82",
+  "d_center": "50",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:44:25.671Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:44:25.671Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f5f0078ce0a2ef84e630"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR264",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR264/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "70",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:44:48.634Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:44:48.634Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f60a078ce0a2ef84e636"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR212",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR212/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-30T23:45:14.756Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:45:14.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f669078ce0a2ef84e63c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR273",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR273/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:46:49.260Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:46:49.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f68e078ce0a2ef84e642"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR269",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR269/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:47:26.186Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:47:26.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f6a6078ce0a2ef84e648"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1221",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1221/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:47:50.712Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:47:50.712Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f6e7078ce0a2ef84e64e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1222",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1222/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "90",
+  "d_center": "68",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:48:55.647Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:48:55.647Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f703078ce0a2ef84e654"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1219",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1219/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:49:23.609Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:49:23.609Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f719078ce0a2ef84e65a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1206",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1206/",
+  "a_holeDiameter": "10.8",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "70",
+  "d_center": "54",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:49:45.994Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:49:45.994Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f730078ce0a2ef84e660"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR271",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR271/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:50:08.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:50:08.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f77d078ce0a2ef84e666"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR279",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR279/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:51:25.480Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:51:25.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f7a6078ce0a2ef84e66c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1250",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1250/",
+  "a_holeDiameter": "9.1",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "96",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:52:06.240Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:52:06.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f81d078ce0a2ef84e672"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR242",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR242/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "95",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:54:05.374Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:54:05.374Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f836078ce0a2ef84e679"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1258",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1258/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:54:30.734Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:54:30.734Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f84e078ce0a2ef84e67f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1230",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1230/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "134",
+  "d_center": "90",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:54:54.665Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:54:54.665Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f867078ce0a2ef84e685"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1226",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1226/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:55:19.401Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:55:19.401Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f885078ce0a2ef84e68b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1227",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1227/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-30T23:55:49.711Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:55:49.711Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f8a0078ce0a2ef84e691"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR254",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR254/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "96",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:56:16.275Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:56:16.275Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f8d3078ce0a2ef84e697"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR277",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR277/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:57:07.984Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:57:07.984Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f8f5078ce0a2ef84e69d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1509",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1509/",
+  "a_holeDiameter": "10",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "120",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-30T23:57:41.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:57:41.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f915078ce0a2ef84e6a3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR278",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR278/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "105",
+  "d_center": "70",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:58:13.113Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:58:13.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f930078ce0a2ef84e6a9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR246",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR246/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "70",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-30T23:58:40.336Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T23:58:40.336Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f9c1078ce0a2ef84e6af"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR247",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR247/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "70",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:01:05.470Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:01:05.470Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f9d9078ce0a2ef84e6b5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR248",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR248/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "70",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:01:29.760Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:01:29.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6f9ef078ce0a2ef84e6bb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR272",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR272/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:01:51.530Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:01:51.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa0d078ce0a2ef84e6c1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1224",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1224/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "90",
+  "d_center": "68",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:02:21.241Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:02:21.241Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa21078ce0a2ef84e6c7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR301",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR301/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:02:41.422Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:02:41.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa3f078ce0a2ef84e6cd"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1977",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1977/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:03:11.058Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:03:11.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa6c078ce0a2ef84e6d3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1209",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1209/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "96",
+  "d_center": "74",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:03:56.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:03:56.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa84078ce0a2ef84e6d9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1315",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1315/",
+  "a_holeDiameter": "14",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "96",
+  "d_center": "74",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:04:20.701Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:04:20.701Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fa9b078ce0a2ef84e6df"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1490",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1490/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:04:43.889Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:04:43.889Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fb02078ce0a2ef84e6e5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR245/3",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR245_3/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:06:26.882Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:06:26.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fb25078ce0a2ef84e6eb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR260",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR260/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:07:01.085Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:07:01.085Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fb3c078ce0a2ef84e6f1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1361",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1361/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:07:24.229Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:07:24.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fb52078ce0a2ef84e6f7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1220",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1220/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "138",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:07:46.774Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:07:46.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fb67078ce0a2ef84e6fd"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1225",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1225/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "84",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:08:07.672Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:08:07.672Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fba6078ce0a2ef84e703"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1332",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1332/",
+  "a_holeDiameter": "12.5/10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:09:10.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:09:10.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fc4f078ce0a2ef84e709"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1334",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1334/",
+  "a_holeDiameter": "12.5/10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:11:59.546Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:11:59.546Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fc72078ce0a2ef84e70f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1314",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1314/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "118",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:12:34.326Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:12:34.326Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fd1b078ce0a2ef84e716"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1311",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1311/",
+  "a_holeDiameter": "11",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "165",
+  "d_center": "145",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:15:23.277Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:15:23.277Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fd34078ce0a2ef84e71c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR312",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR312/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "138",
+  "d_center": "120",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:15:48.199Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:15:48.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fddf078ce0a2ef84e722"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR300",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR300/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:18:39.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:18:39.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fdf7078ce0a2ef84e728"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR282",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR282/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "124",
+  "d_center": "94",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:19:03.107Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:19:03.107Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fe0d078ce0a2ef84e72e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR280",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR280/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "74",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:19:25.800Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:19:25.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fe27078ce0a2ef84e734"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1316",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1316/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:19:51.720Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:19:51.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fe41078ce0a2ef84e73a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1304",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1304/",
+  "a_holeDiameter": "12.8",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:20:17.952Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:20:17.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fea4078ce0a2ef84e740"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR302",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR302/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:21:56.788Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:21:56.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fec2078ce0a2ef84e746"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1307",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1307/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "134",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:22:26.522Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:22:26.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6fede078ce0a2ef84e74c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1308",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1308/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:22:54.295Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:22:54.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ff00078ce0a2ef84e752"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1303",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1303/",
+  "a_holeDiameter": "12.5/10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:23:28.140Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:23:28.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ff51078ce0a2ef84e758"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR284",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR284/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:24:49.624Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:24:49.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ff6a078ce0a2ef84e75e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR305",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR305/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:25:14.298Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:25:14.298Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ffcb078ce0a2ef84e766"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR336",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR336/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T00:26:51.249Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:26:51.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c6ffe4078ce0a2ef84e76c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR298",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR298/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:27:16.589Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:27:16.589Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70039078ce0a2ef84e772"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1340",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1340/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "176",
+  "d_center": "154",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:28:41.979Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:28:41.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c700a2078ce0a2ef84e778"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1346",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1346/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "176",
+  "d_center": "154",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:30:26.782Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:30:26.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c700c2078ce0a2ef84e77e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1306",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1306/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "134",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T00:30:58.116Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:30:58.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c700f3078ce0a2ef84e786"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1317",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1317/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "134",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:31:47.646Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:31:47.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7014e078ce0a2ef84e78c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1331",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1331/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:33:18.990Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:33:18.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c701ab078ce0a2ef84e794"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR890",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR890/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "63",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:34:51.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:34:51.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c701d2078ce0a2ef84e79a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR897",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR897/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:35:30.801Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:35:30.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c701eb078ce0a2ef84e7a0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1067",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1067/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "164",
+  "d_center": "142",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:35:55.607Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:35:55.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70206078ce0a2ef84e7a6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1068",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1068/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "164",
+  "d_center": "142",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:36:22.030Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:36:22.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70251078ce0a2ef84e7ac"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1073",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1073/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "100",
+  "d_center": "74",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T00:37:37.447Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:37:37.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7026e078ce0a2ef84e7b2"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1074",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1074/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "164",
+  "d_center": "142",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T00:38:06.882Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:38:06.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70289078ce0a2ef84e7b8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR801",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR801/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "68",
+  "d_center": "52",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T00:38:33.517Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:38:33.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c702ac078ce0a2ef84e7be"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR802",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR802/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "68",
+  "d_center": "52",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:39:08.255Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:39:08.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c702cc078ce0a2ef84e7c4"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR458",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR458/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "78",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:39:40.497Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:39:40.497Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70335078ce0a2ef84e7ca"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR468",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR468/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "86",
+  "d_center": "68",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:41:25.537Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:41:25.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7034e078ce0a2ef84e7d0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1494",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1494/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:41:50.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:41:50.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70369078ce0a2ef84e7d6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR459",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR459/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:42:17.790Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:42:17.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c70385078ce0a2ef84e7dc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR471",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR471/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "86",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:42:45.588Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:42:45.588Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c703a3078ce0a2ef84e7e2"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR797",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR797/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "128",
+  "d_center": "108",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:43:15.976Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:43:15.976Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c703bc078ce0a2ef84e7e8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1466",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1466/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "126",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T00:43:40.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T00:43:40.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71332078ce0a2ef84e7ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR463",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR463/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T01:49:38.310Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:49:38.310Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7135c078ce0a2ef84e7f5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR473",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR473/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "86",
+  "d_center": "68",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:50:20.498Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:50:20.498Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71379078ce0a2ef84e7fb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1486",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1486/",
+  "a_holeDiameter": "12.5/10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:50:49.440Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:50:49.440Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c713af078ce0a2ef84e801"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR487",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR487/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:51:43.505Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:51:43.505Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71413078ce0a2ef84e807"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR476",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR476/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "70",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T01:53:23.747Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:53:23.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7142c078ce0a2ef84e80d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR486",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR486/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:53:48.924Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:53:48.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71494078ce0a2ef84e813"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1458",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1458/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "74",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:55:32.626Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:55:32.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c714ac078ce0a2ef84e819"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR474",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR474/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "70",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T01:55:56.089Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:55:56.089Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c714c5078ce0a2ef84e81f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR475",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR475/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:56:21.598Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:56:21.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c714f8078ce0a2ef84e827"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR460",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR460/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:57:12.261Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:57:12.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7152c078ce0a2ef84e82f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR472",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR472/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:58:04.685Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:58:04.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71581078ce0a2ef84e837"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR808",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR808/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "146",
+  "d_center": "126",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T01:59:29.669Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T01:59:29.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c715e0078ce0a2ef84e83d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR488",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR488/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "80",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:01:04.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:01:04.599Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c715f4078ce0a2ef84e843"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR499",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR499/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:01:24.487Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:01:24.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71611078ce0a2ef84e849"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR478",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR478/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:01:53.944Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:01:53.944Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c716a7078ce0a2ef84e84f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR479",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR479/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "130",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:04:23.404Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:04:23.404Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c716c2078ce0a2ef84e855"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR481",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR481/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "74",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:04:50.241Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:04:50.241Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c716df078ce0a2ef84e85b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR477",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR477/",
+  "a_holeDiameter": "8.3",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:05:19.023Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:05:19.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c716fa078ce0a2ef84e861"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR498",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR498/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:05:46.659Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:05:46.659Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71712078ce0a2ef84e867"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1489",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1489/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "80",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:06:10.856Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:06:10.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7182f078ce0a2ef84e86f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1478",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1478/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:10:55.180Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:10:55.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c718c1078ce0a2ef84e876"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR501",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR501/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "104",
+  "d_center": "80",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T02:13:21.402Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:13:21.402Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c718dc078ce0a2ef84e87c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR482",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR482/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "98",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:13:48.050Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:13:48.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c718f5078ce0a2ef84e882"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR502",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR502/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "140",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:14:13.200Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:14:13.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71959078ce0a2ef84e888"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR483",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR483/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "89",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T02:15:53.728Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:15:53.728Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71975078ce0a2ef84e88e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR500",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR500/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "136",
+  "e_chain": "632",
+  "createdAt": {
+    "$date": "2023-07-31T02:16:21.219Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:16:21.219Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7198a078ce0a2ef84e894"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR506",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR506/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "136",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T02:16:42.726Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:16:42.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7199e078ce0a2ef84e89a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1792",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1792/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:17:02.339Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:17:02.339Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c719f2078ce0a2ef84e8a0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR503",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR503/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "160",
+  "d_center": "140",
+  "e_chain": "532",
+  "createdAt": {
+    "$date": "2023-07-31T02:18:26.031Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:18:26.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71a2b078ce0a2ef84e8a6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1493",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1493/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "116",
+  "d_center": "92",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:19:23.550Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:19:23.550Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71aab078ce0a2ef84e8ae"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR809",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR809/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:21:31.997Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:21:31.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71af0078ce0a2ef84e8b4"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR899",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR899/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "125",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:22:40.215Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:22:40.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71b0c078ce0a2ef84e8ba"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR898",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR898/",
+  "a_holeDiameter": "14.2",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "124",
+  "d_center": "101",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:23:08.408Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:23:08.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71b69078ce0a2ef84e8c0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1075",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1075/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:24:41.227Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:24:41.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71b80078ce0a2ef84e8c6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR832",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR832/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "60",
+  "d_center": "44",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T02:25:04.982Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:25:04.982Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71b9b078ce0a2ef84e8cc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1078",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1078/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "54",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T02:25:31.712Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:25:31.712Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71bb2078ce0a2ef84e8d2"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR857",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR857/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:25:54.439Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:25:54.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71c1a078ce0a2ef84e8db"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1077",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1077/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "3",
+  "c_holeDistance": "90",
+  "d_center": "55",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T02:27:38.827Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:27:38.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71c30078ce0a2ef84e8e1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1076",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1076/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "100",
+  "d_center": "80",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T02:28:00.422Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:28:00.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71c7d078ce0a2ef84e8e9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR804",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR804/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "128",
+  "d_center": "108",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:29:17.975Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:29:17.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71cbb078ce0a2ef84e8ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1806",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1806/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "100",
+  "d_center": "76",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:30:19.422Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:30:19.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71cd7078ce0a2ef84e8f5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1796",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1796/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:30:47.383Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:30:47.383Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71cf5078ce0a2ef84e8fb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR811",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR811/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:31:17.243Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:31:17.243Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71d2e078ce0a2ef84e903"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR805",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR805/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "146",
+  "d_center": "126",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:32:14.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:32:14.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71da6078ce0a2ef84e909"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR803",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR803/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T02:34:14.267Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:34:14.267Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71dbe078ce0a2ef84e90f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR815",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR815/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "78",
+  "d_center": "57",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:34:38.247Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:34:38.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71de1078ce0a2ef84e915"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1826",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1826/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:35:13.133Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:35:13.133Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e0e078ce0a2ef84e91b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR823",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR823/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "87",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:35:58.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:35:58.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e29078ce0a2ef84e921"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR822",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR822/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:36:25.297Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:36:25.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e41078ce0a2ef84e927"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR820",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR820/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "96",
+  "d_center": "72",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:36:49.892Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:36:49.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e58078ce0a2ef84e92d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1825",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1825/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "100",
+  "d_center": "76",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:37:12.052Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:37:12.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e79078ce0a2ef84e933"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR819/2",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR819_2/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "100",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:37:45.204Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:37:45.204Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71e91078ce0a2ef84e939"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR819",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR819/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "100",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:38:09.379Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:38:09.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71eb2078ce0a2ef84e940"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR826",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR826/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T02:38:42.096Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:38:42.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71ece078ce0a2ef84e946"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR812",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR812/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:39:10.049Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:39:10.049Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71f52078ce0a2ef84e94e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR813",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR813/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "90",
+  "d_center": "72",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:41:22.148Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:41:22.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71f7d078ce0a2ef84e954"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR814",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR814/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "84",
+  "d_center": "64",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T02:42:05.610Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:42:05.610Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c71f93078ce0a2ef84e95a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR807",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR807/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "87",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T02:42:27.362Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T02:42:27.362Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82669a139639fe2bc7cd8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR816",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR816/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "76",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T21:23:54.008Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:23:54.008Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82704c4a0c4f52672d6a7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR829",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR829/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "87",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T21:26:28.372Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:26:28.372Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82720c4a0c4f52672d6ad"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1876",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1876/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T21:26:56.268Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:26:56.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82752c4a0c4f52672d6b3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR818",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR818/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "100",
+  "d_center": "76",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T21:27:46.865Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:27:46.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8278ec4a0c4f52672d6b9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1793",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1793/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T21:28:46.629Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:28:46.629Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c827cec4a0c4f52672d6c1"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1821",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1821/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "170",
+  "d_center": "148",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T21:29:50.739Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:29:50.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8280ec4a0c4f52672d6c7"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1800",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1800/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T21:30:54.770Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:30:54.770Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8289cc4a0c4f52672d6cf"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR830",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR830/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "87",
+  "e_chain": "532",
+  "createdAt": {
+    "$date": "2023-07-31T21:33:16.887Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:33:16.887Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c828c0c4a0c4f52672d6d6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1212",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1212/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "58",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:33:52.593Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:33:52.593Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c828d6c4a0c4f52672d6dc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR838",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR838/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "80",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:34:14.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:34:14.539Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c828f1c4a0c4f52672d6e3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR2010",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR2010/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T21:34:41.625Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:34:41.625Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8290ac4a0c4f52672d6e9"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR2014",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR2014/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "106",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T21:35:06.123Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:35:06.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82923c4a0c4f52672d6ef"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR2012",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR2012/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "110",
+  "d_center": "80",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T21:35:31.767Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:35:31.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82957c4a0c4f52672d6f5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR2020",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR2020/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "125",
+  "d_center": "106",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T21:36:23.295Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:36:23.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82977c4a0c4f52672d6fb"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR2011",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR2011/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "176",
+  "d_center": "155",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T21:36:55.174Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:36:55.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c829d3c4a0c4f52672d701"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR833",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR833/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "60",
+  "d_center": "44",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:38:27.536Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:38:27.536Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c829eec4a0c4f52672d708"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR834",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR834/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "80",
+  "d_center": "64",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T21:38:54.937Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:39:35.552Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82a2cc4a0c4f52672d712"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR835",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR835/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "54",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:39:56.858Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:39:56.858Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82a4bc4a0c4f52672d718"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR843",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR843/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "8",
+  "c_holeDistance": "80",
+  "d_center": "62",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:40:27.733Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:40:27.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82c4ec4a0c4f52672d71f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR837",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR837/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "60",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:49:02.038Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:49:02.038Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82c6ac4a0c4f52672d725"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR839",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR839/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "175",
+  "d_center": "152",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:49:30.013Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:49:30.013Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82c8fc4a0c4f52672d72b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR853",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR853/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "175",
+  "d_center": "152",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T21:50:07.308Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:50:07.308Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c82ccac4a0c4f52672d733"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1842",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1842/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "80",
+  "d_center": "62",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T21:51:06.715Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T21:51:06.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c832f6c4a0c4f52672d743"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1844",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1844/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "100",
+  "d_center": "76",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:17:26.733Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:17:26.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83310c4a0c4f52672d749"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1925",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1925/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "80",
+  "d_center": "64",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:17:52.330Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:17:52.330Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83323c4a0c4f52672d74f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR836",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR836/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "66",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:18:11.364Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:18:11.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8337bc4a0c4f52672d756"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1847",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1847/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "136",
+  "d_center": "120",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:19:39.465Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:19:39.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83396c4a0c4f52672d75c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR845",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR845/",
+  "a_holeDiameter": "10.5/8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "80",
+  "d_center": "62",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T22:20:06.947Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:20:06.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c833bac4a0c4f52672d762"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR846",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR846/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "136",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T22:20:42.173Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:20:42.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83419c4a0c4f52672d768"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR854",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR854/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "74",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:22:17.832Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:22:17.832Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83438c4a0c4f52672d76e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR848",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR848/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "74",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:22:48.062Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:22:48.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8351cc4a0c4f52672d776"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR862",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR862/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "136",
+  "d_center": "120",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:26:36.723Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:26:36.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83562c4a0c4f52672d77d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR856",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR856/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "92",
+  "d_center": "74",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:27:46.112Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:27:46.112Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83582c4a0c4f52672d783"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR840",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR840/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:28:18.003Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:28:18.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c835b1c4a0c4f52672d78a"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1839",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1839/",
+  "a_holeDiameter": "80.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "164",
+  "d_center": "152",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:29:05.834Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:29:05.834Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c835cfc4a0c4f52672d790"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR850",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR850/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:29:35.600Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:29:35.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8370ec4a0c4f52672d798"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR841",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR841/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "164",
+  "d_center": "152",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:34:54.005Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:34:54.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83826c4a0c4f52672d79e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR865",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR865/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:39:34.836Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:39:34.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83840c4a0c4f52672d7a4"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR859",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR859/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:40:00.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:40:00.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8385ac4a0c4f52672d7aa"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1857",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1857/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T22:40:26.799Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:40:26.799Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c838bbc4a0c4f52672d7b0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1873",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1873/",
+  "a_holeDiameter": "138",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "532",
+  "createdAt": {
+    "$date": "2023-07-31T22:42:03.514Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:42:03.514Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c838e2c4a0c4f52672d7b6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1871",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1871/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T22:42:42.138Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:42:42.138Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c838fcc4a0c4f52672d7bc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR855",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR855/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T22:43:08.551Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:43:08.551Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c839cac4a0c4f52672d7c3"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR866",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR866/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "532",
+  "createdAt": {
+    "$date": "2023-07-31T22:46:34.286Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:46:34.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c839eec4a0c4f52672d7ca"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1877",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1877/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "138",
+  "d_center": "112",
+  "e_chain": "525",
+  "createdAt": {
+    "$date": "2023-07-31T22:47:10.684Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:47:10.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83a39c4a0c4f52672d7d0"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR858",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR858/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "630",
+  "createdAt": {
+    "$date": "2023-07-31T22:48:25.383Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:48:25.383Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83b4ac4a0c4f52672d7d6"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR215",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR215/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T22:52:58.658Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:52:58.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83b6fc4a0c4f52672d7dc"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR217",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR217/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T22:53:35.806Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:53:35.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83b8ec4a0c4f52672d7e2"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1214",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1214/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "100",
+  "d_center": "80",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T22:54:06.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:54:06.015Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83c7ec4a0c4f52672d7e8"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1208",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1208/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "86",
+  "d_center": "51",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T22:58:06.401Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:58:06.401Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83cdfc4a0c4f52672d7ee"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1950",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1950/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "138",
+  "d_center": "119",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T22:59:43.101Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T22:59:43.101Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83cfbc4a0c4f52672d7f4"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR894",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR894/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "115",
+  "d_center": "98",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T23:00:11.727Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:00:11.727Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83d16c4a0c4f52672d7fa"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR895",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR895/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:00:38.925Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:00:38.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83d2fc4a0c4f52672d800"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR223",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR223/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "192",
+  "d_center": "177",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:01:03.668Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:01:03.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83dd3c4a0c4f52672d807"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR510",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR510/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "175",
+  "d_center": "155",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:03:47.353Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:03:47.353Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83ea3c4a0c4f52672d80e"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1465",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1465/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "126",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T23:07:15.642Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:07:15.642Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83ed5c4a0c4f52672d816"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR461",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR461/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T23:08:05.503Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:08:05.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83ef2c4a0c4f52672d81c"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR462",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR462/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:08:34.203Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:08:34.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83f45c4a0c4f52672d822"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR896",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR896/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "190",
+  "d_center": "165",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:09:57.742Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:09:57.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c83feec4a0c4f52672d828"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1780",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1780/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "3",
+  "c_holeDistance": "56",
+  "d_center": "36",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-07-31T23:12:46.269Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:12:46.269Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c84030c4a0c4f52672d82f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1080",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1080/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "92",
+  "d_center": "76",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:13:52.842Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:13:52.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c841d7c4a0c4f52672d837"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR831",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR831/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "140",
+  "d_center": "117",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:20:55.077Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:20:55.077Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c841edc4a0c4f52672d83d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR798",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR798/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:21:17.914Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:21:17.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8423fc4a0c4f52672d843"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR251SC",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR251SC/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:22:39.815Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:22:39.815Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c842a2c4a0c4f52672d849"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1910",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1910/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "80",
+  "d_center": "64",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:24:18.506Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:24:18.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c842c1c4a0c4f52672d84f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1420",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1420/",
+  "a_holeDiameter": "12.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T23:24:49.111Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:24:49.111Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c842d4c4a0c4f52672d855"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1421",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1421/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "530",
+  "createdAt": {
+    "$date": "2023-07-31T23:25:08.987Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:25:08.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c842f1c4a0c4f52672d85b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1353",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1353/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "96",
+  "d_center": "47",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:25:37.612Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:25:37.612Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8430fc4a0c4f52672d861"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1354",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1354/",
+  "a_holeDiameter": "9.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:26:07.525Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:26:07.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8432ac4a0c4f52672d867"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1350",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1350/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:26:34.181Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:26:34.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8433fc4a0c4f52672d86d"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1355",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1355/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:26:55.399Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:26:55.399Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8443fc4a0c4f52672d873"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1412",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1412/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "124",
+  "d_center": "100",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:31:11.729Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:31:11.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8445fc4a0c4f52672d879"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1411",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1411/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "100",
+  "d_center": "70",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:31:43.559Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:31:43.559Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c84479c4a0c4f52672d87f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1410",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1410/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "76",
+  "d_center": "48",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-07-31T23:32:09.231Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:32:09.231Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c84497c4a0c4f52672d885"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1413",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1413/",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "140",
+  "d_center": "120",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:32:39.243Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:32:39.243Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c844bdc4a0c4f52672d88b"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1414",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1414/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "70",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:33:17.087Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:33:17.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c844fbc4a0c4f52672d893"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1415",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1415/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:34:19.032Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:34:19.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8455ac4a0c4f52672d899"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1071",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1071/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "86",
+  "d_center": "52",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:35:54.265Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:35:54.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c8456ec4a0c4f52672d89f"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1072",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1072/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "112",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:36:14.921Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:36:14.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c84591c4a0c4f52672d8a5"
+  },
+  "make": "JT Sprockets",
+  "code": "JTR1480",
+  "link": "http://www.jtsprockets.com/catalogue/sprocket/JTR1480/",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "127",
+  "d_center": "101.6",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-07-31T23:36:49.048Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-31T23:36:49.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3caaadbb1ed331eba9226"
+  },
+  "make": "Moto-Master",
+  "code": "620022",
+  "link": "https://products.moto-master.com/disk/?d=620022",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:52:10.645Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:52:10.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cad6dbb1ed331eba9231"
+  },
+  "make": "Moto-Master",
+  "code": "620122",
+  "link": "https://products.moto-master.com/disk/?d=620122",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:52:54.191Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:52:54.191Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cb0ddbb1ed331eba923c"
+  },
+  "make": "Moto-Master",
+  "code": "6201211",
+  "link": "https://products.moto-master.com/disk/?d=6201211",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:53:49.039Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:53:49.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cb3ddbb1ed331eba9245"
+  },
+  "make": "Moto-Master",
+  "code": "620222",
+  "link": "https://products.moto-master.com/disk/?d=620222",
+  "a_holeDiameter": "7.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "61.8",
+  "d_center": "40",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-02T23:54:37.823Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:54:37.823Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cb63dbb1ed331eba924e"
+  },
+  "make": "Moto-Master",
+  "code": "620242",
+  "link": "https://products.moto-master.com/disk/?d=620242",
+  "a_holeDiameter": "7.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "61.8",
+  "d_center": "40",
+  "e_chain": "415",
+  "createdAt": {
+    "$date": "2023-09-02T23:55:15.554Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:55:15.554Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cb81dbb1ed331eba9259"
+  },
+  "make": "Moto-Master",
+  "code": "620232",
+  "link": "https://products.moto-master.com/disk/?d=620232",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "90",
+  "d_center": "80",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-02T23:55:45.979Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:55:45.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cba0dbb1ed331eba9264"
+  },
+  "make": "Moto-Master",
+  "code": "620032",
+  "link": "https://products.moto-master.com/disk/?d=620032",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-02T23:56:16.930Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:56:16.930Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cbbedbb1ed331eba926d"
+  },
+  "make": "Moto-Master",
+  "code": "620123",
+  "link": "https://products.moto-master.com/disk/?d=620123",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "156",
+  "d_center": "136",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:56:46.380Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:56:46.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cbdfdbb1ed331eba9276"
+  },
+  "make": "Moto-Master",
+  "code": "620033",
+  "link": "https://products.moto-master.com/disk/?d=620033",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-02T23:57:19.592Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:57:19.592Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc09dbb1ed331eba927f"
+  },
+  "make": "Moto-Master",
+  "code": "620023",
+  "link": "https://products.moto-master.com/disk/?d=620023",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:58:01.026Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:58:01.026Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc21dbb1ed331eba9288"
+  },
+  "make": "Moto-Master",
+  "code": "620072",
+  "link": "https://products.moto-master.com/disk/?d=620072",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:58:25.441Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:58:25.441Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc38dbb1ed331eba9291"
+  },
+  "make": "Moto-Master",
+  "code": "620292",
+  "link": "https://products.moto-master.com/disk/?d=620292",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "415",
+  "createdAt": {
+    "$date": "2023-09-02T23:58:48.658Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:58:48.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc4fdbb1ed331eba929a"
+  },
+  "make": "Moto-Master",
+  "code": "620073",
+  "link": "https://products.moto-master.com/disk/?d=620073",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-02T23:59:11.607Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:59:11.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc7cdbb1ed331eba92a3"
+  },
+  "make": "Moto-Master",
+  "code": "620273",
+  "link": "https://products.moto-master.com/disk/?d=620273",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "114.5",
+  "d_center": "98",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-02T23:59:56.002Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-02T23:59:56.002Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cc9cdbb1ed331eba92ac"
+  },
+  "make": "Moto-Master",
+  "code": "620082",
+  "link": "https://products.moto-master.com/disk/?d=620082",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:00:28.665Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:00:28.665Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ccc3dbb1ed331eba92b5"
+  },
+  "make": "Moto-Master",
+  "code": "620083",
+  "link": "https://products.moto-master.com/disk/?d=620083",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:01:07.657Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:01:07.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cd15dbb1ed331eba92c2"
+  },
+  "make": "Moto-Master",
+  "code": "620062",
+  "link": "https://products.moto-master.com/disk/?d=620062",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:02:29.869Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:02:29.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cd3ddbb1ed331eba92cb"
+  },
+  "make": "Moto-Master",
+  "code": "620052",
+  "link": "https://products.moto-master.com/disk/?d=620052",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:03:09.382Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:03:09.382Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cd54dbb1ed331eba92d4"
+  },
+  "make": "Moto-Master",
+  "code": "620063",
+  "link": "https://products.moto-master.com/disk/?d=620063",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:03:32.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:03:32.434Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cd6ddbb1ed331eba92dd"
+  },
+  "make": "Moto-Master",
+  "code": "620053",
+  "link": "https://products.moto-master.com/disk/?d=620053",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:03:57.245Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:03:57.245Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cd84dbb1ed331eba92e6"
+  },
+  "make": "Moto-Master",
+  "code": "620272",
+  "link": "https://products.moto-master.com/disk/?d=620272",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "114.5",
+  "d_center": "98",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:04:20.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:04:20.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cda1dbb1ed331eba92ef"
+  },
+  "make": "Moto-Master",
+  "code": "620302",
+  "link": "https://products.moto-master.com/disk/?d=620302",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:04:49.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:04:49.394Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cdbcdbb1ed331eba92f8"
+  },
+  "make": "Moto-Master",
+  "code": "620303",
+  "link": "https://products.moto-master.com/disk/?d=620303",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:05:16.256Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:05:16.256Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cddfdbb1ed331eba9303"
+  },
+  "make": "Moto-Master",
+  "code": "620262",
+  "link": "https://products.moto-master.com/disk/?d=620262",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "126",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:05:51.999Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:05:51.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cdf8dbb1ed331eba930c"
+  },
+  "make": "Moto-Master",
+  "code": "620042",
+  "link": "https://products.moto-master.com/disk/?d=620042",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:06:16.363Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:06:16.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce1cdbb1ed331eba9315"
+  },
+  "make": "Moto-Master",
+  "code": "620012",
+  "link": "https://products.moto-master.com/disk/?d=620012",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "146",
+  "d_center": "126",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:06:52.760Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:06:52.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce38dbb1ed331eba931e"
+  },
+  "make": "Moto-Master",
+  "code": "620263",
+  "link": "https://products.moto-master.com/disk/?d=620263",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "126",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:07:20.617Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:07:20.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce4cdbb1ed331eba9327"
+  },
+  "make": "Moto-Master",
+  "code": "620043",
+  "link": "https://products.moto-master.com/disk/?d=620043",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:07:40.005Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:07:40.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce68dbb1ed331eba9330"
+  },
+  "make": "Moto-Master",
+  "code": "620013",
+  "link": "https://products.moto-master.com/disk/?d=620013",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "146",
+  "d_center": "126",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:08:08.532Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:08:08.532Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce80dbb1ed331eba9339"
+  },
+  "make": "Moto-Master",
+  "code": "620182",
+  "link": "https://products.moto-master.com/disk/?d=620182",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "7",
+  "c_holeDistance": "100",
+  "d_center": "85",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:08:32.825Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:08:32.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3ce99dbb1ed331eba9342"
+  },
+  "make": "Moto-Master",
+  "code": "620192",
+  "link": "https://products.moto-master.com/disk/?d=620192",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "9",
+  "c_holeDistance": "124",
+  "d_center": "105",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:08:57.792Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:08:57.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cedcdbb1ed331eba934e"
+  },
+  "make": "Moto-Master",
+  "code": "620183",
+  "link": "https://products.moto-master.com/disk/?d=620183",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "7",
+  "c_holeDistance": "100",
+  "d_center": "85",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:10:04.600Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:10:04.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cef7dbb1ed331eba9357"
+  },
+  "make": "Moto-Master",
+  "code": "620193",
+  "link": "https://products.moto-master.com/disk/?d=620193",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "9",
+  "c_holeDistance": "124",
+  "d_center": "105",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:10:31.551Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:10:31.551Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cf0fdbb1ed331eba9360"
+  },
+  "make": "Moto-Master",
+  "code": "620332",
+  "link": "https://products.moto-master.com/disk/?d=620332",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "120",
+  "d_center": "100",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:10:55.243Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:10:55.243Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cf26dbb1ed331eba9369"
+  },
+  "make": "Moto-Master",
+  "code": "620092",
+  "link": "https://products.moto-master.com/disk/?d=620092",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:11:18.094Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:11:18.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3cf3ddbb1ed331eba9372"
+  },
+  "make": "Moto-Master",
+  "code": "620093",
+  "link": "https://products.moto-master.com/disk/?d=620093",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:11:41.572Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:11:41.572Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d114dbb1ed331eba9385"
+  },
+  "make": "Moto-Master",
+  "code": "6200211",
+  "link": "https://products.moto-master.com/disk/?d=6200211",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "153",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:19:32.957Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:19:32.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d13edbb1ed331eba938e"
+  },
+  "make": "Moto-Master",
+  "code": "6200311",
+  "link": "https://products.moto-master.com/disk/?d=6200311",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:20:14.213Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:20:14.213Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d155dbb1ed331eba9397"
+  },
+  "make": "Moto-Master",
+  "code": "6201511",
+  "link": "https://products.moto-master.com/disk/?d=6201511",
+  "a_holeDiameter": "10.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "130",
+  "d_center": "110",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:20:37.372Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:20:37.372Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d17bdbb1ed331eba93a0"
+  },
+  "make": "Moto-Master",
+  "code": "6200711",
+  "link": "https://products.moto-master.com/disk/?d=6200711",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:21:15.489Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:21:15.489Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d199dbb1ed331eba93ab"
+  },
+  "make": "Moto-Master",
+  "code": "6200811",
+  "link": "https://products.moto-master.com/disk/?d=6200811",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "132",
+  "d_center": "110",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:21:45.244Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:21:45.244Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d1cddbb1ed331eba93b7"
+  },
+  "make": "Moto-Master",
+  "code": "6202611",
+  "link": "https://products.moto-master.com/disk/?d=6202611",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "126",
+  "d_center": "110",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:22:37.810Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:22:37.810Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d1e9dbb1ed331eba93c0"
+  },
+  "make": "Moto-Master",
+  "code": "6200511",
+  "link": "https://products.moto-master.com/disk/?d=6200511",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "134",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:23:05.087Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:23:05.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d206dbb1ed331eba93c9"
+  },
+  "make": "Moto-Master",
+  "code": "6202711",
+  "link": "https://products.moto-master.com/disk/?d=6202711",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "114.5",
+  "d_center": "98",
+  "e_chain": "420",
+  "createdAt": {
+    "$date": "2023-09-03T00:23:34.190Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:23:34.190Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d26edbb1ed331eba93d2"
+  },
+  "make": "Moto-Master",
+  "code": "6202811",
+  "link": "https://products.moto-master.com/disk/?d=6202811",
+  "a_holeDiameter": "6.5",
+  "b_numberOfHoles": "5",
+  "c_holeDistance": "60",
+  "d_center": "40",
+  "e_chain": "415",
+  "createdAt": {
+    "$date": "2023-09-03T00:25:18.652Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:25:18.652Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d28bdbb1ed331eba93db"
+  },
+  "make": "Moto-Master",
+  "code": "6202911",
+  "link": "https://products.moto-master.com/disk/?d=6202911",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "110",
+  "d_center": "90",
+  "e_chain": "415",
+  "createdAt": {
+    "$date": "2023-09-03T00:25:47.416Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:25:47.416Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d29fdbb1ed331eba93e4"
+  },
+  "make": "Moto-Master",
+  "code": "6200411",
+  "link": "https://products.moto-master.com/disk/?d=6200411",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "116",
+  "d_center": "100",
+  "e_chain": "428",
+  "createdAt": {
+    "$date": "2023-09-03T00:26:07.633Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:26:07.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d2b4dbb1ed331eba93ed"
+  },
+  "make": "Moto-Master",
+  "code": "6200111",
+  "link": "https://products.moto-master.com/disk/?d=6200111",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "146",
+  "d_center": "126",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:26:28.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:26:28.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d2ccdbb1ed331eba93f6"
+  },
+  "make": "Moto-Master",
+  "code": "6201311",
+  "link": "https://products.moto-master.com/disk/?d=6201311",
+  "a_holeDiameter": "10.7",
+  "b_numberOfHoles": "4",
+  "c_holeDistance": "145",
+  "d_center": "125",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:26:52.725Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:26:52.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f3d2dfdbb1ed331eba93ff"
+  },
+  "make": "Moto-Master",
+  "code": "6200911",
+  "link": "https://products.moto-master.com/disk/?d=6200911",
+  "a_holeDiameter": "8.5",
+  "b_numberOfHoles": "6",
+  "c_holeDistance": "150",
+  "d_center": "130",
+  "e_chain": "520",
+  "createdAt": {
+    "$date": "2023-09-03T00:27:11.625Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-03T00:27:11.625Z"
+  },
+  "__v": 0
+}]

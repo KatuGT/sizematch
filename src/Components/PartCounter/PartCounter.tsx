@@ -18,9 +18,14 @@ type PartCounter = {
 
 const PartCounter = ({ part }: PartCounter) => {
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<any[]>;
-  const { data } = useSWR<any>(`/api/parts?part=${part}`, fetcher);
+   const [data, setData] = useState<any[]>([]); 
+      
+    useEffect(() => {
+      fetch(`/data/${part}.json`)
+        .then((res) => res.json())
+        .then((json) => setData(json))
+        .catch((err) => console.error("Error cargando JSON:", err));
+    }, [part]);
 
   const mappedParts = {
     [possibleParts.BrakeDisc]: "Brake Discs",
@@ -62,7 +67,7 @@ const PartCounter = ({ part }: PartCounter) => {
           className="relative top-[-40px] flex  w-[150px] flex-col rounded-md border border-solid border-blue-300 p-2 text-center backdrop-blur-sm"
         >
           <span className="whitespace-pre-line">{actualPartName}</span>
-          <span className="text-xl font-bold">{data?.count} </span>
+          <span className="text-xl font-bold">{data?.length} </span>
         </div>
       </Link>
     </div>

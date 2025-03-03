@@ -1,0 +1,6622 @@
+[{
+  "_id": {
+    "$oid": "64b4aea1f37ff51347fe06a6"
+  },
+  "make": "TKRJ",
+  "code": "AH1070X",
+  "link": "https://www.tkrj.co.jp/goods/m-AH1070X-KBB-901.php",
+  "a_compressionHight1": "22.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22",
+  "d_bore": "63.5",
+  "e_length": "45.5",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-07-17T02:59:45.039Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-17T02:59:45.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9909bf86a27cb9767f5cd"
+  },
+  "make": "TKRJ",
+  "code": "AH0010X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0010X-036-010.php",
+  "a_compressionHight1": "24.5",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "18.86",
+  "d_bore": "39",
+  "e_length": "50.5",
+  "f_pinLength": "30.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:09:15.344Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:09:15.344Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c990fbf86a27cb9767f5d4"
+  },
+  "make": "TKRJ",
+  "code": "AH0060X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0060X-GK4-760.php",
+  "a_compressionHight1": "18.3",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "18",
+  "d_bore": "39",
+  "e_length": "36.8",
+  "f_pinLength": "30.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:10:51.920Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:10:51.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c99176f86a27cb9767f5db"
+  },
+  "make": "TKRJ",
+  "code": "AH0120X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0120X-GAH-780.php",
+  "a_compressionHight1": "30.3",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "27.8",
+  "d_bore": "39",
+  "e_length": "53.3",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-01T23:12:54.976Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:12:54.976Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c991aff86a27cb9767f5e1"
+  },
+  "make": "TKRJ",
+  "code": "AH0140X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0140X-GBL-010.php",
+  "a_compressionHight1": "27.8",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "40",
+  "e_length": "50.8",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-01T23:13:51.517Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:13:51.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c992f4f86a27cb9767f5ec"
+  },
+  "make": "TKRJ",
+  "code": "AH0210X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0210X-087-712.php",
+  "a_compressionHight1": "24.9",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20.4",
+  "d_bore": "47",
+  "e_length": "48.9",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:19:16.193Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:19:16.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c99361f86a27cb9767f5f3"
+  },
+  "make": "TKRJ",
+  "code": "AH0220X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0220X-GBO-910.php",
+  "a_compressionHight1": "23",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20.5",
+  "d_bore": "47",
+  "e_length": "47",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:21:05.259Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:21:05.259Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9939df86a27cb9767f5f9"
+  },
+  "make": "TKRJ",
+  "code": "AH0240X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0240X-GB5-760.php",
+  "a_compressionHight1": "19.1",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "17.5",
+  "d_bore": "47",
+  "e_length": "41.1",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:22:05.031Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:22:05.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9944af86a27cb9767f60c"
+  },
+  "make": "TKRJ",
+  "code": "AH0300X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0300X-GE1-830.php",
+  "a_compressionHight1": "18.55",
+  "b_pinDiameter": "13",
+  "d_bore": "49.5",
+  "e_length": "38.3",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:24:58.086Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:17:42.831Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "18.55"
+},
+{
+  "_id": {
+    "$oid": "64c99480f86a27cb9767f612"
+  },
+  "make": "TKRJ",
+  "code": "AH0320X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0320X-176-000.php",
+  "a_compressionHight1": "25.55",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "23.5",
+  "d_bore": "47.5",
+  "e_length": "49.55",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:25:52.380Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:25:52.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c994e9f86a27cb9767f619"
+  },
+  "make": "TKRJ",
+  "code": "AH0350X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0350X-028-070.php",
+  "a_compressionHight1": "25.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "20.5",
+  "d_bore": "50",
+  "e_length": "54.9",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:27:37.558Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:27:37.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c99670f86a27cb9767f62e"
+  },
+  "make": "TKRJ",
+  "code": "AH0380X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0380X-GB6-760.php",
+  "a_compressionHight1": "20.35",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.5",
+  "d_bore": "47",
+  "e_length": "42.35",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:34:08.596Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:34:08.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c996a7f86a27cb9767f634"
+  },
+  "make": "TKRJ",
+  "code": "AH0390X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0390X-GTO-000.php",
+  "a_compressionHight1": "20.3",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.1",
+  "d_bore": "47",
+  "e_length": "42.3",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:35:03.212Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:35:03.212Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c996dbf86a27cb9767f63a"
+  },
+  "make": "TKRJ",
+  "code": "AH0410X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0410X-GTO-680.php",
+  "a_compressionHight1": "19.7",
+  "b_pinDiameter": "13",
+  "d_bore": "47",
+  "e_length": "41.7",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:35:55.113Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:17:49.854Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "19.7"
+},
+{
+  "_id": {
+    "$oid": "64c996fef86a27cb9767f640"
+  },
+  "make": "TKRJ",
+  "code": "AH0420X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0420X-121-960.php",
+  "a_compressionHight1": "28.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "20.6",
+  "d_bore": "50",
+  "e_length": "53.5",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:36:30.210Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:36:30.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c99799f86a27cb9767f649"
+  },
+  "make": "TKRJ",
+  "code": "AH0450X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0450X-GN5-912.php",
+  "a_compressionHight1": "19.2",
+  "b_pinDiameter": "13",
+  "d_bore": "50",
+  "e_length": "44.2",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:39:05.543Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:17:55.858Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "19.2"
+},
+{
+  "_id": {
+    "$oid": "64c997c9f86a27cb9767f64f"
+  },
+  "make": "TKRJ",
+  "code": "AH0490X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0490X-436-000.php",
+  "a_compressionHight1": "19.9",
+  "b_pinDiameter": "14",
+  "d_bore": "53",
+  "e_length": "45.4",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:39:53.964Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:18:00.983Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "19.9"
+},
+{
+  "_id": {
+    "$oid": "64c99bbbf86a27cb9767f657"
+  },
+  "make": "TKRJ",
+  "code": "AH0510X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0510X-KCC-900.php",
+  "a_compressionHight1": "19.25",
+  "b_pinDiameter": "13",
+  "d_bore": "50",
+  "e_length": "39.25",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:56:43.025Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:18:05.974Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "19.25"
+},
+{
+  "_id": {
+    "$oid": "64c99bf2f86a27cb9767f65d"
+  },
+  "make": "TKRJ",
+  "code": "AH0530X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0530X-KFM-900.php",
+  "a_compressionHight1": "19",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19",
+  "d_bore": "50",
+  "e_length": "41",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:57:38.781Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:57:38.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c99c29f86a27cb9767f663"
+  },
+  "make": "TKRJ",
+  "code": "AH0560X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0560X-439-000.php",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "41.5",
+  "d_bore": "52",
+  "e_length": "55.5",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-01T23:58:33.339Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-01T23:58:33.339Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a060579279fa55f89043"
+  },
+  "make": "TKRJ",
+  "code": "AH0600X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0600X-KWS-900.php",
+  "a_compressionHight1": "17.7",
+  "b_pinDiameter": "12",
+  "d_bore": "50",
+  "e_length": "36.7",
+  "f_pinLength": "33",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:16:32.500Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:18:12.976Z"
+  },
+  "__v": 0,
+  "c_compressionHight2": "17.7"
+},
+{
+  "_id": {
+    "$oid": "64c9a098579279fa55f89049"
+  },
+  "make": "TKRJ",
+  "code": "AH0630X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0630X-KWW-740.php",
+  "a_compressionHight1": "19.2",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.2",
+  "d_bore": "50",
+  "e_length": "38.2",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:17:28.792Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:17:28.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a0fe579279fa55f89068"
+  },
+  "make": "TKRJ",
+  "code": "AH0660X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0660X-324-680.php",
+  "a_compressionHight1": "23.2",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23",
+  "d_bore": "56.5",
+  "e_length": "52.75",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:19:10.930Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:19:10.930Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a122579279fa55f8906e"
+  },
+  "make": "TKRJ",
+  "code": "AH0670X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0670X-399-010.php",
+  "a_compressionHight1": "24.9",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "21",
+  "d_bore": "44",
+  "e_length": "48.4",
+  "f_pinLength": "34.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:19:46.037Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:19:46.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a15e579279fa55f89074"
+  },
+  "make": "TKRJ",
+  "code": "AH0690X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0690X-383-010.php",
+  "a_compressionHight1": "26.65",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22.85",
+  "d_bore": "56.5",
+  "e_length": "54.65",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:20:46.253Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:20:46.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a18b579279fa55f8907a"
+  },
+  "make": "TKRJ",
+  "code": "AH0700X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0700X-KYO-890.php",
+  "a_compressionHight1": "23.95",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "21.5",
+  "d_bore": "56.5",
+  "e_length": "43.95",
+  "f_pinLength": "43",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:21:31.987Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:21:31.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a1b0579279fa55f89080"
+  },
+  "make": "TKRJ",
+  "code": "AH0750X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0750X-437-000.php",
+  "a_compressionHight1": "27.2",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23",
+  "d_bore": "56.5",
+  "e_length": "56.2",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:22:08.623Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:22:08.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a1db579279fa55f89086"
+  },
+  "make": "TKRJ",
+  "code": "AH0770X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0770X-KGA-B00.php",
+  "a_compressionHight1": "23",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "21.26",
+  "d_bore": "56.5",
+  "e_length": "40",
+  "f_pinLength": "40.9",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:22:51.115Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:22:51.115Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a203579279fa55f8908c"
+  },
+  "make": "TKRJ",
+  "code": "AH0780X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0780X-KPH-900.php",
+  "a_compressionHight1": "19.7",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.7",
+  "d_bore": "52.4",
+  "e_length": "38.7",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:23:31.336Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:23:31.336Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a227579279fa55f89092"
+  },
+  "make": "TKRJ",
+  "code": "AH0790X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0790X-KVC-900.php",
+  "a_compressionHight1": "26.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22.5",
+  "d_bore": "56.5",
+  "e_length": "55.6",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:24:07.883Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:24:07.883Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a263579279fa55f89098"
+  },
+  "make": "TKRJ",
+  "code": "AH0800X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0800X-KTE-305.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20",
+  "d_bore": "52.4",
+  "e_length": "37.5",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:25:07.820Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:25:07.820Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a28b579279fa55f8909e"
+  },
+  "make": "TKRJ",
+  "code": "AH0810X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0810X-KYZ-900.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20",
+  "d_bore": "52.4",
+  "e_length": "37.5",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:25:47.206Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:25:47.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a2b1579279fa55f890a4"
+  },
+  "make": "TKRJ",
+  "code": "AH0850X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0850X-KM7-700.php",
+  "a_compressionHight1": "33.4",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.3",
+  "d_bore": "58",
+  "e_length": "67.4",
+  "f_pinLength": "46",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:26:25.490Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:26:25.490Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a335579279fa55f890ab"
+  },
+  "make": "TKRJ",
+  "code": "AH0880X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0880X-KG2-000.php",
+  "a_compressionHight1": "28",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23.5",
+  "d_bore": "61",
+  "e_length": "57",
+  "f_pinLength": "50",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:28:37.624Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:28:37.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a35e579279fa55f890b1"
+  },
+  "make": "TKRJ",
+  "code": "AH0890X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0890X-KGG-911.php",
+  "a_compressionHight1": "21.1",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "18.5",
+  "d_bore": "58",
+  "e_length": "37.6",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:29:18.596Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:29:18.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a38d579279fa55f890b7"
+  },
+  "make": "TKRJ",
+  "code": "AH0910X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0910X-KN7-000.php",
+  "a_compressionHight1": "19.8",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "19.8",
+  "d_bore": "58",
+  "e_length": "42.5",
+  "f_pinLength": "42.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:30:05.925Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:30:05.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a3d8579279fa55f890bd"
+  },
+  "make": "TKRJ",
+  "code": "AH0930X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0930X-KRM-930.php",
+  "a_compressionHight1": "20.3",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.8",
+  "d_bore": "57.3",
+  "e_length": "35.3",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:31:20.068Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:31:20.068Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a401579279fa55f890c3"
+  },
+  "make": "TKRJ",
+  "code": "AH0940X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0940X-KFN-851.php",
+  "a_compressionHight1": "25",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "21.8",
+  "d_bore": "63.5",
+  "e_length": "48",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:32:01.577Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:32:01.577Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a42c579279fa55f890c9"
+  },
+  "make": "TKRJ",
+  "code": "AH0960X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0960X-KG9.php",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23",
+  "d_bore": "62",
+  "e_length": "55",
+  "f_pinLength": "50",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:32:44.447Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:32:44.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a451579279fa55f890cf"
+  },
+  "make": "TKRJ",
+  "code": "AH0970X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH0970X-KPP-900.php",
+  "a_compressionHight1": "19.3",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "19.3",
+  "d_bore": "63.5",
+  "e_length": "37.3",
+  "f_pinLength": "44",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:33:21.163Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:33:21.163Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a486579279fa55f890d6"
+  },
+  "make": "TKRJ",
+  "code": "AH1000X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1000X-418-000.php",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "21",
+  "d_bore": "53",
+  "e_length": "45",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:34:14.864Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:34:14.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a4ab579279fa55f890dc"
+  },
+  "make": "TKRJ",
+  "code": "AH1010X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1010X-427-000.php",
+  "a_compressionHight1": "25.3",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.3",
+  "d_bore": "63",
+  "e_length": "63",
+  "f_pinLength": "49.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:34:51.860Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:34:51.860Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a4ce579279fa55f890e2"
+  },
+  "make": "TKRJ",
+  "code": "AH1020X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1020X-K38-900.php",
+  "a_compressionHight1": "20.25",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "20.25",
+  "d_bore": "57.3",
+  "e_length": "39.25",
+  "f_pinLength": "39",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:35:26.715Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:35:26.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a4f3579279fa55f890e8"
+  },
+  "make": "TKRJ",
+  "code": "AH1050X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1050X-464-000.php",
+  "a_compressionHight1": "20.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "20.5",
+  "d_bore": "53",
+  "e_length": "44.5",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:36:03.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:36:03.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a516579279fa55f890ee"
+  },
+  "make": "TKRJ",
+  "code": "AH1060X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1060X-446-770.php",
+  "a_compressionHight1": "25.15",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.15",
+  "d_bore": "65.5",
+  "e_length": "51",
+  "f_pinLength": "50",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:36:38.156Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:36:38.156Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a55b579279fa55f890f6"
+  },
+  "make": "TKRJ",
+  "code": "AH1080X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1080X-.php",
+  "a_compressionHight1": "27.9",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23",
+  "d_bore": "63",
+  "e_length": "53.9",
+  "f_pinLength": "52",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:37:47.980Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:37:47.980Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a58c579279fa55f890fc"
+  },
+  "make": "TKRJ",
+  "code": "AH1090X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1090X-KEH-660.php",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22",
+  "d_bore": "63.5",
+  "e_length": "49.5",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:38:36.034Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:38:36.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a5bd579279fa55f89102"
+  },
+  "make": "TKRJ",
+  "code": "AH1110X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1110X-428-013.php",
+  "a_compressionHight1": "27.7",
+  "b_pinDiameter": "19",
+  "c_compressionHight2": "24.7",
+  "d_bore": "74",
+  "e_length": "61",
+  "f_pinLength": "63",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:39:25.260Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:39:25.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a5e2579279fa55f89108"
+  },
+  "make": "TKRJ",
+  "code": "AH1120X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1120X-KT1-013.php",
+  "a_compressionHight1": "28.2",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "25.2",
+  "d_bore": "73",
+  "e_length": "56.2",
+  "f_pinLength": "54",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:40:02.717Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:40:02.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a602579279fa55f8910e"
+  },
+  "make": "TKRJ",
+  "code": "AH1130X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1130X-KS4-000.php",
+  "a_compressionHight1": "24.5",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "22.5",
+  "d_bore": "72",
+  "e_length": "47.5",
+  "f_pinLength": "57",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:40:34.473Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:40:34.473Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a62c579279fa55f89114"
+  },
+  "make": "TKRJ",
+  "code": "AH1140X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1140X-KV6-013.php",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "25.1",
+  "d_bore": "73",
+  "e_length": "54.5",
+  "f_pinLength": "59",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:41:16.750Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:41:16.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a64b579279fa55f8911a"
+  },
+  "make": "TKRJ",
+  "code": "AH1150X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1150X-KR6-003.php",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "25.2",
+  "d_bore": "75",
+  "e_length": "54",
+  "f_pinLength": "59",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:41:47.866Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:41:47.866Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a668579279fa55f89120"
+  },
+  "make": "TKRJ",
+  "code": "AH1160X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1160X-KR3-013.php",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22",
+  "d_bore": "53",
+  "e_length": "47",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:42:16.367Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:42:16.367Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a690579279fa55f89126"
+  },
+  "make": "TKRJ",
+  "code": "AH1170X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1170X-KPF-900.php",
+  "a_compressionHight1": "25",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "25",
+  "d_bore": "73",
+  "e_length": "50",
+  "f_pinLength": "54",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:42:56.108Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:42:56.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a6b9579279fa55f8912c"
+  },
+  "make": "TKRJ",
+  "code": "AH1180X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1180X-KYJ-900.php",
+  "a_compressionHight1": "23.5",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "23.5",
+  "d_bore": "76",
+  "e_length": "45.5",
+  "f_pinLength": "46",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:43:37.768Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:43:37.768Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a6e1579279fa55f89132"
+  },
+  "make": "TKRJ",
+  "code": "AH1190X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1190X-KL8-305.php",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "19",
+  "c_compressionHight2": "26.5",
+  "d_bore": "72",
+  "e_length": "55.5",
+  "f_pinLength": "50",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:44:17.926Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:44:17.926Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a704579279fa55f89138"
+  },
+  "make": "TKRJ",
+  "code": "AH1310X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1310X-275-020.php",
+  "a_compressionHight1": "31.35",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "24",
+  "d_bore": "60",
+  "e_length": "65",
+  "f_pinLength": "52",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:44:52.137Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:44:52.137Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a72a579279fa55f8913e"
+  },
+  "make": "TKRJ",
+  "code": "AH1410X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1410X-MA6-000.php",
+  "a_compressionHight1": "24.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22.8",
+  "d_bore": "55",
+  "e_length": "51.4",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:45:30.856Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:45:30.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a754579279fa55f89144"
+  },
+  "make": "TKRJ",
+  "code": "AH1550X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1550X-MA7-700.php",
+  "a_compressionHight1": "24.3",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "23.3",
+  "d_bore": "52.9",
+  "e_length": "50.9",
+  "f_pinLength": "44.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:46:12.396Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:46:12.396Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a791579279fa55f8914a"
+  },
+  "make": "TKRJ",
+  "code": "AH1600X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH1600X-MN1-680.php",
+  "a_compressionHight1": "29.8",
+  "b_pinDiameter": "24",
+  "c_compressionHight2": "29.8",
+  "d_bore": "97",
+  "e_length": "63",
+  "f_pinLength": "0",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:47:13.707Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:47:13.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a7bf579279fa55f89150"
+  },
+  "make": "TKRJ",
+  "code": "AH5000X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AH5000X-HM8-A40.php",
+  "a_compressionHight1": "22.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "21.6",
+  "d_bore": "68.5",
+  "e_length": "47.5",
+  "f_pinLength": "49.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T00:47:59.595Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:47:59.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a7e5579279fa55f89156"
+  },
+  "make": "TKRJ",
+  "code": "AHR010X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AHR010X-.php",
+  "a_compressionHight1": "31.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.2",
+  "d_bore": "53.94",
+  "e_length": "63",
+  "f_pinLength": "44",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:48:37.986Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:48:37.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a81a579279fa55f8915c"
+  },
+  "make": "TKRJ",
+  "code": "AY0030X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0030X-353.php",
+  "a_compressionHight1": "25.4",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23",
+  "d_bore": "40",
+  "e_length": "50.4",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:49:30.793Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:49:30.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a83c579279fa55f89162"
+  },
+  "make": "TKRJ",
+  "code": "AY0040X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0040X-3CP.php",
+  "a_compressionHight1": "28",
+  "b_pinDiameter": "10",
+  "c_compressionHight2": "25.6",
+  "d_bore": "40",
+  "e_length": "50.5",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:50:04.904Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:50:04.904Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a85f579279fa55f89168"
+  },
+  "make": "TKRJ",
+  "code": "AY0060X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0060X-2E9.php",
+  "a_compressionHight1": "27.4",
+  "b_pinDiameter": "10",
+  "c_compressionHight2": "25",
+  "d_bore": "40",
+  "e_length": "49.9",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:50:39.573Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:50:39.573Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a951579279fa55f8916e"
+  },
+  "make": "TKRJ",
+  "code": "AY0100X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0100X-109.php",
+  "a_compressionHight1": "25.3",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23",
+  "d_bore": "40",
+  "e_length": "50.3",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:54:41.958Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:54:41.958Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a973579279fa55f89174"
+  },
+  "make": "TKRJ",
+  "code": "AY0110X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0110X-3E1.php",
+  "a_compressionHight1": "25.3",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23",
+  "d_bore": "40",
+  "e_length": "50.3",
+  "f_pinLength": "33",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:55:15.309Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:55:15.309Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a9a4579279fa55f8917b"
+  },
+  "make": "TKRJ",
+  "code": "AY0210X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0210X-367.php",
+  "a_compressionHight1": "32",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "29.5",
+  "d_bore": "47",
+  "e_length": "58.5",
+  "f_pinLength": "40",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:56:04.165Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:56:04.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9a9e1579279fa55f89181"
+  },
+  "make": "TKRJ",
+  "code": "AY0230X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0230X-3E5.php",
+  "a_compressionHight1": "32.6",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "30",
+  "d_bore": "47",
+  "e_length": "59.1",
+  "f_pinLength": "40",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:57:05.364Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:57:05.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aa0d579279fa55f89187"
+  },
+  "make": "TKRJ",
+  "code": "AY0240X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0240X-122.php",
+  "a_compressionHight1": "32.3",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "29.5",
+  "d_bore": "47",
+  "e_length": "58.8",
+  "f_pinLength": "40",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:57:49.312Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:57:49.312Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aa2c579279fa55f8918d"
+  },
+  "make": "TKRJ",
+  "code": "AY0260X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0260X-2GX.php",
+  "a_compressionHight1": "32.3",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "29.4",
+  "d_bore": "49",
+  "e_length": "58.8",
+  "f_pinLength": "40",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:58:20.348Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:58:20.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aa50579279fa55f89193"
+  },
+  "make": "TKRJ",
+  "code": "AY0300X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0300X-3WF.php",
+  "a_compressionHight1": "36.1",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "33.1",
+  "d_bore": "50",
+  "e_length": "63.1",
+  "f_pinLength": "40",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:58:56.496Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:58:56.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aa6d579279fa55f89199"
+  },
+  "make": "TKRJ",
+  "code": "AY0350X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0350X-23F.php",
+  "a_compressionHight1": "35",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "33",
+  "d_bore": "52",
+  "e_length": "62",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T00:59:25.202Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T00:59:25.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aaa7579279fa55f8919f"
+  },
+  "make": "TKRJ",
+  "code": "AY0380X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0380X-1V1.php",
+  "a_compressionHight1": "39",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "38",
+  "d_bore": "52",
+  "e_length": "66",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:00:23.879Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:00:23.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aaca579279fa55f891a5"
+  },
+  "make": "TKRJ",
+  "code": "AY0440X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0440X-36L.php",
+  "a_compressionHight1": "38",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "34.8",
+  "d_bore": "50",
+  "e_length": "68",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:00:58.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:00:58.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aaf4579279fa55f891ab"
+  },
+  "make": "TKRJ",
+  "code": "AY0450X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0450X-4ST.php",
+  "a_compressionHight1": "18.25",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "17.45",
+  "d_bore": "49",
+  "e_length": "37.25",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:01:40.812Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:01:40.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ab1c579279fa55f891b1"
+  },
+  "make": "TKRJ",
+  "code": "AY0480X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0480X-5LW.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20",
+  "d_bore": "50",
+  "e_length": "37",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:02:20.488Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:02:20.488Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ab3b579279fa55f891b7"
+  },
+  "make": "TKRJ",
+  "code": "AY0500X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0500X-3YR.php",
+  "a_compressionHight1": "36.2",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "32.75",
+  "d_bore": "52",
+  "e_length": "63",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:02:51.151Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:02:51.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ab69579279fa55f891bd"
+  },
+  "make": "TKRJ",
+  "code": "AY0530X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0530X-4X8.php",
+  "a_compressionHight1": "38.1",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "34.8",
+  "d_bore": "54",
+  "e_length": "68.1",
+  "f_pinLength": "45.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:03:37.654Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:03:37.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ab85579279fa55f891c3"
+  },
+  "make": "TKRJ",
+  "code": "AY0540X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0540X-31D.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20",
+  "d_bore": "50",
+  "e_length": "36",
+  "f_pinLength": "38",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:04:05.391Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:04:05.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aba4579279fa55f891c9"
+  },
+  "make": "TKRJ",
+  "code": "AY0550X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0550X-1DY.php",
+  "a_compressionHight1": "19",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19",
+  "d_bore": "50",
+  "e_length": "32",
+  "f_pinLength": "34.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:04:36.438Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:04:36.438Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9abe4579279fa55f891cf"
+  },
+  "make": "TKRJ",
+  "code": "AY0570X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0570X-2A6.php",
+  "a_compressionHight1": "33",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "29.8",
+  "d_bore": "56",
+  "e_length": "66",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:05:40.009Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:05:40.009Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ac01579279fa55f891d5"
+  },
+  "make": "TKRJ",
+  "code": "AY0580X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0580X-18G-00.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "56",
+  "e_length": "66",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:06:09.427Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:06:09.427Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ac1c579279fa55f891db"
+  },
+  "make": "TKRJ",
+  "code": "AY0590X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0590X-3TL-01(18G-01).php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "56",
+  "e_length": "66",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:06:36.801Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:06:36.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ac45579279fa55f891e1"
+  },
+  "make": "TKRJ",
+  "code": "AY0620X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0620X-466.php",
+  "a_compressionHight1": "35",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "33",
+  "d_bore": "43",
+  "e_length": "49",
+  "f_pinLength": "35",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:07:17.522Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:07:17.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ac68579279fa55f891e7"
+  },
+  "make": "TKRJ",
+  "code": "AY0630X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0630X-10W.php",
+  "a_compressionHight1": "32.8",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.3",
+  "d_bore": "56",
+  "e_length": "65.8",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:07:52.248Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:07:52.248Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ac8b579279fa55f891ed"
+  },
+  "make": "TKRJ",
+  "code": "AY0670X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0670X-2RH.php",
+  "a_compressionHight1": "33.4",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.4",
+  "d_bore": "56.4",
+  "e_length": "65.4",
+  "f_pinLength": "48",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:08:27.282Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:08:27.282Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9acab579279fa55f891f3"
+  },
+  "make": "TKRJ",
+  "code": "AY0680X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0680X-307.php",
+  "a_compressionHight1": "35",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "33",
+  "d_bore": "43",
+  "e_length": "59",
+  "f_pinLength": "35",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:08:59.564Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:08:59.564Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9acd3579279fa55f891f9"
+  },
+  "make": "TKRJ",
+  "code": "AY0710X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0710X-4LS.php",
+  "a_compressionHight1": "21.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "19.75",
+  "d_bore": "54",
+  "e_length": "38.5",
+  "f_pinLength": "43",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:09:39.253Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:09:39.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9acfc579279fa55f891ff"
+  },
+  "make": "TKRJ",
+  "code": "AY0720X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0720X-5BU.php",
+  "a_compressionHight1": "32.7",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.8",
+  "e_length": "66.7",
+  "f_pinLength": "44.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:10:20.981Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:10:20.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ad2d579279fa55f89205"
+  },
+  "make": "TKRJ",
+  "code": "AY0730X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0730X-33S.php",
+  "a_compressionHight1": "18.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "18.9",
+  "d_bore": "52.4",
+  "e_length": "32.9",
+  "f_pinLength": "37",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:11:09.962Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:11:09.962Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ad56579279fa55f8920b"
+  },
+  "make": "TKRJ",
+  "code": "AY0740X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0740X-5ML.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20",
+  "d_bore": "52.4",
+  "e_length": "37.7",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:11:50.054Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:11:50.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ad74579279fa55f89211"
+  },
+  "make": "TKRJ",
+  "code": "AY0750X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0750X-4Y2.php",
+  "a_compressionHight1": "38.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "58",
+  "e_length": "68.5",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:12:20.483Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:12:20.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9ad9a579279fa55f89217"
+  },
+  "make": "TKRJ",
+  "code": "AY0760X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0760X-55G.php",
+  "a_compressionHight1": "36.9",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "56",
+  "e_length": "66.9",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:12:58.189Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:12:58.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9adb6579279fa55f8921d"
+  },
+  "make": "TKRJ",
+  "code": "AY0770X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0770X-5YP.php",
+  "a_compressionHight1": "17.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "17.7",
+  "d_bore": "54",
+  "e_length": "31.7",
+  "f_pinLength": "37",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:13:26.249Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:13:26.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9add0579279fa55f89223"
+  },
+  "make": "TKRJ",
+  "code": "AY0780X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0780X-5PV.php",
+  "a_compressionHight1": "35.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "56",
+  "e_length": "65.5",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:13:52.988Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:13:52.988Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aeae579279fa55f89229"
+  },
+  "make": "TKRJ",
+  "code": "AY0820X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0820X-4VP.php",
+  "a_compressionHight1": "36.2",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "33.14",
+  "d_bore": "52",
+  "e_length": "63.2",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:17:34.025Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:17:34.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9aed7579279fa55f8922f"
+  },
+  "make": "TKRJ",
+  "code": "AY0830X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0830X-3C1.php",
+  "a_compressionHight1": "18.1",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "18.1",
+  "d_bore": "57",
+  "e_length": "32.1",
+  "f_pinLength": "40.9",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:18:15.638Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:18:15.638Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9af04579279fa55f89235"
+  },
+  "make": "TKRJ",
+  "code": "AY0850X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0850X-2A7.php",
+  "a_compressionHight1": "34.6",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30",
+  "d_bore": "66",
+  "e_length": "67.6",
+  "f_pinLength": "57",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:19:00.423Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:19:00.423Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9af2c579279fa55f8923b"
+  },
+  "make": "TKRJ",
+  "code": "AY0860X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0860X-18L.php",
+  "a_compressionHight1": "39.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "66",
+  "e_length": "69.5",
+  "f_pinLength": "57",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:19:40.461Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:19:40.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9af51579279fa55f89241"
+  },
+  "make": "TKRJ",
+  "code": "AY0870X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0870X-21C.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20",
+  "d_bore": "58",
+  "e_length": "37",
+  "f_pinLength": "44",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:20:17.975Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:20:17.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9af77579279fa55f89247"
+  },
+  "make": "TKRJ",
+  "code": "AY0880X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0880X-1KH.php",
+  "a_compressionHight1": "24.7",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "23.68",
+  "d_bore": "70",
+  "e_length": "48.7",
+  "f_pinLength": "53",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:20:55.841Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:20:55.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9af93579279fa55f8924d"
+  },
+  "make": "TKRJ",
+  "code": "AY0890X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0890X-4HF.php",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30",
+  "d_bore": "59",
+  "e_length": "63.5",
+  "f_pinLength": "50.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:21:23.276Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:21:23.276Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9afc0579279fa55f89253"
+  },
+  "make": "TKRJ",
+  "code": "AY0900X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0900X-4L1.php",
+  "a_compressionHight1": "32.9",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.1",
+  "d_bore": "54",
+  "e_length": "69.4",
+  "f_pinLength": "46",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:22:08.266Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:22:08.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9afe1579279fa55f89259"
+  },
+  "make": "TKRJ",
+  "code": "AY0910X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0910X-4HC.php",
+  "a_compressionHight1": "21.3",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "21.3",
+  "d_bore": "69",
+  "e_length": "42.3",
+  "f_pinLength": "46.8",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:22:41.666Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:22:41.666Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b00a579279fa55f8925f"
+  },
+  "make": "TKRJ",
+  "code": "AY0920X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0920X-29L.php",
+  "a_compressionHight1": "32.9",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "29.8",
+  "d_bore": "54",
+  "e_length": "64.9",
+  "f_pinLength": "44.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:23:22.806Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:23:22.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b032579279fa55f89265"
+  },
+  "make": "TKRJ",
+  "code": "AY0930B",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0930B-2YK.php",
+  "a_compressionHight1": "33.4",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.4",
+  "d_bore": "56.4",
+  "e_length": "65.4",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:24:02.209Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:24:02.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b056579279fa55f8926b"
+  },
+  "make": "TKRJ",
+  "code": "AY0930X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0930X-2YK.php",
+  "a_compressionHight1": "33.4",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.4",
+  "d_bore": "56.4",
+  "e_length": "65.4",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:24:38.239Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:24:38.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b07a579279fa55f89271"
+  },
+  "make": "TKRJ",
+  "code": "AY0940X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0940X-2GS.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20",
+  "d_bore": "57.3",
+  "e_length": "37",
+  "f_pinLength": "44.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:25:14.475Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:25:14.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b098579279fa55f89277"
+  },
+  "make": "TKRJ",
+  "code": "AY0950X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0950X-4LO.php",
+  "a_compressionHight1": "40",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "36",
+  "d_bore": "64",
+  "e_length": "72",
+  "f_pinLength": "54",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:25:44.500Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:25:44.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b0b9579279fa55f8927d"
+  },
+  "make": "TKRJ",
+  "code": "AY0960X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0960X-31K.php",
+  "a_compressionHight1": "40",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "36",
+  "d_bore": "64",
+  "e_length": "72",
+  "f_pinLength": "54",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:26:17.543Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:26:17.543Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b0d5579279fa55f89283"
+  },
+  "make": "TKRJ",
+  "code": "AY0970X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0970X-31K.php",
+  "a_compressionHight1": "40",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "36",
+  "d_bore": "64",
+  "e_length": "72",
+  "f_pinLength": "54",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:26:45.302Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:26:45.302Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b10e579279fa55f89289"
+  },
+  "make": "TKRJ",
+  "code": "AY0980X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY0980X-31K.php",
+  "a_compressionHight1": "40",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "36",
+  "d_bore": "64",
+  "e_length": "72",
+  "f_pinLength": "36",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:27:42.494Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:27:42.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b13d579279fa55f8928f"
+  },
+  "make": "TKRJ",
+  "code": "AY1100X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY1100X-3TB.php",
+  "a_compressionHight1": "28",
+  "b_pinDiameter": "22",
+  "c_compressionHight2": "28",
+  "d_bore": "95",
+  "e_length": "57.7",
+  "f_pinLength": "72",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:28:29.528Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:28:29.528Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b161579279fa55f89295"
+  },
+  "make": "TKRJ",
+  "code": "AY8000X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY8000X-2XT.php",
+  "a_compressionHight1": "33.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30",
+  "d_bore": "56.4",
+  "e_length": "65.5",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:29:05.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:29:05.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b18d579279fa55f8929b"
+  },
+  "make": "TKRJ",
+  "code": "AY8020X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY8020X-3MA.php",
+  "a_compressionHight1": "33.6",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "30.4",
+  "d_bore": "56",
+  "e_length": "65.5",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:29:49.876Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:29:49.876Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b1b9579279fa55f892a1"
+  },
+  "make": "TKRJ",
+  "code": "AY8030X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AY8030X-3XV.php",
+  "a_compressionHight1": "30.45",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "27.73",
+  "d_bore": "56",
+  "e_length": "57.35",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-02T01:30:33.715Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:30:33.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c9b1e0579279fa55f892a7"
+  },
+  "make": "TKRJ",
+  "code": "AYS510X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AYS510X-5TN.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20",
+  "d_bore": "51",
+  "e_length": "39",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-02T01:31:12.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T01:31:12.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeb39b83e3b6f73146679"
+  },
+  "make": "TKRJ",
+  "code": "AS0040X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0040X-46103.php",
+  "a_compressionHight1": "30.45",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "27",
+  "d_bore": "41",
+  "e_length": "51.4",
+  "f_pinLength": "34",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:00:25.286Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:00:25.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeb67b83e3b6f7314667f"
+  },
+  "make": "TKRJ",
+  "code": "AS0070X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0070X-35613.php",
+  "a_compressionHight1": "30.45",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "27",
+  "d_bore": "41",
+  "e_length": "51.4",
+  "f_pinLength": "34",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:01:11.903Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:01:11.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeb8cb83e3b6f73146685"
+  },
+  "make": "TKRJ",
+  "code": "AS0160X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0160X-46402.php",
+  "a_compressionHight1": "30.4",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "26.75",
+  "d_bore": "49",
+  "e_length": "56.4",
+  "f_pinLength": "39",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:01:48.286Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:01:48.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbebbdb83e3b6f7314668b"
+  },
+  "make": "TKRJ",
+  "code": "AS0170X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0170X-35623.php",
+  "a_compressionHight1": "31.2",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "27.4",
+  "d_bore": "49",
+  "e_length": "61.2",
+  "f_pinLength": "39",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:02:37.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:02:37.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbebf3b83e3b6f73146691"
+  },
+  "make": "TKRJ",
+  "code": "AS0270X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0270X-23401.php",
+  "a_compressionHight1": "31",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28",
+  "d_bore": "50",
+  "e_length": "63",
+  "f_pinLength": "41.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:03:31.749Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:03:31.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbec1ab83e3b6f73146697"
+  },
+  "make": "TKRJ",
+  "code": "AS0320X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0320X-30A01.php",
+  "a_compressionHight1": "22.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "21.3",
+  "d_bore": "51",
+  "e_length": "44.7",
+  "f_pinLength": "40.9",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:04:10.342Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:04:10.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbec3db83e3b6f7314669d"
+  },
+  "make": "TKRJ",
+  "code": "AS0330X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0330X-35630.php",
+  "a_compressionHight1": "30",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "26",
+  "d_bore": "51",
+  "e_length": "58",
+  "f_pinLength": "39",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:04:45.557Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:04:45.557Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbec6eb83e3b6f731466a2"
+  },
+  "make": "TKRJ",
+  "code": "AS0390X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0390X-23J00.php",
+  "a_compressionHight1": "0",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "0",
+  "d_bore": "51",
+  "e_length": "37.3",
+  "f_pinLength": "36",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:05:34.749Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:05:34.749Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbec92b83e3b6f731466a7"
+  },
+  "make": "TKRJ",
+  "code": "AS0420X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0420X-23450.php",
+  "a_compressionHight1": "31",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "27.09",
+  "d_bore": "52.5",
+  "e_length": "60",
+  "f_pinLength": "41.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:06:10.713Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:06:10.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbecbab83e3b6f731466ad"
+  },
+  "make": "TKRJ",
+  "code": "AS0450X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0450X-09G10.php",
+  "a_compressionHight1": "21",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.9",
+  "d_bore": "53.5",
+  "e_length": "44.5",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:06:50.793Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:06:50.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbecdeb83e3b6f731466b2"
+  },
+  "make": "TKRJ",
+  "code": "AS0460X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0460X-36H00.php",
+  "a_compressionHight1": "20",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "20",
+  "d_bore": "51",
+  "e_length": "42.5",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:07:26.342Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:07:26.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbed13b83e3b6f731466b9"
+  },
+  "make": "TKRJ",
+  "code": "AS0490X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0490X-05202.php",
+  "a_compressionHight1": "31.8",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.62",
+  "d_bore": "57",
+  "e_length": "60.8",
+  "f_pinLength": "47",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:08:19.671Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:08:19.671Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbed41b83e3b6f731466be"
+  },
+  "make": "TKRJ",
+  "code": "AS0500X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0500X-39102.php",
+  "a_compressionHight1": "32.65",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "27.15",
+  "d_bore": "56",
+  "e_length": "60.65",
+  "f_pinLength": "44.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:09:05.148Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:09:05.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeebbb83e3b6f731466c7"
+  },
+  "make": "TKRJ",
+  "code": "AS0530X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0530X-36A06.php",
+  "a_compressionHight1": "32",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28",
+  "d_bore": "54",
+  "e_length": "63",
+  "f_pinLength": "41.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:15:23.586Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:15:23.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeed9b83e3b6f731466cd"
+  },
+  "make": "TKRJ",
+  "code": "AS0550X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0550X-48001.php",
+  "a_compressionHight1": "33",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28.5",
+  "d_bore": "56",
+  "e_length": "66.5",
+  "f_pinLength": "48",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:15:53.333Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:15:53.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbeef5b83e3b6f731466d3"
+  },
+  "make": "TKRJ",
+  "code": "AS0570X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0570X-01A03.php",
+  "a_compressionHight1": "33",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28.5",
+  "d_bore": "56",
+  "e_length": "66.5",
+  "f_pinLength": "47",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:16:21.554Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:16:21.554Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbef4cb83e3b6f731466da"
+  },
+  "make": "TKRJ",
+  "code": "AS0580X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0580X-12F50.php",
+  "a_compressionHight1": "21.2",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "21.2",
+  "d_bore": "57",
+  "e_length": "41.2",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:17:48.467Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:17:48.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbef72b83e3b6f731466df"
+  },
+  "make": "TKRJ",
+  "code": "AS0590X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0590X-20G00.php",
+  "a_compressionHight1": "19.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.9",
+  "d_bore": "53.5",
+  "e_length": "38.4",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:18:26.529Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:18:26.529Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbef9bb83e3b6f731466e4"
+  },
+  "make": "TKRJ",
+  "code": "AS0600X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0600X-20G30.php",
+  "a_compressionHight1": "19.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.9",
+  "d_bore": "53.5",
+  "e_length": "38.4",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:19:07.859Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:19:07.859Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbefbcb83e3b6f731466ea"
+  },
+  "make": "TKRJ",
+  "code": "AS0650X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0650X-12B05.php",
+  "a_compressionHight1": "32.1",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28",
+  "d_bore": "59",
+  "e_length": "68",
+  "f_pinLength": "46",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:19:40.814Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:19:40.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbefdbb83e3b6f731466ef"
+  },
+  "make": "TKRJ",
+  "code": "AS0670X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0670X-34J01.php",
+  "a_compressionHight1": "0",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "0",
+  "d_bore": "56",
+  "e_length": "0",
+  "f_pinLength": "34",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:20:11.865Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:20:11.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf005b83e3b6f731466f4"
+  },
+  "make": "TKRJ",
+  "code": "AS0680X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0680X-30H01.php",
+  "a_compressionHight1": "20.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20.4",
+  "d_bore": "57",
+  "e_length": "40.4",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:20:53.256Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:20:53.256Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf032b83e3b6f731466f9"
+  },
+  "make": "TKRJ",
+  "code": "AS0700X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0700X-29900.php",
+  "a_compressionHight1": "37.1",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "32.1",
+  "d_bore": "64",
+  "e_length": "75.1",
+  "f_pinLength": "49.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:21:38.656Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:21:38.656Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf068b83e3b6f731466fe"
+  },
+  "make": "TKRJ",
+  "code": "AS0760X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0760X-42A03.php",
+  "a_compressionHight1": "27",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "22",
+  "d_bore": "66",
+  "e_length": "52",
+  "f_pinLength": "44.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:22:32.333Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:22:32.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf08bb83e3b6f73146703"
+  },
+  "make": "TKRJ",
+  "code": "AS0800X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0800X-11300.php",
+  "a_compressionHight1": "32.8",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28",
+  "d_bore": "54",
+  "e_length": "64.3",
+  "f_pinLength": "40.9",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:23:07.822Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:23:07.822Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf0b7b83e3b6f73146709"
+  },
+  "make": "TKRJ",
+  "code": "AS0810X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0810X-30510.php",
+  "a_compressionHight1": "39.2",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "34.2",
+  "d_bore": "70",
+  "e_length": "78.2",
+  "f_pinLength": "55",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:23:51.939Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:23:51.939Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf0dcb83e3b6f7314670f"
+  },
+  "make": "TKRJ",
+  "code": "AS0900X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS0900X-14D03.php",
+  "a_compressionHight1": "25",
+  "b_pinDiameter": "20",
+  "c_compressionHight2": "25",
+  "d_bore": "79",
+  "e_length": "53",
+  "f_pinLength": "58",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:24:28.315Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:24:28.315Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf103b83e3b6f73146715"
+  },
+  "make": "TKRJ",
+  "code": "AS8040X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS8040X-21A05-21A15.php",
+  "a_compressionHight1": "32.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "44.5",
+  "d_bore": "56",
+  "e_length": "64.9",
+  "f_pinLength": "44.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:25:07.084Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:25:07.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf125b83e3b6f7314671b"
+  },
+  "make": "TKRJ",
+  "code": "AS8060X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS8060X-21A04-21A14.php",
+  "a_compressionHight1": "32.45",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28.5",
+  "d_bore": "50",
+  "e_length": "62.45",
+  "f_pinLength": "41.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:25:41.478Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:25:41.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf154b83e3b6f73146721"
+  },
+  "make": "TKRJ",
+  "code": "AS8100X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS8100X-42E00.php",
+  "a_compressionHight1": "32",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "54",
+  "e_length": "59.5",
+  "f_pinLength": "46.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:26:28.722Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:26:28.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf186b83e3b6f73146727"
+  },
+  "make": "TKRJ",
+  "code": "AS8120X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AS8120X-08D30.php",
+  "a_compressionHight1": "28.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "28.6",
+  "d_bore": "66",
+  "e_length": "65.5",
+  "f_pinLength": "57.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:27:18.011Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:27:18.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf1d7b83e3b6f7314672e"
+  },
+  "make": "TKRJ",
+  "code": "AK0080X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0080X-1080.php",
+  "a_compressionHight1": "25.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.5",
+  "d_bore": "43",
+  "e_length": "50.5",
+  "f_pinLength": "35",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:28:39.485Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:28:39.485Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf1fcb83e3b6f73146733"
+  },
+  "make": "TKRJ",
+  "code": "AK0100X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0100X-1218.php",
+  "a_compressionHight1": "20.8",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.4",
+  "d_bore": "53",
+  "e_length": "45.6",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:29:16.166Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:29:16.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf223b83e3b6f73146738"
+  },
+  "make": "TKRJ",
+  "code": "AK0110X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0110X-1420.php",
+  "a_compressionHight1": "19.5",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.4",
+  "d_bore": "53",
+  "e_length": "44.8",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:29:55.278Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:29:55.278Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf25bb83e3b6f7314673d"
+  },
+  "make": "TKRJ",
+  "code": "AK0150X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0150X-057.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "33",
+  "d_bore": "49.5",
+  "e_length": "67",
+  "f_pinLength": "38.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:30:51.682Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:30:51.682Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf27cb83e3b6f73146742"
+  },
+  "make": "TKRJ",
+  "code": "AK0240X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0240X-1067.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "33",
+  "d_bore": "52",
+  "e_length": "67",
+  "f_pinLength": "38.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:31:24.398Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:31:24.398Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf2afb83e3b6f73146748"
+  },
+  "make": "TKRJ",
+  "code": "AK0250X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0250X-1512.php",
+  "a_compressionHight1": "20.65",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.65",
+  "d_bore": "53",
+  "e_length": "45.5",
+  "f_pinLength": "39.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:32:15.166Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:32:15.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf2cbb83e3b6f7314674d"
+  },
+  "make": "TKRJ",
+  "code": "AK0380X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0380X-1061.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "33",
+  "d_bore": "55",
+  "e_length": "67",
+  "f_pinLength": "43",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:32:43.802Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:32:43.802Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf2e7b83e3b6f73146752"
+  },
+  "make": "TKRJ",
+  "code": "AK0400X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0400X-1235.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "33",
+  "d_bore": "54",
+  "e_length": "61",
+  "f_pinLength": "46",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:33:11.346Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:33:11.346Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf30bb83e3b6f73146757"
+  },
+  "make": "TKRJ",
+  "code": "AK0490X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0490X-1352.php",
+  "a_compressionHight1": "38",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "35",
+  "d_bore": "59",
+  "e_length": "68",
+  "f_pinLength": "50.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:33:47.034Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:33:47.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf328b83e3b6f7314675c"
+  },
+  "make": "TKRJ",
+  "code": "AK0500X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0500X-0053.php",
+  "a_compressionHight1": "38",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "35",
+  "d_bore": "59",
+  "e_length": "68",
+  "f_pinLength": "50.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:34:16.385Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:34:16.385Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf348b83e3b6f73146761"
+  },
+  "make": "TKRJ",
+  "code": "AK0510X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0510X-0104.php",
+  "a_compressionHight1": "19.8",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "18.4",
+  "d_bore": "58",
+  "e_length": "33.8",
+  "f_pinLength": "34",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:34:48.758Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:34:48.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf36cb83e3b6f73146767"
+  },
+  "make": "TKRJ",
+  "code": "AK0600X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AK0600X-1317.php",
+  "a_compressionHight1": "36",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "32",
+  "d_bore": "66",
+  "e_length": "70",
+  "f_pinLength": "53",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:35:24.878Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:35:24.878Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf3beb83e3b6f7314676e"
+  },
+  "make": "TKRJ",
+  "code": "AZ0040X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0040X-.php",
+  "a_compressionHight1": "17.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "17.5",
+  "d_bore": "51",
+  "e_length": "39.6",
+  "f_pinLength": "38",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:36:46.157Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:36:46.157Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf3e4b83e3b6f73146773"
+  },
+  "make": "TKRJ",
+  "code": "AZ0050X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0050X-DU-1012-07.php",
+  "a_compressionHight1": "20.4",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20.4",
+  "d_bore": "53",
+  "e_length": "44.9",
+  "f_pinLength": "39.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:37:24.038Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:37:24.038Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf409b83e3b6f73146779"
+  },
+  "make": "TKRJ",
+  "code": "AZ0070X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0070X-.php",
+  "a_compressionHight1": "19.5",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.5",
+  "d_bore": "52.4",
+  "e_length": "37",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:38:01.847Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:38:01.847Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf426b83e3b6f7314677e"
+  },
+  "make": "TKRJ",
+  "code": "AZ0080X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0080X-JB-5212-00.php",
+  "a_compressionHight1": "19.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "19.5",
+  "d_bore": "47",
+  "e_length": "34.5",
+  "f_pinLength": "35",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:38:30.829Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:38:30.829Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf44ab83e3b6f73146783"
+  },
+  "make": "TKRJ",
+  "code": "AZ0090X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0090X-0074.php",
+  "a_compressionHight1": "20.9",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "20.9",
+  "d_bore": "53",
+  "e_length": "41.7",
+  "f_pinLength": "38.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:39:06.890Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:39:06.890Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf47cb83e3b6f73146789"
+  },
+  "make": "TKRJ",
+  "code": "AZ0110X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0110X-DJ-1010-13.php",
+  "a_compressionHight1": "24.8",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "22",
+  "d_bore": "63.5",
+  "e_length": "46.8",
+  "f_pinLength": "49",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:39:56.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:39:56.316Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf49cb83e3b6f7314678e"
+  },
+  "make": "TKRJ",
+  "code": "AZ0120X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0120X-JF-5212-00.php",
+  "a_compressionHight1": "22.3",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "41.5",
+  "d_bore": "58",
+  "e_length": "44.3",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:40:28.429Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:40:28.429Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf4c5b83e3b6f73146794"
+  },
+  "make": "TKRJ",
+  "code": "AZ0130X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0130X-JA-5212-10.php",
+  "a_compressionHight1": "19",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19",
+  "d_bore": "54",
+  "e_length": "40",
+  "f_pinLength": "39",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:41:09.569Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:41:09.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf4e6b83e3b6f73146799"
+  },
+  "make": "TKRJ",
+  "code": "AZ0140X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0140X-JE-5212-00.php",
+  "a_compressionHight1": "19.9",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.9",
+  "d_bore": "36.9",
+  "e_length": "36.9",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:41:42.188Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:41:42.188Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf503b83e3b6f7314679e"
+  },
+  "make": "TKRJ",
+  "code": "AZ0150X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0150X-DS-1013-60.php",
+  "a_compressionHight1": "22.5",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "22.5",
+  "d_bore": "57",
+  "e_length": "44.5",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:42:11.029Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:42:11.029Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf521b83e3b6f731467a3"
+  },
+  "make": "TKRJ",
+  "code": "AZ0170X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0170X-1481.php",
+  "a_compressionHight1": "19.5",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "19.5",
+  "d_bore": "53",
+  "e_length": "44.8",
+  "f_pinLength": "38",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:42:41.559Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:42:41.559Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf557b83e3b6f731467a8"
+  },
+  "make": "TKRJ",
+  "code": "AZ0180X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0180X-.php",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "35.1",
+  "d_bore": "54",
+  "e_length": "68.6",
+  "f_pinLength": "42.5",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-03T18:43:35.782Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:43:35.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf57bb83e3b6f731467ad"
+  },
+  "make": "TKRJ",
+  "code": "AZ0200X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0200X-13003A125-0001.php",
+  "a_compressionHight1": "25.9",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "22.8",
+  "d_bore": "56.5",
+  "e_length": "51.9",
+  "f_pinLength": "48",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:44:11.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:44:11.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf5a1b83e3b6f731467b3"
+  },
+  "make": "TKRJ",
+  "code": "AZ0210X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0210X-13101-KUDU-900.php",
+  "a_compressionHight1": "20.1",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "20.1",
+  "d_bore": "52.4",
+  "e_length": "37.1",
+  "f_pinLength": "40.9",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:44:49.602Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:44:49.602Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf5c1b83e3b6f731467b8"
+  },
+  "make": "TKRJ",
+  "code": "AZ0220X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0220X-36-JZ00-74.php",
+  "a_compressionHight1": "19.2",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.2",
+  "d_bore": "54",
+  "e_length": "37.5",
+  "f_pinLength": "42",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:45:21.366Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:45:21.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf5efb83e3b6f731467bd"
+  },
+  "make": "TKRJ",
+  "code": "AZ0230X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0230X-36-JZ00-24.php",
+  "a_compressionHight1": "19.2",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.2",
+  "d_bore": "54",
+  "e_length": "40.2",
+  "f_pinLength": "40.9",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:46:07.212Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:46:07.212Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf620b83e3b6f731467c2"
+  },
+  "make": "TKRJ",
+  "code": "AZ0240X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0240X-.php",
+  "a_compressionHight1": "19.94",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "19.94",
+  "d_bore": "52.4",
+  "e_length": "36.94",
+  "f_pinLength": "43",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:46:56.094Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:46:56.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf63cb83e3b6f731467c7"
+  },
+  "make": "TKRJ",
+  "code": "AZ0250X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0250X-13220-IA25-0000.php",
+  "a_compressionHight1": "21.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "19.2",
+  "d_bore": "54",
+  "e_length": "39.5",
+  "f_pinLength": "41.5",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:47:24.043Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:47:24.043Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf656b83e3b6f731467cc"
+  },
+  "make": "TKRJ",
+  "code": "AZ0300X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0300X-.php",
+  "a_compressionHight1": "23",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "21.3",
+  "d_bore": "62",
+  "e_length": "40",
+  "f_pinLength": "46",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:47:50.451Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:47:50.451Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf679b83e3b6f731467d1"
+  },
+  "make": "TKRJ",
+  "code": "AZ0400X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0400X-JC-1010-12.php",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "22",
+  "d_bore": "67",
+  "e_length": "47.2",
+  "f_pinLength": "49",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:48:25.945Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:48:25.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf697b83e3b6f731467d7"
+  },
+  "make": "TKRJ",
+  "code": "AZ0410X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0410X-JL-5212-00.php",
+  "a_compressionHight1": "21",
+  "b_pinDiameter": "17",
+  "c_compressionHight2": "21",
+  "d_bore": "72",
+  "e_length": "38.9",
+  "f_pinLength": "49",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:48:55.348Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:48:55.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64cbf6b4b83e3b6f731467dd"
+  },
+  "make": "TKRJ",
+  "code": "AZ0500X",
+  "link": "https://www.tkrj.co.jp/es/goods/m-AZ0500X-.php",
+  "a_compressionHight1": "27",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "24.2",
+  "d_bore": "67",
+  "e_length": "49",
+  "f_pinLength": "54",
+  "g_stroke": "4",
+  "createdAt": {
+    "$date": "2023-08-03T18:49:24.443Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-03T18:49:24.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e2e0397a071ae5ecbe406e"
+  },
+  "make": "VHM",
+  "code": "APAP12521745A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apap12521745a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "24.1",
+  "d_bore": "53.92",
+  "e_length": "60",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T03:55:37.450Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T03:55:37.450Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e2e35d7a071ae5ecbe40b5"
+  },
+  "make": "VHM",
+  "code": "APHO12521708",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521708a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "31.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.1",
+  "d_bore": "5.93",
+  "e_length": "62.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T04:09:01.911Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T04:09:01.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37b69eaf0fadc39c81c25"
+  },
+  "make": "VHM",
+  "code": "APHO12521750A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521750a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.93",
+  "e_length": "60.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T14:57:45.597Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T14:57:45.597Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37d7ceaf0fadc39c81c36"
+  },
+  "make": "VHM",
+  "code": "APHO12521717A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521717a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "32.4",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "30.1",
+  "d_bore": "53.92",
+  "e_length": "63.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:06:36.950Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:06:36.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37db9eaf0fadc39c81c41"
+  },
+  "make": "VHM",
+  "code": "APHO12521743A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521743a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28.5",
+  "d_bore": "55.93",
+  "e_length": "60.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:07:37.198Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:07:37.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37df1eaf0fadc39c81c4c"
+  },
+  "make": "VHM",
+  "code": "APKR05011676A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.95",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:08:33.684Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:08:33.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37e70eaf0fadc39c81c57"
+  },
+  "make": "VHM",
+  "code": "APAP12521745B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apap12521745b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "24.1",
+  "d_bore": "53.94",
+  "e_length": "60",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:10:40.654Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:10:40.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37eb8eaf0fadc39c81c62"
+  },
+  "make": "VHM",
+  "code": "APHO12521708A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521708a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "31.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.1",
+  "d_bore": "53.92",
+  "e_length": "62.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:11:52.034Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:11:52.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37ef6eaf0fadc39c81c6d"
+  },
+  "make": "VHM",
+  "code": "APHO12521708B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521708b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "31.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.1",
+  "d_bore": "53.94",
+  "e_length": "62.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:12:54.702Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:12:54.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37f33eaf0fadc39c81c78"
+  },
+  "make": "VHM",
+  "code": "APHO12521708C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521708c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "31.4",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.1",
+  "d_bore": "53.95",
+  "e_length": "62.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:13:55.640Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:13:55.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37f8beaf0fadc39c81c84"
+  },
+  "make": "VHM",
+  "code": "APHO12521750B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521750b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.94",
+  "e_length": "60.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:15:23.663Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:15:23.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e37fe9eaf0fadc39c81c92"
+  },
+  "make": "VHM",
+  "code": "APHO12521717A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521717a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "32.4",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "30.1",
+  "d_bore": "53.93",
+  "e_length": "63.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:16:57.601Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:16:57.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e38023eaf0fadc39c81c9d"
+  },
+  "make": "VHM",
+  "code": "APHO12521717B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521717b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "32.4",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "30.1",
+  "d_bore": "53.94",
+  "e_length": "63.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:17:55.225Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:17:55.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e38060eaf0fadc39c81ca8"
+  },
+  "make": "VHM",
+  "code": "APHO12521717C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521717c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "32.4",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "30.1",
+  "d_bore": "53.95",
+  "e_length": "63.9",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:18:56.136Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:18:56.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e380b1eaf0fadc39c81cb6"
+  },
+  "make": "VHM",
+  "code": "APHO12521743B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apho12521743b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "28.5",
+  "d_bore": "55.94",
+  "e_length": "60.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:20:17.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:20:17.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e380e9eaf0fadc39c81cc3"
+  },
+  "make": "VHM",
+  "code": "APKR05011676A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.94",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:21:13.838Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:21:13.838Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3810feaf0fadc39c81cce"
+  },
+  "make": "VHM",
+  "code": "APKR05011676B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.96",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:21:51.989Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:21:51.989Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3812feaf0fadc39c81cd9"
+  },
+  "make": "VHM",
+  "code": "APKR05011676C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.97",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:22:23.210Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:22:23.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e38156eaf0fadc39c81ce4"
+  },
+  "make": "VHM",
+  "code": "APKR05011676D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.98",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:23:02.250Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:23:02.250Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e381b8eaf0fadc39c81cef"
+  },
+  "make": "VHM",
+  "code": "APKR05011676E",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676e/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.99",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:24:40.761Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:24:40.761Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e381d9eaf0fadc39c81cfa"
+  },
+  "make": "VHM",
+  "code": "APKR05011676F",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011676f/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "24.8",
+  "d_bore": "40",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:25:13.726Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:25:13.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e381fdeaf0fadc39c81d05"
+  },
+  "make": "VHM",
+  "code": "APKR05011715A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011715a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.95",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:25:49.370Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:25:49.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3821feaf0fadc39c81d10"
+  },
+  "make": "VHM",
+  "code": "APKR05011715B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011715b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.96",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:26:23.990Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:26:23.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e38242eaf0fadc39c81d1b"
+  },
+  "make": "VHM",
+  "code": "APKR05011715C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011715c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.97",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:26:58.871Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:26:58.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3826aeaf0fadc39c81d26"
+  },
+  "make": "VHM",
+  "code": "APKR05011715D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05011715d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27.5",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "24.8",
+  "d_bore": "39.98",
+  "e_length": "51",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:27:38.942Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:27:38.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e382afeaf0fadc39c81d33"
+  },
+  "make": "VHM",
+  "code": "APKR05021763A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05021763a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.95",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T15:28:47.058Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T15:28:47.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bc17eaf0fadc39c81d42"
+  },
+  "make": "VHM",
+  "code": "APKR05021763B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05021763b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "36.96",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:33:43.681Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:33:43.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bc45eaf0fadc39c81d4d"
+  },
+  "make": "VHM",
+  "code": "APKR05021763C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05021763c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.97",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:34:29.926Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:34:29.926Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bc79eaf0fadc39c81d58"
+  },
+  "make": "VHM",
+  "code": "APKR05021763D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr05021763d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.98",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:35:21.937Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:35:21.937Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bc9deaf0fadc39c81d63"
+  },
+  "make": "VHM",
+  "code": "APKR06011683A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011683a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.95",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:35:57.956Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:35:57.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bcc6eaf0fadc39c81d6e"
+  },
+  "make": "VHM",
+  "code": "APKR06011683A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011683a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.94",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:36:38.108Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:36:38.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bceceaf0fadc39c81d79"
+  },
+  "make": "VHM",
+  "code": "APKR06011683B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011683b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.96",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:37:16.635Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:37:16.635Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bd39eaf0fadc39c81d86"
+  },
+  "make": "VHM",
+  "code": "APKR06011683C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011683c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.97",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:38:33.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:38:33.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bd87eaf0fadc39c81d95"
+  },
+  "make": "VHM",
+  "code": "APKR06011683D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011683d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.98",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:39:51.057Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:39:51.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bdadeaf0fadc39c81da0"
+  },
+  "make": "VHM",
+  "code": "APKR06011705A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011705a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.95",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:40:29.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:40:29.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bdd4eaf0fadc39c81dad"
+  },
+  "make": "VHM",
+  "code": "APKR06011705B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011705b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.96",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:41:08.350Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:41:08.350Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bdf6eaf0fadc39c81db8"
+  },
+  "make": "VHM",
+  "code": "APKR06011705C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011705c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.97",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:41:42.210Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:41:42.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3be13eaf0fadc39c81dc3"
+  },
+  "make": "VHM",
+  "code": "APKR06011705D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkr06011705d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.3",
+  "d_bore": "43.98",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:42:11.667Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:42:11.667Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3be60eaf0fadc39c81dce"
+  },
+  "make": "VHM",
+  "code": "APKT06521722A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.95",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:43:28.098Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:43:28.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3be83eaf0fadc39c81dd9"
+  },
+  "make": "VHM",
+  "code": "APKT06521722A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.94",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:44:03.791Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:44:03.791Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3beb4eaf0fadc39c81de4"
+  },
+  "make": "VHM",
+  "code": "APKT06521722B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.96",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:44:52.024Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:44:52.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bed0eaf0fadc39c81def"
+  },
+  "make": "VHM",
+  "code": "APKT06521722C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.97",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:45:20.857Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:45:20.857Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bef6eaf0fadc39c81dfa"
+  },
+  "make": "VHM",
+  "code": "APKT06521722D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.98",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:45:58.332Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:45:58.332Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bf14eaf0fadc39c81e05"
+  },
+  "make": "VHM",
+  "code": "APKT06521722E",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722e/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "44.99",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:46:28.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:46:28.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bf37eaf0fadc39c81e10"
+  },
+  "make": "VHM",
+  "code": "APKT06521722F",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt06521722f/properties/g+c+a+nr+view",
+  "a_compressionHight1": "22",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "21.5",
+  "d_bore": "45",
+  "e_length": "46",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:47:03.044Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:47:03.044Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bf65eaf0fadc39c81e1b"
+  },
+  "make": "VHM",
+  "code": "APKT08521707A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt08521707a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "24.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.9",
+  "d_bore": "46.95",
+  "e_length": "51.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:47:49.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:47:49.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bf88eaf0fadc39c81e26"
+  },
+  "make": "VHM",
+  "code": "APKT08521707A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt08521707a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "24.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.9",
+  "d_bore": "46.94",
+  "e_length": "51.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:48:24.413Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:48:24.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bfa9eaf0fadc39c81e31"
+  },
+  "make": "VHM",
+  "code": "APKT08521707B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt08521707b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "24.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.9",
+  "d_bore": "46.96",
+  "e_length": "51.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:48:57.671Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:48:57.671Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bfd5eaf0fadc39c81e3c"
+  },
+  "make": "VHM",
+  "code": "APKT08521707C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt08521707c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "24.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.9",
+  "d_bore": "46.97",
+  "e_length": "51.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:49:41.262Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:49:41.262Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3bffaeaf0fadc39c81e47"
+  },
+  "make": "VHM",
+  "code": "APKT08521707D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt08521707d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "24.6",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "23.9",
+  "d_bore": "46.98",
+  "e_length": "51.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:50:18.138Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:50:18.138Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c01deaf0fadc39c81e52"
+  },
+  "make": "VHM",
+  "code": "APKT12511673A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.95",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:50:53.898Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:50:53.898Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c052eaf0fadc39c81e5d"
+  },
+  "make": "VHM",
+  "code": "APKT12511673A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.94",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:51:46.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:51:46.418Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c073eaf0fadc39c81e68"
+  },
+  "make": "VHM",
+  "code": "APKT12511673A2",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673a2/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.93",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:52:19.353Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:52:19.353Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c099eaf0fadc39c81e73"
+  },
+  "make": "VHM",
+  "code": "APKT12511673B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.96",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:52:57.035Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:52:57.035Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c0eceaf0fadc39c81e80"
+  },
+  "make": "VHM",
+  "code": "APKT12511673C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.97",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:54:20.998Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:54:20.998Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c107eaf0fadc39c81e8b"
+  },
+  "make": "VHM",
+  "code": "APKT12511673D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511673d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "0",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:54:47.726Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:54:47.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c12beaf0fadc39c81e96"
+  },
+  "make": "VHM",
+  "code": "APKT12511725A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511725a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.94",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:55:23.415Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:55:23.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c14aeaf0fadc39c81ea1"
+  },
+  "make": "VHM",
+  "code": "APKT12511725A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511725a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "59.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.95",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:55:54.023Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:55:54.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c17ceaf0fadc39c81eac"
+  },
+  "make": "VHM",
+  "code": "APKT12511725B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511725b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.96",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:56:44.781Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:56:44.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c1aeeaf0fadc39c81eb7"
+  },
+  "make": "VHM",
+  "code": "APKT12511726A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511726a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.94",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:57:34.466Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:57:34.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c1d4eaf0fadc39c81ec2"
+  },
+  "make": "VHM",
+  "code": "APKT12511726A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511726a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.95",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:58:12.467Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:58:12.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c1eeeaf0fadc39c81ecd"
+  },
+  "make": "VHM",
+  "code": "APKT12511726B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511726b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.96",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:58:38.604Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:58:38.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c21deaf0fadc39c81ed8"
+  },
+  "make": "VHM",
+  "code": "APKT25021754A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt25021754a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "38",
+  "d_bore": "66.33",
+  "e_length": "73.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T19:59:25.895Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T19:59:25.895Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c251eaf0fadc39c81ee3"
+  },
+  "make": "VHM",
+  "code": "APKT25021754A2",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt25021754a2/properties/g+c+a+nr+view",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "38",
+  "d_bore": "66.32",
+  "e_length": "73.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:00:17.991Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:00:17.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c26feaf0fadc39c81eee"
+  },
+  "make": "VHM",
+  "code": "APKT25021754A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt25021754a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "38",
+  "d_bore": "66.34",
+  "e_length": "73.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:00:47.266Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:00:47.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c28ceaf0fadc39c81ef9"
+  },
+  "make": "VHM",
+  "code": "APKT25021754B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt25021754b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "38",
+  "d_bore": "66.35",
+  "e_length": "73.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:01:16.011Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:01:16.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c2aeeaf0fadc39c81f04"
+  },
+  "make": "VHM",
+  "code": "APKT25021754C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt25021754c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "38.6",
+  "b_pinDiameter": "18",
+  "c_compressionHight2": "38",
+  "d_bore": "66.36",
+  "e_length": "73.6",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:01:50.399Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:01:50.399Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c2d6eaf0fadc39c81f0f"
+  },
+  "make": "VHM",
+  "code": "APKT12511691C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511691c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.97",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:02:30.882Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:02:30.882Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c721eaf0fadc39c81f1e"
+  },
+  "make": "VHM",
+  "code": "APKT12511691D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apkt12511691d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29.5",
+  "d_bore": "53.98",
+  "e_length": "58",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:20:49.445Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:20:49.445Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c77ceaf0fadc39c81f2d"
+  },
+  "make": "VHM",
+  "code": "APMA05011689A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.95",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:22:20.835Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:22:20.835Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c79feaf0fadc39c81f38"
+  },
+  "make": "VHM",
+  "code": "APMA05011689A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.94",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:22:55.931Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:22:55.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c7bbeaf0fadc39c81f43"
+  },
+  "make": "VHM",
+  "code": "APMA05011689B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.96",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:23:23.348Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:23:23.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c7d7eaf0fadc39c81f4e"
+  },
+  "make": "VHM",
+  "code": "APMA05011689C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.97",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:23:51.701Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:23:51.701Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c7fbeaf0fadc39c81f59"
+  },
+  "make": "VHM",
+  "code": "APMA05011689D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.98",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:24:27.534Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:24:27.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c816eaf0fadc39c81f64"
+  },
+  "make": "VHM",
+  "code": "APMA05011689E",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011689e/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.99",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:24:54.019Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:24:54.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c83aeaf0fadc39c81f6f"
+  },
+  "make": "VHM",
+  "code": "APMA05011709B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011709b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.84",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:25:30.279Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:25:30.279Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c85feaf0fadc39c81f7a"
+  },
+  "make": "VHM",
+  "code": "APMA05011709C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011709c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.85",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:26:07.241Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:26:07.241Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c87ceaf0fadc39c81f85"
+  },
+  "make": "VHM",
+  "code": "APMA05011710A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011710a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.83",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:26:36.767Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:26:36.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c89aeaf0fadc39c81f90"
+  },
+  "make": "VHM",
+  "code": "APMA05011710B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011710b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.84",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:27:06.507Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:27:06.507Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c8b9eaf0fadc39c81f9b"
+  },
+  "make": "VHM",
+  "code": "APMA05011710C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011710c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "21.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "20",
+  "d_bore": "39.85",
+  "e_length": "47",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:27:37.488Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:27:37.488Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c907eaf0fadc39c81fa6"
+  },
+  "make": "VHM",
+  "code": "APMA05011712A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011712a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.95",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:28:55.129Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:28:55.129Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c926eaf0fadc39c81fb1"
+  },
+  "make": "VHM",
+  "code": "APMA05011712A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011712a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.94",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:29:26.579Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:29:26.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c949eaf0fadc39c81fbc"
+  },
+  "make": "VHM",
+  "code": "APMA05011712B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011712b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.96",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:30:01.925Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:30:01.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c965eaf0fadc39c81fc7"
+  },
+  "make": "VHM",
+  "code": "APMA05011712C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011712c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.97",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:30:29.096Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:30:29.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3c988eaf0fadc39c81fd2"
+  },
+  "make": "VHM",
+  "code": "APMA05011712D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apma05011712d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "39.98",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T20:31:04.209Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T20:31:04.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d1f7eaf0fadc39c81fed"
+  },
+  "make": "VHM",
+  "code": "APMI05011694A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apmi05011694a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "40.25",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:07:03.375Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:07:03.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d216eaf0fadc39c81ff8"
+  },
+  "make": "VHM",
+  "code": "APMI05011694B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apmi05011694b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26.5",
+  "b_pinDiameter": "12",
+  "c_compressionHight2": "25",
+  "d_bore": "40.26",
+  "e_length": "49",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:07:34.736Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:07:34.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d24beaf0fadc39c82003"
+  },
+  "make": "VHM",
+  "code": "APSA05011701A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apsa05011701a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "27",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "25.5",
+  "d_bore": "39.96",
+  "e_length": "49.5",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:08:27.915Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:08:27.915Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d274eaf0fadc39c8200e"
+  },
+  "make": "VHM",
+  "code": "APTM08521702B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm08521702b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "23.9",
+  "d_bore": "47.86",
+  "e_length": "53",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:09:08.650Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:09:08.650Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d297eaf0fadc39c82019"
+  },
+  "make": "VHM",
+  "code": "APTM08521702C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm08521702c/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "23.9",
+  "d_bore": "47.87",
+  "e_length": "53",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:09:43.013Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:09:43.013Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d2c7eaf0fadc39c82024"
+  },
+  "make": "VHM",
+  "code": "APTM08521702D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm08521702d/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "23.9",
+  "d_bore": "47.88",
+  "e_length": "53",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:10:31.864Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:10:31.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d2edeaf0fadc39c8202f"
+  },
+  "make": "VHM",
+  "code": "APTM08521702F",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm08521702f/properties/g+c+a+nr+view",
+  "a_compressionHight1": "26",
+  "b_pinDiameter": "13",
+  "c_compressionHight2": "23.9",
+  "d_bore": "47.9",
+  "e_length": "53",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:11:09.082Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:11:09.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d30ceaf0fadc39c8203a"
+  },
+  "make": "VHM",
+  "code": "APTM12521762A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm12521762a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.93",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:11:40.098Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:11:40.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d335eaf0fadc39c82045"
+  },
+  "make": "VHM",
+  "code": "APTM12521729A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm12521729a/properties/g+c+a+nr+view",
+  "a_compressionHight1": "30.8",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.9",
+  "d_bore": "53.93",
+  "e_length": "62.3",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:12:21.355Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:12:21.355Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d351eaf0fadc39c82050"
+  },
+  "make": "VHM",
+  "code": "APTM12521729A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm12521729a1/properties/g+c+a+nr+view",
+  "a_compressionHight1": "30.8",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.9",
+  "d_bore": "53.92",
+  "e_length": "62.3",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:12:49.369Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:12:49.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e3d376eaf0fadc39c8205b"
+  },
+  "make": "VHM",
+  "code": "APTM12521729B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/aptm12521729b/properties/g+c+a+nr+view",
+  "a_compressionHight1": "30.8",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.9",
+  "d_bore": "53.94",
+  "e_length": "62.3",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-21T21:13:26.044Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-21T21:13:26.044Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e507a0ade2526d84c0f4a7"
+  },
+  "make": "VHM",
+  "code": "APYA12521716A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521716a/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.93",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:08:16.696Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:08:16.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e507cdade2526d84c0f4b6"
+  },
+  "make": "VHM",
+  "code": "APYA12521716A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521716a1/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.92",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:09:01.438Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:09:01.438Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5083bade2526d84c0f4c8"
+  },
+  "make": "VHM",
+  "code": "APYA12521716B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521716b/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.94",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:10:51.077Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:10:51.077Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5085fade2526d84c0f4d5"
+  },
+  "make": "VHM",
+  "code": "APYA12521716C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521716c/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.95",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:11:27.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:11:27.539Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50888ade2526d84c0f4e0"
+  },
+  "make": "VHM",
+  "code": "APYA12521716D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521716d/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "29.5",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "29",
+  "d_bore": "53.96",
+  "e_length": "61",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:12:08.328Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:12:08.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e508cdade2526d84c0f4eb"
+  },
+  "make": "VHM",
+  "code": "APYA12521747A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521747a/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "28.1",
+  "d_bore": "55.93",
+  "e_length": "57.4",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:13:17.827Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:13:17.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e508ecade2526d84c0f4f6"
+  },
+  "make": "VHM",
+  "code": "APYA12521747B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521747b/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "28.1",
+  "d_bore": "55.94",
+  "e_length": "57.4",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:13:48.485Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:13:48.485Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5090aade2526d84c0f501"
+  },
+  "make": "VHM",
+  "code": "APYA12521764B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apya12521764b/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "30.5",
+  "b_pinDiameter": "16",
+  "c_compressionHight2": "28",
+  "d_bore": "55.94",
+  "e_length": "57.4",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:14:18.975Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:14:18.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5092eade2526d84c0f50a"
+  },
+  "make": "VHM",
+  "code": "APYZ08521757A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz08521757a/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "26.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "26",
+  "d_bore": "47.45",
+  "e_length": "52",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:14:54.630Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:14:54.630Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e5094aade2526d84c0f513"
+  },
+  "make": "VHM",
+  "code": "APYZ08521757A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz08521757a1/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "26.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "26",
+  "d_bore": "47.44",
+  "e_length": "52",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:15:22.697Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:15:22.697Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50965ade2526d84c0f51e"
+  },
+  "make": "VHM",
+  "code": "APYZ08521757B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz08521757b/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "26.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "26",
+  "d_bore": "47.46",
+  "e_length": "52",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:15:49.681Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:15:49.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50989ade2526d84c0f527"
+  },
+  "make": "VHM",
+  "code": "APYZ08521757C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz08521757c/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "26.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "26",
+  "d_bore": "47.47",
+  "e_length": "52",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:16:25.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:16:25.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e509a5ade2526d84c0f530"
+  },
+  "make": "VHM",
+  "code": "APYZ08521757D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz08521757d/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "26.7",
+  "b_pinDiameter": "14",
+  "c_compressionHight2": "26",
+  "d_bore": "47.48",
+  "e_length": "52",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:16:53.342Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:16:53.342Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e509c9ade2526d84c0f53b"
+  },
+  "make": "VHM",
+  "code": "APYZ12521705A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521705a/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "28.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.1",
+  "d_bore": "53.95",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:17:29.101Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:17:29.101Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50a02ade2526d84c0f546"
+  },
+  "make": "VHM",
+  "code": "APYZ12521705A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521705a1/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "28.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.1",
+  "d_bore": "53.94",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:18:26.503Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:18:26.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50a2bade2526d84c0f551"
+  },
+  "make": "VHM",
+  "code": "APYZ12521705B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521705b/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "28.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.1",
+  "d_bore": "53.96",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:19:07.795Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:19:07.795Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50a4eade2526d84c0f55c"
+  },
+  "make": "VHM",
+  "code": "APYZ12521705C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521705c/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "28.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "28.1",
+  "d_bore": "53.97",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:19:42.604Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:19:42.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50a84ade2526d84c0f565"
+  },
+  "make": "VHM",
+  "code": "APYZ12521714A",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521714a/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "25.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.1",
+  "d_bore": "53.95",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:20:36.370Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:20:36.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50aa6ade2526d84c0f570"
+  },
+  "make": "VHM",
+  "code": "APYZ12521714A1",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521714a1/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "25.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.1",
+  "d_bore": "53.94",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:21:10.548Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:21:10.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50ad3ade2526d84c0f579"
+  },
+  "make": "VHM",
+  "code": "APYZ12521714B",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521714b/properties/4t/2t/g+c+a+nr+view+f6+f6",
+  "a_compressionHight1": "25.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.1",
+  "d_bore": "53.96",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:21:55.251Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:21:55.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50af5ade2526d84c0f582"
+  },
+  "make": "VHM",
+  "code": "APYZ12521714C",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521714c/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "25.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.1",
+  "d_bore": "53.97",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:22:29.602Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:22:29.602Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e50b29ade2526d84c0f58d"
+  },
+  "make": "VHM",
+  "code": "APYZ12521714D",
+  "link": "https://www.vhm.nl/en/catalog/engine-parts/piston-parts/piston-kits/apyz12521714d/properties/2t/g+c+a+nr+view+f6",
+  "a_compressionHight1": "25.6",
+  "b_pinDiameter": "15",
+  "c_compressionHight2": "25.1",
+  "d_bore": "53.98",
+  "e_length": "59.1",
+  "f_pinLength": "0",
+  "g_stroke": "2",
+  "createdAt": {
+    "$date": "2023-08-22T19:23:21.648Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T19:23:21.648Z"
+  },
+  "__v": 0
+}]

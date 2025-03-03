@@ -6,12 +6,15 @@ import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, pistonKitTable } from "@/utils";
 import CreateParams from "@/utils/createParams";
 import { DataGrid, GridOverlay } from "@mui/x-data-grid";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
-import { MeasurementDistributionTips, ReutilisableTip } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
+import {
+  MeasurementDistributionTips,
+  ReutilisableTip,
+} from "@/Components/CommonSearchTips";
+import { filterData } from "@/utils/filteredData";
 
 const PistonKitSearcher = () => {
   const { state } = useContext(SharedValuesContext);
@@ -24,22 +27,23 @@ const PistonKitSearcher = () => {
     onMouseLeave: handleMouseLeave,
     contextData: pistonKit,
     part: possibleParts.PistonKit,
-    arrayPartData: pistonKitTable
+    arrayPartData: pistonKitTable,
   });
 
-  const fetcher = (...args: Parameters<typeof fetch>) =>
-    fetch(...args).then((res) => res.json()) as Promise<
-      SearchResultPistonKit[]
-    >;
+  const [data, setData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
-  const params = CreateParams({ data: pistonKit });
+  useEffect(() => {
+    fetch("/data/PistonKit.json")
+      .then((res) => res.json())
+      .then((json) => setData(json))
+      .catch((err) => console.error("Error cargando JSON:", err));
+  }, []);
 
-  const { data, isLoading } = useSWR<SearchResultPistonKit[]>(
-    params ? `/api/search/${possibleParts.PistonKit}/${params}` : null,
-    fetcher
-  );
-
-  let searchResults: SearchResultPistonKit[] = data || [];
+  useEffect(() => {
+    if (data && data?.length === 0) return;
+    setFilteredData(filterData(data, pistonKit as any));
+  }, [data, pistonKit]);
 
   const {
     formState: { errors },
@@ -49,9 +53,6 @@ const PistonKitSearcher = () => {
   });
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4">
-      
-      <Adsterra/>
-      
       <PistonKitSVG
         control={control}
         errors={errors}
@@ -62,17 +63,17 @@ const PistonKitSearcher = () => {
 
       <div className="my-20 w-full text-white laptop:mx-auto laptop:max-w-[min-content]">
         <TableRecomendations />
-        <div className="bg-gray-80 h-[400px] mb-20">
+        <div className="bg-gray-80 mb-20 h-[400px]">
           <DataGrid
-            rows={searchResults}
+            rows={filteredData}
             columns={columnPistonKit}
-            getRowId={(row) => row._id}
+            getRowId={(row) => row._id.$oid}
             initialState={{
               sorting: {
                 sortModel: [
                   {
-                    field: 'code',
-                    sort: 'asc',
+                    field: "code",
+                    sort: "asc",
                   },
                 ],
               },
@@ -95,25 +96,14 @@ const PistonKitSearcher = () => {
               "& .MuiDataGrid-row:nth-of-type(even)": {
                 backgroundColor: "#1e293b",
               },
-              "& .MuiDataGrid-cell:nth-of-type(n+3)":{
-                justifyContent: 'center'
-              }
-            }}
-            loading={isLoading}
-            slots={{
-              noRowsOverlay: () =>
-                !params ? (
-                  <GridOverlay>Nothing to show</GridOverlay>
-                ) : (
-                  <GridOverlay> No results</GridOverlay>
-                ),
-              noResultsOverlay: () => <div>No results</div>,
-              loadingOverlay: () => <GridOverlay>Wait a second...</GridOverlay>,
+              "& .MuiDataGrid-cell:nth-of-type(n+3)": {
+                justifyContent: "center",
+              },
             }}
           />
         </div>
-      <MeasurementDistributionTips />
-      <ReutilisableTip text="If you are searching for a piston kit with a flat top, you can enter the same measurement for both A and C."/>
+        <MeasurementDistributionTips />
+        <ReutilisableTip text="If you are searching for a piston kit with a flat top, you can enter the same measurement for both A and C." />
       </div>
     </div>
   );

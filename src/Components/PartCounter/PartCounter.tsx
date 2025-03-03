@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import useSWR from "swr";
 import valve from "../../../public/landingImg/valve.webp";
 import FSLargeSpline from "../../../public/landingImg/FSLargeSpline.webp";
 import FSNarrowSpline from "../../../public/landingImg/FSNarrowSpline.webp";
@@ -10,7 +9,7 @@ import RearSprocket from "../../../public/landingImg/rearSprocket.webp";
 import Piston from "../../../public/landingImg/piston.webp";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type PartCounter = {
   part: possibleParts;

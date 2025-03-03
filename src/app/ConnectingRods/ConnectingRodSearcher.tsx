@@ -12,7 +12,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import useSWR from "swr";
 import F3 from "../../../public/F3.webp";
-import Adsterra from "@/Components/Adsterra";
 import { filterData } from "@/utils/filteredData";
 
 const ConnectingRodSearcher = () => {

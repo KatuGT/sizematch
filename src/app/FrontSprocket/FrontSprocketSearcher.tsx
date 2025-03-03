@@ -2,7 +2,6 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultFSNarrowSpline } from "@/types-enums-interfaces/FSnarrowSplineProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import {
   FSlargeSplineTable,
@@ -10,17 +9,14 @@ import {
   GetUserColumnConfig,
   useHover,
 } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import useSWR from "swr";
 import { useForm } from "react-hook-form";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import {
   FSLargeSpline,
   FSNarrowSpline,
   TableRecomendations,
 } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
 import { filterData } from "@/utils/filteredData";
 
 const FrontSprocketSearcher = () => {
@@ -28,7 +24,6 @@ const FrontSprocketSearcher = () => {
   const { fsNarrowSpline, fsLargeSpline } = state;
   const { handleHover, handleMouseLeave, hoverClass } = useHover();
 
-  //Setea tipo de piñon
   const [frontSprocketType, setFrontSprocketType] = useState(
     possibleParts.FSNarrowSpline
   );

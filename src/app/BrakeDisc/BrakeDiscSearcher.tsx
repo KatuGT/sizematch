@@ -1,16 +1,12 @@
 "use client";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultBrakeDisc } from "@/types-enums-interfaces/BrakeDiscProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { GetUserColumnConfig, brakeDiscTable, useHover } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import useSWR from "swr";
 import { BrakeDisc as BrakeDiscSVG, TableRecomendations } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
 import { filterData } from "@/utils/filteredData";
 
 const BrakeDiscSearcher = () => {

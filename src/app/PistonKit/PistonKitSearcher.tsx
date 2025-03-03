@@ -1,14 +1,11 @@
 "use client";
 import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultPistonKit } from "@/types-enums-interfaces/PistonKitProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, pistonKitTable } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import useSWR from "swr";
 import { PistonKit as PistonKitSVG } from "@/Components";
 import {
   MeasurementDistributionTips,

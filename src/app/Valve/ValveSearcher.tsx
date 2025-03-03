@@ -1,17 +1,13 @@
 "use client";
 import { TableRecomendations } from "@/Components";
 import { SharedValuesContext } from "@/Context/SharedValuesContext/SharedValuesContext";
-import { SearchResultValve } from "@/types-enums-interfaces/ValveProps";
 import { possibleParts } from "@/types-enums-interfaces/partEnum";
 import { useHover, GetUserColumnConfig, valveTable } from "@/utils";
-import CreateParams from "@/utils/createParams";
-import { DataGrid, GridOverlay } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import useSWR from "swr";
 import { Valve as ValveSVG } from "@/Components";
 import { MeasurementDistributionTips } from "@/Components/CommonSearchTips";
-import Adsterra from "@/Components/Adsterra";
 import { filterData } from "@/utils/filteredData";
 
 const ValveSearcher = () => {
@@ -52,7 +48,6 @@ const ValveSearcher = () => {
 
   return (
     <div className="mx-auto mt-10 flex w-full flex-col items-center justify-center p-4 laptop:max-w-[min-content]">
-      <Adsterra />
 
       <ValveSVG
         control={control}
